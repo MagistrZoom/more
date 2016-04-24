@@ -24,8 +24,8 @@ void itoa(int n, char s[]) {
 	s[i] = '\0';
 	reverse(s);
 }
-#define STR_BUF 1024
-#define FORMAT_BUF 64
+#define STR_BUF (1024)
+#define FORMAT_BUF (64)
 static void _zprintf(int fd, char *template, va_list argp){
 	int i = -1, j = 0, r;
 	char outbuffer[STR_BUF] = { 0 };
