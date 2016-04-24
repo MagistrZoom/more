@@ -29,48 +29,10 @@ void put_header(char *filename){
 	zprintf("::::::::::::\n%s\n::::::::::::\n", filename);	
 }
 
-/*
- * @function read_data
- * @description read @limit bytes into @buf
- *
- * @param (int) fd file descriptor
- * @param (char*)  	buf
- * @param (off_t) 	offset
- * @param (size_t) 	limit
- *
- * @return (size_t) @limit or less written in buf
- */
-size_t read_data(int fd, char *buf, off_t *offset, size_t limit){
-	size_t o_data, o_hole, read_limit = 0, current_read = 0, max_read = 0;
-A:
-	o_data = lseek(fd, *offset, SEEK_DATA);
-	if(o_data == *offset){
-		goto B;
-	}
-C:
-	*offset = lseek(fd, *offset, SEEK_HOLE);
-	*offset = lseek(fd, *offset, SEEK_DATA);
-B:
-	o_hole = lseek(fd, *offset, SEEK_HOLE);
-	lseek(fd, *offset, SEEK_SET);
-	max_read = o_hole - *offset;
-	if(max_read > limit)
-		max_read = limit;
-	current_read = read(fd, buf + read_limit, max_read);
-	if(current_read > 0){
-		read_limit += current_read;
-		*offset = lseek(fd, 0, SEEK_CUR);
-		goto A;
-	}
-E:
-	return read_limit;
-}
-
 int main(int argc, char *argv[]) {
 	/*TODO: argument and options parsing			*/
 
 	size_t page_size = sysconf(_SC_PAGESIZE);
-
 	/* reopen control STDIN descriptor and save stdin from pipe */
 	if(!isatty(STDIN_FILENO)){
 		in_tty = 1;
@@ -100,21 +62,26 @@ int main(int argc, char *argv[]) {
 
 		put_header(argv[1]);	
 
-
-		/*
-		 *
-		 * lseek + read
-		 * Punch holes away
-		 * 
-		 */
-		off_t offset = 0;
 		char *buffer = malloc(sizeof(char)*page_size);
-		size_t data = read_data(read_fd, buffer, &offset, page_size-1);	
 		
-		if(data != page_size - 1){
-			/* end_of_reading() */
-			return 0;
+		int r_code;
+		size_t read_bytes = 0;
+
+		//way to get filesize
+		off_t end = lseek(read_fd, 0, SEEK_END);
+		if(end == -1) { return perr(errno); }
+		off_t start = lseek(read_fd, 0, SEEK_SET);
+		if(start == -1) { return perr(errno); }
+
+		while(read_bytes < end){
+			r_code = read(read_fd, buf, page_size-1);
+			if(!r_code) { return 0; /* end of file */ }
+			if(r_code == -1){ return perr(errno); }
+			read_bytes += r_code;
+
+
 		}
+		
 	}
 	return 0;
 }
