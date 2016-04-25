@@ -13,11 +13,85 @@ AT_NO_AUTOMOUNT	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	355;"	d
 AT_REMOVEDIR	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	351;"	d
 AT_SYMLINK_FOLLOW	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	353;"	d
 AT_SYMLINK_NOFOLLOW	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	350;"	d
+B0	/usr/include/x86_64-linux-gnu/bits/termios.h	121;"	d
+B1000000	/usr/include/x86_64-linux-gnu/bits/termios.h	162;"	d
+B110	/usr/include/x86_64-linux-gnu/bits/termios.h	124;"	d
+B115200	/usr/include/x86_64-linux-gnu/bits/termios.h	156;"	d
+B1152000	/usr/include/x86_64-linux-gnu/bits/termios.h	163;"	d
+B1200	/usr/include/x86_64-linux-gnu/bits/termios.h	130;"	d
+B134	/usr/include/x86_64-linux-gnu/bits/termios.h	125;"	d
+B150	/usr/include/x86_64-linux-gnu/bits/termios.h	126;"	d
+B1500000	/usr/include/x86_64-linux-gnu/bits/termios.h	164;"	d
+B1800	/usr/include/x86_64-linux-gnu/bits/termios.h	131;"	d
+B19200	/usr/include/x86_64-linux-gnu/bits/termios.h	135;"	d
+B200	/usr/include/x86_64-linux-gnu/bits/termios.h	127;"	d
+B2000000	/usr/include/x86_64-linux-gnu/bits/termios.h	165;"	d
+B230400	/usr/include/x86_64-linux-gnu/bits/termios.h	157;"	d
+B2400	/usr/include/x86_64-linux-gnu/bits/termios.h	132;"	d
+B2500000	/usr/include/x86_64-linux-gnu/bits/termios.h	166;"	d
+B300	/usr/include/x86_64-linux-gnu/bits/termios.h	128;"	d
+B3000000	/usr/include/x86_64-linux-gnu/bits/termios.h	167;"	d
+B3500000	/usr/include/x86_64-linux-gnu/bits/termios.h	168;"	d
+B38400	/usr/include/x86_64-linux-gnu/bits/termios.h	136;"	d
+B4000000	/usr/include/x86_64-linux-gnu/bits/termios.h	169;"	d
+B460800	/usr/include/x86_64-linux-gnu/bits/termios.h	158;"	d
+B4800	/usr/include/x86_64-linux-gnu/bits/termios.h	133;"	d
+B50	/usr/include/x86_64-linux-gnu/bits/termios.h	122;"	d
+B500000	/usr/include/x86_64-linux-gnu/bits/termios.h	159;"	d
+B57600	/usr/include/x86_64-linux-gnu/bits/termios.h	155;"	d
+B576000	/usr/include/x86_64-linux-gnu/bits/termios.h	160;"	d
+B600	/usr/include/x86_64-linux-gnu/bits/termios.h	129;"	d
+B75	/usr/include/x86_64-linux-gnu/bits/termios.h	123;"	d
+B921600	/usr/include/x86_64-linux-gnu/bits/termios.h	161;"	d
+B9600	/usr/include/x86_64-linux-gnu/bits/termios.h	134;"	d
 BIG_ENDIAN	/usr/include/endian.h	46;"	d
+BRKINT	/usr/include/x86_64-linux-gnu/bits/termios.h	63;"	d
+BS0	/usr/include/x86_64-linux-gnu/bits/termios.h	102;"	d
+BS1	/usr/include/x86_64-linux-gnu/bits/termios.h	103;"	d
+BSDLY	/usr/include/x86_64-linux-gnu/bits/termios.h	101;"	d
 BUFSIZ	/usr/include/stdio.h	127;"	d
+BUS_ADRALN	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  BUS_ADRALN = 1,		\/* Invalid address alignment.  *\/$/;"	e	enum:__anon57
+BUS_ADRALN	/usr/include/x86_64-linux-gnu/bits/siginfo.h	239;"	d
+BUS_ADRERR	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  BUS_ADRERR,			\/* Non-existant physical address.  *\/$/;"	e	enum:__anon57
+BUS_ADRERR	/usr/include/x86_64-linux-gnu/bits/siginfo.h	241;"	d
+BUS_MCEERR_AO	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  BUS_MCEERR_AO			\/* Hardware memory error: action optional.  *\/$/;"	e	enum:__anon57
+BUS_MCEERR_AO	/usr/include/x86_64-linux-gnu/bits/siginfo.h	247;"	d
+BUS_MCEERR_AR	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  BUS_MCEERR_AR,		\/* Hardware memory error: action required.  *\/$/;"	e	enum:__anon57
+BUS_MCEERR_AR	/usr/include/x86_64-linux-gnu/bits/siginfo.h	245;"	d
+BUS_OBJERR	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  BUS_OBJERR,			\/* Object specific hardware error.  *\/$/;"	e	enum:__anon57
+BUS_OBJERR	/usr/include/x86_64-linux-gnu/bits/siginfo.h	243;"	d
 BYTE_ORDER	/usr/include/endian.h	48;"	d
+CBAUD	/usr/include/x86_64-linux-gnu/bits/termios.h	119;"	d
+CBAUDEX	/usr/include/x86_64-linux-gnu/bits/termios.h	153;"	d
+CBRK	/usr/include/x86_64-linux-gnu/sys/ttydefaults.h	83;"	d
+CCEQ	/usr/include/termios.h	44;"	d
+CDISCARD	/usr/include/x86_64-linux-gnu/sys/ttydefaults.h	78;"	d
+CDSUSP	/usr/include/x86_64-linux-gnu/sys/ttydefaults.h	74;"	d
+CEOF	/usr/include/x86_64-linux-gnu/sys/ttydefaults.h	56;"	d
+CEOL	/usr/include/x86_64-linux-gnu/sys/ttydefaults.h	58;"	d
+CEOL	/usr/include/x86_64-linux-gnu/sys/ttydefaults.h	60;"	d
+CEOT	/usr/include/x86_64-linux-gnu/sys/ttydefaults.h	81;"	d
+CERASE	/usr/include/x86_64-linux-gnu/sys/ttydefaults.h	62;"	d
+CFLUSH	/usr/include/x86_64-linux-gnu/sys/ttydefaults.h	85;"	d
+CIBAUD	/usr/include/x86_64-linux-gnu/bits/termios.h	172;"	d
+CINTR	/usr/include/x86_64-linux-gnu/sys/ttydefaults.h	63;"	d
+CKILL	/usr/include/x86_64-linux-gnu/sys/ttydefaults.h	69;"	d
+CLD_CONTINUED	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  CLD_CONTINUED			\/* Stopped child has continued.  *\/$/;"	e	enum:__anon59
+CLD_CONTINUED	/usr/include/x86_64-linux-gnu/bits/siginfo.h	277;"	d
+CLD_DUMPED	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  CLD_DUMPED,			\/* Child terminated abnormally.  *\/$/;"	e	enum:__anon59
+CLD_DUMPED	/usr/include/x86_64-linux-gnu/bits/siginfo.h	271;"	d
+CLD_EXITED	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  CLD_EXITED = 1,		\/* Child has exited.  *\/$/;"	e	enum:__anon59
+CLD_EXITED	/usr/include/x86_64-linux-gnu/bits/siginfo.h	267;"	d
+CLD_KILLED	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  CLD_KILLED,			\/* Child was killed.  *\/$/;"	e	enum:__anon59
+CLD_KILLED	/usr/include/x86_64-linux-gnu/bits/siginfo.h	269;"	d
+CLD_STOPPED	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  CLD_STOPPED,			\/* Child has stopped.  *\/$/;"	e	enum:__anon59
+CLD_STOPPED	/usr/include/x86_64-linux-gnu/bits/siginfo.h	275;"	d
+CLD_TRAPPED	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  CLD_TRAPPED,			\/* Traced child has trapped.  *\/$/;"	e	enum:__anon59
+CLD_TRAPPED	/usr/include/x86_64-linux-gnu/bits/siginfo.h	273;"	d
 CLK_TCK	/usr/include/time.h	46;"	d
 CLK_TCK	/usr/include/x86_64-linux-gnu/bits/time.h	56;"	d
+CLNEXT	/usr/include/x86_64-linux-gnu/sys/ttydefaults.h	77;"	d
+CLOCAL	/usr/include/x86_64-linux-gnu/bits/termios.h	151;"	d
 CLOCKS_PER_SEC	/usr/include/x86_64-linux-gnu/bits/time.h	48;"	d
 CLOCK_BOOTTIME	/usr/include/x86_64-linux-gnu/bits/time.h	75;"	d
 CLOCK_BOOTTIME_ALARM	/usr/include/x86_64-linux-gnu/bits/time.h	79;"	d
@@ -30,7 +104,35 @@ CLOCK_REALTIME_ALARM	/usr/include/x86_64-linux-gnu/bits/time.h	77;"	d
 CLOCK_REALTIME_COARSE	/usr/include/x86_64-linux-gnu/bits/time.h	71;"	d
 CLOCK_TAI	/usr/include/x86_64-linux-gnu/bits/time.h	81;"	d
 CLOCK_THREAD_CPUTIME_ID	/usr/include/x86_64-linux-gnu/bits/time.h	67;"	d
-COLUMNS	src/main.c	14;"	d	file:
+CMIN	/usr/include/x86_64-linux-gnu/sys/ttydefaults.h	70;"	d
+CMSPAR	/usr/include/x86_64-linux-gnu/bits/termios.h	173;"	d
+COLUMNS	src/main.c	22;"	d	file:
+COMMAND_SET	src/main.c	25;"	d	file:
+COMMAND_UNSET	src/main.c	26;"	d	file:
+CQUIT	/usr/include/x86_64-linux-gnu/sys/ttydefaults.h	71;"	d
+CR0	/usr/include/x86_64-linux-gnu/bits/termios.h	92;"	d
+CR1	/usr/include/x86_64-linux-gnu/bits/termios.h	93;"	d
+CR2	/usr/include/x86_64-linux-gnu/bits/termios.h	94;"	d
+CR3	/usr/include/x86_64-linux-gnu/bits/termios.h	95;"	d
+CRDLY	/usr/include/x86_64-linux-gnu/bits/termios.h	91;"	d
+CREAD	/usr/include/x86_64-linux-gnu/bits/termios.h	147;"	d
+CREPRINT	/usr/include/x86_64-linux-gnu/sys/ttydefaults.h	80;"	d
+CRPRNT	/usr/include/x86_64-linux-gnu/sys/ttydefaults.h	84;"	d
+CRTSCTS	/usr/include/x86_64-linux-gnu/bits/termios.h	174;"	d
+CS5	/usr/include/x86_64-linux-gnu/bits/termios.h	142;"	d
+CS6	/usr/include/x86_64-linux-gnu/bits/termios.h	143;"	d
+CS7	/usr/include/x86_64-linux-gnu/bits/termios.h	144;"	d
+CS8	/usr/include/x86_64-linux-gnu/bits/termios.h	145;"	d
+CSIZE	/usr/include/x86_64-linux-gnu/bits/termios.h	141;"	d
+CSTART	/usr/include/x86_64-linux-gnu/sys/ttydefaults.h	75;"	d
+CSTATUS	/usr/include/x86_64-linux-gnu/sys/ttydefaults.h	65;"	d
+CSTATUS	/usr/include/x86_64-linux-gnu/sys/ttydefaults.h	67;"	d
+CSTOP	/usr/include/x86_64-linux-gnu/sys/ttydefaults.h	76;"	d
+CSTOPB	/usr/include/x86_64-linux-gnu/bits/termios.h	146;"	d
+CSUSP	/usr/include/x86_64-linux-gnu/sys/ttydefaults.h	72;"	d
+CTIME	/usr/include/x86_64-linux-gnu/sys/ttydefaults.h	73;"	d
+CTRL	/usr/include/x86_64-linux-gnu/sys/ttydefaults.h	55;"	d
+CWERASE	/usr/include/x86_64-linux-gnu/sys/ttydefaults.h	79;"	d
 DEFFILEMODE	/usr/include/x86_64-linux-gnu/sys/stat.h	200;"	d
 DN_ACCESS	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	246;"	d
 DN_ATTRIB	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	251;"	d
@@ -39,6 +141,7 @@ DN_DELETE	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	249;"	d
 DN_MODIFY	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	247;"	d
 DN_MULTISHOT	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	252;"	d
 DN_RENAME	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	250;"	d
+DOMAIN	/usr/include/math.h	359;"	d
 E2BIG	/usr/include/asm-generic/errno-base.h	10;"	d
 EACCES	/usr/include/asm-generic/errno-base.h	16;"	d
 EADDRINUSE	/usr/include/asm-generic/errno.h	80;"	d
@@ -59,6 +162,13 @@ EBUSY	/usr/include/asm-generic/errno-base.h	19;"	d
 ECANCELED	/usr/include/asm-generic/errno.h	108;"	d
 ECANCELED	/usr/include/x86_64-linux-gnu/bits/errno.h	31;"	d
 ECHILD	/usr/include/asm-generic/errno-base.h	13;"	d
+ECHO	/usr/include/x86_64-linux-gnu/bits/termios.h	183;"	d
+ECHOCTL	/usr/include/x86_64-linux-gnu/bits/termios.h	190;"	d
+ECHOE	/usr/include/x86_64-linux-gnu/bits/termios.h	184;"	d
+ECHOK	/usr/include/x86_64-linux-gnu/bits/termios.h	185;"	d
+ECHOKE	/usr/include/x86_64-linux-gnu/bits/termios.h	192;"	d
+ECHONL	/usr/include/x86_64-linux-gnu/bits/termios.h	186;"	d
+ECHOPRT	/usr/include/x86_64-linux-gnu/bits/termios.h	191;"	d
 ECHRNG	/usr/include/asm-generic/errno.h	24;"	d
 ECOMM	/usr/include/asm-generic/errno.h	52;"	d
 ECONNABORTED	/usr/include/asm-generic/errno.h	85;"	d
@@ -186,6 +296,11 @@ EUSERS	/usr/include/asm-generic/errno.h	69;"	d
 EWOULDBLOCK	/usr/include/asm-generic/errno.h	21;"	d
 EXDEV	/usr/include/asm-generic/errno-base.h	21;"	d
 EXFULL	/usr/include/asm-generic/errno.h	34;"	d
+EXIT_FAILURE	/usr/include/stdlib.h	133;"	d
+EXIT_SUCCESS	/usr/include/stdlib.h	134;"	d
+EXTA	/usr/include/x86_64-linux-gnu/bits/termios.h	138;"	d
+EXTB	/usr/include/x86_64-linux-gnu/bits/termios.h	139;"	d
+EXTPROC	/usr/include/x86_64-linux-gnu/bits/termios.h	198;"	d
 FALLOC_FL_COLLAPSE_RANGE	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	325;"	d
 FALLOC_FL_KEEP_SIZE	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	321;"	d
 FALLOC_FL_PUNCH_HOLE	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	324;"	d
@@ -198,14 +313,52 @@ FD_ISSET	/usr/include/x86_64-linux-gnu/sys/select.h	92;"	d
 FD_SET	/usr/include/x86_64-linux-gnu/sys/select.h	90;"	d
 FD_SETSIZE	/usr/include/x86_64-linux-gnu/sys/select.h	78;"	d
 FD_ZERO	/usr/include/x86_64-linux-gnu/sys/select.h	93;"	d
+FF0	/usr/include/x86_64-linux-gnu/bits/termios.h	105;"	d
+FF1	/usr/include/x86_64-linux-gnu/bits/termios.h	106;"	d
+FFDLY	/usr/include/x86_64-linux-gnu/bits/termios.h	104;"	d
 FFSYNC	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	278;"	d
 FILE	/usr/include/stdio.h	/^typedef struct _IO_FILE FILE;$/;"	t	typeref:struct:_IO_FILE
 FILENAME_MAX	/usr/include/x86_64-linux-gnu/bits/stdio_lim.h	25;"	d
+FLUSHO	/usr/include/x86_64-linux-gnu/bits/termios.h	193;"	d
 FNDELAY	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	281;"	d
 FNONBLOCK	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	280;"	d
 FOPEN_MAX	/usr/include/x86_64-linux-gnu/bits/stdio_lim.h	36;"	d
 FOPEN_MAX	/usr/include/x86_64-linux-gnu/bits/stdio_lim.h	37;"	d
 FORMAT_BUF	src/zprintf.c	28;"	d	file:
+FPE_FLTDIV	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  FPE_FLTDIV,			\/* Floating point divide by zero.  *\/$/;"	e	enum:__anon55
+FPE_FLTDIV	/usr/include/x86_64-linux-gnu/bits/siginfo.h	213;"	d
+FPE_FLTINV	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  FPE_FLTINV,			\/* Floating point invalid operation.  *\/$/;"	e	enum:__anon55
+FPE_FLTINV	/usr/include/x86_64-linux-gnu/bits/siginfo.h	221;"	d
+FPE_FLTOVF	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  FPE_FLTOVF,			\/* Floating point overflow.  *\/$/;"	e	enum:__anon55
+FPE_FLTOVF	/usr/include/x86_64-linux-gnu/bits/siginfo.h	215;"	d
+FPE_FLTRES	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  FPE_FLTRES,			\/* Floating point inexact result.  *\/$/;"	e	enum:__anon55
+FPE_FLTRES	/usr/include/x86_64-linux-gnu/bits/siginfo.h	219;"	d
+FPE_FLTSUB	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  FPE_FLTSUB			\/* Subscript out of range.  *\/$/;"	e	enum:__anon55
+FPE_FLTSUB	/usr/include/x86_64-linux-gnu/bits/siginfo.h	223;"	d
+FPE_FLTUND	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  FPE_FLTUND,			\/* Floating point underflow.  *\/$/;"	e	enum:__anon55
+FPE_FLTUND	/usr/include/x86_64-linux-gnu/bits/siginfo.h	217;"	d
+FPE_INTDIV	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  FPE_INTDIV = 1,		\/* Integer divide by zero.  *\/$/;"	e	enum:__anon55
+FPE_INTDIV	/usr/include/x86_64-linux-gnu/bits/siginfo.h	209;"	d
+FPE_INTOVF	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  FPE_INTOVF,			\/* Integer overflow.  *\/$/;"	e	enum:__anon55
+FPE_INTOVF	/usr/include/x86_64-linux-gnu/bits/siginfo.h	211;"	d
+FP_FAST_FMA	/usr/include/x86_64-linux-gnu/bits/mathdef.h	48;"	d
+FP_FAST_FMAF	/usr/include/x86_64-linux-gnu/bits/mathdef.h	52;"	d
+FP_FAST_FMAL	/usr/include/x86_64-linux-gnu/bits/mathdef.h	56;"	d
+FP_ILOGB0	/usr/include/x86_64-linux-gnu/bits/mathdef.h	42;"	d
+FP_ILOGBNAN	/usr/include/x86_64-linux-gnu/bits/mathdef.h	43;"	d
+FP_INFINITE	/usr/include/math.h	/^    FP_INFINITE =$/;"	e	enum:__anon38
+FP_INFINITE	/usr/include/math.h	209;"	d
+FP_NAN	/usr/include/math.h	/^    FP_NAN =$/;"	e	enum:__anon38
+FP_NAN	/usr/include/math.h	206;"	d
+FP_NORMAL	/usr/include/math.h	/^    FP_NORMAL =$/;"	e	enum:__anon38
+FP_NORMAL	/usr/include/math.h	218;"	d
+FP_SUBNORMAL	/usr/include/math.h	/^    FP_SUBNORMAL =$/;"	e	enum:__anon38
+FP_SUBNORMAL	/usr/include/math.h	215;"	d
+FP_XSTATE_MAGIC1	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	25;"	d
+FP_XSTATE_MAGIC2	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	26;"	d
+FP_XSTATE_MAGIC2_SIZE	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	27;"	d
+FP_ZERO	/usr/include/math.h	/^    FP_ZERO =$/;"	e	enum:__anon38
+FP_ZERO	/usr/include/math.h	212;"	d
 F_DUPFD	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	167;"	d
 F_DUPFD_CLOEXEC	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	207;"	d
 F_EXLCK	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	224;"	d
@@ -257,8 +410,56 @@ F_ULOCK	/usr/include/fcntl.h	225;"	d
 F_ULOCK	/usr/include/unistd.h	1078;"	d
 F_UNLCK	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	218;"	d
 F_WRLCK	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	217;"	d
+HUGE	/usr/include/math.h	367;"	d
+HUGE_VAL	/usr/include/x86_64-linux-gnu/bits/huge_val.h	27;"	d
+HUGE_VAL	/usr/include/x86_64-linux-gnu/bits/huge_val.h	29;"	d
+HUGE_VAL	/usr/include/x86_64-linux-gnu/bits/huge_val.h	32;"	d
+HUGE_VAL	/usr/include/x86_64-linux-gnu/bits/huge_val.h	51;"	d
+HUGE_VALF	/usr/include/x86_64-linux-gnu/bits/huge_valf.h	27;"	d
+HUGE_VALF	/usr/include/x86_64-linux-gnu/bits/huge_valf.h	29;"	d
+HUGE_VALF	/usr/include/x86_64-linux-gnu/bits/huge_valf.h	32;"	d
+HUGE_VALF	/usr/include/x86_64-linux-gnu/bits/huge_valf.h	49;"	d
+HUGE_VALL	/usr/include/x86_64-linux-gnu/bits/huge_vall.h	25;"	d
+HUGE_VALL	/usr/include/x86_64-linux-gnu/bits/huge_vall.h	27;"	d
+HUGE_VALL	/usr/include/x86_64-linux-gnu/bits/huge_vall.h	34;"	d
+HUGE_VALL	/usr/include/x86_64-linux-gnu/bits/huge_vall.h	38;"	d
+HUPCL	/usr/include/x86_64-linux-gnu/bits/termios.h	150;"	d
+ICANON	/usr/include/x86_64-linux-gnu/bits/termios.h	179;"	d
+ICRNL	/usr/include/x86_64-linux-gnu/bits/termios.h	70;"	d
+IEXTEN	/usr/include/x86_64-linux-gnu/bits/termios.h	196;"	d
+IGNBRK	/usr/include/x86_64-linux-gnu/bits/termios.h	62;"	d
+IGNCR	/usr/include/x86_64-linux-gnu/bits/termios.h	69;"	d
+IGNPAR	/usr/include/x86_64-linux-gnu/bits/termios.h	64;"	d
+ILL_BADSTK	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  ILL_BADSTK			\/* Internal stack error.  *\/$/;"	e	enum:__anon54
+ILL_BADSTK	/usr/include/x86_64-linux-gnu/bits/siginfo.h	202;"	d
+ILL_COPROC	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  ILL_COPROC,			\/* Coprocessor error.  *\/$/;"	e	enum:__anon54
+ILL_COPROC	/usr/include/x86_64-linux-gnu/bits/siginfo.h	200;"	d
+ILL_ILLADR	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  ILL_ILLADR,			\/* Illegal addressing mode.  *\/$/;"	e	enum:__anon54
+ILL_ILLADR	/usr/include/x86_64-linux-gnu/bits/siginfo.h	192;"	d
+ILL_ILLOPC	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  ILL_ILLOPC = 1,		\/* Illegal opcode.  *\/$/;"	e	enum:__anon54
+ILL_ILLOPC	/usr/include/x86_64-linux-gnu/bits/siginfo.h	188;"	d
+ILL_ILLOPN	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  ILL_ILLOPN,			\/* Illegal operand.  *\/$/;"	e	enum:__anon54
+ILL_ILLOPN	/usr/include/x86_64-linux-gnu/bits/siginfo.h	190;"	d
+ILL_ILLTRP	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  ILL_ILLTRP,			\/* Illegal trap. *\/$/;"	e	enum:__anon54
+ILL_ILLTRP	/usr/include/x86_64-linux-gnu/bits/siginfo.h	194;"	d
+ILL_PRVOPC	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  ILL_PRVOPC,			\/* Privileged opcode.  *\/$/;"	e	enum:__anon54
+ILL_PRVOPC	/usr/include/x86_64-linux-gnu/bits/siginfo.h	196;"	d
+ILL_PRVREG	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  ILL_PRVREG,			\/* Privileged register.  *\/$/;"	e	enum:__anon54
+ILL_PRVREG	/usr/include/x86_64-linux-gnu/bits/siginfo.h	198;"	d
+IMAXBEL	/usr/include/x86_64-linux-gnu/bits/termios.h	75;"	d
+INFINITY	/usr/include/x86_64-linux-gnu/bits/inf.h	26;"	d
+INFINITY	/usr/include/x86_64-linux-gnu/bits/inf.h	28;"	d
+INLCR	/usr/include/x86_64-linux-gnu/bits/termios.h	68;"	d
+INPCK	/usr/include/x86_64-linux-gnu/bits/termios.h	66;"	d
 IOV_MAX	/usr/include/x86_64-linux-gnu/bits/stdio_lim.h	41;"	d
-LINES	src/main.c	15;"	d	file:
+ISIG	/usr/include/x86_64-linux-gnu/bits/termios.h	178;"	d
+ISTRIP	/usr/include/x86_64-linux-gnu/bits/termios.h	67;"	d
+IUCLC	/usr/include/x86_64-linux-gnu/bits/termios.h	71;"	d
+IUTF8	/usr/include/x86_64-linux-gnu/bits/termios.h	76;"	d
+IXANY	/usr/include/x86_64-linux-gnu/bits/termios.h	73;"	d
+IXOFF	/usr/include/x86_64-linux-gnu/bits/termios.h	74;"	d
+IXON	/usr/include/x86_64-linux-gnu/bits/termios.h	72;"	d
+LINES	src/main.c	23;"	d	file:
 LITTLE_ENDIAN	/usr/include/endian.h	45;"	d
 LOCK_EX	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	231;"	d
 LOCK_MAND	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	238;"	d
@@ -310,28 +511,70 @@ MAP_PRIVATE	/usr/include/x86_64-linux-gnu/bits/mman-linux.h	46;"	d
 MAP_SHARED	/usr/include/x86_64-linux-gnu/bits/mman-linux.h	45;"	d
 MAP_STACK	/usr/include/x86_64-linux-gnu/bits/mman.h	40;"	d
 MAP_TYPE	/usr/include/x86_64-linux-gnu/bits/mman-linux.h	48;"	d
+MATH_ERREXCEPT	/usr/include/math.h	288;"	d
+MATH_ERRNO	/usr/include/math.h	287;"	d
+MAXFLOAT	/usr/include/math.h	373;"	d
 MAX_HANDLE_SZ	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	342;"	d
+MB_CUR_MAX	/usr/include/stdlib.h	138;"	d
 MCL_CURRENT	/usr/include/x86_64-linux-gnu/bits/mman-linux.h	108;"	d
 MCL_FUTURE	/usr/include/x86_64-linux-gnu/bits/mman-linux.h	109;"	d
+MINSIGSTKSZ	/usr/include/x86_64-linux-gnu/bits/sigstack.h	42;"	d
 MREMAP_FIXED	/usr/include/x86_64-linux-gnu/bits/mman-linux.h	74;"	d
 MREMAP_MAYMOVE	/usr/include/x86_64-linux-gnu/bits/mman-linux.h	73;"	d
 MS_ASYNC	/usr/include/x86_64-linux-gnu/bits/mman-linux.h	67;"	d
 MS_INVALIDATE	/usr/include/x86_64-linux-gnu/bits/mman-linux.h	69;"	d
 MS_SYNC	/usr/include/x86_64-linux-gnu/bits/mman-linux.h	68;"	d
+M_1_PI	/usr/include/math.h	389;"	d
+M_1_PIl	/usr/include/math.h	408;"	d
+M_2_PI	/usr/include/math.h	390;"	d
+M_2_PIl	/usr/include/math.h	409;"	d
+M_2_SQRTPI	/usr/include/math.h	391;"	d
+M_2_SQRTPIl	/usr/include/math.h	410;"	d
 M_ARENA_MAX	/usr/include/malloc.h	118;"	d
 M_ARENA_TEST	/usr/include/malloc.h	117;"	d
 M_CHECK_ACTION	/usr/include/malloc.h	115;"	d
+M_E	/usr/include/math.h	381;"	d
+M_El	/usr/include/math.h	400;"	d
 M_GRAIN	/usr/include/malloc.h	104;"	d
 M_KEEP	/usr/include/malloc.h	107;"	d
+M_LN10	/usr/include/math.h	385;"	d
+M_LN10l	/usr/include/math.h	404;"	d
+M_LN2	/usr/include/math.h	384;"	d
+M_LN2l	/usr/include/math.h	403;"	d
+M_LOG10E	/usr/include/math.h	383;"	d
+M_LOG10El	/usr/include/math.h	402;"	d
+M_LOG2E	/usr/include/math.h	382;"	d
+M_LOG2El	/usr/include/math.h	401;"	d
 M_MMAP_MAX	/usr/include/malloc.h	114;"	d
 M_MMAP_THRESHOLD	/usr/include/malloc.h	113;"	d
 M_MXFAST	/usr/include/malloc.h	98;"	d
 M_NLBLKS	/usr/include/malloc.h	101;"	d
 M_PERTURB	/usr/include/malloc.h	116;"	d
+M_PI	/usr/include/math.h	386;"	d
+M_PI_2	/usr/include/math.h	387;"	d
+M_PI_2l	/usr/include/math.h	406;"	d
+M_PI_4	/usr/include/math.h	388;"	d
+M_PI_4l	/usr/include/math.h	407;"	d
+M_PIl	/usr/include/math.h	405;"	d
+M_SQRT1_2	/usr/include/math.h	393;"	d
+M_SQRT1_2l	/usr/include/math.h	412;"	d
+M_SQRT2	/usr/include/math.h	392;"	d
+M_SQRT2l	/usr/include/math.h	411;"	d
 M_TOP_PAD	/usr/include/malloc.h	112;"	d
 M_TRIM_THRESHOLD	/usr/include/malloc.h	111;"	d
+NAN	/usr/include/x86_64-linux-gnu/bits/nan.h	28;"	d
+NAN	/usr/include/x86_64-linux-gnu/bits/nan.h	32;"	d
+NAN	/usr/include/x86_64-linux-gnu/bits/nan.h	50;"	d
+NCCS	/usr/include/x86_64-linux-gnu/bits/termios.h	27;"	d
 NFDBITS	/usr/include/x86_64-linux-gnu/sys/select.h	85;"	d
-NL	src/main.c	13;"	d	file:
+NGREG	/usr/include/x86_64-linux-gnu/sys/ucontext.h	149;"	d
+NGREG	/usr/include/x86_64-linux-gnu/sys/ucontext.h	34;"	d
+NL	src/main.c	21;"	d	file:
+NL0	/usr/include/x86_64-linux-gnu/bits/termios.h	89;"	d
+NL1	/usr/include/x86_64-linux-gnu/bits/termios.h	90;"	d
+NLDLY	/usr/include/x86_64-linux-gnu/bits/termios.h	88;"	d
+NOFLSH	/usr/include/x86_64-linux-gnu/bits/termios.h	187;"	d
+NSIG	/usr/include/signal.h	198;"	d
 NULL	/usr/include/libio.h	67;"	d
 NULL	/usr/include/libio.h	70;"	d
 NULL	/usr/include/libio.h	72;"	d
@@ -339,6 +582,15 @@ NULL	/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h	401;"	d
 NULL	/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h	403;"	d
 NULL	/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h	406;"	d
 NULL	/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h	408;"	d
+OCRNL	/usr/include/x86_64-linux-gnu/bits/termios.h	82;"	d
+OFDEL	/usr/include/x86_64-linux-gnu/bits/termios.h	86;"	d
+OFILL	/usr/include/x86_64-linux-gnu/bits/termios.h	85;"	d
+OLCUC	/usr/include/x86_64-linux-gnu/bits/termios.h	80;"	d
+ONLCR	/usr/include/x86_64-linux-gnu/bits/termios.h	81;"	d
+ONLRET	/usr/include/x86_64-linux-gnu/bits/termios.h	84;"	d
+ONOCR	/usr/include/x86_64-linux-gnu/bits/termios.h	83;"	d
+OPOST	/usr/include/x86_64-linux-gnu/bits/termios.h	79;"	d
+OVERFLOW	/usr/include/math.h	361;"	d
 O_ACCMODE	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	42;"	d
 O_APPEND	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	59;"	d
 O_ASYNC	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	72;"	d
@@ -364,7 +616,24 @@ O_SYNC	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	68;"	d
 O_TMPFILE	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	151;"	d
 O_TRUNC	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	56;"	d
 O_WRONLY	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	44;"	d
+PARENB	/usr/include/x86_64-linux-gnu/bits/termios.h	148;"	d
+PARMRK	/usr/include/x86_64-linux-gnu/bits/termios.h	65;"	d
+PARODD	/usr/include/x86_64-linux-gnu/bits/termios.h	149;"	d
 PDP_ENDIAN	/usr/include/endian.h	47;"	d
+PENDIN	/usr/include/x86_64-linux-gnu/bits/termios.h	194;"	d
+PLOSS	/usr/include/math.h	364;"	d
+POLL_ERR	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  POLL_ERR,			\/* I\/O error.  *\/$/;"	e	enum:__anon60
+POLL_ERR	/usr/include/x86_64-linux-gnu/bits/siginfo.h	290;"	d
+POLL_HUP	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  POLL_HUP			\/* Device disconnected.  *\/$/;"	e	enum:__anon60
+POLL_HUP	/usr/include/x86_64-linux-gnu/bits/siginfo.h	294;"	d
+POLL_IN	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  POLL_IN = 1,			\/* Data input available.  *\/$/;"	e	enum:__anon60
+POLL_IN	/usr/include/x86_64-linux-gnu/bits/siginfo.h	284;"	d
+POLL_MSG	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  POLL_MSG,			\/* Input message available.   *\/$/;"	e	enum:__anon60
+POLL_MSG	/usr/include/x86_64-linux-gnu/bits/siginfo.h	288;"	d
+POLL_OUT	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  POLL_OUT,			\/* Output buffers available.  *\/$/;"	e	enum:__anon60
+POLL_OUT	/usr/include/x86_64-linux-gnu/bits/siginfo.h	286;"	d
+POLL_PRI	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  POLL_PRI,			\/* High priority input available.  *\/$/;"	e	enum:__anon60
+POLL_PRI	/usr/include/x86_64-linux-gnu/bits/siginfo.h	292;"	d
 POSIX_FADV_DONTNEED	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	294;"	d
 POSIX_FADV_NOREUSE	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	295;"	d
 POSIX_FADV_NORMAL	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	290;"	d
@@ -382,9 +651,111 @@ PROT_GROWSUP	/usr/include/x86_64-linux-gnu/bits/mman-linux.h	41;"	d
 PROT_NONE	/usr/include/x86_64-linux-gnu/bits/mman-linux.h	38;"	d
 PROT_READ	/usr/include/x86_64-linux-gnu/bits/mman-linux.h	35;"	d
 PROT_WRITE	/usr/include/x86_64-linux-gnu/bits/mman-linux.h	36;"	d
+P_ALL	/usr/include/x86_64-linux-gnu/bits/waitflags.h	/^  P_ALL,		\/* Wait for any child.  *\/$/;"	e	enum:__anon74
+P_ALL	/usr/include/x86_64-linux-gnu/bits/waitflags.h	46;"	d
+P_PGID	/usr/include/x86_64-linux-gnu/bits/waitflags.h	/^  P_PGID		\/* Wait for members of process group.  *\/$/;"	e	enum:__anon74
+P_PGID	/usr/include/x86_64-linux-gnu/bits/waitflags.h	48;"	d
+P_PID	/usr/include/x86_64-linux-gnu/bits/waitflags.h	/^  P_PID,		\/* Wait for specified process.  *\/$/;"	e	enum:__anon74
+P_PID	/usr/include/x86_64-linux-gnu/bits/waitflags.h	47;"	d
 P_tmpdir	/usr/include/stdio.h	151;"	d
+RAND_MAX	/usr/include/stdlib.h	128;"	d
+REG_CR2	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  REG_CR2$/;"	e	enum:__anon67
+REG_CR2	/usr/include/x86_64-linux-gnu/sys/ucontext.h	88;"	d
+REG_CS	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  REG_CS,$/;"	e	enum:__anon69
+REG_CS	/usr/include/x86_64-linux-gnu/sys/ucontext.h	189;"	d
+REG_CSGSFS	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  REG_CSGSFS,		\/* Actually short cs, gs, fs, __pad0.  *\/$/;"	e	enum:__anon67
+REG_CSGSFS	/usr/include/x86_64-linux-gnu/sys/ucontext.h	80;"	d
+REG_DS	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  REG_DS,$/;"	e	enum:__anon69
+REG_DS	/usr/include/x86_64-linux-gnu/sys/ucontext.h	165;"	d
+REG_EAX	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  REG_EAX,$/;"	e	enum:__anon69
+REG_EAX	/usr/include/x86_64-linux-gnu/sys/ucontext.h	181;"	d
+REG_EBP	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  REG_EBP,$/;"	e	enum:__anon69
+REG_EBP	/usr/include/x86_64-linux-gnu/sys/ucontext.h	171;"	d
+REG_EBX	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  REG_EBX,$/;"	e	enum:__anon69
+REG_EBX	/usr/include/x86_64-linux-gnu/sys/ucontext.h	175;"	d
+REG_ECX	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  REG_ECX,$/;"	e	enum:__anon69
+REG_ECX	/usr/include/x86_64-linux-gnu/sys/ucontext.h	179;"	d
+REG_EDI	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  REG_EDI,$/;"	e	enum:__anon69
+REG_EDI	/usr/include/x86_64-linux-gnu/sys/ucontext.h	167;"	d
+REG_EDX	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  REG_EDX,$/;"	e	enum:__anon69
+REG_EDX	/usr/include/x86_64-linux-gnu/sys/ucontext.h	177;"	d
+REG_EFL	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  REG_EFL,$/;"	e	enum:__anon67
+REG_EFL	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  REG_EFL,$/;"	e	enum:__anon69
+REG_EFL	/usr/include/x86_64-linux-gnu/sys/ucontext.h	191;"	d
+REG_EFL	/usr/include/x86_64-linux-gnu/sys/ucontext.h	78;"	d
+REG_EIP	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  REG_EIP,$/;"	e	enum:__anon69
+REG_EIP	/usr/include/x86_64-linux-gnu/sys/ucontext.h	187;"	d
+REG_ERR	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  REG_ERR,$/;"	e	enum:__anon67
+REG_ERR	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  REG_ERR,$/;"	e	enum:__anon69
+REG_ERR	/usr/include/x86_64-linux-gnu/sys/ucontext.h	185;"	d
+REG_ERR	/usr/include/x86_64-linux-gnu/sys/ucontext.h	82;"	d
+REG_ES	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  REG_ES,$/;"	e	enum:__anon69
+REG_ES	/usr/include/x86_64-linux-gnu/sys/ucontext.h	163;"	d
+REG_ESI	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  REG_ESI,$/;"	e	enum:__anon69
+REG_ESI	/usr/include/x86_64-linux-gnu/sys/ucontext.h	169;"	d
+REG_ESP	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  REG_ESP,$/;"	e	enum:__anon69
+REG_ESP	/usr/include/x86_64-linux-gnu/sys/ucontext.h	173;"	d
+REG_FS	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  REG_FS,$/;"	e	enum:__anon69
+REG_FS	/usr/include/x86_64-linux-gnu/sys/ucontext.h	161;"	d
+REG_GS	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  REG_GS = 0,$/;"	e	enum:__anon69
+REG_GS	/usr/include/x86_64-linux-gnu/sys/ucontext.h	159;"	d
+REG_OLDMASK	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  REG_OLDMASK,$/;"	e	enum:__anon67
+REG_OLDMASK	/usr/include/x86_64-linux-gnu/sys/ucontext.h	86;"	d
+REG_R10	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  REG_R10,$/;"	e	enum:__anon67
+REG_R10	/usr/include/x86_64-linux-gnu/sys/ucontext.h	48;"	d
+REG_R11	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  REG_R11,$/;"	e	enum:__anon67
+REG_R11	/usr/include/x86_64-linux-gnu/sys/ucontext.h	50;"	d
+REG_R12	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  REG_R12,$/;"	e	enum:__anon67
+REG_R12	/usr/include/x86_64-linux-gnu/sys/ucontext.h	52;"	d
+REG_R13	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  REG_R13,$/;"	e	enum:__anon67
+REG_R13	/usr/include/x86_64-linux-gnu/sys/ucontext.h	54;"	d
+REG_R14	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  REG_R14,$/;"	e	enum:__anon67
+REG_R14	/usr/include/x86_64-linux-gnu/sys/ucontext.h	56;"	d
+REG_R15	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  REG_R15,$/;"	e	enum:__anon67
+REG_R15	/usr/include/x86_64-linux-gnu/sys/ucontext.h	58;"	d
+REG_R8	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  REG_R8 = 0,$/;"	e	enum:__anon67
+REG_R8	/usr/include/x86_64-linux-gnu/sys/ucontext.h	44;"	d
+REG_R9	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  REG_R9,$/;"	e	enum:__anon67
+REG_R9	/usr/include/x86_64-linux-gnu/sys/ucontext.h	46;"	d
+REG_RAX	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  REG_RAX,$/;"	e	enum:__anon67
+REG_RAX	/usr/include/x86_64-linux-gnu/sys/ucontext.h	70;"	d
+REG_RBP	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  REG_RBP,$/;"	e	enum:__anon67
+REG_RBP	/usr/include/x86_64-linux-gnu/sys/ucontext.h	64;"	d
+REG_RBX	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  REG_RBX,$/;"	e	enum:__anon67
+REG_RBX	/usr/include/x86_64-linux-gnu/sys/ucontext.h	66;"	d
+REG_RCX	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  REG_RCX,$/;"	e	enum:__anon67
+REG_RCX	/usr/include/x86_64-linux-gnu/sys/ucontext.h	72;"	d
+REG_RDI	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  REG_RDI,$/;"	e	enum:__anon67
+REG_RDI	/usr/include/x86_64-linux-gnu/sys/ucontext.h	60;"	d
+REG_RDX	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  REG_RDX,$/;"	e	enum:__anon67
+REG_RDX	/usr/include/x86_64-linux-gnu/sys/ucontext.h	68;"	d
+REG_RIP	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  REG_RIP,$/;"	e	enum:__anon67
+REG_RIP	/usr/include/x86_64-linux-gnu/sys/ucontext.h	76;"	d
+REG_RSI	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  REG_RSI,$/;"	e	enum:__anon67
+REG_RSI	/usr/include/x86_64-linux-gnu/sys/ucontext.h	62;"	d
+REG_RSP	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  REG_RSP,$/;"	e	enum:__anon67
+REG_RSP	/usr/include/x86_64-linux-gnu/sys/ucontext.h	74;"	d
+REG_SS	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  REG_SS$/;"	e	enum:__anon69
+REG_SS	/usr/include/x86_64-linux-gnu/sys/ucontext.h	195;"	d
+REG_TRAPNO	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  REG_TRAPNO,$/;"	e	enum:__anon67
+REG_TRAPNO	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  REG_TRAPNO,$/;"	e	enum:__anon69
+REG_TRAPNO	/usr/include/x86_64-linux-gnu/sys/ucontext.h	183;"	d
+REG_TRAPNO	/usr/include/x86_64-linux-gnu/sys/ucontext.h	84;"	d
+REG_UESP	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  REG_UESP,$/;"	e	enum:__anon69
+REG_UESP	/usr/include/x86_64-linux-gnu/sys/ucontext.h	193;"	d
 R_OK	/usr/include/fcntl.h	127;"	d
 R_OK	/usr/include/unistd.h	284;"	d
+SA_INTERRUPT	/usr/include/x86_64-linux-gnu/bits/sigaction.h	67;"	d
+SA_NOCLDSTOP	/usr/include/x86_64-linux-gnu/bits/sigaction.h	53;"	d
+SA_NOCLDWAIT	/usr/include/x86_64-linux-gnu/bits/sigaction.h	54;"	d
+SA_NODEFER	/usr/include/x86_64-linux-gnu/bits/sigaction.h	62;"	d
+SA_NOMASK	/usr/include/x86_64-linux-gnu/bits/sigaction.h	70;"	d
+SA_ONESHOT	/usr/include/x86_64-linux-gnu/bits/sigaction.h	71;"	d
+SA_ONSTACK	/usr/include/x86_64-linux-gnu/bits/sigaction.h	58;"	d
+SA_RESETHAND	/usr/include/x86_64-linux-gnu/bits/sigaction.h	64;"	d
+SA_RESTART	/usr/include/x86_64-linux-gnu/bits/sigaction.h	61;"	d
+SA_SIGINFO	/usr/include/x86_64-linux-gnu/bits/sigaction.h	55;"	d
+SA_STACK	/usr/include/x86_64-linux-gnu/bits/sigaction.h	72;"	d
 SEEK_CUR	/usr/include/fcntl.h	137;"	d
 SEEK_CUR	/usr/include/stdio.h	141;"	d
 SEEK_CUR	/usr/include/unistd.h	315;"	d
@@ -398,10 +769,90 @@ SEEK_HOLE	/usr/include/unistd.h	319;"	d
 SEEK_SET	/usr/include/fcntl.h	136;"	d
 SEEK_SET	/usr/include/stdio.h	140;"	d
 SEEK_SET	/usr/include/unistd.h	314;"	d
+SEGV_ACCERR	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  SEGV_ACCERR			\/* Invalid permissions for mapped object.  *\/$/;"	e	enum:__anon56
+SEGV_ACCERR	/usr/include/x86_64-linux-gnu/bits/siginfo.h	232;"	d
+SEGV_MAPERR	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  SEGV_MAPERR = 1,		\/* Address not mapped to object.  *\/$/;"	e	enum:__anon56
+SEGV_MAPERR	/usr/include/x86_64-linux-gnu/bits/siginfo.h	230;"	d
+SIGABRT	/usr/include/x86_64-linux-gnu/bits/signum.h	37;"	d
+SIGALRM	/usr/include/x86_64-linux-gnu/bits/signum.h	46;"	d
+SIGBUS	/usr/include/x86_64-linux-gnu/bits/signum.h	39;"	d
+SIGCHLD	/usr/include/x86_64-linux-gnu/bits/signum.h	50;"	d
+SIGCLD	/usr/include/x86_64-linux-gnu/bits/signum.h	49;"	d
+SIGCONT	/usr/include/x86_64-linux-gnu/bits/signum.h	51;"	d
+SIGEV_NONE	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  SIGEV_NONE,			\/* Other notification: meaningless.  *\/$/;"	e	enum:__anon63
+SIGEV_NONE	/usr/include/x86_64-linux-gnu/bits/siginfo.h	352;"	d
+SIGEV_SIGNAL	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  SIGEV_SIGNAL = 0,		\/* Notify via signal.  *\/$/;"	e	enum:__anon63
+SIGEV_SIGNAL	/usr/include/x86_64-linux-gnu/bits/siginfo.h	350;"	d
+SIGEV_THREAD	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  SIGEV_THREAD,			\/* Deliver via thread creation.  *\/$/;"	e	enum:__anon63
+SIGEV_THREAD	/usr/include/x86_64-linux-gnu/bits/siginfo.h	354;"	d
+SIGEV_THREAD_ID	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  SIGEV_THREAD_ID = 4		\/* Send signal to specific thread.  *\/$/;"	e	enum:__anon63
+SIGEV_THREAD_ID	/usr/include/x86_64-linux-gnu/bits/siginfo.h	357;"	d
+SIGFPE	/usr/include/x86_64-linux-gnu/bits/signum.h	40;"	d
+SIGHUP	/usr/include/x86_64-linux-gnu/bits/signum.h	32;"	d
+SIGILL	/usr/include/x86_64-linux-gnu/bits/signum.h	35;"	d
+SIGINT	/usr/include/x86_64-linux-gnu/bits/signum.h	33;"	d
+SIGIO	/usr/include/x86_64-linux-gnu/bits/signum.h	63;"	d
+SIGIOT	/usr/include/x86_64-linux-gnu/bits/signum.h	38;"	d
+SIGKILL	/usr/include/x86_64-linux-gnu/bits/signum.h	41;"	d
+SIGPIPE	/usr/include/x86_64-linux-gnu/bits/signum.h	45;"	d
+SIGPOLL	/usr/include/x86_64-linux-gnu/bits/signum.h	62;"	d
+SIGPROF	/usr/include/x86_64-linux-gnu/bits/signum.h	60;"	d
+SIGPWR	/usr/include/x86_64-linux-gnu/bits/signum.h	64;"	d
+SIGQUIT	/usr/include/x86_64-linux-gnu/bits/signum.h	34;"	d
+SIGRTMAX	/usr/include/x86_64-linux-gnu/bits/signum.h	72;"	d
+SIGRTMIN	/usr/include/x86_64-linux-gnu/bits/signum.h	71;"	d
+SIGSEGV	/usr/include/x86_64-linux-gnu/bits/signum.h	43;"	d
+SIGSTKFLT	/usr/include/x86_64-linux-gnu/bits/signum.h	48;"	d
+SIGSTKSZ	/usr/include/x86_64-linux-gnu/bits/sigstack.h	45;"	d
+SIGSTOP	/usr/include/x86_64-linux-gnu/bits/signum.h	52;"	d
+SIGSYS	/usr/include/x86_64-linux-gnu/bits/signum.h	65;"	d
+SIGTERM	/usr/include/x86_64-linux-gnu/bits/signum.h	47;"	d
+SIGTRAP	/usr/include/x86_64-linux-gnu/bits/signum.h	36;"	d
+SIGTSTP	/usr/include/x86_64-linux-gnu/bits/signum.h	53;"	d
+SIGTTIN	/usr/include/x86_64-linux-gnu/bits/signum.h	54;"	d
+SIGTTOU	/usr/include/x86_64-linux-gnu/bits/signum.h	55;"	d
+SIGUNUSED	/usr/include/x86_64-linux-gnu/bits/signum.h	66;"	d
+SIGURG	/usr/include/x86_64-linux-gnu/bits/signum.h	56;"	d
+SIGUSR1	/usr/include/x86_64-linux-gnu/bits/signum.h	42;"	d
+SIGUSR2	/usr/include/x86_64-linux-gnu/bits/signum.h	44;"	d
+SIGVTALRM	/usr/include/x86_64-linux-gnu/bits/signum.h	59;"	d
+SIGWINCH	/usr/include/x86_64-linux-gnu/bits/signum.h	61;"	d
+SIGXCPU	/usr/include/x86_64-linux-gnu/bits/signum.h	57;"	d
+SIGXFSZ	/usr/include/x86_64-linux-gnu/bits/signum.h	58;"	d
+SIG_BLOCK	/usr/include/x86_64-linux-gnu/bits/sigaction.h	76;"	d
+SIG_DFL	/usr/include/x86_64-linux-gnu/bits/signum.h	23;"	d
+SIG_ERR	/usr/include/x86_64-linux-gnu/bits/signum.h	22;"	d
+SIG_HOLD	/usr/include/x86_64-linux-gnu/bits/signum.h	27;"	d
+SIG_IGN	/usr/include/x86_64-linux-gnu/bits/signum.h	24;"	d
+SIG_SETMASK	/usr/include/x86_64-linux-gnu/bits/sigaction.h	78;"	d
+SIG_UNBLOCK	/usr/include/x86_64-linux-gnu/bits/sigaction.h	77;"	d
+SING	/usr/include/math.h	360;"	d
+SI_ASYNCIO	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  SI_ASYNCIO,			\/* Sent by AIO completion.  *\/$/;"	e	enum:__anon53
+SI_ASYNCIO	/usr/include/x86_64-linux-gnu/bits/siginfo.h	169;"	d
+SI_ASYNCNL	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  SI_ASYNCNL = -60,		\/* Sent by asynch name lookup completion.  *\/$/;"	e	enum:__anon53
+SI_ASYNCNL	/usr/include/x86_64-linux-gnu/bits/siginfo.h	163;"	d
+SI_KERNEL	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  SI_KERNEL = 0x80		\/* Send by kernel.  *\/$/;"	e	enum:__anon53
+SI_KERNEL	/usr/include/x86_64-linux-gnu/bits/siginfo.h	179;"	d
+SI_MESGQ	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  SI_MESGQ,			\/* Sent by real time mesq state change.  *\/$/;"	e	enum:__anon53
+SI_MESGQ	/usr/include/x86_64-linux-gnu/bits/siginfo.h	171;"	d
+SI_QUEUE	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  SI_QUEUE,			\/* Sent by sigqueue.  *\/$/;"	e	enum:__anon53
+SI_QUEUE	/usr/include/x86_64-linux-gnu/bits/siginfo.h	175;"	d
+SI_SIGIO	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  SI_SIGIO,			\/* Sent by queued SIGIO. *\/$/;"	e	enum:__anon53
+SI_SIGIO	/usr/include/x86_64-linux-gnu/bits/siginfo.h	167;"	d
+SI_TIMER	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  SI_TIMER,			\/* Sent by timer expiration.  *\/$/;"	e	enum:__anon53
+SI_TIMER	/usr/include/x86_64-linux-gnu/bits/siginfo.h	173;"	d
+SI_TKILL	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  SI_TKILL = -6,		\/* Sent by tkill.  *\/$/;"	e	enum:__anon53
+SI_TKILL	/usr/include/x86_64-linux-gnu/bits/siginfo.h	165;"	d
+SI_USER	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  SI_USER,			\/* Sent by kill, sigsend.  *\/$/;"	e	enum:__anon53
+SI_USER	/usr/include/x86_64-linux-gnu/bits/siginfo.h	177;"	d
 SPLICE_F_GIFT	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	317;"	d
 SPLICE_F_MORE	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	316;"	d
 SPLICE_F_MOVE	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	312;"	d
 SPLICE_F_NONBLOCK	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	313;"	d
+SS_DISABLE	/usr/include/x86_64-linux-gnu/bits/sigstack.h	/^  SS_DISABLE$/;"	e	enum:__anon66
+SS_DISABLE	/usr/include/x86_64-linux-gnu/bits/sigstack.h	38;"	d
+SS_ONSTACK	/usr/include/x86_64-linux-gnu/bits/sigstack.h	/^  SS_ONSTACK = 1,$/;"	e	enum:__anon66
+SS_ONSTACK	/usr/include/x86_64-linux-gnu/bits/sigstack.h	36;"	d
 STDERR_FILENO	/usr/include/unistd.h	215;"	d
 STDIN_FILENO	/usr/include/unistd.h	213;"	d
 STDOUT_FILENO	/usr/include/unistd.h	214;"	d
@@ -470,19 +921,85 @@ S_IXUSR	/usr/include/x86_64-linux-gnu/sys/stat.h	173;"	d
 S_TYPEISMQ	/usr/include/x86_64-linux-gnu/sys/stat.h	155;"	d
 S_TYPEISSEM	/usr/include/x86_64-linux-gnu/sys/stat.h	156;"	d
 S_TYPEISSHM	/usr/include/x86_64-linux-gnu/sys/stat.h	157;"	d
+TAB0	/usr/include/x86_64-linux-gnu/bits/termios.h	97;"	d
+TAB1	/usr/include/x86_64-linux-gnu/bits/termios.h	98;"	d
+TAB2	/usr/include/x86_64-linux-gnu/bits/termios.h	99;"	d
+TAB3	/usr/include/x86_64-linux-gnu/bits/termios.h	100;"	d
+TABDLY	/usr/include/x86_64-linux-gnu/bits/termios.h	96;"	d
+TCIFLUSH	/usr/include/x86_64-linux-gnu/bits/termios.h	208;"	d
+TCIOFF	/usr/include/x86_64-linux-gnu/bits/termios.h	204;"	d
+TCIOFLUSH	/usr/include/x86_64-linux-gnu/bits/termios.h	210;"	d
+TCION	/usr/include/x86_64-linux-gnu/bits/termios.h	205;"	d
+TCOFLUSH	/usr/include/x86_64-linux-gnu/bits/termios.h	209;"	d
+TCOOFF	/usr/include/x86_64-linux-gnu/bits/termios.h	202;"	d
+TCOON	/usr/include/x86_64-linux-gnu/bits/termios.h	203;"	d
+TCSADRAIN	/usr/include/x86_64-linux-gnu/bits/termios.h	214;"	d
+TCSAFLUSH	/usr/include/x86_64-linux-gnu/bits/termios.h	215;"	d
+TCSANOW	/usr/include/x86_64-linux-gnu/bits/termios.h	213;"	d
 TEMP_FAILURE_RETRY	/usr/include/unistd.h	1104;"	d
 TIMER_ABSTIME	/usr/include/x86_64-linux-gnu/bits/time.h	84;"	d
 TIME_UTC	/usr/include/time.h	182;"	d
+TLOSS	/usr/include/math.h	363;"	d
 TMP_MAX	/usr/include/x86_64-linux-gnu/bits/stdio_lim.h	24;"	d
+TOSTOP	/usr/include/x86_64-linux-gnu/bits/termios.h	188;"	d
+TRAP_BRKPT	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  TRAP_BRKPT = 1,		\/* Process breakpoint.  *\/$/;"	e	enum:__anon58
+TRAP_BRKPT	/usr/include/x86_64-linux-gnu/bits/siginfo.h	256;"	d
+TRAP_TRACE	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  TRAP_TRACE			\/* Process trace trap.  *\/$/;"	e	enum:__anon58
+TRAP_TRACE	/usr/include/x86_64-linux-gnu/bits/siginfo.h	258;"	d
+TTYDEFCHARS	/usr/include/x86_64-linux-gnu/sys/ttydefaults.h	99;"	d
+TTYDEF_CFLAG	/usr/include/x86_64-linux-gnu/sys/ttydefaults.h	49;"	d
+TTYDEF_IFLAG	/usr/include/x86_64-linux-gnu/sys/ttydefaults.h	46;"	d
+TTYDEF_LFLAG	/usr/include/x86_64-linux-gnu/sys/ttydefaults.h	48;"	d
+TTYDEF_OFLAG	/usr/include/x86_64-linux-gnu/sys/ttydefaults.h	47;"	d
+TTYDEF_SPEED	/usr/include/x86_64-linux-gnu/sys/ttydefaults.h	50;"	d
+UNDERFLOW	/usr/include/math.h	362;"	d
 UTIME_NOW	/usr/include/x86_64-linux-gnu/bits/stat.h	206;"	d
 UTIME_OMIT	/usr/include/x86_64-linux-gnu/bits/stat.h	207;"	d
+VDISCARD	/usr/include/x86_64-linux-gnu/bits/termios.h	56;"	d
+VEOF	/usr/include/x86_64-linux-gnu/bits/termios.h	47;"	d
+VEOL	/usr/include/x86_64-linux-gnu/bits/termios.h	54;"	d
+VEOL2	/usr/include/x86_64-linux-gnu/bits/termios.h	59;"	d
+VERASE	/usr/include/x86_64-linux-gnu/bits/termios.h	45;"	d
+VINTR	/usr/include/x86_64-linux-gnu/bits/termios.h	43;"	d
+VKILL	/usr/include/x86_64-linux-gnu/bits/termios.h	46;"	d
+VLNEXT	/usr/include/x86_64-linux-gnu/bits/termios.h	58;"	d
+VMIN	/usr/include/x86_64-linux-gnu/bits/termios.h	49;"	d
+VQUIT	/usr/include/x86_64-linux-gnu/bits/termios.h	44;"	d
+VREPRINT	/usr/include/x86_64-linux-gnu/bits/termios.h	55;"	d
+VSTART	/usr/include/x86_64-linux-gnu/bits/termios.h	51;"	d
+VSTOP	/usr/include/x86_64-linux-gnu/bits/termios.h	52;"	d
+VSUSP	/usr/include/x86_64-linux-gnu/bits/termios.h	53;"	d
+VSWTC	/usr/include/x86_64-linux-gnu/bits/termios.h	50;"	d
+VT0	/usr/include/x86_64-linux-gnu/bits/termios.h	110;"	d
+VT1	/usr/include/x86_64-linux-gnu/bits/termios.h	111;"	d
+VTDLY	/usr/include/x86_64-linux-gnu/bits/termios.h	109;"	d
+VTIME	/usr/include/x86_64-linux-gnu/bits/termios.h	48;"	d
+VWERASE	/usr/include/x86_64-linux-gnu/bits/termios.h	57;"	d
 WCHAR_MAX	/usr/include/wchar.h	118;"	d
 WCHAR_MIN	/usr/include/wchar.h	117;"	d
+WCONTINUED	/usr/include/x86_64-linux-gnu/bits/waitflags.h	31;"	d
 WEOF	/usr/include/wchar.h	122;"	d
+WEXITED	/usr/include/x86_64-linux-gnu/bits/waitflags.h	30;"	d
+WEXITSTATUS	/usr/include/stdlib.h	84;"	d
+WIFCONTINUED	/usr/include/stdlib.h	91;"	d
+WIFEXITED	/usr/include/stdlib.h	87;"	d
+WIFSIGNALED	/usr/include/stdlib.h	88;"	d
+WIFSTOPPED	/usr/include/stdlib.h	89;"	d
+WNOHANG	/usr/include/x86_64-linux-gnu/bits/waitflags.h	25;"	d
+WNOWAIT	/usr/include/x86_64-linux-gnu/bits/waitflags.h	32;"	d
+WSTOPPED	/usr/include/x86_64-linux-gnu/bits/waitflags.h	29;"	d
+WSTOPSIG	/usr/include/stdlib.h	86;"	d
+WTERMSIG	/usr/include/stdlib.h	85;"	d
+WUNTRACED	/usr/include/x86_64-linux-gnu/bits/waitflags.h	26;"	d
 W_OK	/usr/include/fcntl.h	128;"	d
 W_OK	/usr/include/unistd.h	285;"	d
+X86_FXSR_MAGIC	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	91;"	d
+XCASE	/usr/include/x86_64-linux-gnu/bits/termios.h	181;"	d
+XTABS	/usr/include/x86_64-linux-gnu/bits/termios.h	114;"	d
 X_OK	/usr/include/fcntl.h	129;"	d
 X_OK	/usr/include/unistd.h	286;"	d
+X_TLOSS	/usr/include/math.h	356;"	d
+_ALLOCA_H	/usr/include/alloca.h	19;"	d
 _ANSI_STDARG_H_	/usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h	32;"	d
 _ANSI_STDDEF_H	/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h	42;"	d
 _ASM_GENERIC_ERRNO_BASE_H	/usr/include/asm-generic/errno-base.h	2;"	d
@@ -492,8 +1009,11 @@ _ATFILE_SOURCE	/usr/include/features.h	174;"	d
 _ATFILE_SOURCE	/usr/include/features.h	268;"	d
 _ATFILE_SOURCE	/usr/include/features.h	269;"	d
 _BITS_BYTESWAP_H	/usr/include/x86_64-linux-gnu/bits/byteswap.h	24;"	d
+_BITS_LIBM_SIMD_DECL_STUBS_H	/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h	34;"	d
 _BITS_POSIX_OPT_H	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	20;"	d
 _BITS_PTHREADTYPES_H	/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h	19;"	d
+_BITS_SIGCONTEXT_H	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	19;"	d
+_BITS_SIGTHREAD_H	/usr/include/x86_64-linux-gnu/bits/sigthread.h	20;"	d
 _BITS_STAT_H	/usr/include/x86_64-linux-gnu/bits/stat.h	23;"	d
 _BITS_TIME_H	/usr/include/x86_64-linux-gnu/bits/time.h	40;"	d
 _BITS_TYPESIZES_H	/usr/include/x86_64-linux-gnu/bits/typesizes.h	24;"	d
@@ -741,6 +1261,9 @@ _G_fpos_t	/usr/include/_G_config.h	/^} _G_fpos_t;$/;"	t	typeref:struct:__anon3
 _G_iconv_t	/usr/include/_G_config.h	/^} _G_iconv_t;$/;"	t	typeref:union:__anon31
 _G_iconv_t	/usr/include/_G_config.h	/^} _G_iconv_t;$/;"	t	typeref:union:__anon5
 _G_va_list	/usr/include/_G_config.h	46;"	d
+_HAVE_STRUCT_TERMIOS_C_ISPEED	/usr/include/x86_64-linux-gnu/bits/termios.h	38;"	d
+_HAVE_STRUCT_TERMIOS_C_OSPEED	/usr/include/x86_64-linux-gnu/bits/termios.h	39;"	d
+_IEEE_	/usr/include/math.h	/^  _IEEE_ = -1,	\/* According to IEEE 754\/IEEE 854.  *\/$/;"	e	enum:__anon39
 _IOFBF	/usr/include/stdio.h	120;"	d
 _IOLBF	/usr/include/stdio.h	121;"	d
 _IONBF	/usr/include/stdio.h	122;"	d
@@ -752,6 +1275,7 @@ _IOS_NOCREATE	/usr/include/libio.h	82;"	d
 _IOS_NOREPLACE	/usr/include/libio.h	83;"	d
 _IOS_OUTPUT	/usr/include/libio.h	78;"	d
 _IOS_TRUNC	/usr/include/libio.h	81;"	d
+_IOT_termios	/usr/include/x86_64-linux-gnu/bits/termios.h	218;"	d
 _IO_BAD_SEEN	/usr/include/libio.h	109;"	d
 _IO_BE	/usr/include/libio.h	396;"	d
 _IO_BE	/usr/include/libio.h	398;"	d
@@ -877,6 +1401,7 @@ _ISOC95_SOURCE	/usr/include/features.h	155;"	d
 _ISOC95_SOURCE	/usr/include/features.h	156;"	d
 _ISOC99_SOURCE	/usr/include/features.h	157;"	d
 _ISOC99_SOURCE	/usr/include/features.h	158;"	d
+_ISOC_	/usr/include/math.h	/^  _ISOC_	\/* Actually this is ISO C99.  *\/$/;"	e	enum:__anon39
 _LARGEFILE64_SOURCE	/usr/include/features.h	169;"	d
 _LARGEFILE64_SOURCE	/usr/include/features.h	170;"	d
 _LARGEFILE_SOURCE	/usr/include/features.h	277;"	d
@@ -886,12 +1411,36 @@ _LFS64_LARGEFILE	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	118;"	d
 _LFS64_STDIO	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	119;"	d
 _LFS_ASYNCHRONOUS_IO	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	109;"	d
 _LFS_LARGEFILE	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	117;"	d
+_LIB_VERSION_TYPE	/usr/include/math.h	/^} _LIB_VERSION_TYPE;$/;"	t	typeref:enum:__anon39
 _MALLOC_H	/usr/include/malloc.h	20;"	d
+_MATH_H	/usr/include/math.h	24;"	d
+_MATH_H_MATHDEF	/usr/include/x86_64-linux-gnu/bits/mathdef.h	23;"	d
 _MKNOD_VER	/usr/include/x86_64-linux-gnu/bits/stat.h	35;"	d
 _MKNOD_VER	/usr/include/x86_64-linux-gnu/sys/stat.h	393;"	d
 _MKNOD_VER_LINUX	/usr/include/x86_64-linux-gnu/bits/stat.h	33;"	d
 _MKNOD_VER_LINUX	/usr/include/x86_64-linux-gnu/bits/stat.h	41;"	d
 _MKNOD_VER_SVR4	/usr/include/x86_64-linux-gnu/bits/stat.h	34;"	d
+_Mdouble_	/usr/include/math.h	102;"	d
+_Mdouble_	/usr/include/math.h	141;"	d
+_Mdouble_	/usr/include/math.h	147;"	d
+_Mdouble_	/usr/include/math.h	78;"	d
+_Mdouble_	/usr/include/math.h	83;"	d
+_Mdouble_	/usr/include/math.h	97;"	d
+_Mdouble_BEGIN_NAMESPACE	/usr/include/math.h	103;"	d
+_Mdouble_BEGIN_NAMESPACE	/usr/include/math.h	143;"	d
+_Mdouble_BEGIN_NAMESPACE	/usr/include/math.h	148;"	d
+_Mdouble_BEGIN_NAMESPACE	/usr/include/math.h	80;"	d
+_Mdouble_BEGIN_NAMESPACE	/usr/include/math.h	84;"	d
+_Mdouble_BEGIN_NAMESPACE	/usr/include/math.h	99;"	d
+_Mdouble_END_NAMESPACE	/usr/include/math.h	100;"	d
+_Mdouble_END_NAMESPACE	/usr/include/math.h	104;"	d
+_Mdouble_END_NAMESPACE	/usr/include/math.h	144;"	d
+_Mdouble_END_NAMESPACE	/usr/include/math.h	149;"	d
+_Mdouble_END_NAMESPACE	/usr/include/math.h	81;"	d
+_Mdouble_END_NAMESPACE	/usr/include/math.h	85;"	d
+_Mfloat_	/usr/include/math.h	95;"	d
+_Mlong_double_	/usr/include/math.h	139;"	d
+_NSIG	/usr/include/x86_64-linux-gnu/bits/signum.h	68;"	d
 _Noreturn	/usr/include/x86_64-linux-gnu/sys/cdefs.h	396;"	d
 _Noreturn	/usr/include/x86_64-linux-gnu/sys/cdefs.h	398;"	d
 _OLD_STDIO_MAGIC	/usr/include/libio.h	93;"	d
@@ -965,6 +1514,7 @@ _POSIX2_C_VERSION	/usr/include/unistd.h	70;"	d
 _POSIX2_LOCALEDEF	/usr/include/unistd.h	86;"	d
 _POSIX2_SW_DEV	/usr/include/unistd.h	82;"	d
 _POSIX2_VERSION	/usr/include/unistd.h	67;"	d
+_POSIX_	/usr/include/math.h	/^  _POSIX_,$/;"	e	enum:__anon39
 _POSIX_ADVISORY_INFO	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	167;"	d
 _POSIX_ASYNCHRONOUS_IO	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	106;"	d
 _POSIX_ASYNC_IO	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	107;"	d
@@ -1694,6 +2244,7 @@ _SC_XOPEN_XPG3	/usr/include/x86_64-linux-gnu/bits/confname.h	286;"	d
 _SC_XOPEN_XPG4	/usr/include/x86_64-linux-gnu/bits/confname.h	/^    _SC_XOPEN_XPG4,$/;"	e	enum:__anon10
 _SC_XOPEN_XPG4	/usr/include/x86_64-linux-gnu/bits/confname.h	/^    _SC_XOPEN_XPG4,$/;"	e	enum:__anon36
 _SC_XOPEN_XPG4	/usr/include/x86_64-linux-gnu/bits/confname.h	288;"	d
+_SIGNAL_H	/usr/include/signal.h	25;"	d
 _SIGSET_H_fns	/usr/include/x86_64-linux-gnu/bits/sigset.h	42;"	d
 _SIGSET_H_types	/usr/include/x86_64-linux-gnu/bits/sigset.h	20;"	d
 _SIGSET_NWORDS	/usr/include/x86_64-linux-gnu/bits/sigset.h	26;"	d
@@ -1724,16 +2275,21 @@ _STDDEF_H	/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h	39;"	d
 _STDDEF_H_	/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h	40;"	d
 _STDIO_H	/usr/include/stdio.h	26;"	d
 _STDIO_USES_IOSTREAM	/usr/include/stdio.h	72;"	d
+_STDLIB_H	/usr/include/stdlib.h	37;"	d
 _STRING_H	/usr/include/string.h	23;"	d
 _STRUCT_TIMEVAL	/usr/include/x86_64-linux-gnu/bits/time.h	25;"	d
+_SVID_	/usr/include/math.h	/^  _SVID_,	\/* According to System V, release 4.  *\/$/;"	e	enum:__anon39
 _SYS_CDEFS_H	/usr/include/x86_64-linux-gnu/sys/cdefs.h	19;"	d
 _SYS_MMAN_H	/usr/include/x86_64-linux-gnu/sys/mman.h	20;"	d
 _SYS_SELECT_H	/usr/include/x86_64-linux-gnu/sys/select.h	22;"	d
 _SYS_SIZE_T_H	/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h	190;"	d
 _SYS_STAT_H	/usr/include/x86_64-linux-gnu/sys/stat.h	23;"	d
 _SYS_SYSMACROS_H	/usr/include/x86_64-linux-gnu/sys/sysmacros.h	20;"	d
+_SYS_TTYDEFAULTS_H_	/usr/include/x86_64-linux-gnu/sys/ttydefaults.h	41;"	d
 _SYS_TYPES_H	/usr/include/x86_64-linux-gnu/sys/types.h	23;"	d
+_SYS_UCONTEXT_H	/usr/include/x86_64-linux-gnu/sys/ucontext.h	19;"	d
 _Static_assert	/usr/include/x86_64-linux-gnu/sys/cdefs.h	405;"	d
+_TERMIOS_H	/usr/include/termios.h	23;"	d
 _TIME_H	/usr/include/time.h	26;"	d
 _TYPE_ptrdiff_t	/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h	106;"	d
 _TYPE_size_t	/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h	110;"	d
@@ -1770,6 +2326,7 @@ _XBS5_ILP32_OFFBIG	/usr/include/x86_64-linux-gnu/bits/environments.h	71;"	d
 _XBS5_LP64_OFF64	/usr/include/x86_64-linux-gnu/bits/environments.h	63;"	d
 _XBS5_LPBIG_OFFBIG	/usr/include/x86_64-linux-gnu/bits/environments.h	58;"	d
 _XLOCALE_H	/usr/include/xlocale.h	21;"	d
+_XOPEN_	/usr/include/math.h	/^  _XOPEN_,	\/* Nowadays also Unix98.  *\/$/;"	e	enum:__anon39
 _XOPEN_CRYPT	/usr/include/unistd.h	111;"	d
 _XOPEN_ENH_I18N	/usr/include/unistd.h	115;"	d
 _XOPEN_LEGACY	/usr/include/unistd.h	118;"	d
@@ -1802,10 +2359,54 @@ __BLKSIZE_T_TYPE	/usr/include/x86_64-linux-gnu/bits/typesizes.h	71;"	d
 __BYTE_ORDER	/usr/include/x86_64-linux-gnu/bits/endian.h	7;"	d
 __CLOCKID_T_TYPE	/usr/include/x86_64-linux-gnu/bits/typesizes.h	69;"	d
 __CLOCK_T_TYPE	/usr/include/x86_64-linux-gnu/bits/typesizes.h	63;"	d
+__COMPAR_FN_T	/usr/include/stdlib.h	740;"	d
 __CONCAT	/usr/include/x86_64-linux-gnu/sys/cdefs.h	88;"	d
 __CORRECT_ISO_CPP_STRING_H_PROTO	/usr/include/string.h	36;"	d
 __CORRECT_ISO_CPP_WCHAR_H_PROTO	/usr/include/wchar.h	75;"	d
 __DADDR_T_TYPE	/usr/include/x86_64-linux-gnu/bits/typesizes.h	67;"	d
+__DECL_SIMD_cos	/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h	36;"	d
+__DECL_SIMD_cos	/usr/include/x86_64-linux-gnu/bits/math-vector.h	31;"	d
+__DECL_SIMD_cos	/usr/include/x86_64-linux-gnu/bits/math-vector.h	32;"	d
+__DECL_SIMD_cosf	/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h	37;"	d
+__DECL_SIMD_cosf	/usr/include/x86_64-linux-gnu/bits/math-vector.h	33;"	d
+__DECL_SIMD_cosf	/usr/include/x86_64-linux-gnu/bits/math-vector.h	34;"	d
+__DECL_SIMD_cosl	/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h	38;"	d
+__DECL_SIMD_exp	/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h	52;"	d
+__DECL_SIMD_exp	/usr/include/x86_64-linux-gnu/bits/math-vector.h	47;"	d
+__DECL_SIMD_exp	/usr/include/x86_64-linux-gnu/bits/math-vector.h	48;"	d
+__DECL_SIMD_expf	/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h	53;"	d
+__DECL_SIMD_expf	/usr/include/x86_64-linux-gnu/bits/math-vector.h	49;"	d
+__DECL_SIMD_expf	/usr/include/x86_64-linux-gnu/bits/math-vector.h	50;"	d
+__DECL_SIMD_expl	/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h	54;"	d
+__DECL_SIMD_log	/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h	48;"	d
+__DECL_SIMD_log	/usr/include/x86_64-linux-gnu/bits/math-vector.h	43;"	d
+__DECL_SIMD_log	/usr/include/x86_64-linux-gnu/bits/math-vector.h	44;"	d
+__DECL_SIMD_logf	/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h	49;"	d
+__DECL_SIMD_logf	/usr/include/x86_64-linux-gnu/bits/math-vector.h	45;"	d
+__DECL_SIMD_logf	/usr/include/x86_64-linux-gnu/bits/math-vector.h	46;"	d
+__DECL_SIMD_logl	/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h	50;"	d
+__DECL_SIMD_pow	/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h	56;"	d
+__DECL_SIMD_pow	/usr/include/x86_64-linux-gnu/bits/math-vector.h	51;"	d
+__DECL_SIMD_pow	/usr/include/x86_64-linux-gnu/bits/math-vector.h	52;"	d
+__DECL_SIMD_powf	/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h	57;"	d
+__DECL_SIMD_powf	/usr/include/x86_64-linux-gnu/bits/math-vector.h	53;"	d
+__DECL_SIMD_powf	/usr/include/x86_64-linux-gnu/bits/math-vector.h	54;"	d
+__DECL_SIMD_powl	/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h	58;"	d
+__DECL_SIMD_sin	/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h	40;"	d
+__DECL_SIMD_sin	/usr/include/x86_64-linux-gnu/bits/math-vector.h	35;"	d
+__DECL_SIMD_sin	/usr/include/x86_64-linux-gnu/bits/math-vector.h	36;"	d
+__DECL_SIMD_sincos	/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h	44;"	d
+__DECL_SIMD_sincos	/usr/include/x86_64-linux-gnu/bits/math-vector.h	39;"	d
+__DECL_SIMD_sincos	/usr/include/x86_64-linux-gnu/bits/math-vector.h	40;"	d
+__DECL_SIMD_sincosf	/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h	45;"	d
+__DECL_SIMD_sincosf	/usr/include/x86_64-linux-gnu/bits/math-vector.h	41;"	d
+__DECL_SIMD_sincosf	/usr/include/x86_64-linux-gnu/bits/math-vector.h	42;"	d
+__DECL_SIMD_sincosl	/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h	46;"	d
+__DECL_SIMD_sinf	/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h	41;"	d
+__DECL_SIMD_sinf	/usr/include/x86_64-linux-gnu/bits/math-vector.h	37;"	d
+__DECL_SIMD_sinf	/usr/include/x86_64-linux-gnu/bits/math-vector.h	38;"	d
+__DECL_SIMD_sinl	/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h	42;"	d
+__DECL_SIMD_x86_64	/usr/include/x86_64-linux-gnu/bits/math-vector.h	30;"	d
 __DEV_T_TYPE	/usr/include/x86_64-linux-gnu/bits/typesizes.h	38;"	d
 __END_DECLS	/usr/include/x86_64-linux-gnu/sys/cdefs.h	102;"	d
 __END_DECLS	/usr/include/x86_64-linux-gnu/sys/cdefs.h	99;"	d
@@ -1813,6 +2414,7 @@ __END_NAMESPACE_C99	/usr/include/x86_64-linux-gnu/sys/cdefs.h	116;"	d
 __END_NAMESPACE_C99	/usr/include/x86_64-linux-gnu/sys/cdefs.h	126;"	d
 __END_NAMESPACE_STD	/usr/include/x86_64-linux-gnu/sys/cdefs.h	113;"	d
 __END_NAMESPACE_STD	/usr/include/x86_64-linux-gnu/sys/cdefs.h	123;"	d
+__ENUM_IDTYPE_T	/usr/include/x86_64-linux-gnu/bits/waitflags.h	42;"	d
 __FDS_BITS	/usr/include/x86_64-linux-gnu/sys/select.h	70;"	d
 __FD_CLR	/usr/include/x86_64-linux-gnu/bits/select.h	60;"	d
 __FD_ELT	/usr/include/x86_64-linux-gnu/sys/select.h	60;"	d
@@ -1851,6 +2453,11 @@ __GNUC_VA_LIST	/usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h	39;"	d
 __GNU_LIBRARY__	/usr/include/features.h	347;"	d
 __GNU_LIBRARY__	/usr/include/features.h	348;"	d
 __HAVE_COLUMN	/usr/include/libio.h	272;"	d
+__HUGE_VALF_bytes	/usr/include/x86_64-linux-gnu/bits/huge_valf.h	42;"	d
+__HUGE_VALF_bytes	/usr/include/x86_64-linux-gnu/bits/huge_valf.h	45;"	d
+__HUGE_VALL_bytes	/usr/include/x86_64-linux-gnu/bits/huge_vall.h	30;"	d
+__HUGE_VAL_bytes	/usr/include/x86_64-linux-gnu/bits/huge_val.h	44;"	d
+__HUGE_VAL_bytes	/usr/include/x86_64-linux-gnu/bits/huge_val.h	47;"	d
 __ID_T_TYPE	/usr/include/x86_64-linux-gnu/bits/typesizes.h	62;"	d
 __ILP32_OFF32_CFLAGS	/usr/include/x86_64-linux-gnu/bits/environments.h	95;"	d
 __ILP32_OFF32_LDFLAGS	/usr/include/x86_64-linux-gnu/bits/environments.h	96;"	d
@@ -1891,11 +2498,33 @@ __MALLOC_DEPRECATED	/usr/include/malloc.h	28;"	d
 __MALLOC_DEPRECATED	/usr/include/malloc.h	31;"	d
 __MALLOC_HOOK_VOLATILE	/usr/include/malloc.h	27;"	d
 __MALLOC_HOOK_VOLATILE	/usr/include/malloc.h	30;"	d
+__MATHCALL	/usr/include/math.h	157;"	d
+__MATHCALL	/usr/include/math.h	65;"	d
+__MATHCALLX	/usr/include/math.h	70;"	d
+__MATHCALL_VEC	/usr/include/math.h	57;"	d
+__MATHDECL	/usr/include/math.h	156;"	d
+__MATHDECL	/usr/include/math.h	67;"	d
+__MATHDECLX	/usr/include/math.h	72;"	d
+__MATHDECL_1	/usr/include/math.h	127;"	d
+__MATHDECL_1	/usr/include/math.h	131;"	d
+__MATHDECL_1	/usr/include/math.h	155;"	d
+__MATHDECL_1	/usr/include/math.h	75;"	d
+__MATHDECL_2	/usr/include/math.h	128;"	d
+__MATHDECL_VEC	/usr/include/math.h	61;"	d
+__MATH_DECLARE_LDOUBLE	/usr/include/math.h	145;"	d
+__MATH_PRECNAME	/usr/include/math.h	105;"	d
+__MATH_PRECNAME	/usr/include/math.h	142;"	d
+__MATH_PRECNAME	/usr/include/math.h	150;"	d
+__MATH_PRECNAME	/usr/include/math.h	79;"	d
+__MATH_PRECNAME	/usr/include/math.h	86;"	d
+__MATH_PRECNAME	/usr/include/math.h	98;"	d
+__MAX_BAUD	/usr/include/x86_64-linux-gnu/bits/termios.h	170;"	d
 __MODE_T_TYPE	/usr/include/x86_64-linux-gnu/bits/typesizes.h	43;"	d
 __NFDBITS	/usr/include/x86_64-linux-gnu/sys/select.h	57;"	d
 __NFDBITS	/usr/include/x86_64-linux-gnu/sys/select.h	59;"	d
 __NLINK_T_TYPE	/usr/include/x86_64-linux-gnu/bits/typesizes.h	45;"	d
 __NLINK_T_TYPE	/usr/include/x86_64-linux-gnu/bits/typesizes.h	48;"	d
+__NO_MATH_INLINES	/usr/include/math.h	420;"	d
 __NTH	/usr/include/x86_64-linux-gnu/sys/cdefs.h	57;"	d
 __NTH	/usr/include/x86_64-linux-gnu/sys/cdefs.h	62;"	d
 __NTH	/usr/include/x86_64-linux-gnu/sys/cdefs.h	66;"	d
@@ -1946,8 +2575,14 @@ __S16_TYPE	/usr/include/x86_64-linux-gnu/bits/types.h	89;"	d
 __S32_TYPE	/usr/include/x86_64-linux-gnu/bits/types.h	91;"	d
 __S64_TYPE	/usr/include/x86_64-linux-gnu/bits/types.h	102;"	d
 __S64_TYPE	/usr/include/x86_64-linux-gnu/bits/types.h	114;"	d
+__SIGEV_MAX_SIZE	/usr/include/x86_64-linux-gnu/bits/siginfo.h	307;"	d
+__SIGEV_PAD_SIZE	/usr/include/x86_64-linux-gnu/bits/siginfo.h	309;"	d
+__SIGEV_PAD_SIZE	/usr/include/x86_64-linux-gnu/bits/siginfo.h	311;"	d
+__SIGRTMAX	/usr/include/x86_64-linux-gnu/bits/signum.h	77;"	d
+__SIGRTMIN	/usr/include/x86_64-linux-gnu/bits/signum.h	76;"	d
 __SIGSETFN	/usr/include/x86_64-linux-gnu/bits/sigset.h	107;"	d
 __SIGSETFN	/usr/include/x86_64-linux-gnu/bits/sigset.h	120;"	d
+__SIMD_DECL	/usr/include/math.h	55;"	d
 __SIZEOF_PTHREAD_ATTR_T	/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h	25;"	d
 __SIZEOF_PTHREAD_ATTR_T	/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h	35;"	d
 __SIZEOF_PTHREAD_ATTR_T	/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h	46;"	d
@@ -1978,6 +2613,12 @@ __SIZEOF_PTHREAD_RWLOCK_T	/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h	51;"
 __SIZE_T	/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h	193;"	d
 __SIZE_TYPE__	/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h	213;"	d
 __SIZE_T__	/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h	188;"	d
+__SI_ALIGNMENT	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  } siginfo_t __SI_ALIGNMENT;$/;"	t	typeref:struct:__anon43
+__SI_ALIGNMENT	/usr/include/x86_64-linux-gnu/bits/siginfo.h	56;"	d
+__SI_ALIGNMENT	/usr/include/x86_64-linux-gnu/bits/siginfo.h	59;"	d
+__SI_MAX_SIZE	/usr/include/x86_64-linux-gnu/bits/siginfo.h	43;"	d
+__SI_PAD_SIZE	/usr/include/x86_64-linux-gnu/bits/siginfo.h	45;"	d
+__SI_PAD_SIZE	/usr/include/x86_64-linux-gnu/bits/siginfo.h	47;"	d
 __SLONG32_TYPE	/usr/include/x86_64-linux-gnu/bits/types.h	100;"	d
 __SLONG32_TYPE	/usr/include/x86_64-linux-gnu/bits/types.h	112;"	d
 __SLONGWORD_TYPE	/usr/include/x86_64-linux-gnu/bits/types.h	93;"	d
@@ -2114,18 +2755,37 @@ __USING_NAMESPACE_STD	/usr/include/x86_64-linux-gnu/sys/cdefs.h	124;"	d
 __UWORD_TYPE	/usr/include/x86_64-linux-gnu/bits/types.h	111;"	d
 __UWORD_TYPE	/usr/include/x86_64-linux-gnu/bits/types.h	99;"	d
 __VA_LIST	/usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h	80;"	d
+__WAIT_INT	/usr/include/stdlib.h	50;"	d
+__WAIT_STATUS	/usr/include/stdlib.h	63;"	d
+__WAIT_STATUS_DEFN	/usr/include/stdlib.h	64;"	d
+__WALL	/usr/include/x86_64-linux-gnu/bits/waitflags.h	36;"	d
 __WCHAR_T	/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h	272;"	d
 __WCHAR_TYPE__	/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h	325;"	d
 __WCHAR_T__	/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h	268;"	d
+__WCLONE	/usr/include/x86_64-linux-gnu/bits/waitflags.h	37;"	d
+__WCOREDUMP	/usr/include/x86_64-linux-gnu/bits/waitstatus.h	53;"	d
+__WCOREFLAG	/usr/include/x86_64-linux-gnu/bits/waitstatus.h	59;"	d
+__WEXITSTATUS	/usr/include/x86_64-linux-gnu/bits/waitstatus.h	28;"	d
+__WIFCONTINUED	/usr/include/x86_64-linux-gnu/bits/waitstatus.h	49;"	d
+__WIFEXITED	/usr/include/x86_64-linux-gnu/bits/waitstatus.h	37;"	d
+__WIFSIGNALED	/usr/include/x86_64-linux-gnu/bits/waitstatus.h	40;"	d
+__WIFSTOPPED	/usr/include/x86_64-linux-gnu/bits/waitstatus.h	44;"	d
 __WINT_TYPE__	/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h	355;"	d
+__WNOTHREAD	/usr/include/x86_64-linux-gnu/bits/waitflags.h	34;"	d
 __WORDSIZE	/usr/include/x86_64-linux-gnu/bits/wordsize.h	4;"	d
 __WORDSIZE	/usr/include/x86_64-linux-gnu/bits/wordsize.h	6;"	d
 __WORDSIZE_TIME64_COMPAT32	/usr/include/x86_64-linux-gnu/bits/wordsize.h	10;"	d
+__WSTOPSIG	/usr/include/x86_64-linux-gnu/bits/waitstatus.h	34;"	d
+__WTERMSIG	/usr/include/x86_64-linux-gnu/bits/waitstatus.h	31;"	d
+__W_CONTINUED	/usr/include/x86_64-linux-gnu/bits/waitstatus.h	58;"	d
+__W_EXITCODE	/usr/include/x86_64-linux-gnu/bits/waitstatus.h	56;"	d
+__W_STOPCODE	/usr/include/x86_64-linux-gnu/bits/waitstatus.h	57;"	d
 ____FILE_defined	/usr/include/stdio.h	66;"	d
 ____mbstate_t_defined	/usr/include/wchar.h	80;"	d
 ___int_ptrdiff_t_h	/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h	143;"	d
 ___int_size_t_h	/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h	200;"	d
 ___int_wchar_t_h	/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h	278;"	d
+__a	/usr/include/stdlib.h	/^    __extension__ unsigned long long int __a;	\/* Factor in congruential$/;"	m	struct:drand48_data
 __align	/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h	/^  __extension__ long long int __align;$/;"	m	union:__anon20
 __align	/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h	/^  int __align;$/;"	m	union:__anon19
 __align	/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h	/^  int __align;$/;"	m	union:__anon22
@@ -2145,6 +2805,10 @@ __attribute_artificial__	/usr/include/x86_64-linux-gnu/sys/cdefs.h	317;"	d
 __attribute_const__	/usr/include/x86_64-linux-gnu/sys/cdefs.h	236;"	d
 __attribute_const__	/usr/include/x86_64-linux-gnu/sys/cdefs.h	238;"	d
 __attribute_const__	/usr/include/x86_64-linux-gnu/sys/sysmacros.h	/^     __THROW __attribute_const__;$/;"	v
+__attribute_deprecated__	/usr/include/signal.h	/^     __THROW __attribute_deprecated__;$/;"	v
+__attribute_deprecated__	/usr/include/signal.h	/^extern int sigblock (int __mask) __THROW __attribute_deprecated__;$/;"	v
+__attribute_deprecated__	/usr/include/signal.h	/^extern int siggetmask (void) __THROW __attribute_deprecated__;$/;"	v
+__attribute_deprecated__	/usr/include/signal.h	/^extern int sigsetmask (int __mask) __THROW __attribute_deprecated__;$/;"	v
 __attribute_deprecated__	/usr/include/stdio.h	/^extern char *gets (char *__s) __wur __attribute_deprecated__;$/;"	v
 __attribute_deprecated__	/usr/include/x86_64-linux-gnu/sys/cdefs.h	254;"	d
 __attribute_deprecated__	/usr/include/x86_64-linux-gnu/sys/cdefs.h	256;"	d
@@ -2166,6 +2830,7 @@ __attribute_pure__	/usr/include/x86_64-linux-gnu/sys/cdefs.h	231;"	d
 __attribute_used__	/usr/include/x86_64-linux-gnu/sys/cdefs.h	245;"	d
 __attribute_used__	/usr/include/x86_64-linux-gnu/sys/cdefs.h	248;"	d
 __attribute_warn_unused_result__	/usr/include/malloc.h	/^__THROW __attribute_warn_unused_result__;$/;"	v
+__attribute_warn_unused_result__	/usr/include/stdlib.h	/^     __THROW __attribute_warn_unused_result__;$/;"	v
 __attribute_warn_unused_result__	/usr/include/x86_64-linux-gnu/sys/cdefs.h	293;"	d
 __attribute_warn_unused_result__	/usr/include/x86_64-linux-gnu/sys/cdefs.h	299;"	d
 __blkcnt64_t	/usr/include/x86_64-linux-gnu/bits/types.h	/^__STD_TYPE __BLKCNT64_T_TYPE __blkcnt64_t;$/;"	v
@@ -2193,6 +2858,10 @@ __bswap_constant_16	/usr/include/x86_64-linux-gnu/bits/byteswap.h	31;"	d
 __bswap_constant_32	/usr/include/x86_64-linux-gnu/bits/byteswap.h	38;"	d
 __bswap_constant_64	/usr/include/x86_64-linux-gnu/bits/byteswap.h	138;"	d
 __bswap_constant_64	/usr/include/x86_64-linux-gnu/bits/byteswap.h	97;"	d
+__c	/usr/include/stdlib.h	/^    unsigned short int __c;	\/* Additive const. in congruential formula.  *\/$/;"	m	struct:drand48_data
+__c	/usr/include/x86_64-linux-gnu/bits/huge_val.h	/^typedef union { unsigned char __c[8]; double __d; } __huge_val_t;$/;"	m	union:__anon40
+__c	/usr/include/x86_64-linux-gnu/bits/huge_valf.h	/^typedef union { unsigned char __c[4]; float __f; } __huge_valf_t;$/;"	m	union:__anon41
+__c	/usr/include/x86_64-linux-gnu/bits/nan.h	/^static union { unsigned char __c[4]; float __d; } __qnan_union$/;"	m	union:__anon42
 __caddr_t	/usr/include/x86_64-linux-gnu/bits/types.h	/^typedef char *__caddr_t;$/;"	t
 __cd	/usr/include/_G_config.h	/^    struct __gconv_info __cd;$/;"	m	struct:__anon31::__anon32	typeref:struct:__anon31::__anon32::__gconv_info
 __cd	/usr/include/_G_config.h	/^    struct __gconv_info __cd;$/;"	m	struct:__anon5::__anon6	typeref:struct:__anon5::__anon6::__gconv_info
@@ -2221,12 +2890,17 @@ __codecvt_partial	/usr/include/libio.h	/^  __codecvt_partial,$/;"	e	enum:__codec
 __codecvt_result	/usr/include/libio.h	/^enum __codecvt_result$/;"	g
 __combined	/usr/include/_G_config.h	/^  } __combined;$/;"	m	union:__anon31	typeref:struct:__anon31::__anon32
 __combined	/usr/include/_G_config.h	/^  } __combined;$/;"	m	union:__anon5	typeref:struct:__anon5::__anon6
+__compar_d_fn_t	/usr/include/stdlib.h	/^typedef int (*__compar_d_fn_t) (const void *, const void *, void *);$/;"	t
+__compar_fn_t	/usr/include/stdlib.h	/^typedef int (*__compar_fn_t) (const void *, const void *);$/;"	t
 __count	/usr/include/wchar.h	/^  int __count;$/;"	m	struct:__anon33
 __count	/usr/include/wchar.h	/^  int __count;$/;"	m	struct:__anon7
 __count	/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h	/^    unsigned int __count;$/;"	m	struct:__anon16::__pthread_mutex_s
+__csh	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  unsigned short cs, __csh;$/;"	m	struct:sigcontext
 __ctype_b	/usr/include/xlocale.h	/^  const unsigned short int *__ctype_b;$/;"	m	struct:__locale_struct
 __ctype_tolower	/usr/include/xlocale.h	/^  const int *__ctype_tolower;$/;"	m	struct:__locale_struct
 __ctype_toupper	/usr/include/xlocale.h	/^  const int *__ctype_toupper;$/;"	m	struct:__locale_struct
+__d	/usr/include/x86_64-linux-gnu/bits/huge_val.h	/^typedef union { unsigned char __c[8]; double __d; } __huge_val_t;$/;"	m	union:__anon40
+__d	/usr/include/x86_64-linux-gnu/bits/nan.h	/^static union { unsigned char __c[4]; float __d; } __qnan_union$/;"	m	union:__anon42
 __daddr_t	/usr/include/x86_64-linux-gnu/bits/types.h	/^__STD_TYPE __DADDR_T_TYPE __daddr_t;	\/* The type of a disk address.  *\/$/;"	v
 __daddr_t_defined	/usr/include/x86_64-linux-gnu/sys/types.h	117;"	d
 __data	/usr/include/_G_config.h	/^    struct __gconv_step_data __data;$/;"	m	struct:__anon31::__anon32	typeref:struct:__anon31::__anon32::__gconv_step_data
@@ -2237,6 +2911,7 @@ __data	/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h	/^  } __data;$/;"	m	uni
 __dev_t	/usr/include/x86_64-linux-gnu/bits/types.h	/^__STD_TYPE __DEV_T_TYPE __dev_t;	\/* Type of device numbers.  *\/$/;"	v
 __dev_t_defined	/usr/include/x86_64-linux-gnu/sys/stat.h	44;"	d
 __dev_t_defined	/usr/include/x86_64-linux-gnu/sys/types.h	61;"	d
+__dsh	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  unsigned short ds, __dsh;$/;"	m	struct:sigcontext
 __elision	/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h	/^	short __elision;$/;"	m	struct:__anon16::__pthread_mutex_s::__anon17::__anon18
 __elision	/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h	/^    short __elision;$/;"	m	struct:__anon16::__pthread_mutex_s
 __elision	/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h	119;"	d
@@ -2244,12 +2919,15 @@ __elision_data	/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h	/^      } __eli
 __error_t_defined	/usr/include/errno.h	69;"	d
 __errordecl	/usr/include/x86_64-linux-gnu/sys/cdefs.h	139;"	d
 __errordecl	/usr/include/x86_64-linux-gnu/sys/cdefs.h	144;"	d
+__esh	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  unsigned short es, __esh;$/;"	m	struct:sigcontext
 __espins	/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h	/^	short __espins;$/;"	m	struct:__anon16::__pthread_mutex_s::__anon17::__anon18
+__exception	/usr/include/math.h	/^struct __exception$/;"	s
 __extension__	/usr/include/x86_64-linux-gnu/sys/cdefs.h	358;"	d
 __extern_always_inline	/usr/include/x86_64-linux-gnu/sys/cdefs.h	334;"	d
 __extern_always_inline	/usr/include/x86_64-linux-gnu/sys/cdefs.h	338;"	d
 __extern_inline	/usr/include/x86_64-linux-gnu/sys/cdefs.h	333;"	d
 __extern_inline	/usr/include/x86_64-linux-gnu/sys/cdefs.h	337;"	d
+__f	/usr/include/x86_64-linux-gnu/bits/huge_valf.h	/^typedef union { unsigned char __c[4]; float __f; } __huge_valf_t;$/;"	m	union:__anon41
 __fd_mask	/usr/include/x86_64-linux-gnu/sys/select.h	/^typedef long int __fd_mask;$/;"	t
 __flags	/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h	/^    unsigned int __flags;$/;"	m	struct:__anon23::__anon24
 __flexarr	/usr/include/x86_64-linux-gnu/sys/cdefs.h	150;"	d
@@ -2257,6 +2935,8 @@ __flexarr	/usr/include/x86_64-linux-gnu/sys/cdefs.h	153;"	d
 __flexarr	/usr/include/x86_64-linux-gnu/sys/cdefs.h	156;"	d
 __flexarr	/usr/include/x86_64-linux-gnu/sys/cdefs.h	159;"	d
 __fortify_function	/usr/include/x86_64-linux-gnu/sys/cdefs.h	343;"	d
+__fpregs_mem	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^    struct _libc_fpstate __fpregs_mem;$/;"	m	struct:ucontext	typeref:struct:ucontext::_libc_fpstate
+__fpstate_word	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^      __uint64_t __fpstate_word;$/;"	m	union:sigcontext::__anon65
 __fsblkcnt64_t	/usr/include/x86_64-linux-gnu/bits/types.h	/^__STD_TYPE __FSBLKCNT64_T_TYPE __fsblkcnt64_t;$/;"	v
 __fsblkcnt_t	/usr/include/x86_64-linux-gnu/bits/types.h	/^__STD_TYPE __FSBLKCNT_T_TYPE __fsblkcnt_t;$/;"	v
 __fsblkcnt_t_defined	/usr/include/x86_64-linux-gnu/sys/types.h	240;"	d
@@ -2265,6 +2945,7 @@ __fsfilcnt64_t	/usr/include/x86_64-linux-gnu/bits/types.h	/^__STD_TYPE __FSFILCN
 __fsfilcnt_t	/usr/include/x86_64-linux-gnu/bits/types.h	/^__STD_TYPE __FSFILCNT_T_TYPE __fsfilcnt_t;$/;"	v
 __fsfilcnt_t_defined	/usr/include/x86_64-linux-gnu/sys/types.h	244;"	d
 __fsfilcnt_t_defined	/usr/include/x86_64-linux-gnu/sys/types.h	257;"	d
+__fsh	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  unsigned short fs, __fsh;$/;"	m	struct:sigcontext
 __fsid_t	/usr/include/x86_64-linux-gnu/bits/types.h	/^__STD_TYPE __FSID_T_TYPE __fsid_t;	\/* Type of file system IDs.  *\/$/;"	v
 __fsword_t	/usr/include/x86_64-linux-gnu/bits/types.h	/^__STD_TYPE __FSWORD_T_TYPE __fsword_t;$/;"	v
 __futex	/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h	/^    unsigned int __futex;$/;"	m	struct:__anon20::__anon21
@@ -2282,9 +2963,21 @@ __glibc_reserved5	/usr/include/x86_64-linux-gnu/bits/stat.h	/^    unsigned long 
 __glibc_unlikely	/usr/include/x86_64-linux-gnu/sys/cdefs.h	385;"	d
 __glibc_unlikely	/usr/include/x86_64-linux-gnu/sys/cdefs.h	388;"	d
 __gnuc_va_list	/usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h	/^typedef __builtin_va_list __gnuc_va_list;$/;"	t
+__gsh	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  unsigned short gs, __gsh;$/;"	m	struct:sigcontext
 __have_pthread_attr_t	/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h	70;"	d
+__have_pthread_attr_t	/usr/include/x86_64-linux-gnu/bits/siginfo.h	317;"	d
+__have_sigevent_t	/usr/include/x86_64-linux-gnu/bits/siginfo.h	304;"	d
+__have_siginfo_t	/usr/include/x86_64-linux-gnu/bits/siginfo.h	41;"	d
+__have_sigval_t	/usr/include/x86_64-linux-gnu/bits/siginfo.h	29;"	d
+__huge_val	/usr/include/x86_64-linux-gnu/bits/huge_val.h	/^static __huge_val_t __huge_val = { __HUGE_VAL_bytes };$/;"	v
+__huge_val_t	/usr/include/x86_64-linux-gnu/bits/huge_val.h	/^typedef union { unsigned char __c[8]; double __d; } __huge_val_t;$/;"	t	typeref:union:__anon40
+__huge_valf	/usr/include/x86_64-linux-gnu/bits/huge_valf.h	/^static __huge_valf_t __huge_valf = { __HUGE_VALF_bytes };$/;"	v
+__huge_valf_t	/usr/include/x86_64-linux-gnu/bits/huge_valf.h	/^typedef union { unsigned char __c[4]; float __f; } __huge_valf_t;$/;"	t	typeref:union:__anon41
+__huge_vall	/usr/include/x86_64-linux-gnu/bits/huge_vall.h	/^static __huge_vall_t __huge_vall = { __HUGE_VALL_bytes };$/;"	v
+__huge_vall_t	/usr/include/x86_64-linux-gnu/bits/huge_vall.h	32;"	d
 __id_t	/usr/include/x86_64-linux-gnu/bits/types.h	/^__STD_TYPE __ID_T_TYPE __id_t;		\/* General type for IDs.  *\/$/;"	v
 __id_t_defined	/usr/include/x86_64-linux-gnu/sys/types.h	105;"	d
+__init	/usr/include/stdlib.h	/^    unsigned short int __init;	\/* Flag for initializing.  *\/$/;"	m	struct:drand48_data
 __inline	/usr/include/x86_64-linux-gnu/sys/cdefs.h	72;"	d
 __ino64_t	/usr/include/x86_64-linux-gnu/bits/types.h	/^__STD_TYPE __INO64_T_TYPE __ino64_t;	\/* Type of file serial numbers (LFS).*\/$/;"	v
 __ino64_t_defined	/usr/include/x86_64-linux-gnu/sys/types.h	56;"	d
@@ -2309,8 +3002,10 @@ __isleap	/usr/include/time.h	310;"	d
 __key_t	/usr/include/x86_64-linux-gnu/bits/types.h	/^__STD_TYPE __KEY_T_TYPE __key_t;	\/* Type of an IPC key.  *\/$/;"	v
 __key_t_defined	/usr/include/x86_64-linux-gnu/sys/types.h	123;"	d
 __kind	/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h	/^    int __kind;$/;"	m	struct:__anon16::__pthread_mutex_s
+__ldiv_t_defined	/usr/include/stdlib.h	110;"	d
 __list	/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h	/^      __pthread_slist_t __list;$/;"	m	union:__anon16::__pthread_mutex_s::__anon17
 __list	/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h	/^    __pthread_list_t __list;$/;"	m	struct:__anon16::__pthread_mutex_s
+__lldiv_t_defined	/usr/include/stdlib.h	122;"	d
 __locale_struct	/usr/include/xlocale.h	/^typedef struct __locale_struct$/;"	s
 __locale_t	/usr/include/xlocale.h	/^} *__locale_t;$/;"	t	typeref:struct:__locale_struct
 __locales	/usr/include/xlocale.h	/^  struct __locale_data *__locales[13]; \/* 13 = __LC_LAST. *\/$/;"	m	struct:__locale_struct	typeref:struct:__locale_struct::__locale_data
@@ -2320,6 +3015,7 @@ __lock	/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h	/^    int __lock;$/;"	m
 __loff_t	/usr/include/x86_64-linux-gnu/bits/types.h	/^typedef __off64_t __loff_t;	\/* Type of file sizes and offsets (LFS).  *\/$/;"	t
 __long_double_t	/usr/include/x86_64-linux-gnu/sys/cdefs.h	93;"	d
 __lxstat	/usr/include/x86_64-linux-gnu/sys/stat.h	426;"	d
+__malloc_and_calloc_defined	/usr/include/stdlib.h	463;"	d
 __max_align_ld	/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h	/^  long double __max_align_ld __attribute__((__aligned__(__alignof__(long double))));$/;"	m	struct:__anon1
 __max_align_ld	/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h	/^  long double __max_align_ld __attribute__((__aligned__(__alignof__(long double))));$/;"	m	struct:__anon12
 __max_align_ld	/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h	/^  long double __max_align_ld __attribute__((__aligned__(__alignof__(long double))));$/;"	m	struct:__anon13
@@ -2342,6 +3038,7 @@ __need_FILE	/usr/include/stdio.h	58;"	d
 __need_FILE	/usr/include/wchar.h	34;"	d
 __need_NULL	/usr/include/_G_config.h	14;"	d
 __need_NULL	/usr/include/stdio.h	32;"	d
+__need_NULL	/usr/include/stdlib.h	30;"	d
 __need_NULL	/usr/include/string.h	31;"	d
 __need_NULL	/usr/include/time.h	36;"	d
 __need_NULL	/usr/include/unistd.h	228;"	d
@@ -2361,12 +3058,19 @@ __need_getopt	/usr/include/getopt.h	189;"	d
 __need_getopt	/usr/include/stdio.h	926;"	d
 __need_getopt	/usr/include/unistd.h	873;"	d
 __need_iswxxx	/usr/include/wchar.h	880;"	d
+__need_malloc_and_calloc	/usr/include/stdlib.h	965;"	d
 __need_mbstate_t	/usr/include/_G_config.h	16;"	d
 __need_mbstate_t	/usr/include/wchar.h	901;"	d
 __need_mbstate_t	/usr/include/wchar.h	96;"	d
 __need_ptrdiff_t	/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h	161;"	d
+__need_sig_atomic_t	/usr/include/signal.h	43;"	d
+__need_siginfo_t	/usr/include/x86_64-linux-gnu/bits/siginfo.h	298;"	d
+__need_sigset_t	/usr/include/signal.h	51;"	d
 __need_size_t	/usr/include/_G_config.h	10;"	d
+__need_size_t	/usr/include/alloca.h	23;"	d
+__need_size_t	/usr/include/signal.h	315;"	d
 __need_size_t	/usr/include/stdio.h	31;"	d
+__need_size_t	/usr/include/stdlib.h	27;"	d
 __need_size_t	/usr/include/string.h	30;"	d
 __need_size_t	/usr/include/time.h	35;"	d
 __need_size_t	/usr/include/unistd.h	227;"	d
@@ -2381,12 +3085,14 @@ __need_time_t	/usr/include/x86_64-linux-gnu/sys/types.h	129;"	d
 __need_timer_t	/usr/include/time.h	106;"	d
 __need_timer_t	/usr/include/x86_64-linux-gnu/sys/types.h	130;"	d
 __need_timespec	/usr/include/fcntl.h	75;"	d
+__need_timespec	/usr/include/signal.h	74;"	d
 __need_timespec	/usr/include/time.h	127;"	d
 __need_timespec	/usr/include/x86_64-linux-gnu/sys/select.h	42;"	d
 __need_timespec	/usr/include/x86_64-linux-gnu/sys/stat.h	34;"	d
 __need_timeval	/usr/include/x86_64-linux-gnu/bits/time.h	101;"	d
 __need_timeval	/usr/include/x86_64-linux-gnu/sys/select.h	44;"	d
 __need_wchar_t	/usr/include/_G_config.h	12;"	d
+__need_wchar_t	/usr/include/stdlib.h	29;"	d
 __need_wchar_t	/usr/include/wchar.h	45;"	d
 __need_wchar_t	/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h	347;"	d
 __need_wint_t	/usr/include/_G_config.h	18;"	d
@@ -2418,7 +3124,9 @@ __off_t_defined	/usr/include/unistd.h	250;"	d
 __off_t_defined	/usr/include/x86_64-linux-gnu/sys/mman.h	33;"	d
 __off_t_defined	/usr/include/x86_64-linux-gnu/sys/stat.h	77;"	d
 __off_t_defined	/usr/include/x86_64-linux-gnu/sys/types.h	90;"	d
+__old_x	/usr/include/stdlib.h	/^    unsigned short int __old_x[3]; \/* Old state.  *\/$/;"	m	struct:drand48_data
 __owner	/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h	/^    int __owner;$/;"	m	struct:__anon16::__pthread_mutex_s
+__pad0	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  unsigned short __pad0;$/;"	m	struct:sigcontext
 __pad0	/usr/include/x86_64-linux-gnu/bits/stat.h	/^    int __pad0;$/;"	m	struct:stat
 __pad0	/usr/include/x86_64-linux-gnu/bits/stat.h	/^    int __pad0;$/;"	m	struct:stat64
 __pad1	/usr/include/libio.h	/^  void *__pad1;$/;"	m	struct:_IO_FILE_complete
@@ -2435,6 +3143,8 @@ __pad4	/usr/include/libio.h	/^  void *__pad4;$/;"	m	struct:_IO_FILE_complete
 __pad5	/usr/include/libio.h	/^  size_t __pad5;$/;"	m	struct:_IO_FILE_complete
 __pid_t	/usr/include/x86_64-linux-gnu/bits/types.h	/^__STD_TYPE __PID_T_TYPE __pid_t;	\/* Type of process identifications.  *\/$/;"	v
 __pid_t_defined	/usr/include/fcntl.h	70;"	d
+__pid_t_defined	/usr/include/signal.h	62;"	d
+__pid_t_defined	/usr/include/termios.h	31;"	d
 __pid_t_defined	/usr/include/time.h	175;"	d
 __pid_t_defined	/usr/include/unistd.h	264;"	d
 __pid_t_defined	/usr/include/x86_64-linux-gnu/sys/types.h	99;"	d
@@ -2451,9 +3161,14 @@ __pthread_mutex_s	/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h	/^  struct _
 __pthread_slist_t	/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h	/^} __pthread_slist_t;$/;"	t	typeref:struct:__pthread_internal_slist
 __ptr_t	/usr/include/x86_64-linux-gnu/sys/cdefs.h	92;"	d
 __qaddr_t	/usr/include/x86_64-linux-gnu/bits/types.h	/^typedef __quad_t *__qaddr_t;$/;"	t
+__qnan_bytes	/usr/include/x86_64-linux-gnu/bits/nan.h	42;"	d
+__qnan_bytes	/usr/include/x86_64-linux-gnu/bits/nan.h	45;"	d
+__qnan_union	/usr/include/x86_64-linux-gnu/bits/nan.h	/^static union { unsigned char __c[4]; float __d; } __qnan_union$/;"	v	typeref:union:__anon42
 __quad_t	/usr/include/x86_64-linux-gnu/bits/types.h	/^__extension__ typedef long long int __quad_t;$/;"	t
 __quad_t	/usr/include/x86_64-linux-gnu/bits/types.h	/^typedef long int __quad_t;$/;"	t
 __readers_wakeup	/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h	/^    unsigned int __readers_wakeup;$/;"	m	struct:__anon23::__anon24
+__reserved1	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint64_t __reserved1 [8];$/;"	m	struct:sigcontext
+__reserved1	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^    __extension__ unsigned long long __reserved1 [8];$/;"	m	struct:__anon68
 __restrict	/usr/include/x86_64-linux-gnu/sys/cdefs.h	363;"	d
 __restrict_arr	/usr/include/x86_64-linux-gnu/sys/cdefs.h	370;"	d
 __restrict_arr	/usr/include/x86_64-linux-gnu/sys/cdefs.h	373;"	d
@@ -2464,13 +3179,19 @@ __rlim_t	/usr/include/x86_64-linux-gnu/bits/types.h	/^__STD_TYPE __RLIM_T_TYPE _
 __rwelision	/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h	/^    signed char __rwelision;$/;"	m	struct:__anon23::__anon24
 __shared	/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h	/^    int __shared;$/;"	m	struct:__anon23::__anon24
 __sig_atomic_t	/usr/include/x86_64-linux-gnu/bits/sigset.h	/^typedef int __sig_atomic_t;$/;"	t
+__sig_atomic_t_defined	/usr/include/signal.h	38;"	d
+__sigaction_handler	/usr/include/x86_64-linux-gnu/bits/sigaction.h	/^    __sigaction_handler;$/;"	m	struct:sigaction	typeref:union:sigaction::__anon64
 __sigandset	/usr/include/x86_64-linux-gnu/bits/sigset.h	78;"	d
+__sigchld_clock_t	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^typedef __clock_t __attribute__ ((__aligned__ (4))) __sigchld_clock_t;$/;"	t
+__sigchld_clock_t	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^typedef __clock_t __sigchld_clock_t;$/;"	t
 __sigemptyset	/usr/include/x86_64-linux-gnu/bits/sigset.h	56;"	d
 __sigfillset	/usr/include/x86_64-linux-gnu/bits/sigset.h	61;"	d
+__sighandler_t	/usr/include/signal.h	/^typedef void (*__sighandler_t) (int);$/;"	t
 __sigisemptyset	/usr/include/x86_64-linux-gnu/bits/sigset.h	71;"	d
 __sigmask	/usr/include/x86_64-linux-gnu/bits/sigset.h	49;"	d
 __sigorset	/usr/include/x86_64-linux-gnu/bits/sigset.h	87;"	d
 __sigset_t	/usr/include/x86_64-linux-gnu/bits/sigset.h	/^  } __sigset_t;$/;"	t	typeref:struct:__anon15
+__sigset_t_defined	/usr/include/signal.h	48;"	d
 __sigset_t_defined	/usr/include/x86_64-linux-gnu/sys/select.h	36;"	d
 __sigword	/usr/include/x86_64-linux-gnu/bits/sigset.h	53;"	d
 __size	/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h	/^  char __size[__SIZEOF_PTHREAD_ATTR_T];$/;"	m	union:pthread_attr_t
@@ -2488,6 +3209,7 @@ __socklen_t	/usr/include/x86_64-linux-gnu/bits/types.h	/^__STD_TYPE __U32_TYPE _
 __socklen_t_defined	/usr/include/unistd.h	278;"	d
 __spins	/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h	/^    short __spins;$/;"	m	struct:__anon16::__pthread_mutex_s
 __spins	/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h	118;"	d
+__ssh	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  unsigned short ss, __ssh;$/;"	m	struct:sigcontext
 __ssize_t	/usr/include/x86_64-linux-gnu/bits/types.h	/^__STD_TYPE __SSIZE_T_TYPE __ssize_t; \/* Type of a byte count, or error.  *\/$/;"	v
 __ssize_t_defined	/usr/include/stdio.h	103;"	d
 __ssize_t_defined	/usr/include/unistd.h	224;"	d
@@ -2534,6 +3256,7 @@ __u_quad_t	/usr/include/x86_64-linux-gnu/bits/types.h	/^__extension__ typedef un
 __u_quad_t	/usr/include/x86_64-linux-gnu/bits/types.h	/^typedef unsigned long int __u_quad_t;$/;"	t
 __u_short	/usr/include/x86_64-linux-gnu/bits/types.h	/^typedef unsigned short int __u_short;$/;"	t
 __uid_t	/usr/include/x86_64-linux-gnu/bits/types.h	/^__STD_TYPE __UID_T_TYPE __uid_t;	\/* Type of user identifications.  *\/$/;"	v
+__uid_t_defined	/usr/include/signal.h	68;"	d
 __uid_t_defined	/usr/include/unistd.h	241;"	d
 __uid_t_defined	/usr/include/x86_64-linux-gnu/sys/stat.h	82;"	d
 __uid_t_defined	/usr/include/x86_64-linux-gnu/sys/types.h	81;"	d
@@ -2552,6 +3275,16 @@ __va_list__	/usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h	116;"	d
 __val	/usr/include/x86_64-linux-gnu/bits/sigset.h	/^    unsigned long int __val[_SIGSET_NWORDS];$/;"	m	struct:__anon15
 __value	/usr/include/wchar.h	/^  } __value;		\/* Value so far.  *\/$/;"	m	struct:__anon33	typeref:union:__anon33::__anon34
 __value	/usr/include/wchar.h	/^  } __value;		\/* Value so far.  *\/$/;"	m	struct:__anon7	typeref:union:__anon7::__anon8
+__w_coredump	/usr/include/x86_64-linux-gnu/bits/waitstatus.h	/^	unsigned int __w_coredump:1; \/* Set if dumped core.  *\/$/;"	m	struct:wait::__anon75
+__w_coredump	/usr/include/x86_64-linux-gnu/bits/waitstatus.h	/^	unsigned int __w_coredump:1;$/;"	m	struct:wait::__anon75
+__w_retcode	/usr/include/x86_64-linux-gnu/bits/waitstatus.h	/^	unsigned int __w_retcode:8; \/* Return code if exited normally.  *\/$/;"	m	struct:wait::__anon75
+__w_retcode	/usr/include/x86_64-linux-gnu/bits/waitstatus.h	/^	unsigned int __w_retcode:8;$/;"	m	struct:wait::__anon75
+__w_stopsig	/usr/include/x86_64-linux-gnu/bits/waitstatus.h	/^	unsigned int __w_stopsig:8; \/* Stopping signal.  *\/$/;"	m	struct:wait::__anon76
+__w_stopval	/usr/include/x86_64-linux-gnu/bits/waitstatus.h	/^	unsigned int __w_stopval:8; \/* W_STOPPED if stopped.  *\/$/;"	m	struct:wait::__anon76
+__w_termsig	/usr/include/x86_64-linux-gnu/bits/waitstatus.h	/^	unsigned int __w_termsig:7; \/* Terminating signal.  *\/$/;"	m	struct:wait::__anon75
+__w_termsig	/usr/include/x86_64-linux-gnu/bits/waitstatus.h	/^	unsigned int __w_termsig:7;$/;"	m	struct:wait::__anon75
+__wait_stopped	/usr/include/x86_64-linux-gnu/bits/waitstatus.h	/^      } __wait_stopped;$/;"	m	union:wait	typeref:struct:wait::__anon76
+__wait_terminated	/usr/include/x86_64-linux-gnu/bits/waitstatus.h	/^      } __wait_terminated;$/;"	m	union:wait	typeref:struct:wait::__anon75
 __wakeup_seq	/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h	/^    __extension__ unsigned long long int __wakeup_seq;$/;"	m	struct:__anon20::__anon21
 __warnattr	/usr/include/x86_64-linux-gnu/sys/cdefs.h	138;"	d
 __warnattr	/usr/include/x86_64-linux-gnu/sys/cdefs.h	143;"	d
@@ -2585,6 +3318,16 @@ __wur	/usr/include/stdio.h	/^extern int ferror_unlocked (FILE *__stream) __THROW
 __wur	/usr/include/stdio.h	/^extern int fileno (FILE *__stream) __THROW __wur;$/;"	v
 __wur	/usr/include/stdio.h	/^extern int fileno_unlocked (FILE *__stream) __THROW __wur;$/;"	v
 __wur	/usr/include/stdio.h	/^extern int ftrylockfile (FILE *__stream) __THROW __wur;$/;"	v
+__wur	/usr/include/stdlib.h	/^		       char *__restrict __resolved) __THROW __wur;$/;"	v
+__wur	/usr/include/stdlib.h	/^     __THROW __attribute__ ((__const__)) __wur;$/;"	v
+__wur	/usr/include/stdlib.h	/^     __THROW __attribute_malloc__ __wur;$/;"	v
+__wur	/usr/include/stdlib.h	/^extern char *l64a (long int __n) __THROW __wur;$/;"	v
+__wur	/usr/include/stdlib.h	/^extern char *ptsname (int __fd) __THROW __wur;$/;"	v
+__wur	/usr/include/stdlib.h	/^extern int abs (int __x) __THROW __attribute__ ((__const__)) __wur;$/;"	v
+__wur	/usr/include/stdlib.h	/^extern long int labs (long int __x) __THROW __attribute__ ((__const__)) __wur;$/;"	v
+__wur	/usr/include/stdlib.h	/^extern size_t __ctype_get_mb_cur_max (void) __THROW __wur;$/;"	v
+__wur	/usr/include/stdlib.h	/^extern void *malloc (size_t __size) __THROW __attribute_malloc__ __wur;$/;"	v
+__wur	/usr/include/stdlib.h	/^extern void *valloc (size_t __size) __THROW __attribute_malloc__ __wur;$/;"	v
 __wur	/usr/include/unistd.h	/^     __THROW __nonnull ((1)) __attribute_deprecated__ __wur;$/;"	v
 __wur	/usr/include/unistd.h	/^     __THROW __wur;$/;"	v
 __wur	/usr/include/unistd.h	/^extern char *getcwd (char *__buf, size_t __size) __THROW __wur;$/;"	v
@@ -2608,7 +3351,11 @@ __wur	/usr/include/unistd.h	/^extern int setreuid (__uid_t __ruid, __uid_t __eui
 __wur	/usr/include/unistd.h	/^extern int setuid (__uid_t __uid) __THROW __wur;$/;"	v
 __wur	/usr/include/x86_64-linux-gnu/sys/cdefs.h	296;"	d
 __wur	/usr/include/x86_64-linux-gnu/sys/cdefs.h	302;"	d
+__x	/usr/include/stdlib.h	/^    unsigned short int __x[3];	\/* Current state.  *\/$/;"	m	struct:drand48_data
 __xstat	/usr/include/x86_64-linux-gnu/sys/stat.h	425;"	d
+_arch	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^	    unsigned int _arch; \/* AUDIT_ARCH_* of syscall.  *\/$/;"	m	struct:__anon43::__anon44::__anon52
+_attribute	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^	    pthread_attr_t *_attribute;		\/* Thread attributes.  *\/$/;"	m	struct:sigevent::__anon61::__anon62
+_call_addr	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^	    void *_call_addr;	\/* Calling user insn.  *\/$/;"	m	struct:__anon43::__anon44::__anon52
 _chain	/usr/include/libio.h	/^  struct _IO_FILE *_chain;$/;"	m	struct:_IO_FILE	typeref:struct:_IO_FILE::_IO_FILE
 _codecvt	/usr/include/libio.h	/^  struct _IO_codecvt *_codecvt;$/;"	m	struct:_IO_FILE_complete	typeref:struct:_IO_FILE_complete::_IO_codecvt
 _codecvt	/usr/include/libio.h	/^  struct _IO_codecvt _codecvt;$/;"	m	struct:_IO_wide_data	typeref:struct:_IO_wide_data::_IO_codecvt
@@ -2617,25 +3364,71 @@ _file	/usr/include/libio.h	/^  struct _IO_FILE _file;$/;"	m	struct:_IO_FILE_comp
 _fileno	/usr/include/libio.h	/^  int _fileno;$/;"	m	struct:_IO_FILE
 _flags	/usr/include/libio.h	/^  int _flags;		\/* High-order word is _IO_MAGIC; rest is flags. *\/$/;"	m	struct:_IO_FILE
 _flags2	/usr/include/libio.h	/^  int _flags2;$/;"	m	struct:_IO_FILE
+_fpreg	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^struct _fpreg$/;"	s
+_fpstate	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^struct _fpstate$/;"	s
+_fpx_sw_bytes	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^struct _fpx_sw_bytes$/;"	s
+_fpxreg	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^struct _fpxreg$/;"	s
 _freeres_buf	/usr/include/libio.h	/^  void *_freeres_buf;$/;"	m	struct:_IO_FILE_complete
 _freeres_list	/usr/include/libio.h	/^  struct _IO_FILE *_freeres_list;$/;"	m	struct:_IO_FILE_complete	typeref:struct:_IO_FILE_complete::_IO_FILE
 _freeres_size	/usr/include/libio.h	/^  size_t _freeres_size;$/;"	m	struct:_IO_FILE_complete
+_function	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^	    void (*_function) (sigval_t);	\/* Function to start.  *\/$/;"	m	struct:sigevent::__anon61::__anon62
+_fxsr_env	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint32_t		_fxsr_env[6];$/;"	m	struct:_fpstate
+_fxsr_st	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  struct _fpxreg	_fxsr_st[8];$/;"	m	struct:_fpstate	typeref:struct:_fpstate::_fpxreg
+_kill	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^	  } _kill;$/;"	m	union:__anon43::__anon44	typeref:struct:__anon43::__anon44::__anon45
+_libc_fpreg	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^struct _libc_fpreg$/;"	s
+_libc_fpstate	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^struct _libc_fpstate$/;"	s
+_libc_fpxreg	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^struct _libc_fpxreg$/;"	s
+_libc_xmmreg	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^struct _libc_xmmreg$/;"	s
 _lock	/usr/include/libio.h	/^  _IO_lock_t *_lock;$/;"	m	struct:_IO_FILE
+_lower	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^		void *_lower;$/;"	m	struct:__anon43::__anon44::__anon49::__anon50
 _markers	/usr/include/libio.h	/^  struct _IO_marker *_markers;$/;"	m	struct:_IO_FILE	typeref:struct:_IO_FILE::_IO_marker
 _mode	/usr/include/libio.h	/^  int _mode;$/;"	m	struct:_IO_FILE_complete
 _next	/usr/include/libio.h	/^  struct _IO_marker *_next;$/;"	m	struct:_IO_marker	typeref:struct:_IO_marker::_IO_marker
 _offset	/usr/include/libio.h	/^  _IO_off64_t _offset;$/;"	m	struct:_IO_FILE_complete
 _old_offset	/usr/include/libio.h	/^  _IO_off_t _old_offset; \/* This used to be _offset but it's too small.  *\/$/;"	m	struct:_IO_FILE
+_pad	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^	int _pad[__SIGEV_PAD_SIZE];$/;"	m	union:sigevent::__anon61
+_pad	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^	int _pad[__SI_PAD_SIZE];$/;"	m	union:__anon43::__anon44
 _pos	/usr/include/libio.h	/^  int _pos;$/;"	m	struct:_IO_marker
+_rt	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^	  } _rt;$/;"	m	union:__anon43::__anon44	typeref:struct:__anon43::__anon44::__anon47
 _sbuf	/usr/include/libio.h	/^  struct _IO_FILE *_sbuf;$/;"	m	struct:_IO_marker	typeref:struct:_IO_marker::_IO_FILE
 _shortbuf	/usr/include/libio.h	/^  char _shortbuf[1];$/;"	m	struct:_IO_FILE
 _shortbuf	/usr/include/libio.h	/^  wchar_t _shortbuf[1];$/;"	m	struct:_IO_wide_data
+_sifields	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^      } _sifields;$/;"	m	struct:__anon43	typeref:union:__anon43::__anon44
+_sigchld	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^	  } _sigchld;$/;"	m	union:__anon43::__anon44	typeref:struct:__anon43::__anon44::__anon48
+_sigev_thread	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^	  } _sigev_thread;$/;"	m	union:sigevent::__anon61	typeref:struct:sigevent::__anon61::__anon62
+_sigev_un	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^      } _sigev_un;$/;"	m	struct:sigevent	typeref:union:sigevent::__anon61
+_sigfault	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^	  } _sigfault;$/;"	m	union:__anon43::__anon44	typeref:struct:__anon43::__anon44::__anon49
+_sigpoll	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^	  } _sigpoll;$/;"	m	union:__anon43::__anon44	typeref:struct:__anon43::__anon44::__anon51
+_sigsys	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^	  } _sigsys;$/;"	m	union:__anon43::__anon44	typeref:struct:__anon43::__anon44::__anon52
+_st	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  struct _fpreg	_st[8];$/;"	m	struct:_fpstate	typeref:struct:_fpstate::_fpreg
+_st	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  struct _fpxreg	_st[8];$/;"	m	struct:_fpstate	typeref:struct:_fpstate::_fpxreg
+_st	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  struct _libc_fpreg _st[8];$/;"	m	struct:_libc_fpstate	typeref:struct:_libc_fpstate::_libc_fpreg
+_st	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  struct _libc_fpxreg	_st[8];$/;"	m	struct:_libc_fpstate	typeref:struct:_libc_fpstate::_libc_fpxreg
+_syscall	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^	    int _syscall;	\/* Triggering system call number.  *\/$/;"	m	struct:__anon43::__anon44::__anon52
+_tid	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^	__pid_t _tid;$/;"	m	union:sigevent::__anon61
+_timer	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^	  } _timer;$/;"	m	union:__anon43::__anon44	typeref:struct:__anon43::__anon44::__anon46
 _unused2	/usr/include/libio.h	/^  char _unused2[15 * sizeof (int) - 4 * sizeof (void *) - sizeof (size_t)];$/;"	m	struct:_IO_FILE_complete
+_upper	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^		void *_upper;$/;"	m	struct:__anon43::__anon44::__anon49::__anon50
 _vtable_offset	/usr/include/libio.h	/^  signed char _vtable_offset;$/;"	m	struct:_IO_FILE
 _wide_data	/usr/include/libio.h	/^  struct _IO_wide_data *_wide_data;$/;"	m	struct:_IO_FILE_complete	typeref:struct:_IO_FILE_complete::_IO_wide_data
 _wide_vtable	/usr/include/libio.h	/^  const struct _IO_jump_t *_wide_vtable;$/;"	m	struct:_IO_wide_data	typeref:struct:_IO_wide_data::_IO_jump_t
+_xmm	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  struct _xmmreg	_xmm[16];$/;"	m	struct:_fpstate	typeref:struct:_fpstate::_xmmreg
+_xmm	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  struct _xmmreg	_xmm[8];$/;"	m	struct:_fpstate	typeref:struct:_fpstate::_xmmreg
+_xmm	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  struct _libc_xmmreg	_xmm[16];$/;"	m	struct:_libc_fpstate	typeref:struct:_libc_fpstate::_libc_xmmreg
+_xmmreg	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^struct _xmmreg$/;"	s
+_xsave_hdr	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^struct _xsave_hdr$/;"	s
+_xstate	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^struct _xstate$/;"	s
+_ymmh_state	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^struct _ymmh_state$/;"	s
 _zprintf	src/zprintf.c	/^static void _zprintf(int fd, char *template, va_list argp){$/;"	f	file:	signature:(int fd, char *template, va_list argp)
+alloca	/usr/include/alloca.h	29;"	d
+alloca	/usr/include/alloca.h	35;"	d
 arena	/usr/include/malloc.h	/^  int arena;    \/* non-mmapped space allocated from system *\/$/;"	m	struct:mallinfo
+arg1	/usr/include/math.h	/^    double arg1;$/;"	m	struct:__exception
+arg2	/usr/include/math.h	/^    double arg2;$/;"	m	struct:__exception
+atof	/usr/include/x86_64-linux-gnu/bits/stdlib-float.h	/^__NTH (atof (const char *__nptr))$/;"	f	signature:(const char *__nptr)
+atoi	/usr/include/stdlib.h	/^__NTH (atoi (const char *__nptr))$/;"	f	signature:(const char *__nptr)
+atol	/usr/include/stdlib.h	/^__NTH (atol (const char *__nptr))$/;"	f	signature:(const char *__nptr)
+atoll	/usr/include/stdlib.h	/^__NTH (atoll (const char *__nptr))$/;"	f	signature:(const char *__nptr)
 be16toh	/usr/include/endian.h	65;"	d
 be16toh	/usr/include/endian.h	81;"	d
 be32toh	/usr/include/endian.h	70;"	d
@@ -2650,23 +3443,77 @@ blkcnt_t	/usr/include/x86_64-linux-gnu/sys/types.h	/^typedef __blkcnt_t blkcnt_t
 blksize_t	/usr/include/x86_64-linux-gnu/sys/stat.h	/^typedef __blksize_t blksize_t;$/;"	t
 blksize_t	/usr/include/x86_64-linux-gnu/sys/types.h	/^typedef __blksize_t blksize_t;$/;"	t
 btowc	/usr/include/wchar.h	/^__NTH (btowc (int __c))$/;"	f	signature:(int __c)
+c_cc	/usr/include/x86_64-linux-gnu/bits/termios.h	/^    cc_t c_cc[NCCS];		\/* control characters *\/$/;"	m	struct:termios
+c_cflag	/usr/include/x86_64-linux-gnu/bits/termios.h	/^    tcflag_t c_cflag;		\/* control mode flags *\/$/;"	m	struct:termios
+c_iflag	/usr/include/x86_64-linux-gnu/bits/termios.h	/^    tcflag_t c_iflag;		\/* input mode flags *\/$/;"	m	struct:termios
+c_ispeed	/usr/include/x86_64-linux-gnu/bits/termios.h	/^    speed_t c_ispeed;		\/* input speed *\/$/;"	m	struct:termios
+c_lflag	/usr/include/x86_64-linux-gnu/bits/termios.h	/^    tcflag_t c_lflag;		\/* local mode flags *\/$/;"	m	struct:termios
+c_line	/usr/include/x86_64-linux-gnu/bits/termios.h	/^    cc_t c_line;			\/* line discipline *\/$/;"	m	struct:termios
+c_oflag	/usr/include/x86_64-linux-gnu/bits/termios.h	/^    tcflag_t c_oflag;		\/* output mode flags *\/$/;"	m	struct:termios
+c_ospeed	/usr/include/x86_64-linux-gnu/bits/termios.h	/^    speed_t c_ospeed;		\/* output speed *\/$/;"	m	struct:termios
 caddr_t	/usr/include/x86_64-linux-gnu/sys/types.h	/^typedef __caddr_t caddr_t;$/;"	t
+cc_t	/usr/include/x86_64-linux-gnu/bits/termios.h	/^typedef unsigned char	cc_t;$/;"	t
 clock_t	/usr/include/time.h	/^typedef __clock_t clock_t;$/;"	t
 clockid_t	/usr/include/time.h	/^typedef __clockid_t clockid_t;$/;"	t
 close	/usr/include/libio.h	/^  __io_close_fn *close;		\/* Close file.  *\/$/;"	m	struct:__anon2
 close	/usr/include/libio.h	/^  __io_close_fn *close;		\/* Close file.  *\/$/;"	m	struct:__anon28
+command_mode	src/main.c	/^void command_mode(int action){$/;"	f	signature:(int action)
+comparison_fn_t	/usr/include/stdlib.h	/^typedef __compar_fn_t comparison_fn_t;$/;"	t
 cookie_close_function_t	/usr/include/libio.h	/^typedef __io_close_fn cookie_close_function_t;$/;"	t
 cookie_io_functions_t	/usr/include/libio.h	/^typedef _IO_cookie_io_functions_t cookie_io_functions_t;$/;"	t
 cookie_read_function_t	/usr/include/libio.h	/^typedef __io_read_fn cookie_read_function_t;$/;"	t
 cookie_seek_function_t	/usr/include/libio.h	/^typedef __io_seek_fn cookie_seek_function_t;$/;"	t
 cookie_write_function_t	/usr/include/libio.h	/^typedef __io_write_fn cookie_write_function_t;$/;"	t
+cr2	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint64_t cr2;$/;"	m	struct:sigcontext
+cr2	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  unsigned long cr2;$/;"	m	struct:sigcontext
+cr2	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^    unsigned long int cr2;$/;"	m	struct:__anon70
 creat	/usr/include/fcntl.h	208;"	d
+cs	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  unsigned short cs, __csh;$/;"	m	struct:sigcontext
+cs	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  unsigned short cs;$/;"	m	struct:sigcontext
+cssel	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint32_t		cssel;$/;"	m	struct:_fpstate
+cssel	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  unsigned long int cssel;$/;"	m	struct:_libc_fpstate
+cw	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint32_t	cw;$/;"	m	struct:_fpstate
+cw	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  unsigned long int cw;$/;"	m	struct:_libc_fpstate
+cwd	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint16_t		cwd;$/;"	m	struct:_fpstate
+cwd	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  __uint16_t		cwd;$/;"	m	struct:_libc_fpstate
 daddr_t	/usr/include/x86_64-linux-gnu/sys/types.h	/^typedef __daddr_t daddr_t;$/;"	t
+dataoff	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint32_t		dataoff;$/;"	m	struct:_fpstate
+dataoff	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  unsigned long int dataoff;$/;"	m	struct:_libc_fpstate
+datasel	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint32_t		datasel;$/;"	m	struct:_fpstate
+datasel	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  unsigned long int datasel;$/;"	m	struct:_libc_fpstate
 dev_t	/usr/include/x86_64-linux-gnu/sys/stat.h	/^typedef __dev_t dev_t;$/;"	t
 dev_t	/usr/include/x86_64-linux-gnu/sys/types.h	/^typedef __dev_t dev_t;$/;"	t
+div_t	/usr/include/stdlib.h	/^  } div_t;$/;"	t	typeref:struct:__anon71
+double_t	/usr/include/x86_64-linux-gnu/bits/mathdef.h	/^typedef double double_t;	\/* `double' expressions are evaluated$/;"	t
+double_t	/usr/include/x86_64-linux-gnu/bits/mathdef.h	/^typedef long double double_t;	\/* `double' expressions are evaluated as$/;"	t
+drand48_data	/usr/include/stdlib.h	/^struct drand48_data$/;"	s
+ds	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  unsigned short ds, __dsh;$/;"	m	struct:sigcontext
 dzprintf	src/zprintf.c	/^void dzprintf(int fd, char *template, ...){$/;"	f	signature:(int fd, char *template, ...)
+eax	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  unsigned long eax;$/;"	m	struct:sigcontext
+ebp	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  unsigned long ebp;$/;"	m	struct:sigcontext
+ebx	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  unsigned long ebx;$/;"	m	struct:sigcontext
+ecx	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  unsigned long ecx;$/;"	m	struct:sigcontext
+edi	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  unsigned long edi;$/;"	m	struct:sigcontext
+edx	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  unsigned long edx;$/;"	m	struct:sigcontext
+eflags	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint64_t eflags;$/;"	m	struct:sigcontext
+eflags	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  unsigned long eflags;$/;"	m	struct:sigcontext
+eip	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  unsigned long eip;$/;"	m	struct:sigcontext
+element	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint32_t	element[4];$/;"	m	struct:_xmmreg
+element	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  __uint32_t	element[4];$/;"	m	struct:_libc_xmmreg
+end_ptr	/usr/include/stdlib.h	/^    int32_t *end_ptr;		\/* Pointer behind state table.  *\/$/;"	m	struct:random_data
+err	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint64_t err;$/;"	m	struct:sigcontext
+err	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  unsigned long err;$/;"	m	struct:sigcontext
 errno	/usr/include/x86_64-linux-gnu/bits/errno.h	54;"	d
 error_t	/usr/include/errno.h	/^typedef int error_t;$/;"	t
+es	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  unsigned short es, __esh;$/;"	m	struct:sigcontext
+esi	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  unsigned long esi;$/;"	m	struct:sigcontext
+esp	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  unsigned long esp;$/;"	m	struct:sigcontext
+esp_at_signal	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  unsigned long esp_at_signal;$/;"	m	struct:sigcontext
+exponent	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  unsigned short exponent;$/;"	m	struct:_fpreg
+exponent	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  unsigned short exponent;$/;"	m	struct:_fpxreg
+exponent	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  unsigned short int exponent;$/;"	m	struct:_libc_fpreg
+exponent	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  unsigned short int exponent;$/;"	m	struct:_libc_fpxreg
+extended_size	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint32_t extended_size;$/;"	m	struct:_fpx_sw_bytes
 f_handle	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	/^  unsigned char f_handle[0];$/;"	m	struct:file_handle
 f_owner_ex	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	/^struct f_owner_ex$/;"	s
 fallocate	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	414;"	d
@@ -2675,11 +3522,26 @@ fd_set	/usr/include/x86_64-linux-gnu/sys/select.h	/^  } fd_set;$/;"	t	typeref:st
 fds_bits	/usr/include/x86_64-linux-gnu/sys/select.h	/^    __fd_mask fds_bits[__FD_SETSIZE \/ __NFDBITS];$/;"	m	struct:__anon14
 file_handle	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	/^struct file_handle$/;"	s
 flag	/usr/include/getopt.h	/^  int *flag;$/;"	m	struct:option
+float_t	/usr/include/x86_64-linux-gnu/bits/mathdef.h	/^typedef float float_t;		\/* `float' expressions are evaluated as `float'.  *\/$/;"	t
+float_t	/usr/include/x86_64-linux-gnu/bits/mathdef.h	/^typedef long double float_t;	\/* `float' expressions are evaluated as$/;"	t
 flock	/usr/include/x86_64-linux-gnu/bits/fcntl.h	/^struct flock$/;"	s
 flock64	/usr/include/x86_64-linux-gnu/bits/fcntl.h	/^struct flock64$/;"	s
+fop	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint16_t		fop;$/;"	m	struct:_fpstate
+fop	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  __uint16_t		fop;$/;"	m	struct:_libc_fpstate
 fordblks	/usr/include/malloc.h	/^  int fordblks; \/* total free space *\/$/;"	m	struct:mallinfo
+fpclassify	/usr/include/math.h	224;"	d
+fpclassify	/usr/include/math.h	227;"	d
 fpos64_t	/usr/include/stdio.h	/^typedef _G_fpos64_t fpos64_t;$/;"	t
 fpos_t	/usr/include/stdio.h	/^typedef _G_fpos_t fpos_t;$/;"	t
+fpregs	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^    fpregset_t fpregs;$/;"	m	struct:__anon68
+fpregs	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^    fpregset_t fpregs;$/;"	m	struct:__anon70
+fpregset_t	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^typedef struct _libc_fpstate *fpregset_t;$/;"	t	typeref:struct:_libc_fpstate
+fpstate	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^      struct _fpstate * fpstate;$/;"	m	union:sigcontext::__anon65	typeref:struct:sigcontext::__anon65::_fpstate
+fpstate	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  struct _fpstate * fpstate;$/;"	m	struct:sigcontext	typeref:struct:sigcontext::_fpstate
+fpstate	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  struct _fpstate fpstate;$/;"	m	struct:_xstate	typeref:struct:_xstate::_fpstate
+fptr	/usr/include/stdlib.h	/^    int32_t *fptr;		\/* Front pointer.  *\/$/;"	m	struct:random_data
+fs	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  unsigned short fs, __fsh;$/;"	m	struct:sigcontext
+fs	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  unsigned short fs;$/;"	m	struct:sigcontext
 fsblkcnt64_t	/usr/include/x86_64-linux-gnu/sys/types.h	/^typedef __fsblkcnt64_t fsblkcnt64_t; \/* Type to count file system blocks.  *\/$/;"	t
 fsblkcnt_t	/usr/include/x86_64-linux-gnu/sys/types.h	/^typedef __fsblkcnt64_t fsblkcnt_t; \/* Type to count file system blocks.  *\/$/;"	t
 fsblkcnt_t	/usr/include/x86_64-linux-gnu/sys/types.h	/^typedef __fsblkcnt_t fsblkcnt_t; \/* Type to count file system blocks.  *\/$/;"	t
@@ -2695,6 +3557,8 @@ fstatat	/usr/include/x86_64-linux-gnu/sys/stat.h	/^__NTH (fstatat (int __fd, con
 fstatat	/usr/include/x86_64-linux-gnu/sys/stat.h	247;"	d
 fstatat64	/usr/include/x86_64-linux-gnu/sys/stat.h	/^__NTH (fstatat64 (int __fd, const char *__filename, struct stat64 *__statbuf,$/;"	f	signature:(int __fd, const char *__filename, struct stat64 *__statbuf, int __flag)
 ftruncate	/usr/include/unistd.h	1025;"	d
+ftw	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint16_t		ftw;$/;"	m	struct:_fpstate
+ftw	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  __uint16_t		ftw;$/;"	m	struct:_libc_fpstate
 fwscanf	/usr/include/wchar.h	676;"	d
 getc	/usr/include/stdio.h	543;"	d
 getopt	/usr/include/getopt.h	165;"	d
@@ -2704,6 +3568,13 @@ gid_t	/usr/include/x86_64-linux-gnu/sys/types.h	/^typedef __gid_t gid_t;$/;"	t
 gnu_dev_major	/usr/include/x86_64-linux-gnu/sys/sysmacros.h	/^__NTH (gnu_dev_major (unsigned long long int __dev))$/;"	f	signature:(unsigned long long int __dev)
 gnu_dev_makedev	/usr/include/x86_64-linux-gnu/sys/sysmacros.h	/^__NTH (gnu_dev_makedev (unsigned int __major, unsigned int __minor))$/;"	f	signature:(unsigned int __major, unsigned int __minor)
 gnu_dev_minor	/usr/include/x86_64-linux-gnu/sys/sysmacros.h	/^__NTH (gnu_dev_minor (unsigned long long int __dev))$/;"	f	signature:(unsigned long long int __dev)
+greg_t	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^__extension__ typedef long long int greg_t;$/;"	t
+greg_t	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^typedef int greg_t;$/;"	t
+gregs	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^    gregset_t gregs;$/;"	m	struct:__anon68
+gregs	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^    gregset_t gregs;$/;"	m	struct:__anon70
+gregset_t	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^typedef greg_t gregset_t[NGREG];$/;"	t
+gs	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  unsigned short gs, __gsh;$/;"	m	struct:sigcontext
+gs	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  unsigned short gs;$/;"	m	struct:sigcontext
 handle_bytes	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	/^  unsigned int handle_bytes;$/;"	m	struct:file_handle
 handle_type	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	/^  int handle_type;$/;"	m	struct:file_handle
 has_arg	/usr/include/getopt.h	/^  int has_arg;$/;"	m	struct:option
@@ -2722,6 +3593,7 @@ htole32	/usr/include/endian.h	85;"	d
 htole64	/usr/include/endian.h	74;"	d
 htole64	/usr/include/endian.h	90;"	d
 id_t	/usr/include/x86_64-linux-gnu/sys/types.h	/^typedef __id_t id_t;$/;"	t
+idtype_t	/usr/include/x86_64-linux-gnu/bits/waitflags.h	/^} idtype_t;$/;"	t	typeref:enum:__anon74
 in_tty	src/main.c	/^int in_tty = 0;$/;"	v
 ino64_t	/usr/include/x86_64-linux-gnu/sys/types.h	/^typedef __ino64_t ino64_t;$/;"	t
 ino_t	/usr/include/x86_64-linux-gnu/sys/stat.h	/^typedef __ino64_t ino_t;$/;"	t
@@ -2734,6 +3606,29 @@ int64_t	/usr/include/x86_64-linux-gnu/sys/types.h	/^__extension__ typedef long l
 int64_t	/usr/include/x86_64-linux-gnu/sys/types.h	/^typedef long int int64_t;$/;"	t
 int8_t	/usr/include/x86_64-linux-gnu/sys/types.h	/^typedef	char int8_t;$/;"	t
 intptr_t	/usr/include/unistd.h	/^typedef __intptr_t intptr_t;$/;"	t
+ipoff	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint32_t		ipoff;$/;"	m	struct:_fpstate
+ipoff	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  unsigned long int ipoff;$/;"	m	struct:_libc_fpstate
+isfinite	/usr/include/math.h	248;"	d
+isfinite	/usr/include/math.h	251;"	d
+isgreater	/usr/include/math.h	430;"	d
+isgreater	/usr/include/math.h	454;"	d
+isgreaterequal	/usr/include/math.h	431;"	d
+isgreaterequal	/usr/include/math.h	462;"	d
+isinf	/usr/include/math.h	276;"	d
+isinf	/usr/include/math.h	279;"	d
+isless	/usr/include/math.h	432;"	d
+isless	/usr/include/math.h	470;"	d
+islessequal	/usr/include/math.h	433;"	d
+islessequal	/usr/include/math.h	478;"	d
+islessgreater	/usr/include/math.h	434;"	d
+islessgreater	/usr/include/math.h	486;"	d
+isnan	/usr/include/math.h	264;"	d
+isnan	/usr/include/math.h	267;"	d
+isnormal	/usr/include/math.h	259;"	d
+issignaling	/usr/include/math.h	302;"	d
+issignaling	/usr/include/math.h	305;"	d
+isunordered	/usr/include/math.h	435;"	d
+isunordered	/usr/include/math.h	494;"	d
 it_interval	/usr/include/time.h	/^    struct timespec it_interval;$/;"	m	struct:itimerspec	typeref:struct:itimerspec::timespec
 it_value	/usr/include/time.h	/^    struct timespec it_value;$/;"	m	struct:itimerspec	typeref:struct:itimerspec::timespec
 itimerspec	/usr/include/time.h	/^struct itimerspec$/;"	s
@@ -2752,12 +3647,14 @@ l_type	/usr/include/x86_64-linux-gnu/bits/fcntl.h	/^    short int l_type;	\/* Ty
 l_type	/usr/include/x86_64-linux-gnu/bits/fcntl.h	/^    short int l_type;	\/* Type of lock: F_RDLCK, F_WRLCK, or F_UNLCK.	*\/$/;"	m	struct:flock64
 l_whence	/usr/include/x86_64-linux-gnu/bits/fcntl.h	/^    short int l_whence;	\/* Where `l_start' is relative to (like `lseek').  *\/$/;"	m	struct:flock
 l_whence	/usr/include/x86_64-linux-gnu/bits/fcntl.h	/^    short int l_whence;	\/* Where `l_start' is relative to (like `lseek').  *\/$/;"	m	struct:flock64
+ldiv_t	/usr/include/stdlib.h	/^  } ldiv_t;$/;"	t	typeref:struct:__anon72
 le16toh	/usr/include/endian.h	66;"	d
 le16toh	/usr/include/endian.h	82;"	d
 le32toh	/usr/include/endian.h	71;"	d
 le32toh	/usr/include/endian.h	87;"	d
 le64toh	/usr/include/endian.h	76;"	d
 le64toh	/usr/include/endian.h	92;"	d
+lldiv_t	/usr/include/stdlib.h	/^  } lldiv_t;$/;"	t	typeref:struct:__anon73
 locale_t	/usr/include/xlocale.h	/^typedef __locale_t locale_t;$/;"	t
 lockf	/usr/include/fcntl.h	236;"	d
 lockf	/usr/include/unistd.h	1090;"	d
@@ -2766,23 +3663,37 @@ lseek	/usr/include/unistd.h	344;"	d
 lstat	/usr/include/x86_64-linux-gnu/sys/stat.h	/^__NTH (lstat (const char *__path, struct stat *__statbuf))$/;"	f	signature:(const char *__path, struct stat *__statbuf)
 lstat	/usr/include/x86_64-linux-gnu/sys/stat.h	271;"	d
 lstat64	/usr/include/x86_64-linux-gnu/sys/stat.h	/^__NTH (lstat64 (const char *__path, struct stat64 *__statbuf))$/;"	f	signature:(const char *__path, struct stat64 *__statbuf)
+magic	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  unsigned short magic;$/;"	m	struct:_fpstate
+magic1	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint32_t magic1;$/;"	m	struct:_fpx_sw_bytes
 main	src/main.c	/^int main(int argc, char *argv[]) {$/;"	f	signature:(int argc, char *argv[])
 major	/usr/include/x86_64-linux-gnu/sys/sysmacros.h	61;"	d
 makedev	/usr/include/x86_64-linux-gnu/sys/sysmacros.h	63;"	d
 mallinfo	/usr/include/malloc.h	/^struct mallinfo$/;"	s
+math_errhandling	/usr/include/math.h	294;"	d
 max_align_t	/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h	/^} max_align_t;$/;"	t	typeref:struct:__anon1
 max_align_t	/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h	/^} max_align_t;$/;"	t	typeref:struct:__anon12
 max_align_t	/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h	/^} max_align_t;$/;"	t	typeref:struct:__anon13
 mbrlen	/usr/include/wchar.h	/^__NTH (mbrlen (const char *__restrict __s, size_t __n,$/;"	f	signature:(const char *__restrict __s, size_t __n, mbstate_t *__restrict __ps)
 mbstate_t	/usr/include/wchar.h	/^typedef __mbstate_t mbstate_t;$/;"	t
+mcontext_t	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  } mcontext_t;$/;"	t	typeref:struct:__anon70
+mcontext_t	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^} mcontext_t;$/;"	t	typeref:struct:__anon68
 minor	/usr/include/x86_64-linux-gnu/sys/sysmacros.h	62;"	d
 mknod	/usr/include/x86_64-linux-gnu/sys/stat.h	/^__NTH (mknod (const char *__path, __mode_t __mode, __dev_t __dev))$/;"	f	signature:(const char *__path, __mode_t __mode, __dev_t __dev)
 mknodat	/usr/include/x86_64-linux-gnu/sys/stat.h	/^__NTH (mknodat (int __fd, const char *__path, __mode_t __mode,$/;"	f	signature:(int __fd, const char *__path, __mode_t __mode, __dev_t __dev)
+mkostemp	/usr/include/stdlib.h	679;"	d
+mkostemps	/usr/include/stdlib.h	701;"	d
+mkstemp	/usr/include/stdlib.h	625;"	d
+mkstemps	/usr/include/stdlib.h	647;"	d
 mode_t	/usr/include/fcntl.h	/^typedef __mode_t mode_t;$/;"	t
 mode_t	/usr/include/x86_64-linux-gnu/sys/mman.h	/^typedef __mode_t mode_t;$/;"	t
 mode_t	/usr/include/x86_64-linux-gnu/sys/stat.h	/^typedef __mode_t mode_t;$/;"	t
 mode_t	/usr/include/x86_64-linux-gnu/sys/types.h	/^typedef __mode_t mode_t;$/;"	t
+mxcr_mask	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint32_t		mxcr_mask;$/;"	m	struct:_fpstate
+mxcr_mask	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  __uint32_t		mxcr_mask;$/;"	m	struct:_libc_fpstate
+mxcsr	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint32_t		mxcsr;$/;"	m	struct:_fpstate
+mxcsr	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  __uint32_t		mxcsr;$/;"	m	struct:_libc_fpstate
 name	/usr/include/getopt.h	/^  const char *name;$/;"	m	struct:option
+name	/usr/include/math.h	/^    char *name;$/;"	m	struct:__exception
 nlink_t	/usr/include/x86_64-linux-gnu/sys/stat.h	/^typedef __nlink_t nlink_t;$/;"	t
 nlink_t	/usr/include/x86_64-linux-gnu/sys/types.h	/^typedef __nlink_t nlink_t;$/;"	t
 no_argument	/usr/include/getopt.h	116;"	d
@@ -2804,14 +3715,26 @@ off_t	/usr/include/x86_64-linux-gnu/sys/stat.h	/^typedef __off_t off_t;$/;"	t
 off_t	/usr/include/x86_64-linux-gnu/sys/types.h	/^typedef __off64_t off_t;$/;"	t
 off_t	/usr/include/x86_64-linux-gnu/sys/types.h	/^typedef __off_t off_t;$/;"	t
 offsetof	/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h	417;"	d
+oldmask	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint64_t oldmask;$/;"	m	struct:sigcontext
+oldmask	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  unsigned long oldmask;$/;"	m	struct:sigcontext
+oldmask	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^    unsigned long int oldmask;$/;"	m	struct:__anon70
 open	/usr/include/fcntl.h	162;"	d
 openat	/usr/include/fcntl.h	187;"	d
 option	/usr/include/getopt.h	/^struct option$/;"	s
 optional_argument	/usr/include/getopt.h	118;"	d
 ordblks	/usr/include/malloc.h	/^  int ordblks;  \/* number of free chunks *\/$/;"	m	struct:mallinfo
+osig	src/main.c	/^sigset_t sig, osig;$/;"	v
+padding	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint32_t		padding[24];$/;"	m	struct:_fpstate
+padding	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint32_t		padding[56];$/;"	m	struct:_fpstate
+padding	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint32_t padding[7];$/;"	m	struct:_fpx_sw_bytes
+padding	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  unsigned short padding[3];$/;"	m	struct:_fpxreg
+padding	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  __uint32_t		padding[24];$/;"	m	struct:_libc_fpstate
+padding	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  unsigned short int padding[3];$/;"	m	struct:_libc_fpxreg
 perr	src/main.c	/^int perr(int err){$/;"	f	signature:(int err)
 pid	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	/^    __pid_t pid;		\/* ID of owner.  *\/$/;"	m	struct:f_owner_ex
 pid_t	/usr/include/fcntl.h	/^typedef __pid_t pid_t;$/;"	t
+pid_t	/usr/include/signal.h	/^typedef __pid_t pid_t;$/;"	t
+pid_t	/usr/include/termios.h	/^typedef __pid_t pid_t;$/;"	t
 pid_t	/usr/include/time.h	/^typedef __pid_t pid_t;$/;"	t
 pid_t	/usr/include/unistd.h	/^typedef __pid_t pid_t;$/;"	t
 pid_t	/usr/include/x86_64-linux-gnu/sys/types.h	/^typedef __pid_t pid_t;$/;"	t
@@ -2821,6 +3744,7 @@ posix_fallocate	/usr/include/fcntl.h	277;"	d
 pread	/usr/include/unistd.h	398;"	d
 pthread_attr_t	/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h	/^typedef union pthread_attr_t pthread_attr_t;$/;"	t	typeref:union:pthread_attr_t
 pthread_attr_t	/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h	/^union pthread_attr_t$/;"	u
+pthread_attr_t	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^typedef union pthread_attr_t pthread_attr_t;$/;"	t	typeref:union:pthread_attr_t
 pthread_barrier_t	/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h	/^} pthread_barrier_t;$/;"	t	typeref:union:__anon26
 pthread_barrierattr_t	/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h	/^} pthread_barrierattr_t;$/;"	t	typeref:union:__anon27
 pthread_cond_t	/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h	/^} pthread_cond_t;$/;"	t	typeref:union:__anon20
@@ -2838,22 +3762,140 @@ put_header	src/main.c	/^void put_header(char *filename){$/;"	f	signature:(char *
 putc	/usr/include/stdio.h	585;"	d
 pwrite	/usr/include/unistd.h	399;"	d
 quad_t	/usr/include/x86_64-linux-gnu/sys/types.h	/^typedef __quad_t quad_t;$/;"	t
+quot	/usr/include/stdlib.h	/^    int quot;			\/* Quotient.  *\/$/;"	m	struct:__anon71
+quot	/usr/include/stdlib.h	/^    long int quot;		\/* Quotient.  *\/$/;"	m	struct:__anon72
+quot	/usr/include/stdlib.h	/^    long long int quot;		\/* Quotient.  *\/$/;"	m	struct:__anon73
+r10	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint64_t r10;$/;"	m	struct:sigcontext
+r11	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint64_t r11;$/;"	m	struct:sigcontext
+r12	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint64_t r12;$/;"	m	struct:sigcontext
+r13	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint64_t r13;$/;"	m	struct:sigcontext
+r14	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint64_t r14;$/;"	m	struct:sigcontext
+r15	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint64_t r15;$/;"	m	struct:sigcontext
+r8	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint64_t r8;$/;"	m	struct:sigcontext
+r9	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint64_t r9;$/;"	m	struct:sigcontext
+rand_deg	/usr/include/stdlib.h	/^    int rand_deg;		\/* Degree of random number generator.  *\/$/;"	m	struct:random_data
+rand_sep	/usr/include/stdlib.h	/^    int rand_sep;		\/* Distance between front and rear.  *\/$/;"	m	struct:random_data
+rand_type	/usr/include/stdlib.h	/^    int rand_type;		\/* Type of random number generator.  *\/$/;"	m	struct:random_data
+random_data	/usr/include/stdlib.h	/^struct random_data$/;"	s
+rax	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint64_t rax;$/;"	m	struct:sigcontext
+rbp	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint64_t rbp;$/;"	m	struct:sigcontext
+rbx	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint64_t rbx;$/;"	m	struct:sigcontext
+rcx	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint64_t rcx;$/;"	m	struct:sigcontext
+rdi	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint64_t rdi;$/;"	m	struct:sigcontext
+rdp	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint64_t		rdp;$/;"	m	struct:_fpstate
+rdp	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  __uint64_t		rdp;$/;"	m	struct:_libc_fpstate
+rdx	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint64_t rdx;$/;"	m	struct:sigcontext
 read	/usr/include/libio.h	/^  __io_read_fn *read;		\/* Read bytes.  *\/$/;"	m	struct:__anon2
 read	/usr/include/libio.h	/^  __io_read_fn *read;		\/* Read bytes.  *\/$/;"	m	struct:__anon28
-read_data	src/main.c	/^size_t read_data(int fd, char *buf, off_t *offset, size_t limit){$/;"	f	signature:(int fd, char *buf, off_t *offset, size_t limit)
 register_t	/usr/include/x86_64-linux-gnu/sys/types.h	/^typedef int register_t __attribute__ ((__mode__ (__word__)));$/;"	t
 register_t	/usr/include/x86_64-linux-gnu/sys/types.h	/^typedef int register_t;$/;"	t
+rem	/usr/include/stdlib.h	/^    int rem;			\/* Remainder.  *\/$/;"	m	struct:__anon71
+rem	/usr/include/stdlib.h	/^    long int rem;		\/* Remainder.  *\/$/;"	m	struct:__anon72
+rem	/usr/include/stdlib.h	/^    long long int rem;		\/* Remainder.  *\/$/;"	m	struct:__anon73
 required_argument	/usr/include/getopt.h	117;"	d
+reserved	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint32_t		reserved;$/;"	m	struct:_fpstate
+reserved1	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint64_t reserved1[2];$/;"	m	struct:_xsave_hdr
+reserved2	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint64_t reserved2[5];$/;"	m	struct:_xsave_hdr
+retval	/usr/include/math.h	/^    double retval;$/;"	m	struct:__exception
 reverse	src/zprintf.c	/^void reverse(char s[]){$/;"	f	signature:(char s[])
+rip	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint64_t		rip;$/;"	m	struct:_fpstate
+rip	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint64_t rip;$/;"	m	struct:sigcontext
+rip	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  __uint64_t		rip;$/;"	m	struct:_libc_fpstate
+rptr	/usr/include/stdlib.h	/^    int32_t *rptr;		\/* Rear pointer.  *\/$/;"	m	struct:random_data
+rsi	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint64_t rsi;$/;"	m	struct:sigcontext
+rsp	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint64_t rsp;$/;"	m	struct:sigcontext
 rune_t	/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h	/^typedef _BSD_RUNE_T_ rune_t;$/;"	t
 rune_t	/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h	/^typedef __rune_t        rune_t;$/;"	t
+sa_flags	/usr/include/x86_64-linux-gnu/bits/sigaction.h	/^    int sa_flags;$/;"	m	struct:sigaction
+sa_handler	/usr/include/x86_64-linux-gnu/bits/sigaction.h	/^	__sighandler_t sa_handler;$/;"	m	union:sigaction::__anon64
+sa_handler	/usr/include/x86_64-linux-gnu/bits/sigaction.h	36;"	d
+sa_mask	/usr/include/x86_64-linux-gnu/bits/sigaction.h	/^    __sigset_t sa_mask;$/;"	m	struct:sigaction
+sa_restorer	/usr/include/x86_64-linux-gnu/bits/sigaction.h	/^    void (*sa_restorer) (void);$/;"	m	struct:sigaction
+sa_sigaction	/usr/include/x86_64-linux-gnu/bits/sigaction.h	/^	void (*sa_sigaction) (int, siginfo_t *, void *);$/;"	m	union:sigaction::__anon64
+sa_sigaction	/usr/include/x86_64-linux-gnu/bits/sigaction.h	37;"	d
 scanf	/usr/include/stdio.h	458;"	d
 seek	/usr/include/libio.h	/^  __io_seek_fn *seek;		\/* Seek\/tell file position.  *\/$/;"	m	struct:__anon2
 seek	/usr/include/libio.h	/^  __io_seek_fn *seek;		\/* Seek\/tell file position.  *\/$/;"	m	struct:__anon28
+si_addr	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^	    void *si_addr;	\/* Faulting insn\/memory ref.  *\/$/;"	m	struct:__anon43::__anon44::__anon49
+si_addr	/usr/include/x86_64-linux-gnu/bits/siginfo.h	147;"	d
+si_addr_bnd	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^	      } si_addr_bnd;$/;"	m	struct:__anon43::__anon44::__anon49	typeref:struct:__anon43::__anon44::__anon49::__anon50
+si_addr_lsb	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^	    short int si_addr_lsb;	\/* Valid LSB of the reported address.  *\/$/;"	m	struct:__anon43::__anon44::__anon49
+si_addr_lsb	/usr/include/x86_64-linux-gnu/bits/siginfo.h	148;"	d
+si_arch	/usr/include/x86_64-linux-gnu/bits/siginfo.h	155;"	d
+si_band	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^	    long int si_band;	\/* Band event for SIGPOLL.  *\/$/;"	m	struct:__anon43::__anon44::__anon51
+si_band	/usr/include/x86_64-linux-gnu/bits/siginfo.h	151;"	d
+si_call_addr	/usr/include/x86_64-linux-gnu/bits/siginfo.h	153;"	d
+si_code	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^    int si_code;		\/* Signal code.  *\/$/;"	m	struct:__anon43
+si_errno	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^    int si_errno;		\/* If non-zero, an errno value associated with$/;"	m	struct:__anon43
+si_fd	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^	    int si_fd;$/;"	m	struct:__anon43::__anon44::__anon51
+si_fd	/usr/include/x86_64-linux-gnu/bits/siginfo.h	152;"	d
+si_int	/usr/include/x86_64-linux-gnu/bits/siginfo.h	145;"	d
+si_lower	/usr/include/x86_64-linux-gnu/bits/siginfo.h	149;"	d
+si_overrun	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^	    int si_overrun;	\/* Overrun count.  *\/$/;"	m	struct:__anon43::__anon44::__anon46
+si_overrun	/usr/include/x86_64-linux-gnu/bits/siginfo.h	140;"	d
+si_pid	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^	    __pid_t si_pid;	\/* Sending process ID.  *\/$/;"	m	struct:__anon43::__anon44::__anon45
+si_pid	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^	    __pid_t si_pid;	\/* Sending process ID.  *\/$/;"	m	struct:__anon43::__anon44::__anon47
+si_pid	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^	    __pid_t si_pid;	\/* Which child.  *\/$/;"	m	struct:__anon43::__anon44::__anon48
+si_pid	/usr/include/x86_64-linux-gnu/bits/siginfo.h	137;"	d
+si_ptr	/usr/include/x86_64-linux-gnu/bits/siginfo.h	146;"	d
+si_signo	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^    int si_signo;		\/* Signal number.  *\/$/;"	m	struct:__anon43
+si_sigval	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^	    sigval_t si_sigval;	\/* Signal value.  *\/$/;"	m	struct:__anon43::__anon44::__anon46
+si_sigval	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^	    sigval_t si_sigval;	\/* Signal value.  *\/$/;"	m	struct:__anon43::__anon44::__anon47
+si_status	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^	    int si_status;	\/* Exit value or signal.  *\/$/;"	m	struct:__anon43::__anon44::__anon48
+si_status	/usr/include/x86_64-linux-gnu/bits/siginfo.h	141;"	d
+si_stime	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^	    __sigchld_clock_t si_stime;$/;"	m	struct:__anon43::__anon44::__anon48
+si_stime	/usr/include/x86_64-linux-gnu/bits/siginfo.h	143;"	d
+si_syscall	/usr/include/x86_64-linux-gnu/bits/siginfo.h	154;"	d
+si_tid	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^	    int si_tid;		\/* Timer ID.  *\/$/;"	m	struct:__anon43::__anon44::__anon46
+si_timerid	/usr/include/x86_64-linux-gnu/bits/siginfo.h	139;"	d
+si_uid	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^	    __uid_t si_uid;	\/* Real user ID of sending process.  *\/$/;"	m	struct:__anon43::__anon44::__anon45
+si_uid	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^	    __uid_t si_uid;	\/* Real user ID of sending process.  *\/$/;"	m	struct:__anon43::__anon44::__anon47
+si_uid	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^	    __uid_t si_uid;	\/* Real user ID of sending process.  *\/$/;"	m	struct:__anon43::__anon44::__anon48
+si_uid	/usr/include/x86_64-linux-gnu/bits/siginfo.h	138;"	d
+si_upper	/usr/include/x86_64-linux-gnu/bits/siginfo.h	150;"	d
+si_utime	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^	    __sigchld_clock_t si_utime;$/;"	m	struct:__anon43::__anon44::__anon48
+si_utime	/usr/include/x86_64-linux-gnu/bits/siginfo.h	142;"	d
+si_value	/usr/include/x86_64-linux-gnu/bits/siginfo.h	144;"	d
+sig	src/main.c	/^sigset_t sig, osig;$/;"	v
+sig_atomic_t	/usr/include/signal.h	/^typedef __sig_atomic_t sig_atomic_t;$/;"	t
+sig_t	/usr/include/signal.h	/^typedef __sighandler_t sig_t;$/;"	t
+sigaction	/usr/include/x86_64-linux-gnu/bits/sigaction.h	/^struct sigaction$/;"	s
+sigaltstack	/usr/include/x86_64-linux-gnu/bits/sigstack.h	/^typedef struct sigaltstack$/;"	s
+sigcontext	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^struct sigcontext$/;"	s
+sigcontext_struct	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	88;"	d
+sigev_notify	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^    int sigev_notify;$/;"	m	struct:sigevent
+sigev_notify_attributes	/usr/include/x86_64-linux-gnu/bits/siginfo.h	344;"	d
+sigev_notify_function	/usr/include/x86_64-linux-gnu/bits/siginfo.h	343;"	d
+sigev_signo	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^    int sigev_signo;$/;"	m	struct:sigevent
+sigev_value	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^    sigval_t sigev_value;$/;"	m	struct:sigevent
+sigevent	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^typedef struct sigevent$/;"	s
+sigevent_t	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  } sigevent_t;$/;"	t	typeref:struct:sigevent
+sighandler_t	/usr/include/signal.h	/^typedef __sighandler_t sighandler_t;$/;"	t
+sigmask	/usr/include/signal.h	184;"	d
+signbit	/usr/include/math.h	236;"	d
+signbit	/usr/include/math.h	239;"	d
+significand	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  unsigned short significand[4];$/;"	m	struct:_fpreg
+significand	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  unsigned short significand[4];$/;"	m	struct:_fpxreg
+significand	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  unsigned short int significand[4];$/;"	m	struct:_libc_fpreg
+significand	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  unsigned short int significand[4];$/;"	m	struct:_libc_fpxreg
+sigpause	/usr/include/signal.h	172;"	d
+sigset_t	/usr/include/signal.h	/^typedef __sigset_t sigset_t;$/;"	t
 sigset_t	/usr/include/x86_64-linux-gnu/sys/select.h	/^typedef __sigset_t sigset_t;$/;"	t
+sigstack	/usr/include/x86_64-linux-gnu/bits/sigstack.h	/^struct sigstack$/;"	s
+sigval	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^typedef union sigval$/;"	u
+sigval_t	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  } sigval_t;$/;"	t	typeref:union:sigval
+sival_int	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^    int sival_int;$/;"	m	union:sigval
+sival_ptr	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^    void *sival_ptr;$/;"	m	union:sigval
 size_t	/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h	/^typedef __SIZE_TYPE__ size_t;$/;"	t
 smblks	/usr/include/malloc.h	/^  int smblks;   \/* number of fastbin blocks *\/$/;"	m	struct:mallinfo
 socklen_t	/usr/include/unistd.h	/^typedef __socklen_t socklen_t;$/;"	t
+speed_t	/usr/include/x86_64-linux-gnu/bits/termios.h	/^typedef unsigned int	speed_t;$/;"	t
+ss	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  unsigned short ss, __ssh;$/;"	m	struct:sigcontext
+ss_flags	/usr/include/x86_64-linux-gnu/bits/sigstack.h	/^    int ss_flags;$/;"	m	struct:sigaltstack
+ss_onstack	/usr/include/x86_64-linux-gnu/bits/sigstack.h	/^    int ss_onstack;		\/* Nonzero if executing on this stack.  *\/$/;"	m	struct:sigstack
+ss_size	/usr/include/x86_64-linux-gnu/bits/sigstack.h	/^    size_t ss_size;$/;"	m	struct:sigaltstack
+ss_sp	/usr/include/x86_64-linux-gnu/bits/sigstack.h	/^    void *ss_sp;		\/* Signal stack pointer.  *\/$/;"	m	struct:sigstack
+ss_sp	/usr/include/x86_64-linux-gnu/bits/sigstack.h	/^    void *ss_sp;$/;"	m	struct:sigaltstack
 sscanf	/usr/include/stdio.h	459;"	d
 ssize_t	/usr/include/stdio.h	/^typedef __ssize_t ssize_t;$/;"	t
 ssize_t	/usr/include/unistd.h	/^typedef __ssize_t ssize_t;$/;"	t
@@ -2910,10 +3952,14 @@ st_size	/usr/include/x86_64-linux-gnu/bits/stat.h	/^    __off_t st_size;			\/* S
 st_size	/usr/include/x86_64-linux-gnu/bits/stat.h	/^    __off_t st_size;		\/* Size of file, in bytes.  *\/$/;"	m	struct:stat64
 st_uid	/usr/include/x86_64-linux-gnu/bits/stat.h	/^    __uid_t st_uid;		\/* User ID of the file's owner.	*\/$/;"	m	struct:stat
 st_uid	/usr/include/x86_64-linux-gnu/bits/stat.h	/^    __uid_t st_uid;		\/* User ID of the file's owner.	*\/$/;"	m	struct:stat64
+stack_t	/usr/include/x86_64-linux-gnu/bits/sigstack.h	/^  } stack_t;$/;"	t	typeref:struct:sigaltstack
 stat	/usr/include/x86_64-linux-gnu/bits/stat.h	/^struct stat$/;"	s
 stat	/usr/include/x86_64-linux-gnu/sys/stat.h	/^__NTH (stat (const char *__path, struct stat *__statbuf))$/;"	f	signature:(const char *__path, struct stat *__statbuf)
 stat64	/usr/include/x86_64-linux-gnu/bits/stat.h	/^struct stat64$/;"	s
 stat64	/usr/include/x86_64-linux-gnu/sys/stat.h	/^__NTH (stat64 (const char *__path, struct stat64 *__statbuf))$/;"	f	signature:(const char *__path, struct stat64 *__statbuf)
+state	/usr/include/stdlib.h	/^    int32_t *state;		\/* Array of state values.  *\/$/;"	m	struct:random_data
+status	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  unsigned short status;$/;"	m	struct:_fpstate
+status	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  unsigned long int status;$/;"	m	struct:_libc_fpstate
 stderr	/usr/include/stdio.h	174;"	d
 stdin	/usr/include/stdio.h	172;"	d
 stdout	/usr/include/stdio.h	173;"	d
@@ -2922,7 +3968,16 @@ strdupa	/usr/include/string.h	185;"	d
 strndupa	/usr/include/string.h	195;"	d
 suseconds_t	/usr/include/x86_64-linux-gnu/sys/select.h	/^typedef __suseconds_t suseconds_t;$/;"	t
 suseconds_t	/usr/include/x86_64-linux-gnu/sys/types.h	/^typedef __suseconds_t suseconds_t;$/;"	t
+sw	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint32_t		sw;$/;"	m	struct:_fpstate
+sw	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  unsigned long int sw;$/;"	m	struct:_libc_fpstate
+swd	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint16_t		swd;$/;"	m	struct:_fpstate
+swd	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  __uint16_t		swd;$/;"	m	struct:_libc_fpstate
 swscanf	/usr/include/wchar.h	678;"	d
+tag	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint32_t		tag;$/;"	m	struct:_fpstate
+tag	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  unsigned long int tag;$/;"	m	struct:_libc_fpstate
+tcflag_t	/usr/include/x86_64-linux-gnu/bits/termios.h	/^typedef unsigned int	tcflag_t;$/;"	t
+term	src/main.c	/^struct termios term = { 0 };$/;"	v	typeref:struct:termios
+termios	/usr/include/x86_64-linux-gnu/bits/termios.h	/^struct termios$/;"	s
 time_t	/usr/include/time.h	/^typedef __time_t time_t;$/;"	t
 timer_t	/usr/include/time.h	/^typedef __timer_t timer_t;$/;"	t
 timespec	/usr/include/time.h	/^struct timespec$/;"	s
@@ -2939,11 +3994,15 @@ tm_wday	/usr/include/time.h	/^  int tm_wday;			\/* Day of week.	[0-6] *\/$/;"	m	
 tm_yday	/usr/include/time.h	/^  int tm_yday;			\/* Days in year.[0-365]	*\/$/;"	m	struct:tm
 tm_year	/usr/include/time.h	/^  int tm_year;			\/* Year	- 1900.  *\/$/;"	m	struct:tm
 tm_zone	/usr/include/time.h	/^  const char *tm_zone;		\/* Timezone abbreviation.  *\/$/;"	m	struct:tm
+trapno	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint64_t trapno;$/;"	m	struct:sigcontext
+trapno	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  unsigned long trapno;$/;"	m	struct:sigcontext
 truncate	/usr/include/unistd.h	1004;"	d
+ttydefchars	/usr/include/x86_64-linux-gnu/sys/ttydefaults.h	/^cc_t	ttydefchars[NCCS] = {$/;"	v
 tv_nsec	/usr/include/time.h	/^    __syscall_slong_t tv_nsec;	\/* Nanoseconds.  *\/$/;"	m	struct:timespec
 tv_sec	/usr/include/time.h	/^    __time_t tv_sec;		\/* Seconds.  *\/$/;"	m	struct:timespec
 tv_sec	/usr/include/x86_64-linux-gnu/bits/time.h	/^    __time_t tv_sec;		\/* Seconds.  *\/$/;"	m	struct:timeval
 tv_usec	/usr/include/x86_64-linux-gnu/bits/time.h	/^    __suseconds_t tv_usec;	\/* Microseconds.  *\/$/;"	m	struct:timeval
+type	/usr/include/math.h	/^    int type;$/;"	m	struct:__exception
 type	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	/^    enum __pid_type type;	\/* Owner type of ID.  *\/$/;"	m	struct:f_owner_ex	typeref:enum:f_owner_ex::__pid_type
 u_char	/usr/include/x86_64-linux-gnu/sys/types.h	/^typedef __u_char u_char;$/;"	t
 u_int	/usr/include/x86_64-linux-gnu/sys/types.h	/^typedef __u_int u_int;$/;"	t
@@ -2955,6 +4014,14 @@ u_int8_t	/usr/include/x86_64-linux-gnu/sys/types.h	/^typedef	unsigned char u_int
 u_long	/usr/include/x86_64-linux-gnu/sys/types.h	/^typedef __u_long u_long;$/;"	t
 u_quad_t	/usr/include/x86_64-linux-gnu/sys/types.h	/^typedef __u_quad_t u_quad_t;$/;"	t
 u_short	/usr/include/x86_64-linux-gnu/sys/types.h	/^typedef __u_short u_short;$/;"	t
+uc_flags	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^    unsigned long int uc_flags;$/;"	m	struct:ucontext
+uc_link	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^    struct ucontext *uc_link;$/;"	m	struct:ucontext	typeref:struct:ucontext::ucontext
+uc_mcontext	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^    mcontext_t uc_mcontext;$/;"	m	struct:ucontext
+uc_sigmask	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^    __sigset_t uc_sigmask;$/;"	m	struct:ucontext
+uc_stack	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^    stack_t uc_stack;$/;"	m	struct:ucontext
+ucontext	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^typedef struct ucontext$/;"	s
+ucontext_t	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  } ucontext_t;$/;"	t	typeref:struct:ucontext
+uid_t	/usr/include/signal.h	/^typedef __uid_t uid_t;$/;"	t
 uid_t	/usr/include/unistd.h	/^typedef __uid_t uid_t;$/;"	t
 uid_t	/usr/include/x86_64-linux-gnu/sys/stat.h	/^typedef __uid_t uid_t;$/;"	t
 uid_t	/usr/include/x86_64-linux-gnu/sys/types.h	/^typedef __uid_t uid_t;$/;"	t
@@ -2978,6 +4045,14 @@ vscanf	/usr/include/stdio.h	517;"	d
 vsscanf	/usr/include/stdio.h	518;"	d
 vswscanf	/usr/include/wchar.h	734;"	d
 vwscanf	/usr/include/wchar.h	733;"	d
+w_coredump	/usr/include/x86_64-linux-gnu/bits/waitstatus.h	100;"	d
+w_retcode	/usr/include/x86_64-linux-gnu/bits/waitstatus.h	101;"	d
+w_status	/usr/include/x86_64-linux-gnu/bits/waitstatus.h	/^    int w_status;$/;"	m	union:wait
+w_stopsig	/usr/include/x86_64-linux-gnu/bits/waitstatus.h	102;"	d
+w_stopval	/usr/include/x86_64-linux-gnu/bits/waitstatus.h	103;"	d
+w_termsig	/usr/include/x86_64-linux-gnu/bits/waitstatus.h	99;"	d
+wait	/usr/include/x86_64-linux-gnu/bits/waitstatus.h	/^union wait$/;"	u
+wait_for_a_command	src/main.c	/^void wait_for_a_command(char *key){$/;"	f	signature:(char *key)
 wctob	/usr/include/wchar.h	/^__NTH (wctob (wint_t __wc))$/;"	f	signature:(wint_t __wc)
 wint_t	/usr/include/wchar.h	/^typedef __WINT_TYPE__ wint_t;$/;"	t
 wint_t	/usr/include/wchar.h	/^typedef unsigned int wint_t;$/;"	t
@@ -2985,4 +4060,10 @@ wint_t	/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h	/^typedef __WINT_TYPE__ 
 write	/usr/include/libio.h	/^  __io_write_fn *write;		\/* Write bytes.  *\/$/;"	m	struct:__anon2
 write	/usr/include/libio.h	/^  __io_write_fn *write;		\/* Write bytes.  *\/$/;"	m	struct:__anon28
 wscanf	/usr/include/wchar.h	677;"	d
+xstate_bv	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint64_t xstate_bv;$/;"	m	struct:_fpx_sw_bytes
+xstate_bv	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint64_t xstate_bv;$/;"	m	struct:_xsave_hdr
+xstate_hdr	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  struct _xsave_hdr xstate_hdr;$/;"	m	struct:_xstate	typeref:struct:_xstate::_xsave_hdr
+xstate_size	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint32_t xstate_size;$/;"	m	struct:_fpx_sw_bytes
+ymmh	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  struct _ymmh_state ymmh;$/;"	m	struct:_xstate	typeref:struct:_xstate::_ymmh_state
+ymmh_space	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint32_t ymmh_space[64];$/;"	m	struct:_ymmh_state
 zprintf	src/zprintf.c	/^void zprintf(char *template, ...){$/;"	f	signature:(char *template, ...)

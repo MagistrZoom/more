@@ -1,7 +1,7 @@
 CC=gcc
 LD=gcc
 CFLAGS=-Wno-discarded-qualifiers -D_GNU_SOURCE -g -c -o
-LFLAGS=-o
+LFLAGS=-lm -o
 SRCS=$(wildcard src/*.c)
 OBJS=$(addprefix obj/,$(notdir $(SRCS:.c=.o)))
 
