@@ -106,9 +106,8 @@ CLOCK_TAI	/usr/include/x86_64-linux-gnu/bits/time.h	81;"	d
 CLOCK_THREAD_CPUTIME_ID	/usr/include/x86_64-linux-gnu/bits/time.h	67;"	d
 CMIN	/usr/include/x86_64-linux-gnu/sys/ttydefaults.h	70;"	d
 CMSPAR	/usr/include/x86_64-linux-gnu/bits/termios.h	173;"	d
-COLUMNS	src/main.c	22;"	d	file:
-COMMAND_SET	src/main.c	25;"	d	file:
-COMMAND_UNSET	src/main.c	26;"	d	file:
+COMMAND_SET	src/main.c	23;"	d	file:
+COMMAND_UNSET	src/main.c	24;"	d	file:
 CQUIT	/usr/include/x86_64-linux-gnu/sys/ttydefaults.h	71;"	d
 CR0	/usr/include/x86_64-linux-gnu/bits/termios.h	92;"	d
 CR1	/usr/include/x86_64-linux-gnu/bits/termios.h	93;"	d
@@ -319,12 +318,18 @@ FFDLY	/usr/include/x86_64-linux-gnu/bits/termios.h	104;"	d
 FFSYNC	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	278;"	d
 FILE	/usr/include/stdio.h	/^typedef struct _IO_FILE FILE;$/;"	t	typeref:struct:_IO_FILE
 FILENAME_MAX	/usr/include/x86_64-linux-gnu/bits/stdio_lim.h	25;"	d
+FIOASYNC	/usr/include/asm-generic/ioctls.h	83;"	d
+FIOCLEX	/usr/include/asm-generic/ioctls.h	82;"	d
+FIONBIO	/usr/include/asm-generic/ioctls.h	52;"	d
+FIONCLEX	/usr/include/asm-generic/ioctls.h	81;"	d
+FIONREAD	/usr/include/asm-generic/ioctls.h	45;"	d
+FIOQSIZE	/usr/include/asm-generic/ioctls.h	102;"	d
 FLUSHO	/usr/include/x86_64-linux-gnu/bits/termios.h	193;"	d
 FNDELAY	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	281;"	d
 FNONBLOCK	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	280;"	d
 FOPEN_MAX	/usr/include/x86_64-linux-gnu/bits/stdio_lim.h	36;"	d
 FOPEN_MAX	/usr/include/x86_64-linux-gnu/bits/stdio_lim.h	37;"	d
-FORMAT_BUF	src/zprintf.c	28;"	d	file:
+FORMAT_BUF	src/zprintf.c	29;"	d	file:
 FPE_FLTDIV	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  FPE_FLTDIV,			\/* Floating point divide by zero.  *\/$/;"	e	enum:__anon55
 FPE_FLTDIV	/usr/include/x86_64-linux-gnu/bits/siginfo.h	213;"	d
 FPE_FLTINV	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  FPE_FLTINV,			\/* Floating point invalid operation.  *\/$/;"	e	enum:__anon55
@@ -451,6 +456,11 @@ INFINITY	/usr/include/x86_64-linux-gnu/bits/inf.h	26;"	d
 INFINITY	/usr/include/x86_64-linux-gnu/bits/inf.h	28;"	d
 INLCR	/usr/include/x86_64-linux-gnu/bits/termios.h	68;"	d
 INPCK	/usr/include/x86_64-linux-gnu/bits/termios.h	66;"	d
+IOCSIZE_MASK	/usr/include/asm-generic/ioctl.h	93;"	d
+IOCSIZE_SHIFT	/usr/include/asm-generic/ioctl.h	94;"	d
+IOC_IN	/usr/include/asm-generic/ioctl.h	90;"	d
+IOC_INOUT	/usr/include/asm-generic/ioctl.h	92;"	d
+IOC_OUT	/usr/include/asm-generic/ioctl.h	91;"	d
 IOV_MAX	/usr/include/x86_64-linux-gnu/bits/stdio_lim.h	41;"	d
 ISIG	/usr/include/x86_64-linux-gnu/bits/termios.h	178;"	d
 ISTRIP	/usr/include/x86_64-linux-gnu/bits/termios.h	67;"	d
@@ -459,7 +469,6 @@ IUTF8	/usr/include/x86_64-linux-gnu/bits/termios.h	76;"	d
 IXANY	/usr/include/x86_64-linux-gnu/bits/termios.h	73;"	d
 IXOFF	/usr/include/x86_64-linux-gnu/bits/termios.h	74;"	d
 IXON	/usr/include/x86_64-linux-gnu/bits/termios.h	72;"	d
-LINES	src/main.c	23;"	d	file:
 LITTLE_ENDIAN	/usr/include/endian.h	45;"	d
 LOCK_EX	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	231;"	d
 LOCK_MAND	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	238;"	d
@@ -475,55 +484,12 @@ L_XTND	/usr/include/unistd.h	327;"	d
 L_ctermid	/usr/include/x86_64-linux-gnu/bits/stdio_lim.h	28;"	d
 L_cuserid	/usr/include/x86_64-linux-gnu/bits/stdio_lim.h	30;"	d
 L_tmpnam	/usr/include/x86_64-linux-gnu/bits/stdio_lim.h	23;"	d
-MADV_DODUMP	/usr/include/x86_64-linux-gnu/bits/mman-linux.h	93;"	d
-MADV_DOFORK	/usr/include/x86_64-linux-gnu/bits/mman-linux.h	86;"	d
-MADV_DONTDUMP	/usr/include/x86_64-linux-gnu/bits/mman-linux.h	91;"	d
-MADV_DONTFORK	/usr/include/x86_64-linux-gnu/bits/mman-linux.h	85;"	d
-MADV_DONTNEED	/usr/include/x86_64-linux-gnu/bits/mman-linux.h	83;"	d
-MADV_HUGEPAGE	/usr/include/x86_64-linux-gnu/bits/mman-linux.h	89;"	d
-MADV_HWPOISON	/usr/include/x86_64-linux-gnu/bits/mman-linux.h	94;"	d
-MADV_MERGEABLE	/usr/include/x86_64-linux-gnu/bits/mman-linux.h	87;"	d
-MADV_NOHUGEPAGE	/usr/include/x86_64-linux-gnu/bits/mman-linux.h	90;"	d
-MADV_NORMAL	/usr/include/x86_64-linux-gnu/bits/mman-linux.h	79;"	d
-MADV_RANDOM	/usr/include/x86_64-linux-gnu/bits/mman-linux.h	80;"	d
-MADV_REMOVE	/usr/include/x86_64-linux-gnu/bits/mman-linux.h	84;"	d
-MADV_SEQUENTIAL	/usr/include/x86_64-linux-gnu/bits/mman-linux.h	81;"	d
-MADV_UNMERGEABLE	/usr/include/x86_64-linux-gnu/bits/mman-linux.h	88;"	d
-MADV_WILLNEED	/usr/include/x86_64-linux-gnu/bits/mman-linux.h	82;"	d
-MAP_32BIT	/usr/include/x86_64-linux-gnu/bits/mman.h	28;"	d
-MAP_ANON	/usr/include/x86_64-linux-gnu/bits/mman-linux.h	60;"	d
-MAP_ANONYMOUS	/usr/include/x86_64-linux-gnu/bits/mman-linux.h	56;"	d
-MAP_ANONYMOUS	/usr/include/x86_64-linux-gnu/bits/mman-linux.h	58;"	d
-MAP_DENYWRITE	/usr/include/x86_64-linux-gnu/bits/mman.h	34;"	d
-MAP_EXECUTABLE	/usr/include/x86_64-linux-gnu/bits/mman.h	35;"	d
-MAP_FAILED	/usr/include/x86_64-linux-gnu/sys/mman.h	44;"	d
-MAP_FILE	/usr/include/x86_64-linux-gnu/bits/mman-linux.h	54;"	d
-MAP_FIXED	/usr/include/x86_64-linux-gnu/bits/mman-linux.h	52;"	d
-MAP_GROWSDOWN	/usr/include/x86_64-linux-gnu/bits/mman.h	33;"	d
-MAP_HUGETLB	/usr/include/x86_64-linux-gnu/bits/mman.h	41;"	d
-MAP_HUGE_MASK	/usr/include/x86_64-linux-gnu/bits/mman-linux.h	63;"	d
-MAP_HUGE_SHIFT	/usr/include/x86_64-linux-gnu/bits/mman-linux.h	62;"	d
-MAP_LOCKED	/usr/include/x86_64-linux-gnu/bits/mman.h	36;"	d
-MAP_NONBLOCK	/usr/include/x86_64-linux-gnu/bits/mman.h	39;"	d
-MAP_NORESERVE	/usr/include/x86_64-linux-gnu/bits/mman.h	37;"	d
-MAP_POPULATE	/usr/include/x86_64-linux-gnu/bits/mman.h	38;"	d
-MAP_PRIVATE	/usr/include/x86_64-linux-gnu/bits/mman-linux.h	46;"	d
-MAP_SHARED	/usr/include/x86_64-linux-gnu/bits/mman-linux.h	45;"	d
-MAP_STACK	/usr/include/x86_64-linux-gnu/bits/mman.h	40;"	d
-MAP_TYPE	/usr/include/x86_64-linux-gnu/bits/mman-linux.h	48;"	d
 MATH_ERREXCEPT	/usr/include/math.h	288;"	d
 MATH_ERRNO	/usr/include/math.h	287;"	d
 MAXFLOAT	/usr/include/math.h	373;"	d
 MAX_HANDLE_SZ	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	342;"	d
 MB_CUR_MAX	/usr/include/stdlib.h	138;"	d
-MCL_CURRENT	/usr/include/x86_64-linux-gnu/bits/mman-linux.h	108;"	d
-MCL_FUTURE	/usr/include/x86_64-linux-gnu/bits/mman-linux.h	109;"	d
 MINSIGSTKSZ	/usr/include/x86_64-linux-gnu/bits/sigstack.h	42;"	d
-MREMAP_FIXED	/usr/include/x86_64-linux-gnu/bits/mman-linux.h	74;"	d
-MREMAP_MAYMOVE	/usr/include/x86_64-linux-gnu/bits/mman-linux.h	73;"	d
-MS_ASYNC	/usr/include/x86_64-linux-gnu/bits/mman-linux.h	67;"	d
-MS_INVALIDATE	/usr/include/x86_64-linux-gnu/bits/mman-linux.h	69;"	d
-MS_SYNC	/usr/include/x86_64-linux-gnu/bits/mman-linux.h	68;"	d
 M_1_PI	/usr/include/math.h	389;"	d
 M_1_PIl	/usr/include/math.h	408;"	d
 M_2_PI	/usr/include/math.h	390;"	d
@@ -565,6 +531,7 @@ M_TRIM_THRESHOLD	/usr/include/malloc.h	111;"	d
 NAN	/usr/include/x86_64-linux-gnu/bits/nan.h	28;"	d
 NAN	/usr/include/x86_64-linux-gnu/bits/nan.h	32;"	d
 NAN	/usr/include/x86_64-linux-gnu/bits/nan.h	50;"	d
+NCC	/usr/include/x86_64-linux-gnu/bits/ioctl-types.h	35;"	d
 NCCS	/usr/include/x86_64-linux-gnu/bits/termios.h	27;"	d
 NFDBITS	/usr/include/x86_64-linux-gnu/sys/select.h	85;"	d
 NGREG	/usr/include/x86_64-linux-gnu/sys/ucontext.h	149;"	d
@@ -572,6 +539,7 @@ NGREG	/usr/include/x86_64-linux-gnu/sys/ucontext.h	34;"	d
 NL	src/main.c	21;"	d	file:
 NL0	/usr/include/x86_64-linux-gnu/bits/termios.h	89;"	d
 NL1	/usr/include/x86_64-linux-gnu/bits/termios.h	90;"	d
+NLC	src/main.c	22;"	d	file:
 NLDLY	/usr/include/x86_64-linux-gnu/bits/termios.h	88;"	d
 NOFLSH	/usr/include/x86_64-linux-gnu/bits/termios.h	187;"	d
 NSIG	/usr/include/signal.h	198;"	d
@@ -582,6 +550,22 @@ NULL	/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h	401;"	d
 NULL	/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h	403;"	d
 NULL	/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h	406;"	d
 NULL	/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h	408;"	d
+N_6PACK	/usr/include/x86_64-linux-gnu/bits/ioctl-types.h	69;"	d
+N_AX25	/usr/include/x86_64-linux-gnu/bits/ioctl-types.h	67;"	d
+N_HCI	/usr/include/x86_64-linux-gnu/bits/ioctl-types.h	77;"	d
+N_HDLC	/usr/include/x86_64-linux-gnu/bits/ioctl-types.h	75;"	d
+N_IRDA	/usr/include/x86_64-linux-gnu/bits/ioctl-types.h	73;"	d
+N_MASC	/usr/include/x86_64-linux-gnu/bits/ioctl-types.h	70;"	d
+N_MOUSE	/usr/include/x86_64-linux-gnu/bits/ioctl-types.h	64;"	d
+N_PPP	/usr/include/x86_64-linux-gnu/bits/ioctl-types.h	65;"	d
+N_PROFIBUS_FDL	/usr/include/x86_64-linux-gnu/bits/ioctl-types.h	72;"	d
+N_R3964	/usr/include/x86_64-linux-gnu/bits/ioctl-types.h	71;"	d
+N_SLIP	/usr/include/x86_64-linux-gnu/bits/ioctl-types.h	63;"	d
+N_SMSBLOCK	/usr/include/x86_64-linux-gnu/bits/ioctl-types.h	74;"	d
+N_STRIP	/usr/include/x86_64-linux-gnu/bits/ioctl-types.h	66;"	d
+N_SYNC_PPP	/usr/include/x86_64-linux-gnu/bits/ioctl-types.h	76;"	d
+N_TTY	/usr/include/x86_64-linux-gnu/bits/ioctl-types.h	62;"	d
+N_X25	/usr/include/x86_64-linux-gnu/bits/ioctl-types.h	68;"	d
 OCRNL	/usr/include/x86_64-linux-gnu/bits/termios.h	82;"	d
 OFDEL	/usr/include/x86_64-linux-gnu/bits/termios.h	86;"	d
 OFILL	/usr/include/x86_64-linux-gnu/bits/termios.h	85;"	d
@@ -640,17 +624,6 @@ POSIX_FADV_NORMAL	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	290;"	d
 POSIX_FADV_RANDOM	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	291;"	d
 POSIX_FADV_SEQUENTIAL	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	292;"	d
 POSIX_FADV_WILLNEED	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	293;"	d
-POSIX_MADV_DONTNEED	/usr/include/x86_64-linux-gnu/bits/mman-linux.h	103;"	d
-POSIX_MADV_NORMAL	/usr/include/x86_64-linux-gnu/bits/mman-linux.h	99;"	d
-POSIX_MADV_RANDOM	/usr/include/x86_64-linux-gnu/bits/mman-linux.h	100;"	d
-POSIX_MADV_SEQUENTIAL	/usr/include/x86_64-linux-gnu/bits/mman-linux.h	101;"	d
-POSIX_MADV_WILLNEED	/usr/include/x86_64-linux-gnu/bits/mman-linux.h	102;"	d
-PROT_EXEC	/usr/include/x86_64-linux-gnu/bits/mman-linux.h	37;"	d
-PROT_GROWSDOWN	/usr/include/x86_64-linux-gnu/bits/mman-linux.h	39;"	d
-PROT_GROWSUP	/usr/include/x86_64-linux-gnu/bits/mman-linux.h	41;"	d
-PROT_NONE	/usr/include/x86_64-linux-gnu/bits/mman-linux.h	38;"	d
-PROT_READ	/usr/include/x86_64-linux-gnu/bits/mman-linux.h	35;"	d
-PROT_WRITE	/usr/include/x86_64-linux-gnu/bits/mman-linux.h	36;"	d
 P_ALL	/usr/include/x86_64-linux-gnu/bits/waitflags.h	/^  P_ALL,		\/* Wait for any child.  *\/$/;"	e	enum:__anon74
 P_ALL	/usr/include/x86_64-linux-gnu/bits/waitflags.h	46;"	d
 P_PGID	/usr/include/x86_64-linux-gnu/bits/waitflags.h	/^  P_PGID		\/* Wait for members of process group.  *\/$/;"	e	enum:__anon74
@@ -827,6 +800,60 @@ SIG_IGN	/usr/include/x86_64-linux-gnu/bits/signum.h	24;"	d
 SIG_SETMASK	/usr/include/x86_64-linux-gnu/bits/sigaction.h	78;"	d
 SIG_UNBLOCK	/usr/include/x86_64-linux-gnu/bits/sigaction.h	77;"	d
 SING	/usr/include/math.h	360;"	d
+SIOCADDDLCI	/usr/include/x86_64-linux-gnu/bits/ioctls.h	92;"	d
+SIOCADDMULTI	/usr/include/x86_64-linux-gnu/bits/ioctls.h	57;"	d
+SIOCADDRT	/usr/include/x86_64-linux-gnu/bits/ioctls.h	26;"	d
+SIOCDARP	/usr/include/x86_64-linux-gnu/bits/ioctls.h	76;"	d
+SIOCDELDLCI	/usr/include/x86_64-linux-gnu/bits/ioctls.h	93;"	d
+SIOCDELMULTI	/usr/include/x86_64-linux-gnu/bits/ioctls.h	58;"	d
+SIOCDELRT	/usr/include/x86_64-linux-gnu/bits/ioctls.h	27;"	d
+SIOCDEVPRIVATE	/usr/include/x86_64-linux-gnu/bits/ioctls.h	102;"	d
+SIOCDIFADDR	/usr/include/x86_64-linux-gnu/bits/ioctls.h	63;"	d
+SIOCDRARP	/usr/include/x86_64-linux-gnu/bits/ioctls.h	81;"	d
+SIOCGARP	/usr/include/x86_64-linux-gnu/bits/ioctls.h	77;"	d
+SIOCGIFADDR	/usr/include/x86_64-linux-gnu/bits/ioctls.h	36;"	d
+SIOCGIFBR	/usr/include/x86_64-linux-gnu/bits/ioctls.h	67;"	d
+SIOCGIFBRDADDR	/usr/include/x86_64-linux-gnu/bits/ioctls.h	40;"	d
+SIOCGIFCONF	/usr/include/x86_64-linux-gnu/bits/ioctls.h	33;"	d
+SIOCGIFCOUNT	/usr/include/x86_64-linux-gnu/bits/ioctls.h	65;"	d
+SIOCGIFDSTADDR	/usr/include/x86_64-linux-gnu/bits/ioctls.h	38;"	d
+SIOCGIFENCAP	/usr/include/x86_64-linux-gnu/bits/ioctls.h	52;"	d
+SIOCGIFFLAGS	/usr/include/x86_64-linux-gnu/bits/ioctls.h	34;"	d
+SIOCGIFHWADDR	/usr/include/x86_64-linux-gnu/bits/ioctls.h	54;"	d
+SIOCGIFINDEX	/usr/include/x86_64-linux-gnu/bits/ioctls.h	59;"	d
+SIOCGIFMAP	/usr/include/x86_64-linux-gnu/bits/ioctls.h	87;"	d
+SIOCGIFMEM	/usr/include/x86_64-linux-gnu/bits/ioctls.h	46;"	d
+SIOCGIFMETRIC	/usr/include/x86_64-linux-gnu/bits/ioctls.h	44;"	d
+SIOCGIFMTU	/usr/include/x86_64-linux-gnu/bits/ioctls.h	48;"	d
+SIOCGIFNAME	/usr/include/x86_64-linux-gnu/bits/ioctls.h	31;"	d
+SIOCGIFNETMASK	/usr/include/x86_64-linux-gnu/bits/ioctls.h	42;"	d
+SIOCGIFPFLAGS	/usr/include/x86_64-linux-gnu/bits/ioctls.h	62;"	d
+SIOCGIFSLAVE	/usr/include/x86_64-linux-gnu/bits/ioctls.h	55;"	d
+SIOCGIFTXQLEN	/usr/include/x86_64-linux-gnu/bits/ioctls.h	70;"	d
+SIOCGRARP	/usr/include/x86_64-linux-gnu/bits/ioctls.h	82;"	d
+SIOCPROTOPRIVATE	/usr/include/x86_64-linux-gnu/bits/ioctls.h	108;"	d
+SIOCRTMSG	/usr/include/x86_64-linux-gnu/bits/ioctls.h	28;"	d
+SIOCSARP	/usr/include/x86_64-linux-gnu/bits/ioctls.h	78;"	d
+SIOCSIFADDR	/usr/include/x86_64-linux-gnu/bits/ioctls.h	37;"	d
+SIOCSIFBR	/usr/include/x86_64-linux-gnu/bits/ioctls.h	68;"	d
+SIOCSIFBRDADDR	/usr/include/x86_64-linux-gnu/bits/ioctls.h	41;"	d
+SIOCSIFDSTADDR	/usr/include/x86_64-linux-gnu/bits/ioctls.h	39;"	d
+SIOCSIFENCAP	/usr/include/x86_64-linux-gnu/bits/ioctls.h	53;"	d
+SIOCSIFFLAGS	/usr/include/x86_64-linux-gnu/bits/ioctls.h	35;"	d
+SIOCSIFHWADDR	/usr/include/x86_64-linux-gnu/bits/ioctls.h	51;"	d
+SIOCSIFHWBROADCAST	/usr/include/x86_64-linux-gnu/bits/ioctls.h	64;"	d
+SIOCSIFLINK	/usr/include/x86_64-linux-gnu/bits/ioctls.h	32;"	d
+SIOCSIFMAP	/usr/include/x86_64-linux-gnu/bits/ioctls.h	88;"	d
+SIOCSIFMEM	/usr/include/x86_64-linux-gnu/bits/ioctls.h	47;"	d
+SIOCSIFMETRIC	/usr/include/x86_64-linux-gnu/bits/ioctls.h	45;"	d
+SIOCSIFMTU	/usr/include/x86_64-linux-gnu/bits/ioctls.h	49;"	d
+SIOCSIFNAME	/usr/include/x86_64-linux-gnu/bits/ioctls.h	50;"	d
+SIOCSIFNETMASK	/usr/include/x86_64-linux-gnu/bits/ioctls.h	43;"	d
+SIOCSIFPFLAGS	/usr/include/x86_64-linux-gnu/bits/ioctls.h	61;"	d
+SIOCSIFSLAVE	/usr/include/x86_64-linux-gnu/bits/ioctls.h	56;"	d
+SIOCSIFTXQLEN	/usr/include/x86_64-linux-gnu/bits/ioctls.h	71;"	d
+SIOCSRARP	/usr/include/x86_64-linux-gnu/bits/ioctls.h	83;"	d
+SIOGIFINDEX	/usr/include/x86_64-linux-gnu/bits/ioctls.h	60;"	d
 SI_ASYNCIO	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  SI_ASYNCIO,			\/* Sent by AIO completion.  *\/$/;"	e	enum:__anon53
 SI_ASYNCIO	/usr/include/x86_64-linux-gnu/bits/siginfo.h	169;"	d
 SI_ASYNCNL	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  SI_ASYNCNL = -60,		\/* Sent by asynch name lookup completion.  *\/$/;"	e	enum:__anon53
@@ -856,7 +883,7 @@ SS_ONSTACK	/usr/include/x86_64-linux-gnu/bits/sigstack.h	36;"	d
 STDERR_FILENO	/usr/include/unistd.h	215;"	d
 STDIN_FILENO	/usr/include/unistd.h	213;"	d
 STDOUT_FILENO	/usr/include/unistd.h	214;"	d
-STR_BUF	src/zprintf.c	27;"	d	file:
+STR_BUF	src/zprintf.c	28;"	d	file:
 SYNC_FILE_RANGE_WAIT_AFTER	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	307;"	d
 SYNC_FILE_RANGE_WAIT_BEFORE	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	301;"	d
 SYNC_FILE_RANGE_WRITE	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	304;"	d
@@ -926,6 +953,11 @@ TAB1	/usr/include/x86_64-linux-gnu/bits/termios.h	98;"	d
 TAB2	/usr/include/x86_64-linux-gnu/bits/termios.h	99;"	d
 TAB3	/usr/include/x86_64-linux-gnu/bits/termios.h	100;"	d
 TABDLY	/usr/include/x86_64-linux-gnu/bits/termios.h	96;"	d
+TCFLSH	/usr/include/asm-generic/ioctls.h	29;"	d
+TCGETA	/usr/include/asm-generic/ioctls.h	23;"	d
+TCGETS	/usr/include/asm-generic/ioctls.h	19;"	d
+TCGETS2	/usr/include/asm-generic/ioctls.h	60;"	d
+TCGETX	/usr/include/asm-generic/ioctls.h	71;"	d
 TCIFLUSH	/usr/include/x86_64-linux-gnu/bits/termios.h	208;"	d
 TCIOFF	/usr/include/x86_64-linux-gnu/bits/termios.h	204;"	d
 TCIOFLUSH	/usr/include/x86_64-linux-gnu/bits/termios.h	210;"	d
@@ -936,9 +968,92 @@ TCOON	/usr/include/x86_64-linux-gnu/bits/termios.h	203;"	d
 TCSADRAIN	/usr/include/x86_64-linux-gnu/bits/termios.h	214;"	d
 TCSAFLUSH	/usr/include/x86_64-linux-gnu/bits/termios.h	215;"	d
 TCSANOW	/usr/include/x86_64-linux-gnu/bits/termios.h	213;"	d
+TCSBRK	/usr/include/asm-generic/ioctls.h	27;"	d
+TCSBRKP	/usr/include/asm-generic/ioctls.h	56;"	d
+TCSETA	/usr/include/asm-generic/ioctls.h	24;"	d
+TCSETAF	/usr/include/asm-generic/ioctls.h	26;"	d
+TCSETAW	/usr/include/asm-generic/ioctls.h	25;"	d
+TCSETS	/usr/include/asm-generic/ioctls.h	20;"	d
+TCSETS2	/usr/include/asm-generic/ioctls.h	61;"	d
+TCSETSF	/usr/include/asm-generic/ioctls.h	22;"	d
+TCSETSF2	/usr/include/asm-generic/ioctls.h	63;"	d
+TCSETSW	/usr/include/asm-generic/ioctls.h	21;"	d
+TCSETSW2	/usr/include/asm-generic/ioctls.h	62;"	d
+TCSETX	/usr/include/asm-generic/ioctls.h	72;"	d
+TCSETXF	/usr/include/asm-generic/ioctls.h	73;"	d
+TCSETXW	/usr/include/asm-generic/ioctls.h	74;"	d
+TCXONC	/usr/include/asm-generic/ioctls.h	28;"	d
 TEMP_FAILURE_RETRY	/usr/include/unistd.h	1104;"	d
 TIMER_ABSTIME	/usr/include/x86_64-linux-gnu/bits/time.h	84;"	d
 TIME_UTC	/usr/include/time.h	182;"	d
+TIOCCBRK	/usr/include/asm-generic/ioctls.h	58;"	d
+TIOCCONS	/usr/include/asm-generic/ioctls.h	48;"	d
+TIOCEXCL	/usr/include/asm-generic/ioctls.h	30;"	d
+TIOCGDEV	/usr/include/asm-generic/ioctls.h	70;"	d
+TIOCGETD	/usr/include/asm-generic/ioctls.h	55;"	d
+TIOCGEXCL	/usr/include/asm-generic/ioctls.h	79;"	d
+TIOCGICOUNT	/usr/include/asm-generic/ioctls.h	95;"	d
+TIOCGLCKTRMIOS	/usr/include/asm-generic/ioctls.h	87;"	d
+TIOCGPGRP	/usr/include/asm-generic/ioctls.h	33;"	d
+TIOCGPKT	/usr/include/asm-generic/ioctls.h	77;"	d
+TIOCGPTLCK	/usr/include/asm-generic/ioctls.h	78;"	d
+TIOCGPTN	/usr/include/asm-generic/ioctls.h	68;"	d
+TIOCGRS485	/usr/include/asm-generic/ioctls.h	64;"	d
+TIOCGSERIAL	/usr/include/asm-generic/ioctls.h	49;"	d
+TIOCGSID	/usr/include/asm-generic/ioctls.h	59;"	d
+TIOCGSOFTCAR	/usr/include/asm-generic/ioctls.h	43;"	d
+TIOCGWINSZ	/usr/include/asm-generic/ioctls.h	37;"	d
+TIOCINQ	/usr/include/asm-generic/ioctls.h	46;"	d
+TIOCLINUX	/usr/include/asm-generic/ioctls.h	47;"	d
+TIOCMBIC	/usr/include/asm-generic/ioctls.h	41;"	d
+TIOCMBIS	/usr/include/asm-generic/ioctls.h	40;"	d
+TIOCMGET	/usr/include/asm-generic/ioctls.h	39;"	d
+TIOCMIWAIT	/usr/include/asm-generic/ioctls.h	94;"	d
+TIOCMSET	/usr/include/asm-generic/ioctls.h	42;"	d
+TIOCM_CAR	/usr/include/x86_64-linux-gnu/bits/ioctl-types.h	53;"	d
+TIOCM_CD	/usr/include/x86_64-linux-gnu/bits/ioctl-types.h	56;"	d
+TIOCM_CTS	/usr/include/x86_64-linux-gnu/bits/ioctl-types.h	52;"	d
+TIOCM_DSR	/usr/include/x86_64-linux-gnu/bits/ioctl-types.h	55;"	d
+TIOCM_DTR	/usr/include/x86_64-linux-gnu/bits/ioctl-types.h	48;"	d
+TIOCM_LE	/usr/include/x86_64-linux-gnu/bits/ioctl-types.h	47;"	d
+TIOCM_RI	/usr/include/x86_64-linux-gnu/bits/ioctl-types.h	57;"	d
+TIOCM_RNG	/usr/include/x86_64-linux-gnu/bits/ioctl-types.h	54;"	d
+TIOCM_RTS	/usr/include/x86_64-linux-gnu/bits/ioctl-types.h	49;"	d
+TIOCM_SR	/usr/include/x86_64-linux-gnu/bits/ioctl-types.h	51;"	d
+TIOCM_ST	/usr/include/x86_64-linux-gnu/bits/ioctl-types.h	50;"	d
+TIOCNOTTY	/usr/include/asm-generic/ioctls.h	53;"	d
+TIOCNXCL	/usr/include/asm-generic/ioctls.h	31;"	d
+TIOCOUTQ	/usr/include/asm-generic/ioctls.h	35;"	d
+TIOCPKT	/usr/include/asm-generic/ioctls.h	51;"	d
+TIOCPKT_DATA	/usr/include/asm-generic/ioctls.h	106;"	d
+TIOCPKT_DOSTOP	/usr/include/asm-generic/ioctls.h	112;"	d
+TIOCPKT_FLUSHREAD	/usr/include/asm-generic/ioctls.h	107;"	d
+TIOCPKT_FLUSHWRITE	/usr/include/asm-generic/ioctls.h	108;"	d
+TIOCPKT_IOCTL	/usr/include/asm-generic/ioctls.h	113;"	d
+TIOCPKT_NOSTOP	/usr/include/asm-generic/ioctls.h	111;"	d
+TIOCPKT_START	/usr/include/asm-generic/ioctls.h	110;"	d
+TIOCPKT_STOP	/usr/include/asm-generic/ioctls.h	109;"	d
+TIOCSBRK	/usr/include/asm-generic/ioctls.h	57;"	d
+TIOCSCTTY	/usr/include/asm-generic/ioctls.h	32;"	d
+TIOCSERCONFIG	/usr/include/asm-generic/ioctls.h	84;"	d
+TIOCSERGETLSR	/usr/include/asm-generic/ioctls.h	90;"	d
+TIOCSERGETMULTI	/usr/include/asm-generic/ioctls.h	91;"	d
+TIOCSERGSTRUCT	/usr/include/asm-generic/ioctls.h	89;"	d
+TIOCSERGWILD	/usr/include/asm-generic/ioctls.h	85;"	d
+TIOCSERSETMULTI	/usr/include/asm-generic/ioctls.h	92;"	d
+TIOCSERSWILD	/usr/include/asm-generic/ioctls.h	86;"	d
+TIOCSER_TEMT	/usr/include/asm-generic/ioctls.h	115;"	d
+TIOCSETD	/usr/include/asm-generic/ioctls.h	54;"	d
+TIOCSIG	/usr/include/asm-generic/ioctls.h	75;"	d
+TIOCSLCKTRMIOS	/usr/include/asm-generic/ioctls.h	88;"	d
+TIOCSPGRP	/usr/include/asm-generic/ioctls.h	34;"	d
+TIOCSPTLCK	/usr/include/asm-generic/ioctls.h	69;"	d
+TIOCSRS485	/usr/include/asm-generic/ioctls.h	66;"	d
+TIOCSSERIAL	/usr/include/asm-generic/ioctls.h	50;"	d
+TIOCSSOFTCAR	/usr/include/asm-generic/ioctls.h	44;"	d
+TIOCSTI	/usr/include/asm-generic/ioctls.h	36;"	d
+TIOCSWINSZ	/usr/include/asm-generic/ioctls.h	38;"	d
+TIOCVHANGUP	/usr/include/asm-generic/ioctls.h	76;"	d
 TLOSS	/usr/include/math.h	363;"	d
 TMP_MAX	/usr/include/x86_64-linux-gnu/bits/stdio_lim.h	24;"	d
 TOSTOP	/usr/include/x86_64-linux-gnu/bits/termios.h	188;"	d
@@ -1004,6 +1119,7 @@ _ANSI_STDARG_H_	/usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h	32;"	d
 _ANSI_STDDEF_H	/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h	42;"	d
 _ASM_GENERIC_ERRNO_BASE_H	/usr/include/asm-generic/errno-base.h	2;"	d
 _ASM_GENERIC_ERRNO_H	/usr/include/asm-generic/errno.h	2;"	d
+_ASM_GENERIC_IOCTL_H	/usr/include/asm-generic/ioctl.h	2;"	d
 _ATFILE_SOURCE	/usr/include/features.h	173;"	d
 _ATFILE_SOURCE	/usr/include/features.h	174;"	d
 _ATFILE_SOURCE	/usr/include/features.h	268;"	d
@@ -1264,9 +1380,33 @@ _G_va_list	/usr/include/_G_config.h	46;"	d
 _HAVE_STRUCT_TERMIOS_C_ISPEED	/usr/include/x86_64-linux-gnu/bits/termios.h	38;"	d
 _HAVE_STRUCT_TERMIOS_C_OSPEED	/usr/include/x86_64-linux-gnu/bits/termios.h	39;"	d
 _IEEE_	/usr/include/math.h	/^  _IEEE_ = -1,	\/* According to IEEE 754\/IEEE 854.  *\/$/;"	e	enum:__anon39
+_IO	/usr/include/asm-generic/ioctl.h	74;"	d
+_IOC	/usr/include/asm-generic/ioctl.h	65;"	d
+_IOC_DIR	/usr/include/asm-generic/ioctl.h	83;"	d
+_IOC_DIRBITS	/usr/include/asm-generic/ioctl.h	35;"	d
+_IOC_DIRMASK	/usr/include/asm-generic/ioctl.h	41;"	d
+_IOC_DIRSHIFT	/usr/include/asm-generic/ioctl.h	46;"	d
+_IOC_NONE	/usr/include/asm-generic/ioctl.h	54;"	d
+_IOC_NR	/usr/include/asm-generic/ioctl.h	85;"	d
+_IOC_NRBITS	/usr/include/asm-generic/ioctl.h	22;"	d
+_IOC_NRMASK	/usr/include/asm-generic/ioctl.h	38;"	d
+_IOC_NRSHIFT	/usr/include/asm-generic/ioctl.h	43;"	d
+_IOC_READ	/usr/include/asm-generic/ioctl.h	62;"	d
+_IOC_SIZE	/usr/include/asm-generic/ioctl.h	86;"	d
+_IOC_SIZEBITS	/usr/include/asm-generic/ioctl.h	31;"	d
+_IOC_SIZEMASK	/usr/include/asm-generic/ioctl.h	40;"	d
+_IOC_SIZESHIFT	/usr/include/asm-generic/ioctl.h	45;"	d
+_IOC_TYPE	/usr/include/asm-generic/ioctl.h	84;"	d
+_IOC_TYPEBITS	/usr/include/asm-generic/ioctl.h	23;"	d
+_IOC_TYPECHECK	/usr/include/asm-generic/ioctl.h	71;"	d
+_IOC_TYPEMASK	/usr/include/asm-generic/ioctl.h	39;"	d
+_IOC_TYPESHIFT	/usr/include/asm-generic/ioctl.h	44;"	d
+_IOC_WRITE	/usr/include/asm-generic/ioctl.h	58;"	d
 _IOFBF	/usr/include/stdio.h	120;"	d
 _IOLBF	/usr/include/stdio.h	121;"	d
 _IONBF	/usr/include/stdio.h	122;"	d
+_IOR	/usr/include/asm-generic/ioctl.h	75;"	d
+_IOR_BAD	/usr/include/asm-generic/ioctl.h	78;"	d
 _IOS_APPEND	/usr/include/libio.h	80;"	d
 _IOS_ATEND	/usr/include/libio.h	79;"	d
 _IOS_BIN	/usr/include/libio.h	84;"	d
@@ -1276,6 +1416,10 @@ _IOS_NOREPLACE	/usr/include/libio.h	83;"	d
 _IOS_OUTPUT	/usr/include/libio.h	78;"	d
 _IOS_TRUNC	/usr/include/libio.h	81;"	d
 _IOT_termios	/usr/include/x86_64-linux-gnu/bits/termios.h	218;"	d
+_IOW	/usr/include/asm-generic/ioctl.h	76;"	d
+_IOWR	/usr/include/asm-generic/ioctl.h	77;"	d
+_IOWR_BAD	/usr/include/asm-generic/ioctl.h	80;"	d
+_IOW_BAD	/usr/include/asm-generic/ioctl.h	79;"	d
 _IO_BAD_SEEN	/usr/include/libio.h	109;"	d
 _IO_BE	/usr/include/libio.h	396;"	d
 _IO_BE	/usr/include/libio.h	398;"	d
@@ -1412,6 +1556,7 @@ _LFS64_STDIO	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	119;"	d
 _LFS_ASYNCHRONOUS_IO	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	109;"	d
 _LFS_LARGEFILE	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	117;"	d
 _LIB_VERSION_TYPE	/usr/include/math.h	/^} _LIB_VERSION_TYPE;$/;"	t	typeref:enum:__anon39
+_LINUX_IOCTL_H	/usr/include/linux/ioctl.h	2;"	d
 _MALLOC_H	/usr/include/malloc.h	20;"	d
 _MATH_H	/usr/include/math.h	24;"	d
 _MATH_H_MATHDEF	/usr/include/x86_64-linux-gnu/bits/mathdef.h	23;"	d
@@ -2280,7 +2425,7 @@ _STRING_H	/usr/include/string.h	23;"	d
 _STRUCT_TIMEVAL	/usr/include/x86_64-linux-gnu/bits/time.h	25;"	d
 _SVID_	/usr/include/math.h	/^  _SVID_,	\/* According to System V, release 4.  *\/$/;"	e	enum:__anon39
 _SYS_CDEFS_H	/usr/include/x86_64-linux-gnu/sys/cdefs.h	19;"	d
-_SYS_MMAN_H	/usr/include/x86_64-linux-gnu/sys/mman.h	20;"	d
+_SYS_IOCTL_H	/usr/include/x86_64-linux-gnu/sys/ioctl.h	19;"	d
 _SYS_SELECT_H	/usr/include/x86_64-linux-gnu/sys/select.h	22;"	d
 _SYS_SIZE_T_H	/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h	190;"	d
 _SYS_STAT_H	/usr/include/x86_64-linux-gnu/sys/stat.h	23;"	d
@@ -2345,6 +2490,7 @@ _XOPEN_XPG3	/usr/include/unistd.h	104;"	d
 _XOPEN_XPG4	/usr/include/unistd.h	105;"	d
 __ASMNAME	/usr/include/x86_64-linux-gnu/sys/cdefs.h	189;"	d
 __ASMNAME2	/usr/include/x86_64-linux-gnu/sys/cdefs.h	190;"	d
+__ASM_GENERIC_IOCTLS_H	/usr/include/asm-generic/ioctls.h	2;"	d
 __BEGIN_DECLS	/usr/include/x86_64-linux-gnu/sys/cdefs.h	101;"	d
 __BEGIN_DECLS	/usr/include/x86_64-linux-gnu/sys/cdefs.h	98;"	d
 __BEGIN_NAMESPACE_C99	/usr/include/x86_64-linux-gnu/sys/cdefs.h	115;"	d
@@ -3027,7 +3173,6 @@ __mbstate_t	/usr/include/wchar.h	/^} __mbstate_t;$/;"	t	typeref:struct:__anon7
 __mbstate_t_defined	/usr/include/wchar.h	108;"	d
 __mode_t	/usr/include/x86_64-linux-gnu/bits/types.h	/^__STD_TYPE __MODE_T_TYPE __mode_t;	\/* Type of file attribute bitmasks.  *\/$/;"	v
 __mode_t_defined	/usr/include/fcntl.h	51;"	d
-__mode_t_defined	/usr/include/x86_64-linux-gnu/sys/mman.h	38;"	d
 __mode_t_defined	/usr/include/x86_64-linux-gnu/sys/stat.h	63;"	d
 __mode_t_defined	/usr/include/x86_64-linux-gnu/sys/types.h	71;"	d
 __mutex	/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h	/^    void *__mutex;$/;"	m	struct:__anon20::__anon21
@@ -3075,7 +3220,6 @@ __need_size_t	/usr/include/string.h	30;"	d
 __need_size_t	/usr/include/time.h	35;"	d
 __need_size_t	/usr/include/unistd.h	227;"	d
 __need_size_t	/usr/include/wchar.h	44;"	d
-__need_size_t	/usr/include/x86_64-linux-gnu/sys/mman.h	24;"	d
 __need_size_t	/usr/include/x86_64-linux-gnu/sys/types.h	145;"	d
 __need_size_t	/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h	238;"	d
 __need_time_t	/usr/include/time.h	82;"	d
@@ -3121,7 +3265,6 @@ __off_t	/usr/include/x86_64-linux-gnu/bits/types.h	/^__STD_TYPE __OFF_T_TYPE __o
 __off_t_defined	/usr/include/fcntl.h	60;"	d
 __off_t_defined	/usr/include/stdio.h	94;"	d
 __off_t_defined	/usr/include/unistd.h	250;"	d
-__off_t_defined	/usr/include/x86_64-linux-gnu/sys/mman.h	33;"	d
 __off_t_defined	/usr/include/x86_64-linux-gnu/sys/stat.h	77;"	d
 __off_t_defined	/usr/include/x86_64-linux-gnu/sys/types.h	90;"	d
 __old_x	/usr/include/stdlib.h	/^    unsigned short int __old_x[3]; \/* Old state.  *\/$/;"	m	struct:drand48_data
@@ -3443,12 +3586,18 @@ blkcnt_t	/usr/include/x86_64-linux-gnu/sys/types.h	/^typedef __blkcnt_t blkcnt_t
 blksize_t	/usr/include/x86_64-linux-gnu/sys/stat.h	/^typedef __blksize_t blksize_t;$/;"	t
 blksize_t	/usr/include/x86_64-linux-gnu/sys/types.h	/^typedef __blksize_t blksize_t;$/;"	t
 btowc	/usr/include/wchar.h	/^__NTH (btowc (int __c))$/;"	f	signature:(int __c)
+c_cc	/usr/include/x86_64-linux-gnu/bits/ioctl-types.h	/^    unsigned char c_cc[NCC];		\/* control characters *\/$/;"	m	struct:termio
 c_cc	/usr/include/x86_64-linux-gnu/bits/termios.h	/^    cc_t c_cc[NCCS];		\/* control characters *\/$/;"	m	struct:termios
+c_cflag	/usr/include/x86_64-linux-gnu/bits/ioctl-types.h	/^    unsigned short int c_cflag;		\/* control mode flags *\/$/;"	m	struct:termio
 c_cflag	/usr/include/x86_64-linux-gnu/bits/termios.h	/^    tcflag_t c_cflag;		\/* control mode flags *\/$/;"	m	struct:termios
+c_iflag	/usr/include/x86_64-linux-gnu/bits/ioctl-types.h	/^    unsigned short int c_iflag;		\/* input mode flags *\/$/;"	m	struct:termio
 c_iflag	/usr/include/x86_64-linux-gnu/bits/termios.h	/^    tcflag_t c_iflag;		\/* input mode flags *\/$/;"	m	struct:termios
 c_ispeed	/usr/include/x86_64-linux-gnu/bits/termios.h	/^    speed_t c_ispeed;		\/* input speed *\/$/;"	m	struct:termios
+c_lflag	/usr/include/x86_64-linux-gnu/bits/ioctl-types.h	/^    unsigned short int c_lflag;		\/* local mode flags *\/$/;"	m	struct:termio
 c_lflag	/usr/include/x86_64-linux-gnu/bits/termios.h	/^    tcflag_t c_lflag;		\/* local mode flags *\/$/;"	m	struct:termios
+c_line	/usr/include/x86_64-linux-gnu/bits/ioctl-types.h	/^    unsigned char c_line;		\/* line discipline *\/$/;"	m	struct:termio
 c_line	/usr/include/x86_64-linux-gnu/bits/termios.h	/^    cc_t c_line;			\/* line discipline *\/$/;"	m	struct:termios
+c_oflag	/usr/include/x86_64-linux-gnu/bits/ioctl-types.h	/^    unsigned short int c_oflag;		\/* output mode flags *\/$/;"	m	struct:termio
 c_oflag	/usr/include/x86_64-linux-gnu/bits/termios.h	/^    tcflag_t c_oflag;		\/* output mode flags *\/$/;"	m	struct:termios
 c_ospeed	/usr/include/x86_64-linux-gnu/bits/termios.h	/^    speed_t c_ospeed;		\/* output speed *\/$/;"	m	struct:termios
 caddr_t	/usr/include/x86_64-linux-gnu/sys/types.h	/^typedef __caddr_t caddr_t;$/;"	t
@@ -3685,7 +3834,6 @@ mkostemps	/usr/include/stdlib.h	701;"	d
 mkstemp	/usr/include/stdlib.h	625;"	d
 mkstemps	/usr/include/stdlib.h	647;"	d
 mode_t	/usr/include/fcntl.h	/^typedef __mode_t mode_t;$/;"	t
-mode_t	/usr/include/x86_64-linux-gnu/sys/mman.h	/^typedef __mode_t mode_t;$/;"	t
 mode_t	/usr/include/x86_64-linux-gnu/sys/stat.h	/^typedef __mode_t mode_t;$/;"	t
 mode_t	/usr/include/x86_64-linux-gnu/sys/types.h	/^typedef __mode_t mode_t;$/;"	t
 mxcr_mask	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint32_t		mxcr_mask;$/;"	m	struct:_fpstate
@@ -3708,8 +3856,6 @@ off_t	/usr/include/stdio.h	/^typedef __off64_t off_t;$/;"	t
 off_t	/usr/include/stdio.h	/^typedef __off_t off_t;$/;"	t
 off_t	/usr/include/unistd.h	/^typedef __off64_t off_t;$/;"	t
 off_t	/usr/include/unistd.h	/^typedef __off_t off_t;$/;"	t
-off_t	/usr/include/x86_64-linux-gnu/sys/mman.h	/^typedef __off64_t off_t;$/;"	t
-off_t	/usr/include/x86_64-linux-gnu/sys/mman.h	/^typedef __off_t off_t;$/;"	t
 off_t	/usr/include/x86_64-linux-gnu/sys/stat.h	/^typedef __off64_t off_t;$/;"	t
 off_t	/usr/include/x86_64-linux-gnu/sys/stat.h	/^typedef __off_t off_t;$/;"	t
 off_t	/usr/include/x86_64-linux-gnu/sys/types.h	/^typedef __off64_t off_t;$/;"	t
@@ -3738,7 +3884,7 @@ pid_t	/usr/include/termios.h	/^typedef __pid_t pid_t;$/;"	t
 pid_t	/usr/include/time.h	/^typedef __pid_t pid_t;$/;"	t
 pid_t	/usr/include/unistd.h	/^typedef __pid_t pid_t;$/;"	t
 pid_t	/usr/include/x86_64-linux-gnu/sys/types.h	/^typedef __pid_t pid_t;$/;"	t
-piped_fd	src/main.c	/^int piped_fd = 0;$/;"	v
+pipe_fd	src/main.c	/^int pipe_fd = 0;$/;"	v
 posix_fadvise	/usr/include/fcntl.h	256;"	d
 posix_fallocate	/usr/include/fcntl.h	277;"	d
 pread	/usr/include/unistd.h	398;"	d
@@ -3977,6 +4123,7 @@ tag	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint32_t		tag;$/;"	m	s
 tag	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  unsigned long int tag;$/;"	m	struct:_libc_fpstate
 tcflag_t	/usr/include/x86_64-linux-gnu/bits/termios.h	/^typedef unsigned int	tcflag_t;$/;"	t
 term	src/main.c	/^struct termios term = { 0 };$/;"	v	typeref:struct:termios
+termio	/usr/include/x86_64-linux-gnu/bits/ioctl-types.h	/^struct termio$/;"	s
 termios	/usr/include/x86_64-linux-gnu/bits/termios.h	/^struct termios$/;"	s
 time_t	/usr/include/time.h	/^typedef __time_t time_t;$/;"	t
 timer_t	/usr/include/time.h	/^typedef __timer_t timer_t;$/;"	t
@@ -4054,11 +4201,16 @@ w_termsig	/usr/include/x86_64-linux-gnu/bits/waitstatus.h	99;"	d
 wait	/usr/include/x86_64-linux-gnu/bits/waitstatus.h	/^union wait$/;"	u
 wait_for_a_command	src/main.c	/^void wait_for_a_command(char *key){$/;"	f	signature:(char *key)
 wctob	/usr/include/wchar.h	/^__NTH (wctob (wint_t __wc))$/;"	f	signature:(wint_t __wc)
+winsize	/usr/include/x86_64-linux-gnu/bits/ioctl-types.h	/^struct winsize$/;"	s
 wint_t	/usr/include/wchar.h	/^typedef __WINT_TYPE__ wint_t;$/;"	t
 wint_t	/usr/include/wchar.h	/^typedef unsigned int wint_t;$/;"	t
 wint_t	/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h	/^typedef __WINT_TYPE__ wint_t;$/;"	t
 write	/usr/include/libio.h	/^  __io_write_fn *write;		\/* Write bytes.  *\/$/;"	m	struct:__anon2
 write	/usr/include/libio.h	/^  __io_write_fn *write;		\/* Write bytes.  *\/$/;"	m	struct:__anon28
+ws_col	/usr/include/x86_64-linux-gnu/bits/ioctl-types.h	/^    unsigned short int ws_col;$/;"	m	struct:winsize
+ws_row	/usr/include/x86_64-linux-gnu/bits/ioctl-types.h	/^    unsigned short int ws_row;$/;"	m	struct:winsize
+ws_xpixel	/usr/include/x86_64-linux-gnu/bits/ioctl-types.h	/^    unsigned short int ws_xpixel;$/;"	m	struct:winsize
+ws_ypixel	/usr/include/x86_64-linux-gnu/bits/ioctl-types.h	/^    unsigned short int ws_ypixel;$/;"	m	struct:winsize
 wscanf	/usr/include/wchar.h	677;"	d
 xstate_bv	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint64_t xstate_bv;$/;"	m	struct:_fpx_sw_bytes
 xstate_bv	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint64_t xstate_bv;$/;"	m	struct:_xsave_hdr
@@ -4067,3 +4219,4 @@ xstate_size	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint32_t xstat
 ymmh	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  struct _ymmh_state ymmh;$/;"	m	struct:_xstate	typeref:struct:_xstate::_ymmh_state
 ymmh_space	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint32_t ymmh_space[64];$/;"	m	struct:_ymmh_state
 zprintf	src/zprintf.c	/^void zprintf(char *template, ...){$/;"	f	signature:(char *template, ...)
+zputb	src/zprintf.c	/^void zputb(char *ptr, int length){$/;"	f	signature:(char *ptr, int length)

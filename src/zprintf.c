@@ -1,4 +1,5 @@
 #include "include/zprintf.h" 
+#include <stdio.h>
 
 void reverse(char s[]){
     int i, j;
@@ -36,7 +37,7 @@ static void _zprintf(int fd, char *template, va_list argp){
 
 A:
 	i++;
-	if(i > template_length)
+	if(i >= template_length)
 		goto Z;
 	if(template[i] != '%')
 		goto F;
@@ -92,4 +93,8 @@ void zprintf(char *template, ...){
 	va_list a;
 	va_start(a, template);
 	_zprintf(STDOUT_FILENO, template, a);
+}
+
+void zputb(char *ptr, int length){
+	write(STDOUT_FILENO, ptr, length);	
 }

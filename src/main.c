@@ -1,5 +1,4 @@
 #include <fcntl.h>
-#include <sys/mman.h>
 #include <errno.h>
 
 #include <sys/types.h>
@@ -13,31 +12,29 @@
 #include <math.h>
 
 #include <termios.h>
+#include <sys/ioctl.h>
 
 #include <signal.h> 
 
 #include <stdlib.h>
 
 #define NL "\n"
-#define COLUMNS (80)
-#define LINES (24)
-
+#define NLC '\n'
 #define COMMAND_SET (1)
 #define COMMAND_UNSET (0)
 
-int in_tty = 0;
-int piped_fd = 0;
-struct termios term = { 0 };
+int pipe_fd = 0;
+int tab_spaces = 8;
 sigset_t sig, osig;
 
-/* TODO: make header */
+int in_tty = 0;
+struct termios term = { 0 };
+
 int perr(int err){
 	char *err_ptr = strerror(err);
 	dzprintf(STDERR_FILENO, "%s\n", err_ptr);
 	return err;
 }
-
-/* TODO: make header */
 void put_header(char *filename){
 	zprintf("[2J[H::::::::::::\n%s\n::::::::::::\n", filename);	
 }
@@ -76,20 +73,24 @@ int main(int argc, char *argv[]) {
 	/*TODO: argument and options parsing			*/
 
 
-	/* get terminal parameters */
+	/* need to get optimal buf size */
+	size_t page_size = sysconf(_SC_PAGESIZE);
+
+	/* get terminal parameters and size */
 	int term_err = tcgetattr(STDERR_FILENO, &term);
 	if(term_err == -1){ return perr(errno); }
+	struct winsize terminal_d = { 0 };
+	term_err = ioctl(STDERR_FILENO, TIOCGWINSZ, &terminal_d);
+	if(term_err == -1){ return perr(errno); }
+//	int columns = terminal_d.ws_col;
+//	int rows = terminal_d.ws_row;
+	int columns = 80;
+	int rows = 25;
 	
-	/* set up signal handlers */
-	sigemptyset(&sig);
-	sigaddset(&sig, SIGINT);        /* block SIGINT */
-    sigaddset(&sig, SIGTSTP);       /* block SIGTSTP */
-
-	size_t page_size = sysconf(_SC_PAGESIZE);
 	/* reopen control STDIN descriptor and save stdin from pipe */
 	if(!isatty(STDIN_FILENO)){
 		in_tty = 1;
-		piped_fd = dup(STDIN_FILENO);
+		pipe_fd = dup(STDIN_FILENO);
 		close(STDIN_FILENO);
 		int fd = open("/dev/tty", O_RDONLY | O_LARGEFILE);
 		if(errno != 0 && fd == -1){
@@ -102,31 +103,10 @@ int main(int argc, char *argv[]) {
 		struct stat read_stat = { 0 };
 	
 		int err_stat = stat(argv[1], &read_stat);
-		if(err_stat == -1){
-			return perr(errno);
-		}
+		if(err_stat == -1){ return perr(errno); }
 		
-		int read_fd = open(argv[1], O_RDONLY | O_LARGEFILE);
-		if(read_fd == -1){
-			return perr(errno);
-		}
-
-
-		char *buf = malloc(sizeof(char)*page_size);
-		char *ptr;
-		char *token;
-		char *newline = "\n";
-		char bc;
-		char key;
-
-		int r_code;
-		int line_len;
-		size_t lines; 
-		size_t line;
-		size_t read_bytes = 0;
-		size_t offset = 0;
-		size_t nls;
-
+		int read_fd = open(argv[1], O_RDONLY);
+		if(read_fd == -1){ return perr(errno); }
 
 		//way to get filesize
 		off_t end = lseek(read_fd, 0, SEEK_END);
@@ -134,62 +114,52 @@ int main(int argc, char *argv[]) {
 		off_t start = lseek(read_fd, 0, SEEK_SET);
 		if(start == -1) { return perr(errno); }
 
+		char *nlptr;
+
+		char *buf = calloc(sizeof(char), page_size);
+		char *ptr = buf;
+		char key;
+
+		size_t line_l = columns;
+		int read_e;
+		int lines = 0;
 		lines = 2 + 1 + strastr(argv[1], NL);
-		put_header(argv[1]);	
 
-		while(1){
-			r_code = read(read_fd, buf + offset, page_size - offset - 1);
-			if(!r_code) { return 0; /* end of file */ }
-			if(r_code == -1){ return perr(errno); }
+	 	put_header(argv[1]);	
 
-			nls = strastr(buf, NL);
-			offset = 0;
+		size_t print_b = 0;			
+		size_t buf_b;
 
-			read_bytes += r_code;
-			
-			ptr = buf;
-			//now need to print lines and stop for waiting
-			while((token = strsep(&ptr, NL)) != NULL){
-				//count lines
-				line_len = strlen(token);
-				
-				line = ceil((double)line_len/COLUMNS);
-				if(!line){
-					line++;
-				}
-				if(lines + line < LINES){
-					lines += line;
+		while(print_b < end){
+			read_e = read(read_fd, buf, page_size - 1);
+			if(read_e == 0) { return 0; }
+			if(read_e == -1) { return perr(errno); }
+
+			buf_b = 0;
+			while(buf_b < read_e){
+				nlptr = memmem(buf + buf_b, read_e , NL, 1) + 1;
+				/*if(nlptr < buf){
+					line_l = (read_e-buf_b)<columns?(read_e-buf_b):columns;
 				} else {
-					/* end of current screen 
-					 * need to print last piece of line
-					 */
-					bc = token[(LINES - lines + 1)*COLUMNS];
-					token[(LINES - lines + 1)*COLUMNS] = 0;
-					zprintf("%s\n", token);
-					token[(LINES - lines + 1)*COLUMNS] = bc;
-					
-					nls -= lines;
+					line_l = (nlptr-buf_b-buf)<columns?(nlptr-buf_b-buf):columns;
+				}*/
 
+				zputb(buf + buf_b, line_l);
+
+				if(nlptr < buf){ zprintf(NL); }
+				lines++;
+
+				if(lines == rows){
 					lines = 0;
-					if(nls < LINES){
-						//not enough data to display full screen
-						//need to append data in the buffer
-						offset = strlen(ptr+strlen(token));
-						strcpy(buf, ptr + strlen(token));
-						break; 
-					}
-
 					wait_for_a_command(&key);
 					if(key == 'q'){
 						return 0;
 					}
-
-					continue;
 				}
-				zprintf("%s\n", token);
+				buf_b   += line_l;
+				print_b += line_l;
 			}
 		}
-		
 	}
 	return 0;
 }

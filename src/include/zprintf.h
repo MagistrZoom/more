@@ -3,5 +3,6 @@
 #include <unistd.h>
 #include <stdarg.h>
 
-void dzprintf(int fd, char *, ...);
+void dzprintf(int, char *, ...);
 void zprintf(char *, ...);
+void zputb(char *, int);
