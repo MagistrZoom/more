@@ -3603,6 +3603,7 @@ c_oflag	/usr/include/x86_64-linux-gnu/bits/termios.h	/^    tcflag_t c_oflag;		\/
 c_ospeed	/usr/include/x86_64-linux-gnu/bits/termios.h	/^    speed_t c_ospeed;		\/* output speed *\/$/;"	m	struct:termios
 caddr_t	/usr/include/x86_64-linux-gnu/sys/types.h	/^typedef __caddr_t caddr_t;$/;"	t
 cc_t	/usr/include/x86_64-linux-gnu/bits/termios.h	/^typedef unsigned char	cc_t;$/;"	t
+clear_prompt	src/main.c	/^void clear_prompt(){$/;"	f
 clock_t	/usr/include/time.h	/^typedef __clock_t clock_t;$/;"	t
 clockid_t	/usr/include/time.h	/^typedef __clockid_t clockid_t;$/;"	t
 close	/usr/include/libio.h	/^  __io_close_fn *close;		\/* Close file.  *\/$/;"	m	struct:__anon2
@@ -3889,6 +3890,7 @@ pipe_fd	src/main.c	/^int pipe_fd = 0;$/;"	v
 posix_fadvise	/usr/include/fcntl.h	256;"	d
 posix_fallocate	/usr/include/fcntl.h	277;"	d
 pread	/usr/include/unistd.h	398;"	d
+print_prompt	src/main.c	/^void print_prompt(size_t cur, size_t end){$/;"	f	signature:(size_t cur, size_t end)
 pthread_attr_t	/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h	/^typedef union pthread_attr_t pthread_attr_t;$/;"	t	typeref:union:pthread_attr_t
 pthread_attr_t	/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h	/^union pthread_attr_t$/;"	u
 pthread_attr_t	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^typedef union pthread_attr_t pthread_attr_t;$/;"	t	typeref:union:pthread_attr_t

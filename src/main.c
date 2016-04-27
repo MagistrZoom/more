@@ -68,6 +68,20 @@ void wait_for_a_command(char *key){
 
 	command_mode(COMMAND_UNSET);	
 }
+/* */
+void print_prompt(size_t cur, size_t end){
+	int percent = ceil((double)cur/end*100);
+	
+	/* set up foreground black and background white 
+	 * print prompt, percents
+	 */
+	zprintf("[30;47m--Next--(%d%%)[0;m", percent);
+}
+void clear_prompt(){
+	/* clears entire line and returns carriage */
+	zprintf("[2K\r");
+}
+
 
 int main(int argc, char *argv[]) {
 	/*TODO: argument and options parsing			*/
@@ -117,7 +131,7 @@ int main(int argc, char *argv[]) {
 		char *nlptr;
 
 		char *buf = calloc(sizeof(char), page_size);
-		char *ptr = buf;
+		char *ptr;
 		char key;
 
 		size_t line_l = columns;
@@ -136,42 +150,44 @@ int main(int argc, char *argv[]) {
 		size_t print_b = 0;			
 		size_t buf_b;
 		while(print_b < end){
-			read_e = read(read_fd, buf + offset, page_size - offset);
+			read_e = read(read_fd, buf + offset, page_size - offset - 1);
+
 			if(read_e == 0) { return 0; }
 			if(read_e == -1) { return perr(errno); }
 
-			buf_b = 0;
+			/* balance read(2) output */
+			read_e += offset; 
+
+			ptr = buf;
 			offset = 0;
 			/* TODO: replace buf+buf_b */
-			while(buf_b < read_e){
-				nlptr = memmem(buf + buf_b, read_e , NL, 1)+1;
+			while(ptr - buf < read_e){
+				nlptr = memmem(ptr, read_e , NL, 1)+1;
 
 				if(nlptr < buf){
-//					line_l = (read_e-buf_b)<columns?(read_e-buf_b):columns;
-//					iflag = 1;
-					offset = read_e - buf_b;
-					memcpy(buf, buf+buf_b, offset+1);
+					/* move last line */
+					offset = read_e - (ptr - buf);
+					memcpy(buf, ptr, offset+1);
 					buf[offset+1] = 0;
 					break;
 				} else {
-					line_l = (nlptr-buf_b-buf)<columns?(nlptr-buf_b-buf):columns;
+					line_l = (nlptr-ptr)<columns?(nlptr-ptr):columns;
 				}
-
 
 				/* get real string size on terminal 
 				 * scrlen >= strlen (or nlptr - buf - buf_b)
 				 */
-				real_l = scrlen(buf + buf_b, line_l, tab_spaces);
+				real_l = scrlen(ptr, line_l, tab_spaces);
 
 				/* decrease line_l until real_l > columns */
 				while(real_l > columns){
 					nlflag = 1;
-					real_l = scrlen(buf + buf_b, --line_l, tab_spaces);
+					real_l = scrlen(ptr, --line_l, tab_spaces);
 				}
 
+				zputb(ptr, line_l);
 
-				zputb(buf + buf_b, line_l);
-
+				/* i dont know how does it work */
 				if(nlflag && iflag){
 					lines++;
 				}
@@ -182,21 +198,27 @@ int main(int argc, char *argv[]) {
 				}
 				if(nlflag){
 					nlflag = 0;
-					zprintf(NL);
+					if(ptr[line_l] != NLC)
+						zprintf(NL);
+					else 
+						lines--;
 				}
+				/* wut ta hell it was? */
 				
 				if(lines == rows){
 					lines = 0;
-					/* nl to command-line */
-					if(buf[buf_b+line_l-1] != NLC && real_l != columns){ 
+					/* nl for the command-line */
+					if(ptr[line_l-1] != NLC && real_l != columns){ 
 						zprintf(NL); 
 					}
+					print_prompt(print_b, end);
 					wait_for_a_command(&key);
+					clear_prompt();
 					if(key == 'q'){
 						return 0;
-						}
+					}
 				}
-				buf_b   += line_l;
+				ptr     += line_l;
 				print_b += line_l;
 			}
 		}
