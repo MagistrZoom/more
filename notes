@@ -1,0 +1,4 @@
+Tab sh~
+^[[6n - request to get current cursor pos
+^[[%dG^[[H set up tab on integer column
+http://www.termsys.demon.co.uk/vtansi.htm

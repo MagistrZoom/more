@@ -85,7 +85,7 @@ int main(int argc, char *argv[]) {
 //	int columns = terminal_d.ws_col;
 //	int rows = terminal_d.ws_row;
 	int columns = 80;
-	int rows = 25;
+	int rows = 24;
 	
 	/* reopen control STDIN descriptor and save stdin from pipe */
 	if(!isatty(STDIN_FILENO)){
@@ -121,40 +121,80 @@ int main(int argc, char *argv[]) {
 		char key;
 
 		size_t line_l = columns;
+		size_t real_l = 0; /* with respect to tab alignment */
+		size_t offset = 0;
 		int read_e;
 		int lines = 0;
-		lines = 2 + 1 + strastr(argv[1], NL);
+		int nlflag = 0;
+		int iflag = 0;
 
-	 	put_header(argv[1]);	
+		if(argc > 2){
+			lines = 2 + 1 + strastr(argv[1], NL);
+	 		put_header(argv[1]);	
+		}
 
 		size_t print_b = 0;			
 		size_t buf_b;
-
 		while(print_b < end){
-			read_e = read(read_fd, buf, page_size - 1);
+			read_e = read(read_fd, buf + offset, page_size - offset);
 			if(read_e == 0) { return 0; }
 			if(read_e == -1) { return perr(errno); }
 
 			buf_b = 0;
+			offset = 0;
+			/* TODO: replace buf+buf_b */
 			while(buf_b < read_e){
-				nlptr = memmem(buf + buf_b, read_e , NL, 1) + 1;
-				/*if(nlptr < buf){
-					line_l = (read_e-buf_b)<columns?(read_e-buf_b):columns;
+				nlptr = memmem(buf + buf_b, read_e , NL, 1)+1;
+
+				if(nlptr < buf){
+//					line_l = (read_e-buf_b)<columns?(read_e-buf_b):columns;
+//					iflag = 1;
+					offset = read_e - buf_b;
+					memcpy(buf, buf+buf_b, offset+1);
+					buf[offset+1] = 0;
+					break;
 				} else {
 					line_l = (nlptr-buf_b-buf)<columns?(nlptr-buf_b-buf):columns;
-				}*/
+				}
+
+
+				/* get real string size on terminal 
+				 * scrlen >= strlen (or nlptr - buf - buf_b)
+				 */
+				real_l = scrlen(buf + buf_b, line_l, tab_spaces);
+
+				/* decrease line_l until real_l > columns */
+				while(real_l > columns){
+					nlflag = 1;
+					real_l = scrlen(buf + buf_b, --line_l, tab_spaces);
+				}
+
 
 				zputb(buf + buf_b, line_l);
 
-				if(nlptr < buf){ zprintf(NL); }
-				lines++;
-
+				if(nlflag && iflag){
+					lines++;
+				}
+				if(iflag == 1){
+					iflag = 0;
+				} else {
+					lines++;
+				}
+				if(nlflag){
+					nlflag = 0;
+					zprintf(NL);
+				}
+				
 				if(lines == rows){
 					lines = 0;
+					/* nl to command-line */
+					if(buf[buf_b+line_l-1] != NLC && real_l != columns){ 
+						zprintf(NL); 
+					}
 					wait_for_a_command(&key);
 					if(key == 'q'){
 						return 0;
-					}
+						}
 				}
 				buf_b   += line_l;
 				print_b += line_l;
@@ -163,5 +203,3 @@ int main(int argc, char *argv[]) {
 	}
 	return 0;
 }
-
-

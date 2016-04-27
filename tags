@@ -948,6 +948,7 @@ S_IXUSR	/usr/include/x86_64-linux-gnu/sys/stat.h	173;"	d
 S_TYPEISMQ	/usr/include/x86_64-linux-gnu/sys/stat.h	155;"	d
 S_TYPEISSEM	/usr/include/x86_64-linux-gnu/sys/stat.h	156;"	d
 S_TYPEISSHM	/usr/include/x86_64-linux-gnu/sys/stat.h	157;"	d
+TAB	src/include/string.h	4;"	d
 TAB0	/usr/include/x86_64-linux-gnu/bits/termios.h	97;"	d
 TAB1	/usr/include/x86_64-linux-gnu/bits/termios.h	98;"	d
 TAB2	/usr/include/x86_64-linux-gnu/bits/termios.h	99;"	d
@@ -3960,6 +3961,7 @@ sa_restorer	/usr/include/x86_64-linux-gnu/bits/sigaction.h	/^    void (*sa_resto
 sa_sigaction	/usr/include/x86_64-linux-gnu/bits/sigaction.h	/^	void (*sa_sigaction) (int, siginfo_t *, void *);$/;"	m	union:sigaction::__anon64
 sa_sigaction	/usr/include/x86_64-linux-gnu/bits/sigaction.h	37;"	d
 scanf	/usr/include/stdio.h	458;"	d
+scrlen	src/string.c	/^size_t scrlen(const char *from, size_t offset, int tab_l){$/;"	f	signature:(const char *from, size_t offset, int tab_l)
 seek	/usr/include/libio.h	/^  __io_seek_fn *seek;		\/* Seek\/tell file position.  *\/$/;"	m	struct:__anon2
 seek	/usr/include/libio.h	/^  __io_seek_fn *seek;		\/* Seek\/tell file position.  *\/$/;"	m	struct:__anon28
 si_addr	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^	    void *si_addr;	\/* Faulting insn\/memory ref.  *\/$/;"	m	struct:__anon43::__anon44::__anon49
@@ -4119,6 +4121,7 @@ sw	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  unsigned long int sw;$/;"	m	
 swd	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint16_t		swd;$/;"	m	struct:_fpstate
 swd	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  __uint16_t		swd;$/;"	m	struct:_libc_fpstate
 swscanf	/usr/include/wchar.h	678;"	d
+tab_spaces	src/main.c	/^int tab_spaces = 8;$/;"	v
 tag	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint32_t		tag;$/;"	m	struct:_fpstate
 tag	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  unsigned long int tag;$/;"	m	struct:_libc_fpstate
 tcflag_t	/usr/include/x86_64-linux-gnu/bits/termios.h	/^typedef unsigned int	tcflag_t;$/;"	t

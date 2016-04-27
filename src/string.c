@@ -16,3 +16,30 @@ size_t strastr(const char *haystack, const char *needle) {
 	}
 	return r;
 }
+
+/*
+ *
+ * @function scrlen
+ * @description calculates size of line from @from to @to with respect to tabstops
+ * @param char *from
+ * @param char *to
+ * @param int tabstop
+ * @return size_t strlen wit respect to tabstops
+ */
+
+size_t scrlen(const char *from, size_t offset, int tab_l){
+	int		t_offset = 0;
+	size_t 	real_l = 0;
+	char *to = from + offset;
+	for(char *cur = from; cur < to; cur++){
+		if(*cur == TAB){
+			real_l += tab_l - t_offset;
+			t_offset = 0;
+		} else {
+			real_l++;
+			t_offset = (t_offset+1) & 7;
+		}
+	}
+
+	return real_l;
+}
