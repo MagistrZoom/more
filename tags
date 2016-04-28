@@ -5,7 +5,10 @@
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
 ACCESSPERMS	/usr/include/x86_64-linux-gnu/sys/stat.h	198;"	d
+AIO_PRIO_DELTA_MAX	/usr/include/x86_64-linux-gnu/bits/local_lim.h	78;"	d
 ALLPERMS	/usr/include/x86_64-linux-gnu/sys/stat.h	199;"	d
+ARG_MAX	/usr/include/linux/limits.h	7;"	d
+ARG_MAX	/usr/include/x86_64-linux-gnu/bits/local_lim.h	57;"	d
 AT_EACCESS	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	359;"	d
 AT_EMPTY_PATH	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	357;"	d
 AT_FDCWD	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	347;"	d
@@ -44,6 +47,10 @@ B600	/usr/include/x86_64-linux-gnu/bits/termios.h	129;"	d
 B75	/usr/include/x86_64-linux-gnu/bits/termios.h	123;"	d
 B921600	/usr/include/x86_64-linux-gnu/bits/termios.h	161;"	d
 B9600	/usr/include/x86_64-linux-gnu/bits/termios.h	134;"	d
+BC_BASE_MAX	/usr/include/x86_64-linux-gnu/bits/posix2_lim.h	63;"	d
+BC_DIM_MAX	/usr/include/x86_64-linux-gnu/bits/posix2_lim.h	66;"	d
+BC_SCALE_MAX	/usr/include/x86_64-linux-gnu/bits/posix2_lim.h	69;"	d
+BC_STRING_MAX	/usr/include/x86_64-linux-gnu/bits/posix2_lim.h	72;"	d
 BIG_ENDIAN	/usr/include/endian.h	46;"	d
 BRKINT	/usr/include/x86_64-linux-gnu/bits/termios.h	63;"	d
 BS0	/usr/include/x86_64-linux-gnu/bits/termios.h	102;"	d
@@ -73,6 +80,23 @@ CEOL	/usr/include/x86_64-linux-gnu/sys/ttydefaults.h	60;"	d
 CEOT	/usr/include/x86_64-linux-gnu/sys/ttydefaults.h	81;"	d
 CERASE	/usr/include/x86_64-linux-gnu/sys/ttydefaults.h	62;"	d
 CFLUSH	/usr/include/x86_64-linux-gnu/sys/ttydefaults.h	85;"	d
+CHARCLASS_NAME_MAX	/usr/include/x86_64-linux-gnu/bits/posix2_lim.h	84;"	d
+CHAR_BIT	/usr/include/limits.h	53;"	d
+CHAR_BIT	/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h	63;"	d
+CHAR_BIT	/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h	64;"	d
+CHAR_MAX	/usr/include/limits.h	65;"	d
+CHAR_MAX	/usr/include/limits.h	68;"	d
+CHAR_MAX	/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h	93;"	d
+CHAR_MAX	/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h	94;"	d
+CHAR_MAX	/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h	98;"	d
+CHAR_MAX	/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h	99;"	d
+CHAR_MIN	/usr/include/limits.h	64;"	d
+CHAR_MIN	/usr/include/limits.h	67;"	d
+CHAR_MIN	/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h	87;"	d
+CHAR_MIN	/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h	89;"	d
+CHAR_MIN	/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h	91;"	d
+CHAR_MIN	/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h	96;"	d
+CHAR_MIN	/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h	97;"	d
 CIBAUD	/usr/include/x86_64-linux-gnu/bits/termios.h	172;"	d
 CINTR	/usr/include/x86_64-linux-gnu/sys/ttydefaults.h	63;"	d
 CKILL	/usr/include/x86_64-linux-gnu/sys/ttydefaults.h	69;"	d
@@ -104,10 +128,24 @@ CLOCK_REALTIME_ALARM	/usr/include/x86_64-linux-gnu/bits/time.h	77;"	d
 CLOCK_REALTIME_COARSE	/usr/include/x86_64-linux-gnu/bits/time.h	71;"	d
 CLOCK_TAI	/usr/include/x86_64-linux-gnu/bits/time.h	81;"	d
 CLOCK_THREAD_CPUTIME_ID	/usr/include/x86_64-linux-gnu/bits/time.h	67;"	d
+CMD	src/main.c	/^enum CMD {$/;"	g	file:
+CMD	src/main.c	/^} CMD;$/;"	v	typeref:enum:CMD
+CMD_BACK	src/main.c	/^	CMD_BACK,		\/* ib		backward i(1) screenfuls of text 			 *\/$/;"	e	enum:CMD	file:
+CMD_EXIT	src/main.c	/^	CMD_EXIT = 0,	\/* interrupt 											 *\/$/;"	e	enum:CMD	file:
+CMD_HALF	src/main.c	/^	CMD_HALF,		\/* id 		by default scroll 11 lines, i as new default *\/$/;"	e	enum:CMD	file:
+CMD_HELP	src/main.c	/^	CMD_HELP, 		\/* tiny help *\/$/;"	e	enum:CMD	file:
+CMD_LINE	src/main.c	/^	CMD_LINE, 		\/* i<CR> 	scroll i(1) lines and set up i as default 		 *\/$/;"	e	enum:CMD	file:
+CMD_PRINTL	src/main.c	/^	CMD_PRINTL,		\/* =		print line 									 *\/$/;"	e	enum:CMD	file:
+CMD_REPEAT	src/main.c	/^	CMD_REPEAT,		\/* .		repeat last command 						 *\/$/;"	e	enum:CMD	file:
+CMD_SCREEN	src/main.c	/^	CMD_SCREEN, 	\/* i<SPACE> (screen usually) down 						 *\/$/;"	e	enum:CMD	file:
+CMD_SCREEN_DEF	src/main.c	/^	CMD_SCREEN_DEF, \/* i<SPACE> (screen usually) down and set up i as default*\/$/;"	e	enum:CMD	file:
+CMD_SKIP	src/main.c	/^	CMD_SKIP,		\/* is		skip i(1) lines of text 					 *\/$/;"	e	enum:CMD	file:
+CMD_SKIP_SCREEN	src/main.c	/^	CMD_SKIP_SCREEN,\/* if		skip i(1) screenfuls of text 				 *\/$/;"	e	enum:CMD	file:
 CMIN	/usr/include/x86_64-linux-gnu/sys/ttydefaults.h	70;"	d
 CMSPAR	/usr/include/x86_64-linux-gnu/bits/termios.h	173;"	d
-COMMAND_SET	src/main.c	23;"	d	file:
-COMMAND_UNSET	src/main.c	24;"	d	file:
+COLL_WEIGHTS_MAX	/usr/include/x86_64-linux-gnu/bits/posix2_lim.h	75;"	d
+COMMAND_SET	src/main.c	25;"	d	file:
+COMMAND_UNSET	src/main.c	26;"	d	file:
 CQUIT	/usr/include/x86_64-linux-gnu/sys/ttydefaults.h	71;"	d
 CR0	/usr/include/x86_64-linux-gnu/bits/termios.h	92;"	d
 CR1	/usr/include/x86_64-linux-gnu/bits/termios.h	93;"	d
@@ -133,6 +171,7 @@ CTIME	/usr/include/x86_64-linux-gnu/sys/ttydefaults.h	73;"	d
 CTRL	/usr/include/x86_64-linux-gnu/sys/ttydefaults.h	55;"	d
 CWERASE	/usr/include/x86_64-linux-gnu/sys/ttydefaults.h	79;"	d
 DEFFILEMODE	/usr/include/x86_64-linux-gnu/sys/stat.h	200;"	d
+DELAYTIMER_MAX	/usr/include/x86_64-linux-gnu/bits/local_lim.h	84;"	d
 DN_ACCESS	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	246;"	d
 DN_ATTRIB	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	251;"	d
 DN_CREATE	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	248;"	d
@@ -297,6 +336,7 @@ EXDEV	/usr/include/asm-generic/errno-base.h	21;"	d
 EXFULL	/usr/include/asm-generic/errno.h	34;"	d
 EXIT_FAILURE	/usr/include/stdlib.h	133;"	d
 EXIT_SUCCESS	/usr/include/stdlib.h	134;"	d
+EXPR_NEST_MAX	/usr/include/x86_64-linux-gnu/bits/posix2_lim.h	78;"	d
 EXTA	/usr/include/x86_64-linux-gnu/bits/termios.h	138;"	d
 EXTB	/usr/include/x86_64-linux-gnu/bits/termios.h	139;"	d
 EXTPROC	/usr/include/x86_64-linux-gnu/bits/termios.h	198;"	d
@@ -415,6 +455,7 @@ F_ULOCK	/usr/include/fcntl.h	225;"	d
 F_ULOCK	/usr/include/unistd.h	1078;"	d
 F_UNLCK	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	218;"	d
 F_WRLCK	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	217;"	d
+HOST_NAME_MAX	/usr/include/x86_64-linux-gnu/bits/local_lim.h	93;"	d
 HUGE	/usr/include/math.h	367;"	d
 HUGE_VAL	/usr/include/x86_64-linux-gnu/bits/huge_val.h	27;"	d
 HUGE_VAL	/usr/include/x86_64-linux-gnu/bits/huge_val.h	29;"	d
@@ -456,6 +497,12 @@ INFINITY	/usr/include/x86_64-linux-gnu/bits/inf.h	26;"	d
 INFINITY	/usr/include/x86_64-linux-gnu/bits/inf.h	28;"	d
 INLCR	/usr/include/x86_64-linux-gnu/bits/termios.h	68;"	d
 INPCK	/usr/include/x86_64-linux-gnu/bits/termios.h	66;"	d
+INT_MAX	/usr/include/limits.h	80;"	d
+INT_MAX	/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h	119;"	d
+INT_MAX	/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h	120;"	d
+INT_MIN	/usr/include/limits.h	79;"	d
+INT_MIN	/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h	117;"	d
+INT_MIN	/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h	118;"	d
 IOCSIZE_MASK	/usr/include/asm-generic/ioctl.h	93;"	d
 IOCSIZE_SHIFT	/usr/include/asm-generic/ioctl.h	94;"	d
 IOC_IN	/usr/include/asm-generic/ioctl.h	90;"	d
@@ -469,7 +516,18 @@ IUTF8	/usr/include/x86_64-linux-gnu/bits/termios.h	76;"	d
 IXANY	/usr/include/x86_64-linux-gnu/bits/termios.h	73;"	d
 IXOFF	/usr/include/x86_64-linux-gnu/bits/termios.h	74;"	d
 IXON	/usr/include/x86_64-linux-gnu/bits/termios.h	72;"	d
+LINE_MAX	/usr/include/x86_64-linux-gnu/bits/posix2_lim.h	81;"	d
+LINK_MAX	/usr/include/linux/limits.h	8;"	d
+LINK_MAX	/usr/include/x86_64-linux-gnu/bits/local_lim.h	47;"	d
 LITTLE_ENDIAN	/usr/include/endian.h	45;"	d
+LLONG_MAX	/usr/include/limits.h	103;"	d
+LLONG_MAX	/usr/include/limits.h	134;"	d
+LLONG_MAX	/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h	141;"	d
+LLONG_MAX	/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h	142;"	d
+LLONG_MIN	/usr/include/limits.h	104;"	d
+LLONG_MIN	/usr/include/limits.h	131;"	d
+LLONG_MIN	/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h	139;"	d
+LLONG_MIN	/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h	140;"	d
 LOCK_EX	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	231;"	d
 LOCK_MAND	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	238;"	d
 LOCK_NB	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	232;"	d
@@ -478,6 +536,18 @@ LOCK_RW	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	241;"	d
 LOCK_SH	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	230;"	d
 LOCK_UN	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	234;"	d
 LOCK_WRITE	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	240;"	d
+LOGIN_NAME_MAX	/usr/include/x86_64-linux-gnu/bits/local_lim.h	90;"	d
+LONG_LONG_MAX	/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h	153;"	d
+LONG_LONG_MAX	/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h	154;"	d
+LONG_LONG_MIN	/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h	151;"	d
+LONG_LONG_MIN	/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h	152;"	d
+LONG_MAX	/usr/include/limits.h	87;"	d
+LONG_MAX	/usr/include/limits.h	89;"	d
+LONG_MAX	/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h	130;"	d
+LONG_MAX	/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h	131;"	d
+LONG_MIN	/usr/include/limits.h	91;"	d
+LONG_MIN	/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h	128;"	d
+LONG_MIN	/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h	129;"	d
 L_INCR	/usr/include/unistd.h	326;"	d
 L_SET	/usr/include/unistd.h	325;"	d
 L_XTND	/usr/include/unistd.h	327;"	d
@@ -487,9 +557,14 @@ L_tmpnam	/usr/include/x86_64-linux-gnu/bits/stdio_lim.h	23;"	d
 MATH_ERREXCEPT	/usr/include/math.h	288;"	d
 MATH_ERRNO	/usr/include/math.h	287;"	d
 MAXFLOAT	/usr/include/math.h	373;"	d
+MAX_CANON	/usr/include/linux/limits.h	9;"	d
 MAX_HANDLE_SZ	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	342;"	d
+MAX_INPUT	/usr/include/linux/limits.h	10;"	d
 MB_CUR_MAX	/usr/include/stdlib.h	138;"	d
+MB_LEN_MAX	/usr/include/limits.h	31;"	d
+MB_LEN_MAX	/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h	68;"	d
 MINSIGSTKSZ	/usr/include/x86_64-linux-gnu/bits/sigstack.h	42;"	d
+MQ_PRIO_MAX	/usr/include/x86_64-linux-gnu/bits/local_lim.h	96;"	d
 M_1_PI	/usr/include/math.h	389;"	d
 M_1_PIl	/usr/include/math.h	408;"	d
 M_2_PI	/usr/include/math.h	390;"	d
@@ -528,6 +603,7 @@ M_SQRT2	/usr/include/math.h	392;"	d
 M_SQRT2l	/usr/include/math.h	411;"	d
 M_TOP_PAD	/usr/include/malloc.h	112;"	d
 M_TRIM_THRESHOLD	/usr/include/malloc.h	111;"	d
+NAME_MAX	/usr/include/linux/limits.h	11;"	d
 NAN	/usr/include/x86_64-linux-gnu/bits/nan.h	28;"	d
 NAN	/usr/include/x86_64-linux-gnu/bits/nan.h	32;"	d
 NAN	/usr/include/x86_64-linux-gnu/bits/nan.h	50;"	d
@@ -536,12 +612,16 @@ NCCS	/usr/include/x86_64-linux-gnu/bits/termios.h	27;"	d
 NFDBITS	/usr/include/x86_64-linux-gnu/sys/select.h	85;"	d
 NGREG	/usr/include/x86_64-linux-gnu/sys/ucontext.h	149;"	d
 NGREG	/usr/include/x86_64-linux-gnu/sys/ucontext.h	34;"	d
-NL	src/main.c	21;"	d	file:
+NGROUPS_MAX	/usr/include/linux/limits.h	6;"	d
+NGROUPS_MAX	/usr/include/x86_64-linux-gnu/bits/posix1_lim.h	172;"	d
+NL	src/main.c	23;"	d	file:
 NL0	/usr/include/x86_64-linux-gnu/bits/termios.h	89;"	d
 NL1	/usr/include/x86_64-linux-gnu/bits/termios.h	90;"	d
-NLC	src/main.c	22;"	d	file:
+NLC	src/main.c	24;"	d	file:
 NLDLY	/usr/include/x86_64-linux-gnu/bits/termios.h	88;"	d
 NOFLSH	/usr/include/x86_64-linux-gnu/bits/termios.h	187;"	d
+NR_OPEN	/usr/include/linux/limits.h	4;"	d
+NR_OPEN	/usr/include/x86_64-linux-gnu/bits/local_lim.h	42;"	d
 NSIG	/usr/include/signal.h	198;"	d
 NULL	/usr/include/libio.h	67;"	d
 NULL	/usr/include/libio.h	70;"	d
@@ -573,6 +653,7 @@ OLCUC	/usr/include/x86_64-linux-gnu/bits/termios.h	80;"	d
 ONLCR	/usr/include/x86_64-linux-gnu/bits/termios.h	81;"	d
 ONLRET	/usr/include/x86_64-linux-gnu/bits/termios.h	84;"	d
 ONOCR	/usr/include/x86_64-linux-gnu/bits/termios.h	83;"	d
+OPEN_MAX	/usr/include/x86_64-linux-gnu/bits/local_lim.h	52;"	d
 OPOST	/usr/include/x86_64-linux-gnu/bits/termios.h	79;"	d
 OVERFLOW	/usr/include/math.h	361;"	d
 O_ACCMODE	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	42;"	d
@@ -603,8 +684,10 @@ O_WRONLY	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	44;"	d
 PARENB	/usr/include/x86_64-linux-gnu/bits/termios.h	148;"	d
 PARMRK	/usr/include/x86_64-linux-gnu/bits/termios.h	65;"	d
 PARODD	/usr/include/x86_64-linux-gnu/bits/termios.h	149;"	d
+PATH_MAX	/usr/include/linux/limits.h	12;"	d
 PDP_ENDIAN	/usr/include/endian.h	47;"	d
 PENDIN	/usr/include/x86_64-linux-gnu/bits/termios.h	194;"	d
+PIPE_BUF	/usr/include/linux/limits.h	13;"	d
 PLOSS	/usr/include/math.h	364;"	d
 POLL_ERR	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  POLL_ERR,			\/* I\/O error.  *\/$/;"	e	enum:__anon60
 POLL_ERR	/usr/include/x86_64-linux-gnu/bits/siginfo.h	290;"	d
@@ -624,6 +707,10 @@ POSIX_FADV_NORMAL	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	290;"	d
 POSIX_FADV_RANDOM	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	291;"	d
 POSIX_FADV_SEQUENTIAL	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	292;"	d
 POSIX_FADV_WILLNEED	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	293;"	d
+PTHREAD_DESTRUCTOR_ITERATIONS	/usr/include/x86_64-linux-gnu/bits/local_lim.h	69;"	d
+PTHREAD_KEYS_MAX	/usr/include/x86_64-linux-gnu/bits/local_lim.h	64;"	d
+PTHREAD_STACK_MIN	/usr/include/x86_64-linux-gnu/bits/local_lim.h	81;"	d
+PTHREAD_THREADS_MAX	/usr/include/x86_64-linux-gnu/bits/local_lim.h	74;"	d
 P_ALL	/usr/include/x86_64-linux-gnu/bits/waitflags.h	/^  P_ALL,		\/* Wait for any child.  *\/$/;"	e	enum:__anon74
 P_ALL	/usr/include/x86_64-linux-gnu/bits/waitflags.h	46;"	d
 P_PGID	/usr/include/x86_64-linux-gnu/bits/waitflags.h	/^  P_PGID		\/* Wait for members of process group.  *\/$/;"	e	enum:__anon74
@@ -716,6 +803,8 @@ REG_TRAPNO	/usr/include/x86_64-linux-gnu/sys/ucontext.h	183;"	d
 REG_TRAPNO	/usr/include/x86_64-linux-gnu/sys/ucontext.h	84;"	d
 REG_UESP	/usr/include/x86_64-linux-gnu/sys/ucontext.h	/^  REG_UESP,$/;"	e	enum:__anon69
 REG_UESP	/usr/include/x86_64-linux-gnu/sys/ucontext.h	193;"	d
+RE_DUP_MAX	/usr/include/x86_64-linux-gnu/bits/posix2_lim.h	88;"	d
+RTSIG_MAX	/usr/include/linux/limits.h	18;"	d
 R_OK	/usr/include/fcntl.h	127;"	d
 R_OK	/usr/include/unistd.h	284;"	d
 SA_INTERRUPT	/usr/include/x86_64-linux-gnu/bits/sigaction.h	67;"	d
@@ -729,6 +818,12 @@ SA_RESETHAND	/usr/include/x86_64-linux-gnu/bits/sigaction.h	64;"	d
 SA_RESTART	/usr/include/x86_64-linux-gnu/bits/sigaction.h	61;"	d
 SA_SIGINFO	/usr/include/x86_64-linux-gnu/bits/sigaction.h	55;"	d
 SA_STACK	/usr/include/x86_64-linux-gnu/bits/sigaction.h	72;"	d
+SCHAR_MAX	/usr/include/limits.h	57;"	d
+SCHAR_MAX	/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h	74;"	d
+SCHAR_MAX	/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h	75;"	d
+SCHAR_MIN	/usr/include/limits.h	56;"	d
+SCHAR_MIN	/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h	72;"	d
+SCHAR_MIN	/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h	73;"	d
 SEEK_CUR	/usr/include/fcntl.h	137;"	d
 SEEK_CUR	/usr/include/stdio.h	141;"	d
 SEEK_CUR	/usr/include/unistd.h	315;"	d
@@ -746,6 +841,13 @@ SEGV_ACCERR	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  SEGV_ACCERR			\/* I
 SEGV_ACCERR	/usr/include/x86_64-linux-gnu/bits/siginfo.h	232;"	d
 SEGV_MAPERR	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^  SEGV_MAPERR = 1,		\/* Address not mapped to object.  *\/$/;"	e	enum:__anon56
 SEGV_MAPERR	/usr/include/x86_64-linux-gnu/bits/siginfo.h	230;"	d
+SEM_VALUE_MAX	/usr/include/x86_64-linux-gnu/bits/local_lim.h	99;"	d
+SHRT_MAX	/usr/include/limits.h	73;"	d
+SHRT_MAX	/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h	105;"	d
+SHRT_MAX	/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h	106;"	d
+SHRT_MIN	/usr/include/limits.h	72;"	d
+SHRT_MIN	/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h	103;"	d
+SHRT_MIN	/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h	104;"	d
 SIGABRT	/usr/include/x86_64-linux-gnu/bits/signum.h	37;"	d
 SIGALRM	/usr/include/x86_64-linux-gnu/bits/signum.h	46;"	d
 SIGBUS	/usr/include/x86_64-linux-gnu/bits/signum.h	39;"	d
@@ -876,6 +978,7 @@ SPLICE_F_GIFT	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	317;"	d
 SPLICE_F_MORE	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	316;"	d
 SPLICE_F_MOVE	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	312;"	d
 SPLICE_F_NONBLOCK	/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h	313;"	d
+SSIZE_MAX	/usr/include/x86_64-linux-gnu/bits/posix1_lim.h	164;"	d
 SS_DISABLE	/usr/include/x86_64-linux-gnu/bits/sigstack.h	/^  SS_DISABLE$/;"	e	enum:__anon66
 SS_DISABLE	/usr/include/x86_64-linux-gnu/bits/sigstack.h	38;"	d
 SS_ONSTACK	/usr/include/x86_64-linux-gnu/bits/sigstack.h	/^  SS_ONSTACK = 1,$/;"	e	enum:__anon66
@@ -1068,7 +1171,29 @@ TTYDEF_IFLAG	/usr/include/x86_64-linux-gnu/sys/ttydefaults.h	46;"	d
 TTYDEF_LFLAG	/usr/include/x86_64-linux-gnu/sys/ttydefaults.h	48;"	d
 TTYDEF_OFLAG	/usr/include/x86_64-linux-gnu/sys/ttydefaults.h	47;"	d
 TTYDEF_SPEED	/usr/include/x86_64-linux-gnu/sys/ttydefaults.h	50;"	d
+TTY_NAME_MAX	/usr/include/x86_64-linux-gnu/bits/local_lim.h	87;"	d
+UCHAR_MAX	/usr/include/limits.h	60;"	d
+UCHAR_MAX	/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h	78;"	d
+UCHAR_MAX	/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h	80;"	d
+UCHAR_MAX	/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h	82;"	d
+UINT_MAX	/usr/include/limits.h	83;"	d
+UINT_MAX	/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h	123;"	d
+UINT_MAX	/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h	124;"	d
+ULLONG_MAX	/usr/include/limits.h	107;"	d
+ULLONG_MAX	/usr/include/limits.h	137;"	d
+ULLONG_MAX	/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h	145;"	d
+ULLONG_MAX	/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h	146;"	d
+ULONG_LONG_MAX	/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h	157;"	d
+ULONG_LONG_MAX	/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h	158;"	d
+ULONG_MAX	/usr/include/limits.h	95;"	d
+ULONG_MAX	/usr/include/limits.h	97;"	d
+ULONG_MAX	/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h	134;"	d
+ULONG_MAX	/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h	135;"	d
 UNDERFLOW	/usr/include/math.h	362;"	d
+USHRT_MAX	/usr/include/limits.h	76;"	d
+USHRT_MAX	/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h	109;"	d
+USHRT_MAX	/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h	111;"	d
+USHRT_MAX	/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h	113;"	d
 UTIME_NOW	/usr/include/x86_64-linux-gnu/bits/stat.h	206;"	d
 UTIME_OMIT	/usr/include/x86_64-linux-gnu/bits/stat.h	207;"	d
 VDISCARD	/usr/include/x86_64-linux-gnu/bits/termios.h	56;"	d
@@ -1110,6 +1235,9 @@ WUNTRACED	/usr/include/x86_64-linux-gnu/bits/waitflags.h	26;"	d
 W_OK	/usr/include/fcntl.h	128;"	d
 W_OK	/usr/include/unistd.h	285;"	d
 X86_FXSR_MAGIC	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	91;"	d
+XATTR_LIST_MAX	/usr/include/linux/limits.h	16;"	d
+XATTR_NAME_MAX	/usr/include/linux/limits.h	14;"	d
+XATTR_SIZE_MAX	/usr/include/linux/limits.h	15;"	d
 XCASE	/usr/include/x86_64-linux-gnu/bits/termios.h	181;"	d
 XTABS	/usr/include/x86_64-linux-gnu/bits/termios.h	114;"	d
 X_OK	/usr/include/fcntl.h	129;"	d
@@ -1127,6 +1255,8 @@ _ATFILE_SOURCE	/usr/include/features.h	268;"	d
 _ATFILE_SOURCE	/usr/include/features.h	269;"	d
 _BITS_BYTESWAP_H	/usr/include/x86_64-linux-gnu/bits/byteswap.h	24;"	d
 _BITS_LIBM_SIMD_DECL_STUBS_H	/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h	34;"	d
+_BITS_POSIX1_LIM_H	/usr/include/x86_64-linux-gnu/bits/posix1_lim.h	25;"	d
+_BITS_POSIX2_LIM_H	/usr/include/x86_64-linux-gnu/bits/posix2_lim.h	23;"	d
 _BITS_POSIX_OPT_H	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	20;"	d
 _BITS_PTHREADTYPES_H	/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h	19;"	d
 _BITS_SIGCONTEXT_H	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	19;"	d
@@ -1359,7 +1489,10 @@ _ERRNO_H	/usr/include/errno.h	27;"	d
 _EXTERN_INLINE	/usr/include/x86_64-linux-gnu/bits/sigset.h	45;"	d
 _FCNTL_H	/usr/include/fcntl.h	23;"	d
 _FEATURES_H	/usr/include/features.h	19;"	d
+_GCC_LIMITS_H_	/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h	30;"	d
 _GCC_MAX_ALIGN_T	/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h	422;"	d
+_GCC_NEXT_LIMITS_H	/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/syslimits.h	6;"	d
+_GCC_NEXT_LIMITS_H	/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/syslimits.h	8;"	d
 _GCC_PTRDIFF_T	/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h	144;"	d
 _GCC_SIZE_T	/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h	201;"	d
 _GCC_WCHAR_T	/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h	280;"	d
@@ -1556,8 +1689,12 @@ _LFS64_LARGEFILE	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	118;"	d
 _LFS64_STDIO	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	119;"	d
 _LFS_ASYNCHRONOUS_IO	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	109;"	d
 _LFS_LARGEFILE	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	117;"	d
+_LIBC_LIMITS_H_	/usr/include/limits.h	23;"	d
 _LIB_VERSION_TYPE	/usr/include/math.h	/^} _LIB_VERSION_TYPE;$/;"	t	typeref:enum:__anon39
+_LIMITS_H	/usr/include/limits.h	42;"	d
+_LIMITS_H___	/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h	60;"	d
 _LINUX_IOCTL_H	/usr/include/linux/ioctl.h	2;"	d
+_LINUX_LIMITS_H	/usr/include/linux/limits.h	2;"	d
 _MALLOC_H	/usr/include/malloc.h	20;"	d
 _MATH_H	/usr/include/math.h	24;"	d
 _MATH_H_MATHDEF	/usr/include/x86_64-linux-gnu/bits/mathdef.h	23;"	d
@@ -1653,19 +1790,34 @@ _PC_SYNC_IO	/usr/include/x86_64-linux-gnu/bits/confname.h	45;"	d
 _PC_VDISABLE	/usr/include/x86_64-linux-gnu/bits/confname.h	/^    _PC_VDISABLE,$/;"	e	enum:__anon35
 _PC_VDISABLE	/usr/include/x86_64-linux-gnu/bits/confname.h	/^    _PC_VDISABLE,$/;"	e	enum:__anon9
 _PC_VDISABLE	/usr/include/x86_64-linux-gnu/bits/confname.h	43;"	d
+_POSIX2_BC_BASE_MAX	/usr/include/x86_64-linux-gnu/bits/posix2_lim.h	27;"	d
+_POSIX2_BC_DIM_MAX	/usr/include/x86_64-linux-gnu/bits/posix2_lim.h	30;"	d
+_POSIX2_BC_SCALE_MAX	/usr/include/x86_64-linux-gnu/bits/posix2_lim.h	33;"	d
+_POSIX2_BC_STRING_MAX	/usr/include/x86_64-linux-gnu/bits/posix2_lim.h	36;"	d
+_POSIX2_CHARCLASS_NAME_MAX	/usr/include/x86_64-linux-gnu/bits/posix2_lim.h	55;"	d
 _POSIX2_CHAR_TERM	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	176;"	d
+_POSIX2_COLL_WEIGHTS_MAX	/usr/include/x86_64-linux-gnu/bits/posix2_lim.h	40;"	d
 _POSIX2_C_BIND	/usr/include/unistd.h	74;"	d
 _POSIX2_C_DEV	/usr/include/unistd.h	78;"	d
 _POSIX2_C_VERSION	/usr/include/unistd.h	70;"	d
+_POSIX2_EXPR_NEST_MAX	/usr/include/x86_64-linux-gnu/bits/posix2_lim.h	44;"	d
+_POSIX2_LINE_MAX	/usr/include/x86_64-linux-gnu/bits/posix2_lim.h	47;"	d
 _POSIX2_LOCALEDEF	/usr/include/unistd.h	86;"	d
+_POSIX2_RE_DUP_MAX	/usr/include/x86_64-linux-gnu/bits/posix2_lim.h	51;"	d
 _POSIX2_SW_DEV	/usr/include/unistd.h	82;"	d
 _POSIX2_VERSION	/usr/include/unistd.h	67;"	d
 _POSIX_	/usr/include/math.h	/^  _POSIX_,$/;"	e	enum:__anon39
 _POSIX_ADVISORY_INFO	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	167;"	d
+_POSIX_AIO_LISTIO_MAX	/usr/include/x86_64-linux-gnu/bits/posix1_lim.h	31;"	d
+_POSIX_AIO_MAX	/usr/include/x86_64-linux-gnu/bits/posix1_lim.h	34;"	d
+_POSIX_ARG_MAX	/usr/include/x86_64-linux-gnu/bits/posix1_lim.h	37;"	d
 _POSIX_ASYNCHRONOUS_IO	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	106;"	d
 _POSIX_ASYNC_IO	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	107;"	d
 _POSIX_BARRIERS	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	152;"	d
+_POSIX_CHILD_MAX	/usr/include/x86_64-linux-gnu/bits/posix1_lim.h	41;"	d
+_POSIX_CHILD_MAX	/usr/include/x86_64-linux-gnu/bits/posix1_lim.h	43;"	d
 _POSIX_CHOWN_RESTRICTED	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	50;"	d
+_POSIX_CLOCKRES_MIN	/usr/include/x86_64-linux-gnu/bits/posix1_lim.h	156;"	d
 _POSIX_CLOCK_SELECTION	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	164;"	d
 _POSIX_CPUTIME	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	125;"	d
 _POSIX_C_SOURCE	/usr/include/features.h	163;"	d
@@ -1676,27 +1828,50 @@ _POSIX_C_SOURCE	/usr/include/features.h	231;"	d
 _POSIX_C_SOURCE	/usr/include/features.h	233;"	d
 _POSIX_C_SOURCE	/usr/include/features.h	235;"	d
 _POSIX_C_SOURCE	/usr/include/features.h	237;"	d
+_POSIX_DELAYTIMER_MAX	/usr/include/x86_64-linux-gnu/bits/posix1_lim.h	47;"	d
+_POSIX_FD_SETSIZE	/usr/include/x86_64-linux-gnu/bits/posix1_lim.h	92;"	d
 _POSIX_FSYNC	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	35;"	d
+_POSIX_HIWAT	/usr/include/x86_64-linux-gnu/bits/posix1_lim.h	149;"	d
+_POSIX_HOST_NAME_MAX	/usr/include/x86_64-linux-gnu/bits/posix1_lim.h	51;"	d
 _POSIX_IPV6	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	170;"	d
 _POSIX_JOB_CONTROL	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	23;"	d
+_POSIX_LINK_MAX	/usr/include/x86_64-linux-gnu/bits/posix1_lim.h	54;"	d
+_POSIX_LOGIN_NAME_MAX	/usr/include/x86_64-linux-gnu/bits/posix1_lim.h	57;"	d
 _POSIX_MAPPED_FILES	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	38;"	d
+_POSIX_MAX_CANON	/usr/include/x86_64-linux-gnu/bits/posix1_lim.h	60;"	d
+_POSIX_MAX_INPUT	/usr/include/x86_64-linux-gnu/bits/posix1_lim.h	64;"	d
 _POSIX_MEMLOCK	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	41;"	d
 _POSIX_MEMLOCK_RANGE	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	44;"	d
 _POSIX_MEMORY_PROTECTION	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	47;"	d
 _POSIX_MESSAGE_PASSING	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	155;"	d
 _POSIX_MONOTONIC_CLOCK	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	161;"	d
+_POSIX_MQ_OPEN_MAX	/usr/include/x86_64-linux-gnu/bits/posix1_lim.h	67;"	d
+_POSIX_MQ_PRIO_MAX	/usr/include/x86_64-linux-gnu/bits/posix1_lim.h	70;"	d
+_POSIX_NAME_MAX	/usr/include/x86_64-linux-gnu/bits/posix1_lim.h	73;"	d
+_POSIX_NGROUPS_MAX	/usr/include/x86_64-linux-gnu/bits/posix1_lim.h	77;"	d
+_POSIX_NGROUPS_MAX	/usr/include/x86_64-linux-gnu/bits/posix1_lim.h	79;"	d
 _POSIX_NO_TRUNC	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	57;"	d
+_POSIX_OPEN_MAX	/usr/include/x86_64-linux-gnu/bits/posix1_lim.h	84;"	d
+_POSIX_OPEN_MAX	/usr/include/x86_64-linux-gnu/bits/posix1_lim.h	86;"	d
+_POSIX_PATH_MAX	/usr/include/x86_64-linux-gnu/bits/posix1_lim.h	96;"	d
+_POSIX_PIPE_BUF	/usr/include/x86_64-linux-gnu/bits/posix1_lim.h	99;"	d
 _POSIX_PRIORITIZED_IO	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	111;"	d
 _POSIX_PRIORITY_SCHEDULING	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	29;"	d
+_POSIX_QLIMIT	/usr/include/x86_64-linux-gnu/bits/posix1_lim.h	145;"	d
 _POSIX_RAW_SOCKETS	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	173;"	d
 _POSIX_READER_WRITER_LOCKS	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	134;"	d
 _POSIX_REALTIME_SIGNALS	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	103;"	d
 _POSIX_REENTRANT_FUNCTIONS	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	72;"	d
 _POSIX_REGEXP	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	131;"	d
+_POSIX_RE_DUP_MAX	/usr/include/x86_64-linux-gnu/bits/posix1_lim.h	103;"	d
+_POSIX_RTSIG_MAX	/usr/include/x86_64-linux-gnu/bits/posix1_lim.h	106;"	d
 _POSIX_SAVED_IDS	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	26;"	d
 _POSIX_SEMAPHORES	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	100;"	d
+_POSIX_SEM_NSEMS_MAX	/usr/include/x86_64-linux-gnu/bits/posix1_lim.h	109;"	d
+_POSIX_SEM_VALUE_MAX	/usr/include/x86_64-linux-gnu/bits/posix1_lim.h	112;"	d
 _POSIX_SHARED_MEMORY_OBJECTS	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	122;"	d
 _POSIX_SHELL	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	137;"	d
+_POSIX_SIGQUEUE_MAX	/usr/include/x86_64-linux-gnu/bits/posix1_lim.h	115;"	d
 _POSIX_SOURCE	/usr/include/features.h	161;"	d
 _POSIX_SOURCE	/usr/include/features.h	162;"	d
 _POSIX_SOURCE	/usr/include/features.h	222;"	d
@@ -1705,11 +1880,17 @@ _POSIX_SOURCE	/usr/include/features.h	229;"	d
 _POSIX_SPAWN	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	146;"	d
 _POSIX_SPIN_LOCKS	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	143;"	d
 _POSIX_SPORADIC_SERVER	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	179;"	d
+_POSIX_SSIZE_MAX	/usr/include/x86_64-linux-gnu/bits/posix1_lim.h	118;"	d
+_POSIX_STREAM_MAX	/usr/include/x86_64-linux-gnu/bits/posix1_lim.h	121;"	d
+_POSIX_SYMLINK_MAX	/usr/include/x86_64-linux-gnu/bits/posix1_lim.h	124;"	d
+_POSIX_SYMLOOP_MAX	/usr/include/x86_64-linux-gnu/bits/posix1_lim.h	128;"	d
 _POSIX_SYNCHRONIZED_IO	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	32;"	d
 _POSIX_THREADS	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	69;"	d
 _POSIX_THREAD_ATTR_STACKADDR	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	82;"	d
 _POSIX_THREAD_ATTR_STACKSIZE	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	79;"	d
 _POSIX_THREAD_CPUTIME	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	128;"	d
+_POSIX_THREAD_DESTRUCTOR_ITERATIONS	/usr/include/x86_64-linux-gnu/bits/local_lim.h	67;"	d
+_POSIX_THREAD_KEYS_MAX	/usr/include/x86_64-linux-gnu/bits/local_lim.h	62;"	d
 _POSIX_THREAD_PRIORITY_SCHEDULING	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	76;"	d
 _POSIX_THREAD_PRIO_INHERIT	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	85;"	d
 _POSIX_THREAD_PRIO_PROTECT	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	89;"	d
@@ -1718,13 +1899,19 @@ _POSIX_THREAD_ROBUST_PRIO_INHERIT	/usr/include/x86_64-linux-gnu/bits/posix_opt.h
 _POSIX_THREAD_ROBUST_PRIO_PROTECT	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	96;"	d
 _POSIX_THREAD_SAFE_FUNCTIONS	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	73;"	d
 _POSIX_THREAD_SPORADIC_SERVER	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	180;"	d
+_POSIX_THREAD_THREADS_MAX	/usr/include/x86_64-linux-gnu/bits/local_lim.h	72;"	d
 _POSIX_TIMEOUTS	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	140;"	d
 _POSIX_TIMERS	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	149;"	d
+_POSIX_TIMER_MAX	/usr/include/x86_64-linux-gnu/bits/posix1_lim.h	131;"	d
 _POSIX_TRACE	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	183;"	d
 _POSIX_TRACE_EVENT_FILTER	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	184;"	d
 _POSIX_TRACE_INHERIT	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	185;"	d
 _POSIX_TRACE_LOG	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	186;"	d
+_POSIX_TTY_NAME_MAX	/usr/include/x86_64-linux-gnu/bits/posix1_lim.h	134;"	d
 _POSIX_TYPED_MEMORY_OBJECTS	/usr/include/x86_64-linux-gnu/bits/posix_opt.h	189;"	d
+_POSIX_TZNAME_MAX	/usr/include/x86_64-linux-gnu/bits/posix1_lim.h	138;"	d
+_POSIX_TZNAME_MAX	/usr/include/x86_64-linux-gnu/bits/posix1_lim.h	140;"	d
+_POSIX_UIO_MAXIOV	/usr/include/x86_64-linux-gnu/bits/posix1_lim.h	152;"	d
 _POSIX_V6_ILP32_OFF32	/usr/include/x86_64-linux-gnu/bits/environments.h	76;"	d
 _POSIX_V6_ILP32_OFFBIG	/usr/include/x86_64-linux-gnu/bits/environments.h	70;"	d
 _POSIX_V6_LP64_OFF64	/usr/include/x86_64-linux-gnu/bits/environments.h	62;"	d
@@ -3409,6 +3596,14 @@ __uint32_t	/usr/include/x86_64-linux-gnu/bits/types.h	/^typedef unsigned int __u
 __uint64_t	/usr/include/x86_64-linux-gnu/bits/types.h	/^__extension__ typedef unsigned long long int __uint64_t;$/;"	t
 __uint64_t	/usr/include/x86_64-linux-gnu/bits/types.h	/^typedef unsigned long int __uint64_t;$/;"	t
 __uint8_t	/usr/include/x86_64-linux-gnu/bits/types.h	/^typedef unsigned char __uint8_t;$/;"	t
+__undef_ARG_MAX	/usr/include/x86_64-linux-gnu/bits/local_lim.h	34;"	d
+__undef_ARG_MAX	/usr/include/x86_64-linux-gnu/bits/local_lim.h	58;"	d
+__undef_LINK_MAX	/usr/include/x86_64-linux-gnu/bits/local_lim.h	28;"	d
+__undef_LINK_MAX	/usr/include/x86_64-linux-gnu/bits/local_lim.h	48;"	d
+__undef_NR_OPEN	/usr/include/x86_64-linux-gnu/bits/local_lim.h	25;"	d
+__undef_NR_OPEN	/usr/include/x86_64-linux-gnu/bits/local_lim.h	43;"	d
+__undef_OPEN_MAX	/usr/include/x86_64-linux-gnu/bits/local_lim.h	31;"	d
+__undef_OPEN_MAX	/usr/include/x86_64-linux-gnu/bits/local_lim.h	53;"	d
 __useconds_t	/usr/include/x86_64-linux-gnu/bits/types.h	/^__STD_TYPE __USECONDS_T_TYPE __useconds_t; \/* Count of microseconds.  *\/$/;"	v
 __useconds_t_defined	/usr/include/unistd.h	259;"	d
 __useconds_t_defined	/usr/include/x86_64-linux-gnu/sys/types.h	137;"	d
@@ -3603,7 +3798,7 @@ c_oflag	/usr/include/x86_64-linux-gnu/bits/termios.h	/^    tcflag_t c_oflag;		\/
 c_ospeed	/usr/include/x86_64-linux-gnu/bits/termios.h	/^    speed_t c_ospeed;		\/* output speed *\/$/;"	m	struct:termios
 caddr_t	/usr/include/x86_64-linux-gnu/sys/types.h	/^typedef __caddr_t caddr_t;$/;"	t
 cc_t	/usr/include/x86_64-linux-gnu/bits/termios.h	/^typedef unsigned char	cc_t;$/;"	t
-clear_prompt	src/main.c	/^void clear_prompt(){$/;"	f
+clean_prompt	src/main.c	/^void clean_prompt(){$/;"	f
 clock_t	/usr/include/time.h	/^typedef __clock_t clock_t;$/;"	t
 clockid_t	/usr/include/time.h	/^typedef __clockid_t clockid_t;$/;"	t
 close	/usr/include/libio.h	/^  __io_close_fn *close;		\/* Close file.  *\/$/;"	m	struct:__anon2
@@ -3891,6 +4086,7 @@ posix_fadvise	/usr/include/fcntl.h	256;"	d
 posix_fallocate	/usr/include/fcntl.h	277;"	d
 pread	/usr/include/unistd.h	398;"	d
 print_prompt	src/main.c	/^void print_prompt(size_t cur, size_t end){$/;"	f	signature:(size_t cur, size_t end)
+prompt	src/main.c	/^char *prompt = "Next";$/;"	v
 pthread_attr_t	/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h	/^typedef union pthread_attr_t pthread_attr_t;$/;"	t	typeref:union:pthread_attr_t
 pthread_attr_t	/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h	/^union pthread_attr_t$/;"	u
 pthread_attr_t	/usr/include/x86_64-linux-gnu/bits/siginfo.h	/^typedef union pthread_attr_t pthread_attr_t;$/;"	t	typeref:union:pthread_attr_t
@@ -4204,7 +4400,7 @@ w_stopsig	/usr/include/x86_64-linux-gnu/bits/waitstatus.h	102;"	d
 w_stopval	/usr/include/x86_64-linux-gnu/bits/waitstatus.h	103;"	d
 w_termsig	/usr/include/x86_64-linux-gnu/bits/waitstatus.h	99;"	d
 wait	/usr/include/x86_64-linux-gnu/bits/waitstatus.h	/^union wait$/;"	u
-wait_for_a_command	src/main.c	/^void wait_for_a_command(char *key){$/;"	f	signature:(char *key)
+wait_for_a_command	src/main.c	/^enum CMD wait_for_a_command(){$/;"	f
 wctob	/usr/include/wchar.h	/^__NTH (wctob (wint_t __wc))$/;"	f	signature:(wint_t __wc)
 winsize	/usr/include/x86_64-linux-gnu/bits/ioctl-types.h	/^struct winsize$/;"	s
 wint_t	/usr/include/wchar.h	/^typedef __WINT_TYPE__ wint_t;$/;"	t
