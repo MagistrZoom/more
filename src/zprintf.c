@@ -1,5 +1,5 @@
 #include "include/zprintf.h" 
-#include <stdio.h>
+#include "include/string.h" 
 
 void reverse(char s[]){
     int i, j;
@@ -29,6 +29,7 @@ void itoa(int n, char s[]) {
 #define FORMAT_BUF (64)
 static void _zprintf(int fd, char *template, va_list argp){
 	int i = -1, j = 0, r;
+	size_t written;
 	char outbuffer[STR_BUF] = { 0 };
 	char formatbuffer[FORMAT_BUF] = { 0 };
 	size_t template_length = strlen(template);
@@ -42,7 +43,9 @@ A:
 	if(template[i] != '%')
 		goto F;
 B:
-	write(fd, outbuffer, j);
+	written = write(fd, outbuffer, j);
+	zassert(written < 0)
+
 	j = 0;
 	i++;
 	switch(template[i]){
@@ -54,20 +57,24 @@ B:
 	goto G;
 C:
 	t = va_arg(argp, int);
-_C:	write(fd, &t, 1);
+_C:	written = write(fd, &t, 1);
+	zassert(written < 0)
 	goto A;
 D:
 	r = va_arg(argp, int);
 	itoa(r, formatbuffer);
-	write(fd, formatbuffer, strlen(formatbuffer));
+	written = write(fd, formatbuffer, strlen(formatbuffer));
+	zassert(written < 0)
 	goto A;
 E:
 	s = va_arg(argp, char*);
-	write(fd, s, strlen(s));
+	written = write(fd, s, strlen(s));
+	zassert(written < 0)
 	goto A;
 F:
 	if(j >= STR_BUF){
-		write(fd, outbuffer, j);
+		written = write(fd, outbuffer, j);
+		zassert(written < 0)
 		*outbuffer = 0;
 	}
 		
@@ -78,7 +85,8 @@ G:
 	goto _C;
 
 Z:
-	write(fd, outbuffer, j);
+	written = write(fd, outbuffer, j);
+	zassert(written < 0)
 
 	va_end(argp);
 }
@@ -96,5 +104,6 @@ void zprintf(char *template, ...){
 }
 
 void zputb(char *ptr, int length){
-	write(STDOUT_FILENO, ptr, length);	
+	size_t written = write(STDOUT_FILENO, ptr, length);	
+	zassert(written < 0)
 }

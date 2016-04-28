@@ -1,4 +1,15 @@
 #include "include/string.h"
+#include "include/zprintf.h"
+
+void put_header(char *filename){
+	zprintf("[2J[H::::::::::::\n%s\n::::::::::::\n", filename);	
+}
+
+int perr(int err){
+	char *err_ptr = strerror(err);
+	dzprintf(STDERR_FILENO, "%s\n", err_ptr);
+	return err;
+}
 
 /*
  * @function strastr
@@ -18,7 +29,6 @@ size_t strastr(const char *haystack, const char *needle) {
 }
 
 /*
- *
  * @function scrlen
  * @description calculates size of line from @from to @to with respect to tabstops
  * @param char *from
@@ -26,7 +36,6 @@ size_t strastr(const char *haystack, const char *needle) {
  * @param int tabstop
  * @return size_t strlen wit respect to tabstops
  */
-
 size_t scrlen(const char *from, size_t offset, int tab_l){
 	int		t_offset = 0;
 	size_t 	real_l = 0;

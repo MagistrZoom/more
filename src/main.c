@@ -1,5 +1,4 @@
 #include <fcntl.h>
-#include <errno.h>
 
 #include <sys/types.h>
 #include <sys/stat.h>
@@ -16,8 +15,6 @@
 
 #include <signal.h> 
 
-#include <stdlib.h>
-
 #include <limits.h> /* just for one constant */
 
 #define NL "\n"
@@ -25,55 +22,60 @@
 #define COMMAND_SET (1)
 #define COMMAND_UNSET (0)
 
-char *prompt = "Next";
+#define reset_cmd(flag, v) do{ if(flag){ flag = 0; current_rows_limit = v;}} while(0)
+#define cmd_case(N,M) case N: return CMD_##M; break
+
+char *prompt = "More";
+char *help = "Most commands optionally preceded by integer argument k.  \n\
+Defaults in brackets.  Star (*) indicates argument becomes new default.\n\
+---------------------------------------------------------------------------\n\
+<space>     Display next k lines of text [current screen size]\n\
+z           Display next k lines of text [current screen size]*\n\
+<return>    Display next k lines of text [1]*\n\
+d			Scroll k lines [current scroll size, initially 11]*\n\
+q 			Exit from more\n\
+b 			Skip backwards k screenfuls of text [1]\n\
+=           Display current line number\n\
+:f          Display current file name and line number\n\
+.           Repeat previous command\n\
+---------------------------------------------------------------------------\n";
 
 int pipe_fd = 0;
 int tab_spaces = 8;
 sigset_t sig, osig;
 
-int in_tty = 0;
 struct termios term = { 0 };
 
-
 enum CMD {
-	CMD_EXIT = 0,	/* interrupt 											 */
-	CMD_HELP, 		/* tiny help */
-	CMD_SCREEN, 	/* i<SPACE> (screen usually) down 						 */
-	CMD_SCREEN_DEF, /* i<SPACE> (screen usually) down and set up i as default*/
-	CMD_LINE, 		/* i<CR> 	scroll i(1) lines and set up i as default 		 */
-	CMD_HALF,		/* id 		by default scroll 11 lines, i as new default */
+	CMD_EXIT = 0,	/*!q		interrupt 									 */
+	CMD_HELP, 		/* h		tiny help  								     */
+	CMD_SCREEN, 	/*!i<SP>	(screen usually) down 						 */
+	CMD_SCREEN_DEF, /*!iz 		(screen usually) down and set up i as default*/
+	CMD_LINE, 		/*!i<CR> 	scroll i(1) lines and set up i as default 	 */
+	CMD_HALF,		/*!id 		by default scroll 11 lines, i as new default */
 	CMD_SKIP,		/* is		skip i(1) lines of text 					 */
 	CMD_SKIP_SCREEN,/* if		skip i(1) screenfuls of text 				 */
-	CMD_BACK,		/* ib		backward i(1) screenfuls of text 			 */
-	CMD_PRINTL,		/* =		print line 									 */
+	CMD_BACK,		/* ib		backward i(1) screenfuls of text, files only */
+	CMD_PRINTL,		/*!=		print line 									 */
+	CMD_PRINTFNL,	/*!:f 		print filename and line						 */
 	CMD_REPEAT,		/* .		repeat last command 						 */
+	CMD_INV,		/*!			any other command							 */
 } CMD;
-
-int perr(int err){
-	char *err_ptr = strerror(err);
-	dzprintf(STDERR_FILENO, "%s\n", err_ptr);
-	return err;
-}
-
-void put_header(char *filename){
-	zprintf("[2J[H::::::::::::\n%s\n::::::::::::\n", filename);	
-}
 
 void command_mode(int action){
 	if(action){
 		term.c_lflag &= ICANON & !ECHO; 
 		int tcs_set_err = tcsetattr(STDERR_FILENO, TCSANOW, &term);
-		if(tcs_set_err == -1){ exit(perr(errno)); }
+		zassert(tcs_set_err < 0)
 	    int sigproc_err = sigprocmask(SIG_BLOCK, &sig, &osig);
-		if(sigproc_err == -1){ exit(perr(errno)); }
+		zassert(sigproc_err < 0)
 	} else {
 		term.c_lflag &= !ICANON & ECHO; 
 		int tcs_set_err = tcsetattr(STDERR_FILENO, TCSANOW, &term);
-		if(tcs_set_err == -1){ exit(perr(errno)); }
+		zassert(tcs_set_err < 0)
 	    int sigproc_err = sigprocmask(SIG_SETMASK, &osig, NULL);
-		if(sigproc_err == -1){ exit(perr(errno)); }
+		zassert(sigproc_err < 0)
 	}
-	
 }
 
 /* set up no-echo and canonical mode
@@ -82,58 +84,98 @@ void command_mode(int action){
  * unblock signals SIGINT and SIGTSTP
  * set up echo and non-canonical mode
  */
-
 /* TODO: need to implement */
-enum CMD wait_for_a_command(){
+enum CMD wait_for_a_command(size_t *k){
 	command_mode(COMMAND_SET);	
-	char key;
-	int rerror = read(STDIN_FILENO, &key, 1);
-	if(rerror == -1){ exit(perr(errno)); }
 
+	size_t rerror = 1;
+	size_t len = 16;
+	size_t i = 0;
+	char key;
+	char *ptr = calloc(1, 16);
+	while(rerror){
+		rerror = read(STDIN_FILENO, &key, 1);
+		zassert(rerror < 0);
+		if(key < '0' || key > '9' || !rerror){
+			break;
+		}
+		if(i >= len){
+			char *tmp = realloc(ptr, len*=2);
+			zassert(!tmp);
+			ptr = tmp;
+		}
+		ptr[i] = key;
+		i++;
+	}
+	char *endptr;
+	size_t k_tmp = strtoll(ptr, &endptr, 10);
+	if(endptr)
+		*k = k_tmp;
+
+	switch(key){
+		cmd_case(' ', SCREEN);
+		cmd_case('z', SCREEN_DEF);
+		cmd_case(NLC, LINE);
+		cmd_case('d', HALF);
+		cmd_case('s', SKIP);
+		cmd_case('f', SKIP_SCREEN);
+		cmd_case('b', BACK);
+
+		cmd_case('q', EXIT);
+		cmd_case('h', HELP);
+		cmd_case('=', PRINTL);
+		cmd_case('.', REPEAT);
+		case ':':
+			rerror = read(STDIN_FILENO, &key, 1);
+			zassert(rerror <= 0); /*omg*/
+			switch(key){
+				case 'f':
+					return CMD_PRINTFNL;
+					break;
+			}
+			break;
+	}
+
+	free(ptr);
 	command_mode(COMMAND_UNSET);	
-	if(key == NLC){
-		return CMD_LINE;
-	}
-	if(key == ' '){
-		return CMD_SCREEN;
-	}
-	if(key == 'q'){
-		return CMD_EXIT;
-	}
-	return CMD_SCREEN;
+
+	return CMD_INV;
 }
 
 /* 
  * prompt in the bottom of screen 
  */
-void print_prompt(size_t cur, size_t end){
+void print_prompt(size_t cur, size_t end, int in_tty){
 	int percent = round((double)cur/end*100);
 	
 	/* set up foreground black and background white 
 	 * print prompt, percents
 	 */
-	zprintf("[30;47m--%s--(%d%%) [0m", prompt, percent);
+	if(!in_tty){
+		zprintf("[30;47m--%s--(%d%%)[0m", prompt, percent);
+	} else {
+		zprintf("[30;47m--%s--[0m", prompt);
+	}
 }
 void clean_prompt(){
 	/* cleans entire line and returns carriage */
 	zprintf("[2K\r");
 }
 
-
 int main(int argc, char *argv[]) {
 	/*TODO: argument and options parsing			*/
-	/*TODO: check syscalls */
 
 
 	/* need to get optimal buf size */
 	size_t page_size = sysconf(_SC_PAGESIZE);
 
+	int in_tty = 0;
 	/* get terminal parameters and size */
 	int term_err = tcgetattr(STDERR_FILENO, &term);
-	if(term_err == -1){ return perr(errno); }
+	zassert(term_err < 0)
 	struct winsize terminal_d = { 0 };
 	term_err = ioctl(STDERR_FILENO, TIOCGWINSZ, &terminal_d);
-	if(term_err == -1){ return perr(errno); }
+	zassert(term_err < 0)
 //	int columns = terminal_d.ws_col;
 //	int rows = terminal_d.ws_row;
 	int columns = 80;
@@ -153,20 +195,27 @@ int main(int argc, char *argv[]) {
 	size_t line_l = columns;
 	size_t real_l = 0; /* with respect to tab alignment */
 	size_t offset = 0;
-	int read_e;
-	int lines = 0;
+	size_t i = 0;
+	size_t read_e;
+
+	unsigned int total_lines = 0; 
+	unsigned int lines = 0;
 	int nlflag = 0;
 	int iflag = 0;
 
+	int ffu = 0;
 
 	/* default lengths */
 	int current_rows_limit = rows;
-	int screen_rows_limit = rows;
-	int line_rows_limit = 1;
+	int screen_rows_limit = current_rows_limit;
+	int screen_def_rows_limit = current_rows_limit;
+	int line_rows_limit   = 1;
+	int half_rows_limit   = 11;
 
 	/* flags 4 commands */
 	int lnflag = 0; /* line mode */
 	int scflag = 0; /* screen mode */
+	int hscflag = 0; /* half-screen mode */
 
 	size_t print_b = 0;			
 	size_t buf_b;
@@ -175,21 +224,20 @@ int main(int argc, char *argv[]) {
 	if(!isatty(STDIN_FILENO)){
 		in_tty = 1;
 		pipe_fd = dup(STDIN_FILENO);
+		zassert(pipe_fd < 0)
 		read_fd = pipe_fd;
 		close(STDIN_FILENO);
 		int fd = open("/dev/tty", O_RDONLY);
-		if(errno != 0 && fd == -1){
-			return perr(errno);	
-		}
+		zassert(fd < 0)
 	}
 
 	if(!in_tty){
 		struct stat read_stat = { 0 };
 		int err_stat = stat(argv[1], &read_stat);
-		if(err_stat == -1){ return perr(errno); }
+		zassert(err_stat < 0)
 		
 		read_fd = open(argv[1], O_RDONLY);
-		if(read_fd == -1){ return perr(errno); }
+		zassert(read_fd < 0)
 
 		/* way to get filesize */
 		/* end = lseek(read_fd, 0, SEEK_END);
@@ -211,7 +259,7 @@ int main(int argc, char *argv[]) {
 		read_e = read(read_fd, buf + offset, page_size - offset - 1);
 
 		if(read_e == 0) { return 0; }
-		if(read_e == -1) { return perr(errno); }
+		zassert(read_e < 0)
 
 		/* balance read(2) output */
 		read_e += offset; 
@@ -267,47 +315,86 @@ int main(int argc, char *argv[]) {
 			/* wut ta hell it was? */
 			
 			if(lines == current_rows_limit){
+				total_lines += lines;
 				lines = 0;
 
-				if(lnflag){
-					lnflag = 0;
-					current_rows_limit = screen_rows_limit;
-				}
-				if(scflag){
-					scflag = 0;
-					current_rows_limit = screen_rows_limit;
-				}
+				reset_cmd(lnflag, 1);
+				reset_cmd(scflag, screen_rows_limit);
+				reset_cmd(hscflag, half_rows_limit);
 
 				/* nl for the command-line */
 				if(ptr[line_l-1] != NLC && (ptr[line_l - 1] != TAB || real_l != columns)){ 
 					zprintf(NL); 
 				}
-
-				print_prompt(print_b, end);
-
-				cmd = wait_for_a_command();
-
-				clean_prompt();
-				switch(cmd) {
-					case CMD_EXIT:
-						return 0;
-						break;
-					case CMD_LINE:
-						lnflag = 1;
-						current_rows_limit = 1;
-						break;
-					case CMD_SCREEN:
-						scflag = 1;
-						current_rows_limit = screen_rows_limit;
-						break;
-				}
 				
+				print_prompt(print_b, end, in_tty);
+
+				while(1){
+					if(ffu) {
+						ffu = 0;
+						break;
+					}
+					if(print_b +line_l < end/* || -w flag */)
+						cmd = wait_for_a_command(&i);
+
+					clean_prompt();
+					switch(cmd) {
+						case CMD_EXIT:
+							return 0;
+							break;
+						case CMD_LINE:
+							lnflag = 1;
+							screen_def_rows_limit = i?i:screen_def_rows_limit;
+							screen_rows_limit = i?i:screen_rows_limit;
+							current_rows_limit = i?i:1;
+							ffu = 1;
+							break;
+						case CMD_SCREEN_DEF:
+							screen_def_rows_limit = i?i:screen_def_rows_limit;
+						case CMD_SCREEN:
+							scflag = 1;
+							screen_rows_limit = i?i:screen_rows_limit;
+							current_rows_limit = i?i:screen_rows_limit;
+							ffu = 1;
+							break;
+						case CMD_HALF:
+							hscflag = 1;
+							half_rows_limit = i?i:half_rows_limit;
+							current_rows_limit = half_rows_limit;
+							ffu = 1;
+							break;
+						case CMD_PRINTL:
+							clean_prompt();
+							zprintf("%d", total_lines);
+							ffu = 0;
+							break;
+						case CMD_PRINTFNL:
+							clean_prompt();
+							zprintf("\"%s\" %d", argv[1], total_lines);
+							ffu = 0;
+							break;
+						case CMD_INV:
+							clean_prompt();
+							zprintf("Invalid command");
+							ffu = 0;
+							break;
+						case CMD_HELP:
+							clean_prompt();
+							zprintf("%s", help);
+							print_prompt(print_b, end, in_tty);
+							ffu = 0;
+							break;
+						case CMD_REPEAT:
+							break; 
+					}
+				}
 			}
 			ptr     += line_l;
 			print_b += line_l;
 		}
 	}
 	
+	free(buf);
 	close(read_fd);
 	return 0;
 }
