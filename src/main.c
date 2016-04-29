@@ -66,6 +66,8 @@ enum CMD {
 
 void command_mode(int action){
 	if(action){
+		term.c_cc[VMIN] = 1;
+		term.c_cc[VTIME] = 0;
 		term.c_lflag &= ICANON & !ECHO; 
 		int tcs_set_err = tcsetattr(STDERR_FILENO, TCSANOW, &term);
 		zassert(tcs_set_err < 0)
@@ -259,28 +261,43 @@ int main(int argc, char *argv[]) {
 
 	while(print_b < end){
 		read_e = read(read_fd, buf + offset, page_size - offset - 1);
-
-		if(read_e == 0) { return 0; }
-		zassert(read_e < 0)
-
+		
+		if(!read_e && !offset) { 
+			reset_tty(); 
+			return 0; 
+		}
 		/* balance read(2) output */
 		read_e += offset; 
+		
+		
+		zassert(read_e < 0)
 
 		ptr = buf;
 		offset = 0;
+
 		while(ptr - buf < read_e){
 			nlptr = memmem(ptr, read_e - (ptr-buf), NL, 1)+1;
 
 			if(nlptr < buf){
 				/* move last line */
-				offset = read_e - (ptr - buf);
+/*				offset = read_e - (ptr - buf);
 				memcpy(buf, ptr, offset+1);
 				buf[offset+1] = 0;
-				break;
+				break;*/
+				line_l = (read_e-(ptr-buf) < columns)?(read_e-(ptr-buf)):columns;
 			} else {
 				line_l = (nlptr-ptr)<columns?(nlptr-ptr):columns;
 			}
-
+			
+			
+			if(read_e-(ptr-buf) <= columns ){
+				offset = read_e - (ptr - buf);                                 
+				memcpy(buf, ptr, offset+1);                                    
+				buf[offset+1] = 0;  
+				if(offset != end - print_b){
+				break;
+				}
+			}
 			/* get real string size on terminal 
 			 * scrlen >= strlen (or nlptr - ptr)
 			 */
@@ -297,7 +314,7 @@ int main(int argc, char *argv[]) {
 			}
 
 			zputb(ptr, line_l);
-
+			
 			/* i dont know how does it work */
 			if(nlflag && iflag){
 /*				if(total_lines >= line_offset_limit){
@@ -332,7 +349,7 @@ int main(int argc, char *argv[]) {
 			/* wut ta hell it was? */
 			
 			if(lines == current_rows_limit){
-/*				total_lines += lines;*/
+				total_lines += lines;
 				lines = 0;
 
 				reset_cmd(lnflag, 1);
@@ -413,11 +430,11 @@ EXEC_CMD:
 						break;
 				}
 			}
+			ptr     += line_l;
 			if(skflag){
 				skflag = 0;
 				break;
 			}
-			ptr     += line_l;
 			print_b += line_l;
 		}
 	}
