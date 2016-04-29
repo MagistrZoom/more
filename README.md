@@ -1,6 +1,6 @@
 # more
 
-Hoi. You are in my silly more implementation. Enjoy.
+Hoi. You are in my silly more implementation repo. Enjoy.
 
 ## Posibilities:
 

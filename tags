@@ -136,6 +136,7 @@ CMD_HALF	src/main.c	/^	CMD_HALF,		\/*!id 		by default scroll 11 lines, i as new 
 CMD_HELP	src/main.c	/^	CMD_HELP, 		\/* h		tiny help  								     *\/$/;"	e	enum:CMD	file:
 CMD_INV	src/main.c	/^	CMD_INV,		\/*!			any other command							 *\/$/;"	e	enum:CMD	file:
 CMD_LINE	src/main.c	/^	CMD_LINE, 		\/*!i<CR> 	scroll i(1) lines and set up i as default 	 *\/$/;"	e	enum:CMD	file:
+CMD_NOP	src/main.c	/^	CMD_NOP$/;"	e	enum:CMD	file:
 CMD_PRINTFNL	src/main.c	/^	CMD_PRINTFNL,	\/*!:f 		print filename and line						 *\/$/;"	e	enum:CMD	file:
 CMD_PRINTL	src/main.c	/^	CMD_PRINTL,		\/*!=		print line 									 *\/$/;"	e	enum:CMD	file:
 CMD_REPEAT	src/main.c	/^	CMD_REPEAT,		\/* .		repeat last command 						 *\/$/;"	e	enum:CMD	file:
@@ -497,6 +498,7 @@ ILL_PRVREG	/usr/include/x86_64-linux-gnu/bits/siginfo.h	198;"	d
 IMAXBEL	/usr/include/x86_64-linux-gnu/bits/termios.h	75;"	d
 INFINITY	/usr/include/x86_64-linux-gnu/bits/inf.h	26;"	d
 INFINITY	/usr/include/x86_64-linux-gnu/bits/inf.h	28;"	d
+INIT_LINES	src/main.c	24;"	d	file:
 INLCR	/usr/include/x86_64-linux-gnu/bits/termios.h	68;"	d
 INPCK	/usr/include/x86_64-linux-gnu/bits/termios.h	66;"	d
 INT_MAX	/usr/include/limits.h	80;"	d
@@ -4259,7 +4261,7 @@ clockid_t	/usr/include/time.h	/^typedef __clockid_t clockid_t;$/;"	t
 close	/usr/include/libio.h	/^  __io_close_fn *close;		\/* Close file.  *\/$/;"	m	struct:__anon2
 close	/usr/include/libio.h	/^  __io_close_fn *close;		\/* Close file.  *\/$/;"	m	struct:__anon53
 close	/usr/include/libio.h	/^  __io_close_fn *close;		\/* Close file.  *\/$/;"	m	struct:__anon84
-cmd_case	src/main.c	26;"	d	file:
+cmd_case	src/main.c	27;"	d	file:
 command_mode	src/main.c	/^void command_mode(int action){$/;"	f	signature:(int action)
 comparison_fn_t	/usr/include/stdlib.h	/^typedef __compar_fn_t comparison_fn_t;$/;"	t
 cookie_close_function_t	/usr/include/libio.h	/^typedef __io_close_fn cookie_close_function_t;$/;"	t
@@ -4639,7 +4641,7 @@ required_argument	/usr/include/getopt.h	117;"	d
 reserved	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint32_t		reserved;$/;"	m	struct:_fpstate
 reserved1	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint64_t reserved1[2];$/;"	m	struct:_xsave_hdr
 reserved2	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint64_t reserved2[5];$/;"	m	struct:_xsave_hdr
-reset_cmd	src/main.c	25;"	d	file:
+reset_cmd	src/main.c	26;"	d	file:
 retval	/usr/include/math.h	/^    double retval;$/;"	m	struct:__exception
 reverse	src/zprintf.c	/^void reverse(char s[]){$/;"	f	signature:(char s[])
 rip	/usr/include/x86_64-linux-gnu/bits/sigcontext.h	/^  __uint64_t		rip;$/;"	m	struct:_fpstate
