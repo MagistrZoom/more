@@ -1,7 +1,7 @@
 CC=gcc
 LD=gcc
-CFLAGS=-m64 -Wno-discarded-qualifiers -D_GNU_SOURCE -g -c -o
-LFLAGS=-lm -o
+CFLAGS=-O0 -m64 -g -c -o
+LFLAGS=-lm -m64 -o
 SRCS=$(wildcard src/*.c)
 OBJS=$(addprefix obj/,$(notdir $(SRCS:.c=.o)))
 
@@ -9,8 +9,8 @@ build: ctags $(OBJS)
 	$(LD) $(OBJS) $(LFLAGS) build/more                                         
                                                                                
 ctags: $(SRCS)
-	$(CC) -M $(SRCS) | sed -e 's@[\\ ]@\n@g' | \
-		sed -e "/\.o:/d; /^$$/d;" | ctags --fields=+S -L -
+	$(CC) -M $(SRCS) | gsed -e 's@[\\ ]@\n@g' | \
+		gsed -e "/\.o:/d; /^$$/d;" | ctags --fields=+S -L -
 
 obj/%.o: src/%.c                                                               
 	$(CC) $(CFLAGS) $@ $<                                                   

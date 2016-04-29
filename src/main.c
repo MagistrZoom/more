@@ -45,7 +45,7 @@ int pipe_fd = 0;
 int tab_spaces = 8;
 sigset_t sig, osig;
 
-struct termios term = { 0 };
+struct termios term = { 0 }, def_term = { 0 };
 
 enum CMD {
 	CMD_EXIT = 0,	/*!q		interrupt 									 */
@@ -162,6 +162,10 @@ void clean_prompt(){
 	/* cleans entire line and returns carriage */
 	zprintf("[2K\r");
 }
+void reset_tty(){
+	int tcs_set_err = tcsetattr(STDERR_FILENO, TCSANOW, &def_term);
+	zassert(tcs_set_err < 0)
+}
 
 int main(int argc, char *argv[]) {
 	/*TODO: argument and options parsing			*/
@@ -174,6 +178,7 @@ int main(int argc, char *argv[]) {
 	/* get terminal parameters and size */
 	int term_err = tcgetattr(STDERR_FILENO, &term);
 	zassert(term_err < 0)
+	def_term = term;
 	struct winsize terminal_d = { 0 };
 	term_err = ioctl(STDERR_FILENO, TIOCGWINSZ, &terminal_d);
 	zassert(term_err < 0)
@@ -350,6 +355,7 @@ REQ_CMD:
 EXEC_CMD:		
 				switch(cmd) {
 					case CMD_EXIT:
+						reset_tty();
 						return 0;
 						break;
 					case CMD_LINE:
@@ -418,5 +424,6 @@ EXEC_CMD:
 	
 	free(buf);
 	close(read_fd);
+	reset_tty();	
 	return 0;
 }
