@@ -6,7 +6,6 @@
 
 #define TAB '\t'
 int perr(int err); 
-#define zassert(eq) if(eq){ _exit(perr(errno)); }
 
 void put_header(char *filename);
 size_t strastr(const char *haystack, const char *needle);

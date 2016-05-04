@@ -1,5 +1,6 @@
 #include "include/zprintf.h" 
 #include "include/string.h" 
+#include "include/zassert.h"
 
 void reverse(char s[]){
     int i, j;

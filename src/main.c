@@ -1,26 +1,17 @@
-#include <fcntl.h>
-
-#include <sys/types.h>
-#include <sys/stat.h>
-
+#include "include/zassert.h"
 #include "include/string.h"
 #include "include/zprintf.h"
+#include "include/tty.h"
+#include "include/signal.h"
 
 #include <malloc.h>
 
 #include <math.h>
 
-#include <termios.h>
-#include <sys/ioctl.h>
-
-#include <signal.h> 
-
 #include <limits.h> /* just for one constant */
 
 #define NL "\n"
 #define NLC '\n'
-#define COMMAND_SET (1)
-#define COMMAND_UNSET (0)
 #define INIT_LINES (256)
 
 #define reset_cmd(flag, v) do{ if(flag){ flag = 0; current_rows_limit = v;}} while(0)
@@ -43,9 +34,10 @@ b 			Skip backwards k screenfuls of text [1]\n\
 
 int pipe_fd = 0;
 int tab_spaces = 8;
-sigset_t sig, osig;
 
-struct termios term = { 0 }, def_term = { 0 };
+struct termios term = { 0 };
+struct termios def_term = { 0 };
+
 
 enum CMD {
 	CMD_EXIT = 0,	/*!q		interrupt 									 */
@@ -64,24 +56,6 @@ enum CMD {
 	CMD_NOP
 } CMD;
 
-void command_mode(int action){
-	if(action){
-		term.c_cc[VMIN] = 1;
-		term.c_cc[VTIME] = 0;
-		term.c_lflag &= ICANON & !ECHO; 
-		int tcs_set_err = tcsetattr(STDERR_FILENO, TCSANOW, &term);
-		zassert(tcs_set_err < 0)
-	    int sigproc_err = sigprocmask(SIG_BLOCK, &sig, &osig);
-		zassert(sigproc_err < 0)
-	} else {
-		term.c_lflag &= !ICANON & ECHO; 
-		int tcs_set_err = tcsetattr(STDERR_FILENO, TCSANOW, &term);
-		zassert(tcs_set_err < 0)
-	    int sigproc_err = sigprocmask(SIG_SETMASK, &osig, NULL);
-		zassert(sigproc_err < 0)
-	}
-}
-
 /* set up no-echo and canonical mode
  * block signals SIGINT and SIGTSTP
  * read one char
@@ -89,7 +63,7 @@ void command_mode(int action){
  * set up echo and non-canonical mode
  */
 enum CMD wait_for_a_command(size_t *k){
-	command_mode(COMMAND_SET);	
+	term_mode(COMMAND_SET, &term);	
 
 	size_t rerror = 1;
 	size_t len = 16;
@@ -140,7 +114,7 @@ enum CMD wait_for_a_command(size_t *k){
 	}
 
 	free(ptr);
-	command_mode(COMMAND_UNSET);	
+	term_mode(COMMAND_UNSET, &term);	
 
 	return CMD_INV;
 }
@@ -163,10 +137,6 @@ void print_prompt(size_t cur, size_t end, int in_tty){
 void clean_prompt(){
 	/* cleans entire line and returns carriage */
 	zprintf("[2K\r");
-}
-void reset_tty(){
-	int tcs_set_err = tcsetattr(STDERR_FILENO, TCSANOW, &def_term);
-	zassert(tcs_set_err < 0)
 }
 
 int main(int argc, char *argv[]) {
@@ -230,13 +200,7 @@ int main(int argc, char *argv[]) {
 
 	/* reopen control STDIN descriptor and save stdin from pipe */
 	if(!isatty(STDIN_FILENO)){
-		in_tty = 1;
-		pipe_fd = dup(STDIN_FILENO);
-		zassert(pipe_fd < 0)
-		read_fd = pipe_fd;
-		close(STDIN_FILENO);
-		int fd = open("/dev/tty", O_RDONLY);
-		zassert(fd < 0)
+		handle_stdin(&in_tty, &pipe_fd, &read_fd);
 	}
 
 	if(!in_tty){
@@ -259,6 +223,7 @@ int main(int argc, char *argv[]) {
 
 	while(print_b < end){
 		read_e = read(read_fd, buf + offset, page_size - offset - 1);
+		zassert(read_e < 0)
 		
 		if(!read_e && !offset) { 
 			reset_tty(); 
@@ -267,9 +232,6 @@ int main(int argc, char *argv[]) {
 		/* balance read(2) output */
 		read_e += offset; 
 		
-		
-		zassert(read_e < 0)
-
 		ptr = buf;
 		offset = 0;
 
@@ -288,12 +250,12 @@ int main(int argc, char *argv[]) {
 			}
 			
 			
-			if(read_e-(ptr-buf) <= columns ){
+			if(read_e-(ptr-buf) <= columns){
 				offset = read_e - (ptr - buf);                                 
 				memcpy(buf, ptr, offset+1);                                    
 				buf[offset+1] = 0;  
 				if(offset != end - print_b){
-				break;
+					break;
 				}
 			}
 			/* get real string size on terminal 
@@ -304,7 +266,7 @@ int main(int argc, char *argv[]) {
 			/* decrease line_l until real_l > columns */
 			/* 
 			 * TODO: small perfomance boost, get logic line 
-			 * from start to columns
+			 * from start to columns len
 			 */
 			while(real_l > columns){
 				nlflag = 1;

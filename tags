@@ -66,12 +66,16 @@ BUFSIZ	/usr/include/iso/stdio_iso.h	104;"	d
 BUS_ADRALN	/usr/include/sys/machsig.h	93;"	d
 BUS_ADRERR	/usr/include/sys/machsig.h	94;"	d
 BUS_OBJERR	/usr/include/sys/machsig.h	96;"	d
-B_FALSE	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef enum { B_FALSE, B_TRUE } boolean_t;$/;"	e	enum:__anon4
-B_FALSE	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef enum { B_FALSE, B_TRUE } boolean_t;$/;"	e	enum:__anon73
-B_FALSE	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef enum { B_FALSE, B_TRUE } boolean_t;$/;"	e	enum:__anon99
-B_TRUE	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef enum { B_FALSE, B_TRUE } boolean_t;$/;"	e	enum:__anon4
-B_TRUE	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef enum { B_FALSE, B_TRUE } boolean_t;$/;"	e	enum:__anon73
-B_TRUE	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef enum { B_FALSE, B_TRUE } boolean_t;$/;"	e	enum:__anon99
+B_FALSE	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef enum { B_FALSE, B_TRUE } boolean_t;$/;"	e	enum:__anon132
+B_FALSE	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef enum { B_FALSE, B_TRUE } boolean_t;$/;"	e	enum:__anon157
+B_FALSE	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef enum { B_FALSE, B_TRUE } boolean_t;$/;"	e	enum:__anon217
+B_FALSE	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef enum { B_FALSE, B_TRUE } boolean_t;$/;"	e	enum:__anon69
+B_FALSE	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef enum { B_FALSE, B_TRUE } boolean_t;$/;"	e	enum:__anon8
+B_TRUE	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef enum { B_FALSE, B_TRUE } boolean_t;$/;"	e	enum:__anon132
+B_TRUE	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef enum { B_FALSE, B_TRUE } boolean_t;$/;"	e	enum:__anon157
+B_TRUE	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef enum { B_FALSE, B_TRUE } boolean_t;$/;"	e	enum:__anon217
+B_TRUE	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef enum { B_FALSE, B_TRUE } boolean_t;$/;"	e	enum:__anon69
+B_TRUE	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef enum { B_FALSE, B_TRUE } boolean_t;$/;"	e	enum:__anon8
 CANTMASK0	/usr/include/sys/signal.h	257;"	d
 CANTMASK1	/usr/include/sys/signal.h	258;"	d
 CBAUD	/usr/include/sys/termios.h	259;"	d
@@ -136,8 +140,8 @@ CMD_SKIP_SCREEN	src/main.c	/^	CMD_SKIP_SCREEN,\/* if		skip i(1) screenfuls of te
 CNSWTCH	/usr/include/sys/termios.h	176;"	d
 CNUL	/usr/include/sys/termios.h	159;"	d
 COLL_WEIGHTS_MAX	/usr/include/limits.h	152;"	d
-COMMAND_SET	src/main.c	22;"	d	file:
-COMMAND_UNSET	src/main.c	23;"	d	file:
+COMMAND_SET	src/include/tty.h	15;"	d
+COMMAND_UNSET	src/include/tty.h	16;"	d
 CQUIT	/usr/include/sys/termios.h	166;"	d
 CR0	/usr/include/sys/ioctl.h	85;"	d
 CR0	/usr/include/sys/termios.h	229;"	d
@@ -374,7 +378,7 @@ FLT_MIN	/usr/include/limits.h	218;"	d
 FLUSHO	/usr/include/sys/ioctl.h	104;"	d
 FLUSHO	/usr/include/sys/termios.h	311;"	d
 FOPEN_MAX	/usr/include/iso/stdio_iso.h	135;"	d
-FORMAT_BUF	src/zprintf.c	29;"	d	file:
+FORMAT_BUF	src/zprintf.c	30;"	d	file:
 FPE_FLTDEN	/usr/include/sys/machsig.h	74;"	d
 FPE_FLTDIV	/usr/include/sys/machsig.h	68;"	d
 FPE_FLTINV	/usr/include/sys/machsig.h	72;"	d
@@ -506,7 +510,7 @@ INFINITY	/usr/include/iso/math_c99.h	111;"	d
 INFINITY	/usr/include/iso/math_c99.h	112;"	d
 INFINITY	/usr/include/iso/math_c99.h	33;"	d
 INFINITY	/usr/include/iso/math_c99.h	34;"	d
-INIT_LINES	src/main.c	24;"	d	file:
+INIT_LINES	src/main.c	15;"	d	file:
 INLCR	/usr/include/sys/termios.h	193;"	d
 INPCK	/usr/include/sys/termios.h	191;"	d
 INT16_MAX	/usr/include/sys/int_limits.h	65;"	d
@@ -651,14 +655,14 @@ NCC	/usr/include/sys/termios.h	55;"	d
 NCCS	/usr/include/sys/termios.h	59;"	d
 NFDBITS	/usr/include/sys/select.h	104;"	d
 NGROUPS_MAX	/usr/include/limits.h	64;"	d
-NL	src/main.c	20;"	d	file:
+NL	src/main.c	13;"	d	file:
 NL0	/usr/include/sys/ioctl.h	75;"	d
 NL0	/usr/include/sys/termios.h	226;"	d
 NL1	/usr/include/sys/ioctl.h	76;"	d
 NL1	/usr/include/sys/termios.h	227;"	d
 NL2	/usr/include/sys/ioctl.h	77;"	d
 NL3	/usr/include/sys/ioctl.h	78;"	d
-NLC	src/main.c	21;"	d	file:
+NLC	src/main.c	14;"	d	file:
 NLDELAY	/usr/include/sys/ioctl.h	74;"	d
 NLDLY	/usr/include/sys/termios.h	225;"	d
 NL_ARGMAX	/usr/include/limits.h	181;"	d
@@ -935,7 +939,7 @@ STDERR_FILENO	/usr/include/unistd.h	171;"	d
 STDIN_FILENO	/usr/include/unistd.h	169;"	d
 STDOUT_FILENO	/usr/include/unistd.h	170;"	d
 STD_BLK	/usr/include/limits.h	261;"	d
-STR_BUF	src/zprintf.c	28;"	d	file:
+STR_BUF	src/zprintf.c	29;"	d	file:
 SYMLINK_MAX	/usr/include/limits.h	70;"	d
 SYSIDMASK	/usr/include/sys/fcntl.h	83;"	d
 SYSPID_MAX	/usr/include/limits.h	264;"	d
@@ -1201,12 +1205,16 @@ _BIT_FIELDS_LTOH	/usr/include/sys/isa_defs.h	334;"	d
 _BOOL_ALIGNMENT	/usr/include/sys/isa_defs.h	273;"	d
 _BOOL_ALIGNMENT	/usr/include/sys/isa_defs.h	337;"	d
 _BOOL_ALIGNMENT	/usr/include/sys/isa_defs.h	423;"	d
-_B_FALSE	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef enum { _B_FALSE, _B_TRUE } boolean_t;$/;"	e	enum:__anon3
-_B_FALSE	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef enum { _B_FALSE, _B_TRUE } boolean_t;$/;"	e	enum:__anon72
-_B_FALSE	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef enum { _B_FALSE, _B_TRUE } boolean_t;$/;"	e	enum:__anon98
-_B_TRUE	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef enum { _B_FALSE, _B_TRUE } boolean_t;$/;"	e	enum:__anon3
-_B_TRUE	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef enum { _B_FALSE, _B_TRUE } boolean_t;$/;"	e	enum:__anon72
-_B_TRUE	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef enum { _B_FALSE, _B_TRUE } boolean_t;$/;"	e	enum:__anon98
+_B_FALSE	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef enum { _B_FALSE, _B_TRUE } boolean_t;$/;"	e	enum:__anon131
+_B_FALSE	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef enum { _B_FALSE, _B_TRUE } boolean_t;$/;"	e	enum:__anon156
+_B_FALSE	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef enum { _B_FALSE, _B_TRUE } boolean_t;$/;"	e	enum:__anon216
+_B_FALSE	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef enum { _B_FALSE, _B_TRUE } boolean_t;$/;"	e	enum:__anon68
+_B_FALSE	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef enum { _B_FALSE, _B_TRUE } boolean_t;$/;"	e	enum:__anon7
+_B_TRUE	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef enum { _B_FALSE, _B_TRUE } boolean_t;$/;"	e	enum:__anon131
+_B_TRUE	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef enum { _B_FALSE, _B_TRUE } boolean_t;$/;"	e	enum:__anon156
+_B_TRUE	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef enum { _B_FALSE, _B_TRUE } boolean_t;$/;"	e	enum:__anon216
+_B_TRUE	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef enum { _B_FALSE, _B_TRUE } boolean_t;$/;"	e	enum:__anon68
+_B_TRUE	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef enum { _B_FALSE, _B_TRUE } boolean_t;$/;"	e	enum:__anon7
 _CHAR_ALIGNMENT	/usr/include/sys/isa_defs.h	214;"	d
 _CHAR_ALIGNMENT	/usr/include/sys/isa_defs.h	274;"	d
 _CHAR_ALIGNMENT	/usr/include/sys/isa_defs.h	338;"	d
@@ -1909,44 +1917,110 @@ __X	/usr/include/iso/math_iso.h	137;"	d
 __XOPEN_OR_POSIX	/usr/include/sys/feature_tests.h	63;"	d
 __Y	/usr/include/iso/math_iso.h	138;"	d
 ___sun_attr_inner	/usr/include/sys/ccompile.h	80;"	d
-__addr	/usr/include/sys/siginfo.h	/^			caddr32_t __addr;	\/* faulting address	*\/$/;"	m	struct:siginfo32::__anon48::__anon53
-__addr	/usr/include/sys/siginfo.h	/^			void 	*__addr;	\/* faulting address	*\/$/;"	m	struct:k_siginfo::__anon57::__anon62
-__addr	/usr/include/sys/siginfo.h	/^			void 	*__addr;	\/* faulting address	*\/$/;"	m	struct:siginfo::__anon39::__anon44
+__addr	/usr/include/sys/siginfo.h	/^			caddr32_t __addr;	\/* faulting address	*\/$/;"	m	struct:siginfo32::__anon107::__anon112
+__addr	/usr/include/sys/siginfo.h	/^			caddr32_t __addr;	\/* faulting address	*\/$/;"	m	struct:siginfo32::__anon195::__anon200
+__addr	/usr/include/sys/siginfo.h	/^			caddr32_t __addr;	\/* faulting address	*\/$/;"	m	struct:siginfo32::__anon46::__anon51
+__addr	/usr/include/sys/siginfo.h	/^			void 	*__addr;	\/* faulting address	*\/$/;"	m	struct:k_siginfo::__anon116::__anon121
+__addr	/usr/include/sys/siginfo.h	/^			void 	*__addr;	\/* faulting address	*\/$/;"	m	struct:k_siginfo::__anon204::__anon209
+__addr	/usr/include/sys/siginfo.h	/^			void 	*__addr;	\/* faulting address	*\/$/;"	m	struct:k_siginfo::__anon55::__anon60
+__addr	/usr/include/sys/siginfo.h	/^			void 	*__addr;	\/* faulting address	*\/$/;"	m	struct:siginfo::__anon186::__anon191
+__addr	/usr/include/sys/siginfo.h	/^			void 	*__addr;	\/* faulting address	*\/$/;"	m	struct:siginfo::__anon37::__anon42
+__addr	/usr/include/sys/siginfo.h	/^			void 	*__addr;	\/* faulting address	*\/$/;"	m	struct:siginfo::__anon98::__anon103
 __amd64	/usr/include/sys/isa_defs.h	257;"	d
-__band	/usr/include/sys/siginfo.h	/^			int32_t	__band;$/;"	m	struct:siginfo32::__anon48::__anon54
-__band	/usr/include/sys/siginfo.h	/^			long	__band;$/;"	m	struct:k_siginfo::__anon57::__anon63
-__band	/usr/include/sys/siginfo.h	/^			long	__band;$/;"	m	struct:siginfo::__anon39::__anon45
+__band	/usr/include/sys/siginfo.h	/^			int32_t	__band;$/;"	m	struct:siginfo32::__anon107::__anon113
+__band	/usr/include/sys/siginfo.h	/^			int32_t	__band;$/;"	m	struct:siginfo32::__anon195::__anon201
+__band	/usr/include/sys/siginfo.h	/^			int32_t	__band;$/;"	m	struct:siginfo32::__anon46::__anon52
+__band	/usr/include/sys/siginfo.h	/^			long	__band;$/;"	m	struct:k_siginfo::__anon116::__anon122
+__band	/usr/include/sys/siginfo.h	/^			long	__band;$/;"	m	struct:k_siginfo::__anon204::__anon210
+__band	/usr/include/sys/siginfo.h	/^			long	__band;$/;"	m	struct:k_siginfo::__anon55::__anon61
+__band	/usr/include/sys/siginfo.h	/^			long	__band;$/;"	m	struct:siginfo::__anon186::__anon192
+__band	/usr/include/sys/siginfo.h	/^			long	__band;$/;"	m	struct:siginfo::__anon37::__anon43
+__band	/usr/include/sys/siginfo.h	/^			long	__band;$/;"	m	struct:siginfo::__anon98::__anon104
 __buf	/usr/include/time.h	/^	char *__buf;$/;"	v
 __buf	/usr/include/unistd.h	/^	char *__buf;$/;"	v
-__cld	/usr/include/sys/siginfo.h	/^				} __cld;$/;"	m	union:k_siginfo::__anon57::__anon58::__anon59	typeref:struct:k_siginfo::__anon57::__anon58::__anon59::__anon61
-__cld	/usr/include/sys/siginfo.h	/^				} __cld;$/;"	m	union:siginfo32::__anon48::__anon49::__anon50	typeref:struct:siginfo32::__anon48::__anon49::__anon50::__anon52
-__cld	/usr/include/sys/siginfo.h	/^				} __cld;$/;"	m	union:siginfo::__anon39::__anon40::__anon41	typeref:struct:siginfo::__anon39::__anon40::__anon41::__anon43
-__ctid	/usr/include/sys/siginfo.h	/^			ctid_t	__ctid;		\/* contract ID		*\/$/;"	m	struct:k_siginfo::__anon57::__anon58
-__ctid	/usr/include/sys/siginfo.h	/^			ctid_t	__ctid;		\/* contract ID		*\/$/;"	m	struct:siginfo::__anon39::__anon40
-__ctid	/usr/include/sys/siginfo.h	/^			id32_t	__ctid;		\/* contract ID		*\/$/;"	m	struct:siginfo32::__anon48::__anon49
-__data	/usr/include/sys/siginfo.h	/^	} __data;$/;"	m	struct:k_siginfo	typeref:union:k_siginfo::__anon57
-__data	/usr/include/sys/siginfo.h	/^	} __data;$/;"	m	struct:siginfo	typeref:union:siginfo::__anon39
-__data	/usr/include/sys/siginfo.h	/^	} __data;$/;"	m	struct:siginfo32	typeref:union:siginfo32::__anon48
-__entity	/usr/include/sys/siginfo.h	/^			int32_t	__entity;	\/* type of entity exceeding *\/$/;"	m	struct:k_siginfo::__anon57::__anon65
-__entity	/usr/include/sys/siginfo.h	/^			int32_t	__entity;	\/* type of entity exceeding *\/$/;"	m	struct:siginfo32::__anon48::__anon56
-__entity	/usr/include/sys/siginfo.h	/^			int32_t	__entity;	\/* type of entity exceeding *\/$/;"	m	struct:siginfo::__anon39::__anon47
+__cld	/usr/include/sys/siginfo.h	/^				} __cld;$/;"	m	union:k_siginfo::__anon116::__anon117::__anon118	typeref:struct:k_siginfo::__anon116::__anon117::__anon118::__anon120
+__cld	/usr/include/sys/siginfo.h	/^				} __cld;$/;"	m	union:k_siginfo::__anon204::__anon205::__anon206	typeref:struct:k_siginfo::__anon204::__anon205::__anon206::__anon208
+__cld	/usr/include/sys/siginfo.h	/^				} __cld;$/;"	m	union:k_siginfo::__anon55::__anon56::__anon57	typeref:struct:k_siginfo::__anon55::__anon56::__anon57::__anon59
+__cld	/usr/include/sys/siginfo.h	/^				} __cld;$/;"	m	union:siginfo32::__anon107::__anon108::__anon109	typeref:struct:siginfo32::__anon107::__anon108::__anon109::__anon111
+__cld	/usr/include/sys/siginfo.h	/^				} __cld;$/;"	m	union:siginfo32::__anon195::__anon196::__anon197	typeref:struct:siginfo32::__anon195::__anon196::__anon197::__anon199
+__cld	/usr/include/sys/siginfo.h	/^				} __cld;$/;"	m	union:siginfo32::__anon46::__anon47::__anon48	typeref:struct:siginfo32::__anon46::__anon47::__anon48::__anon50
+__cld	/usr/include/sys/siginfo.h	/^				} __cld;$/;"	m	union:siginfo::__anon186::__anon187::__anon188	typeref:struct:siginfo::__anon186::__anon187::__anon188::__anon190
+__cld	/usr/include/sys/siginfo.h	/^				} __cld;$/;"	m	union:siginfo::__anon37::__anon38::__anon39	typeref:struct:siginfo::__anon37::__anon38::__anon39::__anon41
+__cld	/usr/include/sys/siginfo.h	/^				} __cld;$/;"	m	union:siginfo::__anon98::__anon99::__anon100	typeref:struct:siginfo::__anon98::__anon99::__anon100::__anon102
+__ctid	/usr/include/sys/siginfo.h	/^			ctid_t	__ctid;		\/* contract ID		*\/$/;"	m	struct:k_siginfo::__anon116::__anon117
+__ctid	/usr/include/sys/siginfo.h	/^			ctid_t	__ctid;		\/* contract ID		*\/$/;"	m	struct:k_siginfo::__anon204::__anon205
+__ctid	/usr/include/sys/siginfo.h	/^			ctid_t	__ctid;		\/* contract ID		*\/$/;"	m	struct:k_siginfo::__anon55::__anon56
+__ctid	/usr/include/sys/siginfo.h	/^			ctid_t	__ctid;		\/* contract ID		*\/$/;"	m	struct:siginfo::__anon186::__anon187
+__ctid	/usr/include/sys/siginfo.h	/^			ctid_t	__ctid;		\/* contract ID		*\/$/;"	m	struct:siginfo::__anon37::__anon38
+__ctid	/usr/include/sys/siginfo.h	/^			ctid_t	__ctid;		\/* contract ID		*\/$/;"	m	struct:siginfo::__anon98::__anon99
+__ctid	/usr/include/sys/siginfo.h	/^			id32_t	__ctid;		\/* contract ID		*\/$/;"	m	struct:siginfo32::__anon107::__anon108
+__ctid	/usr/include/sys/siginfo.h	/^			id32_t	__ctid;		\/* contract ID		*\/$/;"	m	struct:siginfo32::__anon195::__anon196
+__ctid	/usr/include/sys/siginfo.h	/^			id32_t	__ctid;		\/* contract ID		*\/$/;"	m	struct:siginfo32::__anon46::__anon47
+__data	/usr/include/sys/siginfo.h	/^	} __data;$/;"	m	struct:k_siginfo	typeref:union:k_siginfo::__anon116
+__data	/usr/include/sys/siginfo.h	/^	} __data;$/;"	m	struct:k_siginfo	typeref:union:k_siginfo::__anon204
+__data	/usr/include/sys/siginfo.h	/^	} __data;$/;"	m	struct:k_siginfo	typeref:union:k_siginfo::__anon55
+__data	/usr/include/sys/siginfo.h	/^	} __data;$/;"	m	struct:siginfo	typeref:union:siginfo::__anon186
+__data	/usr/include/sys/siginfo.h	/^	} __data;$/;"	m	struct:siginfo	typeref:union:siginfo::__anon37
+__data	/usr/include/sys/siginfo.h	/^	} __data;$/;"	m	struct:siginfo	typeref:union:siginfo::__anon98
+__data	/usr/include/sys/siginfo.h	/^	} __data;$/;"	m	struct:siginfo32	typeref:union:siginfo32::__anon107
+__data	/usr/include/sys/siginfo.h	/^	} __data;$/;"	m	struct:siginfo32	typeref:union:siginfo32::__anon195
+__data	/usr/include/sys/siginfo.h	/^	} __data;$/;"	m	struct:siginfo32	typeref:union:siginfo32::__anon46
+__entity	/usr/include/sys/siginfo.h	/^			int32_t	__entity;	\/* type of entity exceeding *\/$/;"	m	struct:k_siginfo::__anon116::__anon124
+__entity	/usr/include/sys/siginfo.h	/^			int32_t	__entity;	\/* type of entity exceeding *\/$/;"	m	struct:k_siginfo::__anon204::__anon212
+__entity	/usr/include/sys/siginfo.h	/^			int32_t	__entity;	\/* type of entity exceeding *\/$/;"	m	struct:k_siginfo::__anon55::__anon63
+__entity	/usr/include/sys/siginfo.h	/^			int32_t	__entity;	\/* type of entity exceeding *\/$/;"	m	struct:siginfo32::__anon107::__anon115
+__entity	/usr/include/sys/siginfo.h	/^			int32_t	__entity;	\/* type of entity exceeding *\/$/;"	m	struct:siginfo32::__anon195::__anon203
+__entity	/usr/include/sys/siginfo.h	/^			int32_t	__entity;	\/* type of entity exceeding *\/$/;"	m	struct:siginfo32::__anon46::__anon54
+__entity	/usr/include/sys/siginfo.h	/^			int32_t	__entity;	\/* type of entity exceeding *\/$/;"	m	struct:siginfo::__anon186::__anon194
+__entity	/usr/include/sys/siginfo.h	/^			int32_t	__entity;	\/* type of entity exceeding *\/$/;"	m	struct:siginfo::__anon37::__anon45
+__entity	/usr/include/sys/siginfo.h	/^			int32_t	__entity;	\/* type of entity exceeding *\/$/;"	m	struct:siginfo::__anon98::__anon106
 __extendedfd	/usr/include/stdio_impl.h	/^	unsigned	__extendedfd:1;	\/* enable extended FILE *\/$/;"	m	struct:__FILE_TAG
-__faddr	/usr/include/sys/siginfo.h	/^			caddr32_t __faddr;	\/* last fault address	*\/$/;"	m	struct:siginfo32::__anon48::__anon55
-__faddr	/usr/include/sys/siginfo.h	/^			caddr_t	__faddr;	\/* last fault address	*\/$/;"	m	struct:k_siginfo::__anon57::__anon64
-__faddr	/usr/include/sys/siginfo.h	/^			caddr_t	__faddr;	\/* last fault address	*\/$/;"	m	struct:siginfo::__anon39::__anon46
-__fault	/usr/include/sys/siginfo.h	/^			char	__fault;	\/* last fault type	*\/$/;"	m	struct:k_siginfo::__anon57::__anon64
-__fault	/usr/include/sys/siginfo.h	/^			char	__fault;	\/* last fault type	*\/$/;"	m	struct:siginfo::__anon39::__anon46
-__fault	/usr/include/sys/siginfo.h	/^			int8_t	__fault;	\/* last fault type	*\/$/;"	m	struct:siginfo32::__anon48::__anon55
-__fault	/usr/include/sys/siginfo.h	/^		} __fault;$/;"	m	union:k_siginfo::__anon57	typeref:struct:k_siginfo::__anon57::__anon62
-__fault	/usr/include/sys/siginfo.h	/^		} __fault;$/;"	m	union:siginfo32::__anon48	typeref:struct:siginfo32::__anon48::__anon53
-__fault	/usr/include/sys/siginfo.h	/^		} __fault;$/;"	m	union:siginfo::__anon39	typeref:struct:siginfo::__anon39::__anon44
-__fd	/usr/include/sys/siginfo.h	/^			int	__fd;		\/* file descriptor	*\/$/;"	m	struct:k_siginfo::__anon57::__anon63
-__fd	/usr/include/sys/siginfo.h	/^			int	__fd;		\/* file descriptor	*\/$/;"	m	struct:siginfo::__anon39::__anon45
-__fd	/usr/include/sys/siginfo.h	/^			int32_t	__fd;		\/* file descriptor	*\/$/;"	m	struct:siginfo32::__anon48::__anon54
+__faddr	/usr/include/sys/siginfo.h	/^			caddr32_t __faddr;	\/* last fault address	*\/$/;"	m	struct:siginfo32::__anon107::__anon114
+__faddr	/usr/include/sys/siginfo.h	/^			caddr32_t __faddr;	\/* last fault address	*\/$/;"	m	struct:siginfo32::__anon195::__anon202
+__faddr	/usr/include/sys/siginfo.h	/^			caddr32_t __faddr;	\/* last fault address	*\/$/;"	m	struct:siginfo32::__anon46::__anon53
+__faddr	/usr/include/sys/siginfo.h	/^			caddr_t	__faddr;	\/* last fault address	*\/$/;"	m	struct:k_siginfo::__anon116::__anon123
+__faddr	/usr/include/sys/siginfo.h	/^			caddr_t	__faddr;	\/* last fault address	*\/$/;"	m	struct:k_siginfo::__anon204::__anon211
+__faddr	/usr/include/sys/siginfo.h	/^			caddr_t	__faddr;	\/* last fault address	*\/$/;"	m	struct:k_siginfo::__anon55::__anon62
+__faddr	/usr/include/sys/siginfo.h	/^			caddr_t	__faddr;	\/* last fault address	*\/$/;"	m	struct:siginfo::__anon186::__anon193
+__faddr	/usr/include/sys/siginfo.h	/^			caddr_t	__faddr;	\/* last fault address	*\/$/;"	m	struct:siginfo::__anon37::__anon44
+__faddr	/usr/include/sys/siginfo.h	/^			caddr_t	__faddr;	\/* last fault address	*\/$/;"	m	struct:siginfo::__anon98::__anon105
+__fault	/usr/include/sys/siginfo.h	/^			char	__fault;	\/* last fault type	*\/$/;"	m	struct:k_siginfo::__anon116::__anon123
+__fault	/usr/include/sys/siginfo.h	/^			char	__fault;	\/* last fault type	*\/$/;"	m	struct:k_siginfo::__anon204::__anon211
+__fault	/usr/include/sys/siginfo.h	/^			char	__fault;	\/* last fault type	*\/$/;"	m	struct:k_siginfo::__anon55::__anon62
+__fault	/usr/include/sys/siginfo.h	/^			char	__fault;	\/* last fault type	*\/$/;"	m	struct:siginfo::__anon186::__anon193
+__fault	/usr/include/sys/siginfo.h	/^			char	__fault;	\/* last fault type	*\/$/;"	m	struct:siginfo::__anon37::__anon44
+__fault	/usr/include/sys/siginfo.h	/^			char	__fault;	\/* last fault type	*\/$/;"	m	struct:siginfo::__anon98::__anon105
+__fault	/usr/include/sys/siginfo.h	/^			int8_t	__fault;	\/* last fault type	*\/$/;"	m	struct:siginfo32::__anon107::__anon114
+__fault	/usr/include/sys/siginfo.h	/^			int8_t	__fault;	\/* last fault type	*\/$/;"	m	struct:siginfo32::__anon195::__anon202
+__fault	/usr/include/sys/siginfo.h	/^			int8_t	__fault;	\/* last fault type	*\/$/;"	m	struct:siginfo32::__anon46::__anon53
+__fault	/usr/include/sys/siginfo.h	/^		} __fault;$/;"	m	union:k_siginfo::__anon116	typeref:struct:k_siginfo::__anon116::__anon121
+__fault	/usr/include/sys/siginfo.h	/^		} __fault;$/;"	m	union:k_siginfo::__anon204	typeref:struct:k_siginfo::__anon204::__anon209
+__fault	/usr/include/sys/siginfo.h	/^		} __fault;$/;"	m	union:k_siginfo::__anon55	typeref:struct:k_siginfo::__anon55::__anon60
+__fault	/usr/include/sys/siginfo.h	/^		} __fault;$/;"	m	union:siginfo32::__anon107	typeref:struct:siginfo32::__anon107::__anon112
+__fault	/usr/include/sys/siginfo.h	/^		} __fault;$/;"	m	union:siginfo32::__anon195	typeref:struct:siginfo32::__anon195::__anon200
+__fault	/usr/include/sys/siginfo.h	/^		} __fault;$/;"	m	union:siginfo32::__anon46	typeref:struct:siginfo32::__anon46::__anon51
+__fault	/usr/include/sys/siginfo.h	/^		} __fault;$/;"	m	union:siginfo::__anon186	typeref:struct:siginfo::__anon186::__anon191
+__fault	/usr/include/sys/siginfo.h	/^		} __fault;$/;"	m	union:siginfo::__anon37	typeref:struct:siginfo::__anon37::__anon42
+__fault	/usr/include/sys/siginfo.h	/^		} __fault;$/;"	m	union:siginfo::__anon98	typeref:struct:siginfo::__anon98::__anon103
+__fd	/usr/include/sys/siginfo.h	/^			int	__fd;		\/* file descriptor	*\/$/;"	m	struct:k_siginfo::__anon116::__anon122
+__fd	/usr/include/sys/siginfo.h	/^			int	__fd;		\/* file descriptor	*\/$/;"	m	struct:k_siginfo::__anon204::__anon210
+__fd	/usr/include/sys/siginfo.h	/^			int	__fd;		\/* file descriptor	*\/$/;"	m	struct:k_siginfo::__anon55::__anon61
+__fd	/usr/include/sys/siginfo.h	/^			int	__fd;		\/* file descriptor	*\/$/;"	m	struct:siginfo::__anon186::__anon192
+__fd	/usr/include/sys/siginfo.h	/^			int	__fd;		\/* file descriptor	*\/$/;"	m	struct:siginfo::__anon37::__anon43
+__fd	/usr/include/sys/siginfo.h	/^			int	__fd;		\/* file descriptor	*\/$/;"	m	struct:siginfo::__anon98::__anon104
+__fd	/usr/include/sys/siginfo.h	/^			int32_t	__fd;		\/* file descriptor	*\/$/;"	m	struct:siginfo32::__anon107::__anon113
+__fd	/usr/include/sys/siginfo.h	/^			int32_t	__fd;		\/* file descriptor	*\/$/;"	m	struct:siginfo32::__anon195::__anon201
+__fd	/usr/include/sys/siginfo.h	/^			int32_t	__fd;		\/* file descriptor	*\/$/;"	m	struct:siginfo32::__anon46::__anon52
 __fildes	/usr/include/unistd.h	/^	int __fildes;$/;"	v
-__file	/usr/include/sys/siginfo.h	/^		} __file;$/;"	m	union:k_siginfo::__anon57	typeref:struct:k_siginfo::__anon57::__anon63
-__file	/usr/include/sys/siginfo.h	/^		} __file;$/;"	m	union:siginfo32::__anon48	typeref:struct:siginfo32::__anon48::__anon54
-__file	/usr/include/sys/siginfo.h	/^		} __file;$/;"	m	union:siginfo::__anon39	typeref:struct:siginfo::__anon39::__anon45
+__file	/usr/include/sys/siginfo.h	/^		} __file;$/;"	m	union:k_siginfo::__anon116	typeref:struct:k_siginfo::__anon116::__anon122
+__file	/usr/include/sys/siginfo.h	/^		} __file;$/;"	m	union:k_siginfo::__anon204	typeref:struct:k_siginfo::__anon204::__anon210
+__file	/usr/include/sys/siginfo.h	/^		} __file;$/;"	m	union:k_siginfo::__anon55	typeref:struct:k_siginfo::__anon55::__anon61
+__file	/usr/include/sys/siginfo.h	/^		} __file;$/;"	m	union:siginfo32::__anon107	typeref:struct:siginfo32::__anon107::__anon113
+__file	/usr/include/sys/siginfo.h	/^		} __file;$/;"	m	union:siginfo32::__anon195	typeref:struct:siginfo32::__anon195::__anon201
+__file	/usr/include/sys/siginfo.h	/^		} __file;$/;"	m	union:siginfo32::__anon46	typeref:struct:siginfo32::__anon46::__anon52
+__file	/usr/include/sys/siginfo.h	/^		} __file;$/;"	m	union:siginfo::__anon186	typeref:struct:siginfo::__anon186::__anon192
+__file	/usr/include/sys/siginfo.h	/^		} __file;$/;"	m	union:siginfo::__anon37	typeref:struct:siginfo::__anon37::__anon43
+__file	/usr/include/sys/siginfo.h	/^		} __file;$/;"	m	union:siginfo::__anon98	typeref:struct:siginfo::__anon98::__anon104
 __filler	/usr/include/stdio_impl.h	/^	unsigned	__filler:10;$/;"	m	struct:__FILE_TAG
 __gnuc_va_list	/usr/include/sys/va_list.h	/^typedef __builtin_va_list __gnuc_va_list;$/;"	t
 __howmany	/usr/include/sys/select.h	108;"	d
@@ -1955,119 +2029,217 @@ __i386_COMPAT	/usr/include/sys/isa_defs.h	244;"	d
 __i386_COMPAT	/usr/include/sys/isa_defs.h	307;"	d
 __ia64	/usr/include/sys/isa_defs.h	202;"	d
 __ionolock	/usr/include/stdio_impl.h	/^	unsigned	__ionolock:1;	\/* turn off implicit locking *\/$/;"	m	struct:__FILE_TAG
-__kill	/usr/include/sys/siginfo.h	/^				} __kill;$/;"	m	union:k_siginfo::__anon57::__anon58::__anon59	typeref:struct:k_siginfo::__anon57::__anon58::__anon59::__anon60
-__kill	/usr/include/sys/siginfo.h	/^				} __kill;$/;"	m	union:siginfo32::__anon48::__anon49::__anon50	typeref:struct:siginfo32::__anon48::__anon49::__anon50::__anon51
-__kill	/usr/include/sys/siginfo.h	/^				} __kill;$/;"	m	union:siginfo::__anon39::__anon40::__anon41	typeref:struct:siginfo::__anon39::__anon40::__anon41::__anon42
+__kill	/usr/include/sys/siginfo.h	/^				} __kill;$/;"	m	union:k_siginfo::__anon116::__anon117::__anon118	typeref:struct:k_siginfo::__anon116::__anon117::__anon118::__anon119
+__kill	/usr/include/sys/siginfo.h	/^				} __kill;$/;"	m	union:k_siginfo::__anon204::__anon205::__anon206	typeref:struct:k_siginfo::__anon204::__anon205::__anon206::__anon207
+__kill	/usr/include/sys/siginfo.h	/^				} __kill;$/;"	m	union:k_siginfo::__anon55::__anon56::__anon57	typeref:struct:k_siginfo::__anon55::__anon56::__anon57::__anon58
+__kill	/usr/include/sys/siginfo.h	/^				} __kill;$/;"	m	union:siginfo32::__anon107::__anon108::__anon109	typeref:struct:siginfo32::__anon107::__anon108::__anon109::__anon110
+__kill	/usr/include/sys/siginfo.h	/^				} __kill;$/;"	m	union:siginfo32::__anon195::__anon196::__anon197	typeref:struct:siginfo32::__anon195::__anon196::__anon197::__anon198
+__kill	/usr/include/sys/siginfo.h	/^				} __kill;$/;"	m	union:siginfo32::__anon46::__anon47::__anon48	typeref:struct:siginfo32::__anon46::__anon47::__anon48::__anon49
+__kill	/usr/include/sys/siginfo.h	/^				} __kill;$/;"	m	union:siginfo::__anon186::__anon187::__anon188	typeref:struct:siginfo::__anon186::__anon187::__anon188::__anon189
+__kill	/usr/include/sys/siginfo.h	/^				} __kill;$/;"	m	union:siginfo::__anon37::__anon38::__anon39	typeref:struct:siginfo::__anon37::__anon38::__anon39::__anon40
+__kill	/usr/include/sys/siginfo.h	/^				} __kill;$/;"	m	union:siginfo::__anon98::__anon99::__anon100	typeref:struct:siginfo::__anon98::__anon99::__anon100::__anon101
 __len	/usr/include/unistd.h	/^	int __len;$/;"	v
 __longlong_t	/usr/include/iso/stdio_iso.h	/^typedef	long long	__longlong_t;$/;"	t
-__longlong_t	/usr/include/iso/stdio_iso.h	/^} __longlong_t;$/;"	t	typeref:union:__anon29
-__longlong_t	/usr/include/iso/stdio_iso.h	/^} __longlong_t;$/;"	t	typeref:union:__anon69
-__longlong_t	/usr/include/iso/stdio_iso.h	/^} __longlong_t;$/;"	t	typeref:union:__anon95
-__mstate	/usr/include/sys/siginfo.h	/^			int	__mstate[10];	\/* see <sys\/msacct.h>	*\/$/;"	m	struct:siginfo::__anon39::__anon46
-__mstate	/usr/include/sys/siginfo.h	/^			int32_t	__mstate[10];	\/* see <sys\/msacct.h>	*\/$/;"	m	struct:siginfo32::__anon48::__anon55
+__longlong_t	/usr/include/iso/stdio_iso.h	/^} __longlong_t;$/;"	t	typeref:union:__anon128
+__longlong_t	/usr/include/iso/stdio_iso.h	/^} __longlong_t;$/;"	t	typeref:union:__anon213
+__longlong_t	/usr/include/iso/stdio_iso.h	/^} __longlong_t;$/;"	t	typeref:union:__anon4
+__mstate	/usr/include/sys/siginfo.h	/^			int	__mstate[10];	\/* see <sys\/msacct.h>	*\/$/;"	m	struct:siginfo::__anon186::__anon193
+__mstate	/usr/include/sys/siginfo.h	/^			int	__mstate[10];	\/* see <sys\/msacct.h>	*\/$/;"	m	struct:siginfo::__anon37::__anon44
+__mstate	/usr/include/sys/siginfo.h	/^			int	__mstate[10];	\/* see <sys\/msacct.h>	*\/$/;"	m	struct:siginfo::__anon98::__anon105
+__mstate	/usr/include/sys/siginfo.h	/^			int32_t	__mstate[10];	\/* see <sys\/msacct.h>	*\/$/;"	m	struct:siginfo32::__anon107::__anon114
+__mstate	/usr/include/sys/siginfo.h	/^			int32_t	__mstate[10];	\/* see <sys\/msacct.h>	*\/$/;"	m	struct:siginfo32::__anon195::__anon202
+__mstate	/usr/include/sys/siginfo.h	/^			int32_t	__mstate[10];	\/* see <sys\/msacct.h>	*\/$/;"	m	struct:siginfo32::__anon46::__anon53
 __name	/usr/include/unistd.h	/^	char *__name;$/;"	v
 __need___va_list	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/stdio.h	13;"	d
 __not_va_list__	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/stdio.h	/^typedef	__va_list __not_va_list__;$/;"	t
-__nsysarg	/usr/include/sys/siginfo.h	/^			char	__nsysarg;	\/* number of arguments	*\/$/;"	m	struct:k_siginfo::__anon57::__anon64
-__nsysarg	/usr/include/sys/siginfo.h	/^			char	__nsysarg;	\/* number of arguments	*\/$/;"	m	struct:siginfo::__anon39::__anon46
-__nsysarg	/usr/include/sys/siginfo.h	/^			int8_t	__nsysarg;	\/* number of arguments	*\/$/;"	m	struct:siginfo32::__anon48::__anon55
+__nsysarg	/usr/include/sys/siginfo.h	/^			char	__nsysarg;	\/* number of arguments	*\/$/;"	m	struct:k_siginfo::__anon116::__anon123
+__nsysarg	/usr/include/sys/siginfo.h	/^			char	__nsysarg;	\/* number of arguments	*\/$/;"	m	struct:k_siginfo::__anon204::__anon211
+__nsysarg	/usr/include/sys/siginfo.h	/^			char	__nsysarg;	\/* number of arguments	*\/$/;"	m	struct:k_siginfo::__anon55::__anon62
+__nsysarg	/usr/include/sys/siginfo.h	/^			char	__nsysarg;	\/* number of arguments	*\/$/;"	m	struct:siginfo::__anon186::__anon193
+__nsysarg	/usr/include/sys/siginfo.h	/^			char	__nsysarg;	\/* number of arguments	*\/$/;"	m	struct:siginfo::__anon37::__anon44
+__nsysarg	/usr/include/sys/siginfo.h	/^			char	__nsysarg;	\/* number of arguments	*\/$/;"	m	struct:siginfo::__anon98::__anon105
+__nsysarg	/usr/include/sys/siginfo.h	/^			int8_t	__nsysarg;	\/* number of arguments	*\/$/;"	m	struct:siginfo32::__anon107::__anon114
+__nsysarg	/usr/include/sys/siginfo.h	/^			int8_t	__nsysarg;	\/* number of arguments	*\/$/;"	m	struct:siginfo32::__anon195::__anon202
+__nsysarg	/usr/include/sys/siginfo.h	/^			int8_t	__nsysarg;	\/* number of arguments	*\/$/;"	m	struct:siginfo32::__anon46::__anon53
 __orientation	/usr/include/stdio_impl.h	/^	unsigned	__orientation:2; \/* the orientation of the stream *\/$/;"	m	struct:__FILE_TAG
 __pad	/usr/include/stdio_impl.h	/^	long	__pad[16];$/;"	m	struct:__FILE_TAG
-__pad	/usr/include/sys/siginfo.h	/^		int	__pad[SI_PAD];		\/* for future growth	*\/$/;"	m	union:siginfo::__anon39
-__pad	/usr/include/sys/siginfo.h	/^		int32_t	__pad[SI32_PAD];	\/* for future growth	*\/$/;"	m	union:siginfo32::__anon48
-__pc	/usr/include/sys/siginfo.h	/^			caddr32_t __pc;		\/* instruction address	*\/$/;"	m	struct:siginfo32::__anon48::__anon53
-__pc	/usr/include/sys/siginfo.h	/^			caddr_t	__pc;		\/* instruction address	*\/$/;"	m	struct:k_siginfo::__anon57::__anon62
-__pc	/usr/include/sys/siginfo.h	/^			caddr_t	__pc;		\/* instruction address	*\/$/;"	m	struct:siginfo::__anon39::__anon44
-__pdata	/usr/include/sys/siginfo.h	/^			} __pdata;$/;"	m	struct:k_siginfo::__anon57::__anon58	typeref:union:k_siginfo::__anon57::__anon58::__anon59
-__pdata	/usr/include/sys/siginfo.h	/^			} __pdata;$/;"	m	struct:siginfo32::__anon48::__anon49	typeref:union:siginfo32::__anon48::__anon49::__anon50
-__pdata	/usr/include/sys/siginfo.h	/^			} __pdata;$/;"	m	struct:siginfo::__anon39::__anon40	typeref:union:siginfo::__anon39::__anon40::__anon41
-__pid	/usr/include/sys/siginfo.h	/^			pid32_t	__pid;		\/* process ID		*\/$/;"	m	struct:siginfo32::__anon48::__anon49
-__pid	/usr/include/sys/siginfo.h	/^			pid_t	__pid;		\/* process ID		*\/$/;"	m	struct:k_siginfo::__anon57::__anon58
-__pid	/usr/include/sys/siginfo.h	/^			pid_t	__pid;		\/* process ID		*\/$/;"	m	struct:siginfo::__anon39::__anon40
-__proc	/usr/include/sys/siginfo.h	/^		} __proc;$/;"	m	union:k_siginfo::__anon57	typeref:struct:k_siginfo::__anon57::__anon58
-__proc	/usr/include/sys/siginfo.h	/^		} __proc;$/;"	m	union:siginfo32::__anon48	typeref:struct:siginfo32::__anon48::__anon49
-__proc	/usr/include/sys/siginfo.h	/^		} __proc;$/;"	m	union:siginfo::__anon39	typeref:struct:siginfo::__anon39::__anon40
-__prof	/usr/include/sys/siginfo.h	/^		} __prof;$/;"	m	union:k_siginfo::__anon57	typeref:struct:k_siginfo::__anon57::__anon64
-__prof	/usr/include/sys/siginfo.h	/^		} __prof;$/;"	m	union:siginfo32::__anon48	typeref:struct:siginfo32::__anon48::__anon55
-__prof	/usr/include/sys/siginfo.h	/^		} __prof;$/;"	m	union:siginfo::__anon39	typeref:struct:siginfo::__anon39::__anon46
+__pad	/usr/include/sys/siginfo.h	/^		int	__pad[SI_PAD];		\/* for future growth	*\/$/;"	m	union:siginfo::__anon186
+__pad	/usr/include/sys/siginfo.h	/^		int	__pad[SI_PAD];		\/* for future growth	*\/$/;"	m	union:siginfo::__anon37
+__pad	/usr/include/sys/siginfo.h	/^		int	__pad[SI_PAD];		\/* for future growth	*\/$/;"	m	union:siginfo::__anon98
+__pad	/usr/include/sys/siginfo.h	/^		int32_t	__pad[SI32_PAD];	\/* for future growth	*\/$/;"	m	union:siginfo32::__anon107
+__pad	/usr/include/sys/siginfo.h	/^		int32_t	__pad[SI32_PAD];	\/* for future growth	*\/$/;"	m	union:siginfo32::__anon195
+__pad	/usr/include/sys/siginfo.h	/^		int32_t	__pad[SI32_PAD];	\/* for future growth	*\/$/;"	m	union:siginfo32::__anon46
+__pc	/usr/include/sys/siginfo.h	/^			caddr32_t __pc;		\/* instruction address	*\/$/;"	m	struct:siginfo32::__anon107::__anon112
+__pc	/usr/include/sys/siginfo.h	/^			caddr32_t __pc;		\/* instruction address	*\/$/;"	m	struct:siginfo32::__anon195::__anon200
+__pc	/usr/include/sys/siginfo.h	/^			caddr32_t __pc;		\/* instruction address	*\/$/;"	m	struct:siginfo32::__anon46::__anon51
+__pc	/usr/include/sys/siginfo.h	/^			caddr_t	__pc;		\/* instruction address	*\/$/;"	m	struct:k_siginfo::__anon116::__anon121
+__pc	/usr/include/sys/siginfo.h	/^			caddr_t	__pc;		\/* instruction address	*\/$/;"	m	struct:k_siginfo::__anon204::__anon209
+__pc	/usr/include/sys/siginfo.h	/^			caddr_t	__pc;		\/* instruction address	*\/$/;"	m	struct:k_siginfo::__anon55::__anon60
+__pc	/usr/include/sys/siginfo.h	/^			caddr_t	__pc;		\/* instruction address	*\/$/;"	m	struct:siginfo::__anon186::__anon191
+__pc	/usr/include/sys/siginfo.h	/^			caddr_t	__pc;		\/* instruction address	*\/$/;"	m	struct:siginfo::__anon37::__anon42
+__pc	/usr/include/sys/siginfo.h	/^			caddr_t	__pc;		\/* instruction address	*\/$/;"	m	struct:siginfo::__anon98::__anon103
+__pdata	/usr/include/sys/siginfo.h	/^			} __pdata;$/;"	m	struct:k_siginfo::__anon116::__anon117	typeref:union:k_siginfo::__anon116::__anon117::__anon118
+__pdata	/usr/include/sys/siginfo.h	/^			} __pdata;$/;"	m	struct:k_siginfo::__anon204::__anon205	typeref:union:k_siginfo::__anon204::__anon205::__anon206
+__pdata	/usr/include/sys/siginfo.h	/^			} __pdata;$/;"	m	struct:k_siginfo::__anon55::__anon56	typeref:union:k_siginfo::__anon55::__anon56::__anon57
+__pdata	/usr/include/sys/siginfo.h	/^			} __pdata;$/;"	m	struct:siginfo32::__anon107::__anon108	typeref:union:siginfo32::__anon107::__anon108::__anon109
+__pdata	/usr/include/sys/siginfo.h	/^			} __pdata;$/;"	m	struct:siginfo32::__anon195::__anon196	typeref:union:siginfo32::__anon195::__anon196::__anon197
+__pdata	/usr/include/sys/siginfo.h	/^			} __pdata;$/;"	m	struct:siginfo32::__anon46::__anon47	typeref:union:siginfo32::__anon46::__anon47::__anon48
+__pdata	/usr/include/sys/siginfo.h	/^			} __pdata;$/;"	m	struct:siginfo::__anon186::__anon187	typeref:union:siginfo::__anon186::__anon187::__anon188
+__pdata	/usr/include/sys/siginfo.h	/^			} __pdata;$/;"	m	struct:siginfo::__anon37::__anon38	typeref:union:siginfo::__anon37::__anon38::__anon39
+__pdata	/usr/include/sys/siginfo.h	/^			} __pdata;$/;"	m	struct:siginfo::__anon98::__anon99	typeref:union:siginfo::__anon98::__anon99::__anon100
+__pid	/usr/include/sys/siginfo.h	/^			pid32_t	__pid;		\/* process ID		*\/$/;"	m	struct:siginfo32::__anon107::__anon108
+__pid	/usr/include/sys/siginfo.h	/^			pid32_t	__pid;		\/* process ID		*\/$/;"	m	struct:siginfo32::__anon195::__anon196
+__pid	/usr/include/sys/siginfo.h	/^			pid32_t	__pid;		\/* process ID		*\/$/;"	m	struct:siginfo32::__anon46::__anon47
+__pid	/usr/include/sys/siginfo.h	/^			pid_t	__pid;		\/* process ID		*\/$/;"	m	struct:k_siginfo::__anon116::__anon117
+__pid	/usr/include/sys/siginfo.h	/^			pid_t	__pid;		\/* process ID		*\/$/;"	m	struct:k_siginfo::__anon204::__anon205
+__pid	/usr/include/sys/siginfo.h	/^			pid_t	__pid;		\/* process ID		*\/$/;"	m	struct:k_siginfo::__anon55::__anon56
+__pid	/usr/include/sys/siginfo.h	/^			pid_t	__pid;		\/* process ID		*\/$/;"	m	struct:siginfo::__anon186::__anon187
+__pid	/usr/include/sys/siginfo.h	/^			pid_t	__pid;		\/* process ID		*\/$/;"	m	struct:siginfo::__anon37::__anon38
+__pid	/usr/include/sys/siginfo.h	/^			pid_t	__pid;		\/* process ID		*\/$/;"	m	struct:siginfo::__anon98::__anon99
+__proc	/usr/include/sys/siginfo.h	/^		} __proc;$/;"	m	union:k_siginfo::__anon116	typeref:struct:k_siginfo::__anon116::__anon117
+__proc	/usr/include/sys/siginfo.h	/^		} __proc;$/;"	m	union:k_siginfo::__anon204	typeref:struct:k_siginfo::__anon204::__anon205
+__proc	/usr/include/sys/siginfo.h	/^		} __proc;$/;"	m	union:k_siginfo::__anon55	typeref:struct:k_siginfo::__anon55::__anon56
+__proc	/usr/include/sys/siginfo.h	/^		} __proc;$/;"	m	union:siginfo32::__anon107	typeref:struct:siginfo32::__anon107::__anon108
+__proc	/usr/include/sys/siginfo.h	/^		} __proc;$/;"	m	union:siginfo32::__anon195	typeref:struct:siginfo32::__anon195::__anon196
+__proc	/usr/include/sys/siginfo.h	/^		} __proc;$/;"	m	union:siginfo32::__anon46	typeref:struct:siginfo32::__anon46::__anon47
+__proc	/usr/include/sys/siginfo.h	/^		} __proc;$/;"	m	union:siginfo::__anon186	typeref:struct:siginfo::__anon186::__anon187
+__proc	/usr/include/sys/siginfo.h	/^		} __proc;$/;"	m	union:siginfo::__anon37	typeref:struct:siginfo::__anon37::__anon38
+__proc	/usr/include/sys/siginfo.h	/^		} __proc;$/;"	m	union:siginfo::__anon98	typeref:struct:siginfo::__anon98::__anon99
+__prof	/usr/include/sys/siginfo.h	/^		} __prof;$/;"	m	union:k_siginfo::__anon116	typeref:struct:k_siginfo::__anon116::__anon123
+__prof	/usr/include/sys/siginfo.h	/^		} __prof;$/;"	m	union:k_siginfo::__anon204	typeref:struct:k_siginfo::__anon204::__anon211
+__prof	/usr/include/sys/siginfo.h	/^		} __prof;$/;"	m	union:k_siginfo::__anon55	typeref:struct:k_siginfo::__anon55::__anon62
+__prof	/usr/include/sys/siginfo.h	/^		} __prof;$/;"	m	union:siginfo32::__anon107	typeref:struct:siginfo32::__anon107::__anon114
+__prof	/usr/include/sys/siginfo.h	/^		} __prof;$/;"	m	union:siginfo32::__anon195	typeref:struct:siginfo32::__anon195::__anon202
+__prof	/usr/include/sys/siginfo.h	/^		} __prof;$/;"	m	union:siginfo32::__anon46	typeref:struct:siginfo32::__anon46::__anon53
+__prof	/usr/include/sys/siginfo.h	/^		} __prof;$/;"	m	union:siginfo::__anon186	typeref:struct:siginfo::__anon186::__anon193
+__prof	/usr/include/sys/siginfo.h	/^		} __prof;$/;"	m	union:siginfo::__anon37	typeref:struct:siginfo::__anon37::__anon44
+__prof	/usr/include/sys/siginfo.h	/^		} __prof;$/;"	m	union:siginfo::__anon98	typeref:struct:siginfo::__anon98::__anon105
 __pthread_attrp	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	void	*__pthread_attrp;$/;"	m	struct:_pthread_attr
-__pthread_barrier_cond	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	pthread_cond_t	__pthread_barrier_cond;$/;"	m	struct:__anon117
-__pthread_barrier_cond	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	pthread_cond_t	__pthread_barrier_cond;$/;"	m	struct:__anon22
-__pthread_barrier_cond	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	pthread_cond_t	__pthread_barrier_cond;$/;"	m	struct:__anon91
-__pthread_barrier_count	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	uint32_t	__pthread_barrier_count;$/;"	m	struct:__anon117
-__pthread_barrier_count	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	uint32_t	__pthread_barrier_count;$/;"	m	struct:__anon22
-__pthread_barrier_count	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	uint32_t	__pthread_barrier_count;$/;"	m	struct:__anon91
-__pthread_barrier_current	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	uint32_t	__pthread_barrier_current;$/;"	m	struct:__anon117
-__pthread_barrier_current	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	uint32_t	__pthread_barrier_current;$/;"	m	struct:__anon22
-__pthread_barrier_current	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	uint32_t	__pthread_barrier_current;$/;"	m	struct:__anon91
-__pthread_barrier_cycle	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	upad64_t	__pthread_barrier_cycle;$/;"	m	struct:__anon117
-__pthread_barrier_cycle	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	upad64_t	__pthread_barrier_cycle;$/;"	m	struct:__anon22
-__pthread_barrier_cycle	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	upad64_t	__pthread_barrier_cycle;$/;"	m	struct:__anon91
-__pthread_barrier_lock	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	pthread_mutex_t	__pthread_barrier_lock;$/;"	m	struct:__anon117
-__pthread_barrier_lock	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	pthread_mutex_t	__pthread_barrier_lock;$/;"	m	struct:__anon22
-__pthread_barrier_lock	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	pthread_mutex_t	__pthread_barrier_lock;$/;"	m	struct:__anon91
-__pthread_barrier_reserved	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	upad64_t	__pthread_barrier_reserved;$/;"	m	struct:__anon117
-__pthread_barrier_reserved	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	upad64_t	__pthread_barrier_reserved;$/;"	m	struct:__anon22
-__pthread_barrier_reserved	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	upad64_t	__pthread_barrier_reserved;$/;"	m	struct:__anon91
-__pthread_barrierattrp	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	void	*__pthread_barrierattrp;$/;"	m	struct:__anon118
-__pthread_barrierattrp	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	void	*__pthread_barrierattrp;$/;"	m	struct:__anon23
-__pthread_barrierattrp	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	void	*__pthread_barrierattrp;$/;"	m	struct:__anon92
+__pthread_barrier_cond	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	pthread_cond_t	__pthread_barrier_cond;$/;"	m	struct:__anon150
+__pthread_barrier_cond	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	pthread_cond_t	__pthread_barrier_cond;$/;"	m	struct:__anon175
+__pthread_barrier_cond	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	pthread_cond_t	__pthread_barrier_cond;$/;"	m	struct:__anon235
+__pthread_barrier_cond	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	pthread_cond_t	__pthread_barrier_cond;$/;"	m	struct:__anon26
+__pthread_barrier_cond	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	pthread_cond_t	__pthread_barrier_cond;$/;"	m	struct:__anon87
+__pthread_barrier_count	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	uint32_t	__pthread_barrier_count;$/;"	m	struct:__anon150
+__pthread_barrier_count	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	uint32_t	__pthread_barrier_count;$/;"	m	struct:__anon175
+__pthread_barrier_count	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	uint32_t	__pthread_barrier_count;$/;"	m	struct:__anon235
+__pthread_barrier_count	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	uint32_t	__pthread_barrier_count;$/;"	m	struct:__anon26
+__pthread_barrier_count	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	uint32_t	__pthread_barrier_count;$/;"	m	struct:__anon87
+__pthread_barrier_current	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	uint32_t	__pthread_barrier_current;$/;"	m	struct:__anon150
+__pthread_barrier_current	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	uint32_t	__pthread_barrier_current;$/;"	m	struct:__anon175
+__pthread_barrier_current	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	uint32_t	__pthread_barrier_current;$/;"	m	struct:__anon235
+__pthread_barrier_current	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	uint32_t	__pthread_barrier_current;$/;"	m	struct:__anon26
+__pthread_barrier_current	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	uint32_t	__pthread_barrier_current;$/;"	m	struct:__anon87
+__pthread_barrier_cycle	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	upad64_t	__pthread_barrier_cycle;$/;"	m	struct:__anon150
+__pthread_barrier_cycle	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	upad64_t	__pthread_barrier_cycle;$/;"	m	struct:__anon175
+__pthread_barrier_cycle	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	upad64_t	__pthread_barrier_cycle;$/;"	m	struct:__anon235
+__pthread_barrier_cycle	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	upad64_t	__pthread_barrier_cycle;$/;"	m	struct:__anon26
+__pthread_barrier_cycle	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	upad64_t	__pthread_barrier_cycle;$/;"	m	struct:__anon87
+__pthread_barrier_lock	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	pthread_mutex_t	__pthread_barrier_lock;$/;"	m	struct:__anon150
+__pthread_barrier_lock	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	pthread_mutex_t	__pthread_barrier_lock;$/;"	m	struct:__anon175
+__pthread_barrier_lock	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	pthread_mutex_t	__pthread_barrier_lock;$/;"	m	struct:__anon235
+__pthread_barrier_lock	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	pthread_mutex_t	__pthread_barrier_lock;$/;"	m	struct:__anon26
+__pthread_barrier_lock	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	pthread_mutex_t	__pthread_barrier_lock;$/;"	m	struct:__anon87
+__pthread_barrier_reserved	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	upad64_t	__pthread_barrier_reserved;$/;"	m	struct:__anon150
+__pthread_barrier_reserved	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	upad64_t	__pthread_barrier_reserved;$/;"	m	struct:__anon175
+__pthread_barrier_reserved	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	upad64_t	__pthread_barrier_reserved;$/;"	m	struct:__anon235
+__pthread_barrier_reserved	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	upad64_t	__pthread_barrier_reserved;$/;"	m	struct:__anon26
+__pthread_barrier_reserved	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	upad64_t	__pthread_barrier_reserved;$/;"	m	struct:__anon87
+__pthread_barrierattrp	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	void	*__pthread_barrierattrp;$/;"	m	struct:__anon151
+__pthread_barrierattrp	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	void	*__pthread_barrierattrp;$/;"	m	struct:__anon176
+__pthread_barrierattrp	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	void	*__pthread_barrierattrp;$/;"	m	struct:__anon236
+__pthread_barrierattrp	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	void	*__pthread_barrierattrp;$/;"	m	struct:__anon27
+__pthread_barrierattrp	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	void	*__pthread_barrierattrp;$/;"	m	struct:__anon88
 __pthread_cond_data	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	upad64_t __pthread_cond_data;$/;"	m	struct:_pthread_cond
-__pthread_cond_flag	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint8_t		__pthread_cond_flag[4];$/;"	m	struct:_pthread_cond::__anon116
-__pthread_cond_flag	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint8_t		__pthread_cond_flag[4];$/;"	m	struct:_pthread_cond::__anon21
-__pthread_cond_flag	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint8_t		__pthread_cond_flag[4];$/;"	m	struct:_pthread_cond::__anon90
-__pthread_cond_flags	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	} __pthread_cond_flags;$/;"	m	struct:_pthread_cond	typeref:struct:_pthread_cond::__anon116
-__pthread_cond_flags	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	} __pthread_cond_flags;$/;"	m	struct:_pthread_cond	typeref:struct:_pthread_cond::__anon21
-__pthread_cond_flags	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	} __pthread_cond_flags;$/;"	m	struct:_pthread_cond	typeref:struct:_pthread_cond::__anon90
-__pthread_cond_magic	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint16_t 	__pthread_cond_magic;$/;"	m	struct:_pthread_cond::__anon116
-__pthread_cond_magic	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint16_t 	__pthread_cond_magic;$/;"	m	struct:_pthread_cond::__anon21
-__pthread_cond_magic	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint16_t 	__pthread_cond_magic;$/;"	m	struct:_pthread_cond::__anon90
-__pthread_cond_type	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint16_t 	__pthread_cond_type;$/;"	m	struct:_pthread_cond::__anon116
-__pthread_cond_type	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint16_t 	__pthread_cond_type;$/;"	m	struct:_pthread_cond::__anon21
-__pthread_cond_type	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint16_t 	__pthread_cond_type;$/;"	m	struct:_pthread_cond::__anon90
+__pthread_cond_flag	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint8_t		__pthread_cond_flag[4];$/;"	m	struct:_pthread_cond::__anon149
+__pthread_cond_flag	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint8_t		__pthread_cond_flag[4];$/;"	m	struct:_pthread_cond::__anon174
+__pthread_cond_flag	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint8_t		__pthread_cond_flag[4];$/;"	m	struct:_pthread_cond::__anon234
+__pthread_cond_flag	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint8_t		__pthread_cond_flag[4];$/;"	m	struct:_pthread_cond::__anon25
+__pthread_cond_flag	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint8_t		__pthread_cond_flag[4];$/;"	m	struct:_pthread_cond::__anon86
+__pthread_cond_flags	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	} __pthread_cond_flags;$/;"	m	struct:_pthread_cond	typeref:struct:_pthread_cond::__anon149
+__pthread_cond_flags	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	} __pthread_cond_flags;$/;"	m	struct:_pthread_cond	typeref:struct:_pthread_cond::__anon174
+__pthread_cond_flags	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	} __pthread_cond_flags;$/;"	m	struct:_pthread_cond	typeref:struct:_pthread_cond::__anon234
+__pthread_cond_flags	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	} __pthread_cond_flags;$/;"	m	struct:_pthread_cond	typeref:struct:_pthread_cond::__anon25
+__pthread_cond_flags	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	} __pthread_cond_flags;$/;"	m	struct:_pthread_cond	typeref:struct:_pthread_cond::__anon86
+__pthread_cond_magic	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint16_t 	__pthread_cond_magic;$/;"	m	struct:_pthread_cond::__anon149
+__pthread_cond_magic	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint16_t 	__pthread_cond_magic;$/;"	m	struct:_pthread_cond::__anon174
+__pthread_cond_magic	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint16_t 	__pthread_cond_magic;$/;"	m	struct:_pthread_cond::__anon234
+__pthread_cond_magic	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint16_t 	__pthread_cond_magic;$/;"	m	struct:_pthread_cond::__anon25
+__pthread_cond_magic	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint16_t 	__pthread_cond_magic;$/;"	m	struct:_pthread_cond::__anon86
+__pthread_cond_type	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint16_t 	__pthread_cond_type;$/;"	m	struct:_pthread_cond::__anon149
+__pthread_cond_type	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint16_t 	__pthread_cond_type;$/;"	m	struct:_pthread_cond::__anon174
+__pthread_cond_type	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint16_t 	__pthread_cond_type;$/;"	m	struct:_pthread_cond::__anon234
+__pthread_cond_type	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint16_t 	__pthread_cond_type;$/;"	m	struct:_pthread_cond::__anon25
+__pthread_cond_type	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint16_t 	__pthread_cond_type;$/;"	m	struct:_pthread_cond::__anon86
 __pthread_condattrp	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	void	*__pthread_condattrp;$/;"	m	struct:_pthread_condattr
-__pthread_lockword	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^			uint32_t __pthread_lockword;$/;"	m	struct:_pthread_mutex::__anon113::__anon115
-__pthread_lockword	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^			uint32_t __pthread_lockword;$/;"	m	struct:_pthread_mutex::__anon18::__anon20
-__pthread_lockword	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^			uint32_t __pthread_lockword;$/;"	m	struct:_pthread_mutex::__anon87::__anon89
-__pthread_mutex_ceiling	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint8_t		__pthread_mutex_ceiling;$/;"	m	struct:_pthread_mutex::__anon112
-__pthread_mutex_ceiling	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint8_t		__pthread_mutex_ceiling;$/;"	m	struct:_pthread_mutex::__anon17
-__pthread_mutex_ceiling	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint8_t		__pthread_mutex_ceiling;$/;"	m	struct:_pthread_mutex::__anon86
+__pthread_lockword	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^			uint32_t __pthread_lockword;$/;"	m	struct:_pthread_mutex::__anon146::__anon148
+__pthread_lockword	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^			uint32_t __pthread_lockword;$/;"	m	struct:_pthread_mutex::__anon171::__anon173
+__pthread_lockword	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^			uint32_t __pthread_lockword;$/;"	m	struct:_pthread_mutex::__anon22::__anon24
+__pthread_lockword	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^			uint32_t __pthread_lockword;$/;"	m	struct:_pthread_mutex::__anon231::__anon233
+__pthread_lockword	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^			uint32_t __pthread_lockword;$/;"	m	struct:_pthread_mutex::__anon83::__anon85
+__pthread_mutex_ceiling	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint8_t		__pthread_mutex_ceiling;$/;"	m	struct:_pthread_mutex::__anon145
+__pthread_mutex_ceiling	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint8_t		__pthread_mutex_ceiling;$/;"	m	struct:_pthread_mutex::__anon170
+__pthread_mutex_ceiling	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint8_t		__pthread_mutex_ceiling;$/;"	m	struct:_pthread_mutex::__anon21
+__pthread_mutex_ceiling	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint8_t		__pthread_mutex_ceiling;$/;"	m	struct:_pthread_mutex::__anon230
+__pthread_mutex_ceiling	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint8_t		__pthread_mutex_ceiling;$/;"	m	struct:_pthread_mutex::__anon82
 __pthread_mutex_data	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	upad64_t __pthread_mutex_data;$/;"	m	struct:_pthread_mutex
-__pthread_mutex_flag1	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint16_t	__pthread_mutex_flag1;$/;"	m	struct:_pthread_mutex::__anon112
-__pthread_mutex_flag1	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint16_t	__pthread_mutex_flag1;$/;"	m	struct:_pthread_mutex::__anon17
-__pthread_mutex_flag1	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint16_t	__pthread_mutex_flag1;$/;"	m	struct:_pthread_mutex::__anon86
-__pthread_mutex_flag2	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint8_t		__pthread_mutex_flag2;$/;"	m	struct:_pthread_mutex::__anon112
-__pthread_mutex_flag2	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint8_t		__pthread_mutex_flag2;$/;"	m	struct:_pthread_mutex::__anon17
-__pthread_mutex_flag2	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint8_t		__pthread_mutex_flag2;$/;"	m	struct:_pthread_mutex::__anon86
-__pthread_mutex_flags	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	} __pthread_mutex_flags;$/;"	m	struct:_pthread_mutex	typeref:struct:_pthread_mutex::__anon112
-__pthread_mutex_flags	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	} __pthread_mutex_flags;$/;"	m	struct:_pthread_mutex	typeref:struct:_pthread_mutex::__anon17
-__pthread_mutex_flags	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	} __pthread_mutex_flags;$/;"	m	struct:_pthread_mutex	typeref:struct:_pthread_mutex::__anon86
-__pthread_mutex_lock	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	} __pthread_mutex_lock;$/;"	m	struct:_pthread_mutex	typeref:union:_pthread_mutex::__anon113
-__pthread_mutex_lock	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	} __pthread_mutex_lock;$/;"	m	struct:_pthread_mutex	typeref:union:_pthread_mutex::__anon18
-__pthread_mutex_lock	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	} __pthread_mutex_lock;$/;"	m	struct:_pthread_mutex	typeref:union:_pthread_mutex::__anon87
-__pthread_mutex_lock32	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		} __pthread_mutex_lock32;$/;"	m	union:_pthread_mutex::__anon113	typeref:struct:_pthread_mutex::__anon113::__anon115
-__pthread_mutex_lock32	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		} __pthread_mutex_lock32;$/;"	m	union:_pthread_mutex::__anon18	typeref:struct:_pthread_mutex::__anon18::__anon20
-__pthread_mutex_lock32	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		} __pthread_mutex_lock32;$/;"	m	union:_pthread_mutex::__anon87	typeref:struct:_pthread_mutex::__anon87::__anon89
-__pthread_mutex_lock64	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		} __pthread_mutex_lock64;$/;"	m	union:_pthread_mutex::__anon113	typeref:struct:_pthread_mutex::__anon113::__anon114
-__pthread_mutex_lock64	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		} __pthread_mutex_lock64;$/;"	m	union:_pthread_mutex::__anon18	typeref:struct:_pthread_mutex::__anon18::__anon19
-__pthread_mutex_lock64	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		} __pthread_mutex_lock64;$/;"	m	union:_pthread_mutex::__anon87	typeref:struct:_pthread_mutex::__anon87::__anon88
-__pthread_mutex_magic	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint16_t 	__pthread_mutex_magic;$/;"	m	struct:_pthread_mutex::__anon112
-__pthread_mutex_magic	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint16_t 	__pthread_mutex_magic;$/;"	m	struct:_pthread_mutex::__anon17
-__pthread_mutex_magic	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint16_t 	__pthread_mutex_magic;$/;"	m	struct:_pthread_mutex::__anon86
-__pthread_mutex_owner64	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		upad64_t __pthread_mutex_owner64;$/;"	m	union:_pthread_mutex::__anon113
-__pthread_mutex_owner64	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		upad64_t __pthread_mutex_owner64;$/;"	m	union:_pthread_mutex::__anon18
-__pthread_mutex_owner64	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		upad64_t __pthread_mutex_owner64;$/;"	m	union:_pthread_mutex::__anon87
-__pthread_mutex_pad	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^			uint8_t	__pthread_mutex_pad[8];$/;"	m	struct:_pthread_mutex::__anon113::__anon114
-__pthread_mutex_pad	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^			uint8_t	__pthread_mutex_pad[8];$/;"	m	struct:_pthread_mutex::__anon18::__anon19
-__pthread_mutex_pad	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^			uint8_t	__pthread_mutex_pad[8];$/;"	m	struct:_pthread_mutex::__anon87::__anon88
-__pthread_mutex_type	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint16_t 	__pthread_mutex_type;$/;"	m	struct:_pthread_mutex::__anon112
-__pthread_mutex_type	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint16_t 	__pthread_mutex_type;$/;"	m	struct:_pthread_mutex::__anon17
-__pthread_mutex_type	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint16_t 	__pthread_mutex_type;$/;"	m	struct:_pthread_mutex::__anon86
+__pthread_mutex_flag1	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint16_t	__pthread_mutex_flag1;$/;"	m	struct:_pthread_mutex::__anon145
+__pthread_mutex_flag1	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint16_t	__pthread_mutex_flag1;$/;"	m	struct:_pthread_mutex::__anon170
+__pthread_mutex_flag1	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint16_t	__pthread_mutex_flag1;$/;"	m	struct:_pthread_mutex::__anon21
+__pthread_mutex_flag1	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint16_t	__pthread_mutex_flag1;$/;"	m	struct:_pthread_mutex::__anon230
+__pthread_mutex_flag1	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint16_t	__pthread_mutex_flag1;$/;"	m	struct:_pthread_mutex::__anon82
+__pthread_mutex_flag2	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint8_t		__pthread_mutex_flag2;$/;"	m	struct:_pthread_mutex::__anon145
+__pthread_mutex_flag2	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint8_t		__pthread_mutex_flag2;$/;"	m	struct:_pthread_mutex::__anon170
+__pthread_mutex_flag2	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint8_t		__pthread_mutex_flag2;$/;"	m	struct:_pthread_mutex::__anon21
+__pthread_mutex_flag2	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint8_t		__pthread_mutex_flag2;$/;"	m	struct:_pthread_mutex::__anon230
+__pthread_mutex_flag2	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint8_t		__pthread_mutex_flag2;$/;"	m	struct:_pthread_mutex::__anon82
+__pthread_mutex_flags	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	} __pthread_mutex_flags;$/;"	m	struct:_pthread_mutex	typeref:struct:_pthread_mutex::__anon145
+__pthread_mutex_flags	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	} __pthread_mutex_flags;$/;"	m	struct:_pthread_mutex	typeref:struct:_pthread_mutex::__anon170
+__pthread_mutex_flags	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	} __pthread_mutex_flags;$/;"	m	struct:_pthread_mutex	typeref:struct:_pthread_mutex::__anon21
+__pthread_mutex_flags	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	} __pthread_mutex_flags;$/;"	m	struct:_pthread_mutex	typeref:struct:_pthread_mutex::__anon230
+__pthread_mutex_flags	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	} __pthread_mutex_flags;$/;"	m	struct:_pthread_mutex	typeref:struct:_pthread_mutex::__anon82
+__pthread_mutex_lock	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	} __pthread_mutex_lock;$/;"	m	struct:_pthread_mutex	typeref:union:_pthread_mutex::__anon146
+__pthread_mutex_lock	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	} __pthread_mutex_lock;$/;"	m	struct:_pthread_mutex	typeref:union:_pthread_mutex::__anon171
+__pthread_mutex_lock	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	} __pthread_mutex_lock;$/;"	m	struct:_pthread_mutex	typeref:union:_pthread_mutex::__anon22
+__pthread_mutex_lock	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	} __pthread_mutex_lock;$/;"	m	struct:_pthread_mutex	typeref:union:_pthread_mutex::__anon231
+__pthread_mutex_lock	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	} __pthread_mutex_lock;$/;"	m	struct:_pthread_mutex	typeref:union:_pthread_mutex::__anon83
+__pthread_mutex_lock32	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		} __pthread_mutex_lock32;$/;"	m	union:_pthread_mutex::__anon146	typeref:struct:_pthread_mutex::__anon146::__anon148
+__pthread_mutex_lock32	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		} __pthread_mutex_lock32;$/;"	m	union:_pthread_mutex::__anon171	typeref:struct:_pthread_mutex::__anon171::__anon173
+__pthread_mutex_lock32	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		} __pthread_mutex_lock32;$/;"	m	union:_pthread_mutex::__anon22	typeref:struct:_pthread_mutex::__anon22::__anon24
+__pthread_mutex_lock32	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		} __pthread_mutex_lock32;$/;"	m	union:_pthread_mutex::__anon231	typeref:struct:_pthread_mutex::__anon231::__anon233
+__pthread_mutex_lock32	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		} __pthread_mutex_lock32;$/;"	m	union:_pthread_mutex::__anon83	typeref:struct:_pthread_mutex::__anon83::__anon85
+__pthread_mutex_lock64	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		} __pthread_mutex_lock64;$/;"	m	union:_pthread_mutex::__anon146	typeref:struct:_pthread_mutex::__anon146::__anon147
+__pthread_mutex_lock64	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		} __pthread_mutex_lock64;$/;"	m	union:_pthread_mutex::__anon171	typeref:struct:_pthread_mutex::__anon171::__anon172
+__pthread_mutex_lock64	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		} __pthread_mutex_lock64;$/;"	m	union:_pthread_mutex::__anon22	typeref:struct:_pthread_mutex::__anon22::__anon23
+__pthread_mutex_lock64	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		} __pthread_mutex_lock64;$/;"	m	union:_pthread_mutex::__anon231	typeref:struct:_pthread_mutex::__anon231::__anon232
+__pthread_mutex_lock64	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		} __pthread_mutex_lock64;$/;"	m	union:_pthread_mutex::__anon83	typeref:struct:_pthread_mutex::__anon83::__anon84
+__pthread_mutex_magic	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint16_t 	__pthread_mutex_magic;$/;"	m	struct:_pthread_mutex::__anon145
+__pthread_mutex_magic	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint16_t 	__pthread_mutex_magic;$/;"	m	struct:_pthread_mutex::__anon170
+__pthread_mutex_magic	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint16_t 	__pthread_mutex_magic;$/;"	m	struct:_pthread_mutex::__anon21
+__pthread_mutex_magic	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint16_t 	__pthread_mutex_magic;$/;"	m	struct:_pthread_mutex::__anon230
+__pthread_mutex_magic	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint16_t 	__pthread_mutex_magic;$/;"	m	struct:_pthread_mutex::__anon82
+__pthread_mutex_owner64	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		upad64_t __pthread_mutex_owner64;$/;"	m	union:_pthread_mutex::__anon146
+__pthread_mutex_owner64	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		upad64_t __pthread_mutex_owner64;$/;"	m	union:_pthread_mutex::__anon171
+__pthread_mutex_owner64	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		upad64_t __pthread_mutex_owner64;$/;"	m	union:_pthread_mutex::__anon22
+__pthread_mutex_owner64	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		upad64_t __pthread_mutex_owner64;$/;"	m	union:_pthread_mutex::__anon231
+__pthread_mutex_owner64	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		upad64_t __pthread_mutex_owner64;$/;"	m	union:_pthread_mutex::__anon83
+__pthread_mutex_pad	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^			uint8_t	__pthread_mutex_pad[8];$/;"	m	struct:_pthread_mutex::__anon146::__anon147
+__pthread_mutex_pad	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^			uint8_t	__pthread_mutex_pad[8];$/;"	m	struct:_pthread_mutex::__anon171::__anon172
+__pthread_mutex_pad	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^			uint8_t	__pthread_mutex_pad[8];$/;"	m	struct:_pthread_mutex::__anon22::__anon23
+__pthread_mutex_pad	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^			uint8_t	__pthread_mutex_pad[8];$/;"	m	struct:_pthread_mutex::__anon231::__anon232
+__pthread_mutex_pad	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^			uint8_t	__pthread_mutex_pad[8];$/;"	m	struct:_pthread_mutex::__anon83::__anon84
+__pthread_mutex_type	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint16_t 	__pthread_mutex_type;$/;"	m	struct:_pthread_mutex::__anon145
+__pthread_mutex_type	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint16_t 	__pthread_mutex_type;$/;"	m	struct:_pthread_mutex::__anon170
+__pthread_mutex_type	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint16_t 	__pthread_mutex_type;$/;"	m	struct:_pthread_mutex::__anon21
+__pthread_mutex_type	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint16_t 	__pthread_mutex_type;$/;"	m	struct:_pthread_mutex::__anon230
+__pthread_mutex_type	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		uint16_t 	__pthread_mutex_type;$/;"	m	struct:_pthread_mutex::__anon82
 __pthread_mutexattrp	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	void	*__pthread_mutexattrp;$/;"	m	struct:_pthread_mutexattr
 __pthread_once_pad	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	upad64_t	__pthread_once_pad[4];$/;"	m	struct:_once
-__pthread_ownerpid	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^			uint32_t __pthread_ownerpid;$/;"	m	struct:_pthread_mutex::__anon113::__anon115
-__pthread_ownerpid	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^			uint32_t __pthread_ownerpid;$/;"	m	struct:_pthread_mutex::__anon18::__anon20
-__pthread_ownerpid	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^			uint32_t __pthread_ownerpid;$/;"	m	struct:_pthread_mutex::__anon87::__anon89
+__pthread_ownerpid	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^			uint32_t __pthread_ownerpid;$/;"	m	struct:_pthread_mutex::__anon146::__anon148
+__pthread_ownerpid	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^			uint32_t __pthread_ownerpid;$/;"	m	struct:_pthread_mutex::__anon171::__anon173
+__pthread_ownerpid	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^			uint32_t __pthread_ownerpid;$/;"	m	struct:_pthread_mutex::__anon22::__anon24
+__pthread_ownerpid	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^			uint32_t __pthread_ownerpid;$/;"	m	struct:_pthread_mutex::__anon231::__anon233
+__pthread_ownerpid	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^			uint32_t __pthread_ownerpid;$/;"	m	struct:_pthread_mutex::__anon83::__anon85
 __pthread_rwlock_magic	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	uint16_t	__pthread_rwlock_magic;$/;"	m	struct:_pthread_rwlock
 __pthread_rwlock_mutex	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	pthread_mutex_t	__pthread_rwlock_mutex;$/;"	m	struct:_pthread_rwlock
 __pthread_rwlock_readercv	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	pthread_cond_t	__pthread_rwlock_readercv;$/;"	m	struct:_pthread_rwlock
@@ -2075,20 +2247,36 @@ __pthread_rwlock_readers	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/
 __pthread_rwlock_type	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	uint16_t	__pthread_rwlock_type;$/;"	m	struct:_pthread_rwlock
 __pthread_rwlock_writercv	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	pthread_cond_t	__pthread_rwlock_writercv;$/;"	m	struct:_pthread_rwlock
 __pthread_rwlockattrp	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	void	*__pthread_rwlockattrp;$/;"	m	struct:_pthread_rwlockattr
-__rctl	/usr/include/sys/siginfo.h	/^		} __rctl;$/;"	m	union:k_siginfo::__anon57	typeref:struct:k_siginfo::__anon57::__anon65
-__rctl	/usr/include/sys/siginfo.h	/^		} __rctl;$/;"	m	union:siginfo32::__anon48	typeref:struct:siginfo32::__anon48::__anon56
-__rctl	/usr/include/sys/siginfo.h	/^		} __rctl;$/;"	m	union:siginfo::__anon39	typeref:struct:siginfo::__anon39::__anon47
+__rctl	/usr/include/sys/siginfo.h	/^		} __rctl;$/;"	m	union:k_siginfo::__anon116	typeref:struct:k_siginfo::__anon116::__anon124
+__rctl	/usr/include/sys/siginfo.h	/^		} __rctl;$/;"	m	union:k_siginfo::__anon204	typeref:struct:k_siginfo::__anon204::__anon212
+__rctl	/usr/include/sys/siginfo.h	/^		} __rctl;$/;"	m	union:k_siginfo::__anon55	typeref:struct:k_siginfo::__anon55::__anon63
+__rctl	/usr/include/sys/siginfo.h	/^		} __rctl;$/;"	m	union:siginfo32::__anon107	typeref:struct:siginfo32::__anon107::__anon115
+__rctl	/usr/include/sys/siginfo.h	/^		} __rctl;$/;"	m	union:siginfo32::__anon195	typeref:struct:siginfo32::__anon195::__anon203
+__rctl	/usr/include/sys/siginfo.h	/^		} __rctl;$/;"	m	union:siginfo32::__anon46	typeref:struct:siginfo32::__anon46::__anon54
+__rctl	/usr/include/sys/siginfo.h	/^		} __rctl;$/;"	m	union:siginfo::__anon186	typeref:struct:siginfo::__anon186::__anon194
+__rctl	/usr/include/sys/siginfo.h	/^		} __rctl;$/;"	m	union:siginfo::__anon37	typeref:struct:siginfo::__anon37::__anon45
+__rctl	/usr/include/sys/siginfo.h	/^		} __rctl;$/;"	m	union:siginfo::__anon98	typeref:struct:siginfo::__anon98::__anon106
 __seekable	/usr/include/stdio_impl.h	/^	unsigned	__seekable:1;	\/* is file seekable? *\/$/;"	m	struct:__FILE_TAG
 __setp	/usr/include/signal.h	/^	sigset_t *__setp;$/;"	v
-__sigbits	/usr/include/sys/select.h	/^	uint32_t	__sigbits[4];$/;"	m	struct:__anon120
-__sigbits	/usr/include/sys/select.h	/^	uint32_t	__sigbits[4];$/;"	m	struct:__anon25
-__sigbits	/usr/include/sys/select.h	/^	uint32_t	__sigbits[4];$/;"	m	struct:__anon94
-__sigbits	/usr/include/sys/select.h	/^	unsigned int	__sigbits[4];$/;"	m	struct:__anon119
-__sigbits	/usr/include/sys/select.h	/^	unsigned int	__sigbits[4];$/;"	m	struct:__anon24
-__sigbits	/usr/include/sys/select.h	/^	unsigned int	__sigbits[4];$/;"	m	struct:__anon93
-__sigbits	/usr/include/sys/signal.h	/^	uint32_t	__sigbits[4];$/;"	m	struct:__anon33
-__sigbits	/usr/include/sys/signal.h	/^	unsigned int	__sigbits[2];$/;"	m	struct:__anon34
-__sigbits	/usr/include/sys/signal.h	/^	unsigned int	__sigbits[4];$/;"	m	struct:__anon32
+__sigbits	/usr/include/sys/select.h	/^	uint32_t	__sigbits[4];$/;"	m	struct:__anon153
+__sigbits	/usr/include/sys/select.h	/^	uint32_t	__sigbits[4];$/;"	m	struct:__anon178
+__sigbits	/usr/include/sys/select.h	/^	uint32_t	__sigbits[4];$/;"	m	struct:__anon238
+__sigbits	/usr/include/sys/select.h	/^	uint32_t	__sigbits[4];$/;"	m	struct:__anon29
+__sigbits	/usr/include/sys/select.h	/^	uint32_t	__sigbits[4];$/;"	m	struct:__anon90
+__sigbits	/usr/include/sys/select.h	/^	unsigned int	__sigbits[4];$/;"	m	struct:__anon152
+__sigbits	/usr/include/sys/select.h	/^	unsigned int	__sigbits[4];$/;"	m	struct:__anon177
+__sigbits	/usr/include/sys/select.h	/^	unsigned int	__sigbits[4];$/;"	m	struct:__anon237
+__sigbits	/usr/include/sys/select.h	/^	unsigned int	__sigbits[4];$/;"	m	struct:__anon28
+__sigbits	/usr/include/sys/select.h	/^	unsigned int	__sigbits[4];$/;"	m	struct:__anon89
+__sigbits	/usr/include/sys/signal.h	/^	uint32_t	__sigbits[4];$/;"	m	struct:__anon180
+__sigbits	/usr/include/sys/signal.h	/^	uint32_t	__sigbits[4];$/;"	m	struct:__anon31
+__sigbits	/usr/include/sys/signal.h	/^	uint32_t	__sigbits[4];$/;"	m	struct:__anon92
+__sigbits	/usr/include/sys/signal.h	/^	unsigned int	__sigbits[2];$/;"	m	struct:__anon181
+__sigbits	/usr/include/sys/signal.h	/^	unsigned int	__sigbits[2];$/;"	m	struct:__anon32
+__sigbits	/usr/include/sys/signal.h	/^	unsigned int	__sigbits[2];$/;"	m	struct:__anon93
+__sigbits	/usr/include/sys/signal.h	/^	unsigned int	__sigbits[4];$/;"	m	struct:__anon179
+__sigbits	/usr/include/sys/signal.h	/^	unsigned int	__sigbits[4];$/;"	m	struct:__anon30
+__sigbits	/usr/include/sys/signal.h	/^	unsigned int	__sigbits[4];$/;"	m	struct:__anon91
 __sigev_pad2	/usr/include/sys/siginfo.h	/^	int		__sigev_pad2;$/;"	m	struct:sigevent
 __sigev_pad2	/usr/include/sys/siginfo.h	/^	int32_t		__sigev_pad2;$/;"	m	struct:sigevent32
 __sigev_pad2	/usr/include/time.h	/^	int		__sigev_pad2;$/;"	m	struct:sigevent
@@ -2099,12 +2287,24 @@ __sival_ptr	/usr/include/sys/siginfo.h	/^	void	*__sival_ptr;	\/* pointer value *
 __size	/usr/include/unistd.h	/^	size_t __size;$/;"	v
 __sparc	/usr/include/sys/isa_defs.h	393;"	d
 __sparcv8	/usr/include/sys/isa_defs.h	410;"	d
-__status	/usr/include/sys/siginfo.h	/^					int	__status;$/;"	m	struct:k_siginfo::__anon57::__anon58::__anon59::__anon61
-__status	/usr/include/sys/siginfo.h	/^					int	__status;$/;"	m	struct:siginfo::__anon39::__anon40::__anon41::__anon43
-__status	/usr/include/sys/siginfo.h	/^					int32_t	__status;$/;"	m	struct:siginfo32::__anon48::__anon49::__anon50::__anon52
-__stime	/usr/include/sys/siginfo.h	/^					clock32_t __stime;$/;"	m	struct:siginfo32::__anon48::__anon49::__anon50::__anon52
-__stime	/usr/include/sys/siginfo.h	/^					clock_t __stime;$/;"	m	struct:k_siginfo::__anon57::__anon58::__anon59::__anon61
-__stime	/usr/include/sys/siginfo.h	/^					clock_t __stime;$/;"	m	struct:siginfo::__anon39::__anon40::__anon41::__anon43
+__status	/usr/include/sys/siginfo.h	/^					int	__status;$/;"	m	struct:k_siginfo::__anon116::__anon117::__anon118::__anon120
+__status	/usr/include/sys/siginfo.h	/^					int	__status;$/;"	m	struct:k_siginfo::__anon204::__anon205::__anon206::__anon208
+__status	/usr/include/sys/siginfo.h	/^					int	__status;$/;"	m	struct:k_siginfo::__anon55::__anon56::__anon57::__anon59
+__status	/usr/include/sys/siginfo.h	/^					int	__status;$/;"	m	struct:siginfo::__anon186::__anon187::__anon188::__anon190
+__status	/usr/include/sys/siginfo.h	/^					int	__status;$/;"	m	struct:siginfo::__anon37::__anon38::__anon39::__anon41
+__status	/usr/include/sys/siginfo.h	/^					int	__status;$/;"	m	struct:siginfo::__anon98::__anon99::__anon100::__anon102
+__status	/usr/include/sys/siginfo.h	/^					int32_t	__status;$/;"	m	struct:siginfo32::__anon107::__anon108::__anon109::__anon111
+__status	/usr/include/sys/siginfo.h	/^					int32_t	__status;$/;"	m	struct:siginfo32::__anon195::__anon196::__anon197::__anon199
+__status	/usr/include/sys/siginfo.h	/^					int32_t	__status;$/;"	m	struct:siginfo32::__anon46::__anon47::__anon48::__anon50
+__stime	/usr/include/sys/siginfo.h	/^					clock32_t __stime;$/;"	m	struct:siginfo32::__anon107::__anon108::__anon109::__anon111
+__stime	/usr/include/sys/siginfo.h	/^					clock32_t __stime;$/;"	m	struct:siginfo32::__anon195::__anon196::__anon197::__anon199
+__stime	/usr/include/sys/siginfo.h	/^					clock32_t __stime;$/;"	m	struct:siginfo32::__anon46::__anon47::__anon48::__anon50
+__stime	/usr/include/sys/siginfo.h	/^					clock_t __stime;$/;"	m	struct:k_siginfo::__anon116::__anon117::__anon118::__anon120
+__stime	/usr/include/sys/siginfo.h	/^					clock_t __stime;$/;"	m	struct:k_siginfo::__anon204::__anon205::__anon206::__anon208
+__stime	/usr/include/sys/siginfo.h	/^					clock_t __stime;$/;"	m	struct:k_siginfo::__anon55::__anon56::__anon57::__anon59
+__stime	/usr/include/sys/siginfo.h	/^					clock_t __stime;$/;"	m	struct:siginfo::__anon186::__anon187::__anon188::__anon190
+__stime	/usr/include/sys/siginfo.h	/^					clock_t __stime;$/;"	m	struct:siginfo::__anon37::__anon38::__anon39::__anon41
+__stime	/usr/include/sys/siginfo.h	/^					clock_t __stime;$/;"	m	struct:siginfo::__anon98::__anon99::__anon100::__anon102
 __sun_attr__	/usr/include/sys/ccompile.h	81;"	d
 __sun_attr__	/usr/include/sys/ccompile.h	85;"	d
 __sun_attr___KPRINTFLIKE__	/usr/include/sys/ccompile.h	47;"	d
@@ -2117,27 +2317,65 @@ __sun_attr___const__	/usr/include/sys/ccompile.h	73;"	d
 __sun_attr___noreturn__	/usr/include/sys/ccompile.h	59;"	d
 __sun_attr___packed__	/usr/include/sys/ccompile.h	78;"	d
 __sun_attr___pure__	/usr/include/sys/ccompile.h	66;"	d
-__sysarg	/usr/include/sys/siginfo.h	/^			int32_t	__sysarg[8];	\/* syscall arguments	*\/$/;"	m	struct:siginfo32::__anon48::__anon55
-__sysarg	/usr/include/sys/siginfo.h	/^			long	__sysarg[8];	\/* syscall arguments	*\/$/;"	m	struct:siginfo::__anon39::__anon46
-__syscall	/usr/include/sys/siginfo.h	/^			int16_t	__syscall;	\/* current syscall	*\/$/;"	m	struct:siginfo32::__anon48::__anon55
-__syscall	/usr/include/sys/siginfo.h	/^			short	__syscall;	\/* current syscall	*\/$/;"	m	struct:k_siginfo::__anon57::__anon64
-__syscall	/usr/include/sys/siginfo.h	/^			short	__syscall;	\/* current syscall	*\/$/;"	m	struct:siginfo::__anon39::__anon46
+__sysarg	/usr/include/sys/siginfo.h	/^			int32_t	__sysarg[8];	\/* syscall arguments	*\/$/;"	m	struct:siginfo32::__anon107::__anon114
+__sysarg	/usr/include/sys/siginfo.h	/^			int32_t	__sysarg[8];	\/* syscall arguments	*\/$/;"	m	struct:siginfo32::__anon195::__anon202
+__sysarg	/usr/include/sys/siginfo.h	/^			int32_t	__sysarg[8];	\/* syscall arguments	*\/$/;"	m	struct:siginfo32::__anon46::__anon53
+__sysarg	/usr/include/sys/siginfo.h	/^			long	__sysarg[8];	\/* syscall arguments	*\/$/;"	m	struct:siginfo::__anon186::__anon193
+__sysarg	/usr/include/sys/siginfo.h	/^			long	__sysarg[8];	\/* syscall arguments	*\/$/;"	m	struct:siginfo::__anon37::__anon44
+__sysarg	/usr/include/sys/siginfo.h	/^			long	__sysarg[8];	\/* syscall arguments	*\/$/;"	m	struct:siginfo::__anon98::__anon105
+__syscall	/usr/include/sys/siginfo.h	/^			int16_t	__syscall;	\/* current syscall	*\/$/;"	m	struct:siginfo32::__anon107::__anon114
+__syscall	/usr/include/sys/siginfo.h	/^			int16_t	__syscall;	\/* current syscall	*\/$/;"	m	struct:siginfo32::__anon195::__anon202
+__syscall	/usr/include/sys/siginfo.h	/^			int16_t	__syscall;	\/* current syscall	*\/$/;"	m	struct:siginfo32::__anon46::__anon53
+__syscall	/usr/include/sys/siginfo.h	/^			short	__syscall;	\/* current syscall	*\/$/;"	m	struct:k_siginfo::__anon116::__anon123
+__syscall	/usr/include/sys/siginfo.h	/^			short	__syscall;	\/* current syscall	*\/$/;"	m	struct:k_siginfo::__anon204::__anon211
+__syscall	/usr/include/sys/siginfo.h	/^			short	__syscall;	\/* current syscall	*\/$/;"	m	struct:k_siginfo::__anon55::__anon62
+__syscall	/usr/include/sys/siginfo.h	/^			short	__syscall;	\/* current syscall	*\/$/;"	m	struct:siginfo::__anon186::__anon193
+__syscall	/usr/include/sys/siginfo.h	/^			short	__syscall;	\/* current syscall	*\/$/;"	m	struct:siginfo::__anon37::__anon44
+__syscall	/usr/include/sys/siginfo.h	/^			short	__syscall;	\/* current syscall	*\/$/;"	m	struct:siginfo::__anon98::__anon105
 __time	/usr/include/time.h	/^	time_t *__time;$/;"	v
 __tm	/usr/include/time.h	/^	struct tm *__tm;$/;"	v	typeref:struct:tm
-__trapno	/usr/include/sys/siginfo.h	/^			int	__trapno;	\/* illegal trap number	*\/$/;"	m	struct:k_siginfo::__anon57::__anon62
-__trapno	/usr/include/sys/siginfo.h	/^			int	__trapno;	\/* illegal trap number	*\/$/;"	m	struct:siginfo::__anon39::__anon44
-__trapno	/usr/include/sys/siginfo.h	/^			int32_t	__trapno;	\/* illegal trap number	*\/$/;"	m	struct:siginfo32::__anon48::__anon53
-__tstamp	/usr/include/sys/siginfo.h	/^			_timestruc_t __tstamp;	\/* real time stamp	*\/$/;"	m	struct:k_siginfo::__anon57::__anon64
-__tstamp	/usr/include/sys/siginfo.h	/^			_timestruc_t __tstamp;	\/* real time stamp	*\/$/;"	m	struct:siginfo::__anon39::__anon46
-__tstamp	/usr/include/sys/siginfo.h	/^			timestruc32_t __tstamp; \/* real time stamp	*\/$/;"	m	struct:siginfo32::__anon48::__anon55
-__tstamp	/usr/include/sys/siginfo.h	/^			timestruc_t __tstamp;	\/* real time stamp	*\/$/;"	m	struct:k_siginfo::__anon57::__anon64
-__tstamp	/usr/include/sys/siginfo.h	/^			timestruc_t __tstamp;	\/* real time stamp	*\/$/;"	m	struct:siginfo::__anon39::__anon46
-__uid	/usr/include/sys/siginfo.h	/^					uid32_t	__uid;$/;"	m	struct:siginfo32::__anon48::__anon49::__anon50::__anon51
-__uid	/usr/include/sys/siginfo.h	/^					uid_t	__uid;$/;"	m	struct:k_siginfo::__anon57::__anon58::__anon59::__anon60
-__uid	/usr/include/sys/siginfo.h	/^					uid_t	__uid;$/;"	m	struct:siginfo::__anon39::__anon40::__anon41::__anon42
-__utime	/usr/include/sys/siginfo.h	/^					clock32_t __utime;$/;"	m	struct:siginfo32::__anon48::__anon49::__anon50::__anon52
-__utime	/usr/include/sys/siginfo.h	/^					clock_t __utime;$/;"	m	struct:k_siginfo::__anon57::__anon58::__anon59::__anon61
-__utime	/usr/include/sys/siginfo.h	/^					clock_t __utime;$/;"	m	struct:siginfo::__anon39::__anon40::__anon41::__anon43
+__trapno	/usr/include/sys/siginfo.h	/^			int	__trapno;	\/* illegal trap number	*\/$/;"	m	struct:k_siginfo::__anon116::__anon121
+__trapno	/usr/include/sys/siginfo.h	/^			int	__trapno;	\/* illegal trap number	*\/$/;"	m	struct:k_siginfo::__anon204::__anon209
+__trapno	/usr/include/sys/siginfo.h	/^			int	__trapno;	\/* illegal trap number	*\/$/;"	m	struct:k_siginfo::__anon55::__anon60
+__trapno	/usr/include/sys/siginfo.h	/^			int	__trapno;	\/* illegal trap number	*\/$/;"	m	struct:siginfo::__anon186::__anon191
+__trapno	/usr/include/sys/siginfo.h	/^			int	__trapno;	\/* illegal trap number	*\/$/;"	m	struct:siginfo::__anon37::__anon42
+__trapno	/usr/include/sys/siginfo.h	/^			int	__trapno;	\/* illegal trap number	*\/$/;"	m	struct:siginfo::__anon98::__anon103
+__trapno	/usr/include/sys/siginfo.h	/^			int32_t	__trapno;	\/* illegal trap number	*\/$/;"	m	struct:siginfo32::__anon107::__anon112
+__trapno	/usr/include/sys/siginfo.h	/^			int32_t	__trapno;	\/* illegal trap number	*\/$/;"	m	struct:siginfo32::__anon195::__anon200
+__trapno	/usr/include/sys/siginfo.h	/^			int32_t	__trapno;	\/* illegal trap number	*\/$/;"	m	struct:siginfo32::__anon46::__anon51
+__tstamp	/usr/include/sys/siginfo.h	/^			_timestruc_t __tstamp;	\/* real time stamp	*\/$/;"	m	struct:k_siginfo::__anon116::__anon123
+__tstamp	/usr/include/sys/siginfo.h	/^			_timestruc_t __tstamp;	\/* real time stamp	*\/$/;"	m	struct:k_siginfo::__anon204::__anon211
+__tstamp	/usr/include/sys/siginfo.h	/^			_timestruc_t __tstamp;	\/* real time stamp	*\/$/;"	m	struct:k_siginfo::__anon55::__anon62
+__tstamp	/usr/include/sys/siginfo.h	/^			_timestruc_t __tstamp;	\/* real time stamp	*\/$/;"	m	struct:siginfo::__anon186::__anon193
+__tstamp	/usr/include/sys/siginfo.h	/^			_timestruc_t __tstamp;	\/* real time stamp	*\/$/;"	m	struct:siginfo::__anon37::__anon44
+__tstamp	/usr/include/sys/siginfo.h	/^			_timestruc_t __tstamp;	\/* real time stamp	*\/$/;"	m	struct:siginfo::__anon98::__anon105
+__tstamp	/usr/include/sys/siginfo.h	/^			timestruc32_t __tstamp; \/* real time stamp	*\/$/;"	m	struct:siginfo32::__anon107::__anon114
+__tstamp	/usr/include/sys/siginfo.h	/^			timestruc32_t __tstamp; \/* real time stamp	*\/$/;"	m	struct:siginfo32::__anon195::__anon202
+__tstamp	/usr/include/sys/siginfo.h	/^			timestruc32_t __tstamp; \/* real time stamp	*\/$/;"	m	struct:siginfo32::__anon46::__anon53
+__tstamp	/usr/include/sys/siginfo.h	/^			timestruc_t __tstamp;	\/* real time stamp	*\/$/;"	m	struct:k_siginfo::__anon116::__anon123
+__tstamp	/usr/include/sys/siginfo.h	/^			timestruc_t __tstamp;	\/* real time stamp	*\/$/;"	m	struct:k_siginfo::__anon204::__anon211
+__tstamp	/usr/include/sys/siginfo.h	/^			timestruc_t __tstamp;	\/* real time stamp	*\/$/;"	m	struct:k_siginfo::__anon55::__anon62
+__tstamp	/usr/include/sys/siginfo.h	/^			timestruc_t __tstamp;	\/* real time stamp	*\/$/;"	m	struct:siginfo::__anon186::__anon193
+__tstamp	/usr/include/sys/siginfo.h	/^			timestruc_t __tstamp;	\/* real time stamp	*\/$/;"	m	struct:siginfo::__anon37::__anon44
+__tstamp	/usr/include/sys/siginfo.h	/^			timestruc_t __tstamp;	\/* real time stamp	*\/$/;"	m	struct:siginfo::__anon98::__anon105
+__uid	/usr/include/sys/siginfo.h	/^					uid32_t	__uid;$/;"	m	struct:siginfo32::__anon107::__anon108::__anon109::__anon110
+__uid	/usr/include/sys/siginfo.h	/^					uid32_t	__uid;$/;"	m	struct:siginfo32::__anon195::__anon196::__anon197::__anon198
+__uid	/usr/include/sys/siginfo.h	/^					uid32_t	__uid;$/;"	m	struct:siginfo32::__anon46::__anon47::__anon48::__anon49
+__uid	/usr/include/sys/siginfo.h	/^					uid_t	__uid;$/;"	m	struct:k_siginfo::__anon116::__anon117::__anon118::__anon119
+__uid	/usr/include/sys/siginfo.h	/^					uid_t	__uid;$/;"	m	struct:k_siginfo::__anon204::__anon205::__anon206::__anon207
+__uid	/usr/include/sys/siginfo.h	/^					uid_t	__uid;$/;"	m	struct:k_siginfo::__anon55::__anon56::__anon57::__anon58
+__uid	/usr/include/sys/siginfo.h	/^					uid_t	__uid;$/;"	m	struct:siginfo::__anon186::__anon187::__anon188::__anon189
+__uid	/usr/include/sys/siginfo.h	/^					uid_t	__uid;$/;"	m	struct:siginfo::__anon37::__anon38::__anon39::__anon40
+__uid	/usr/include/sys/siginfo.h	/^					uid_t	__uid;$/;"	m	struct:siginfo::__anon98::__anon99::__anon100::__anon101
+__utime	/usr/include/sys/siginfo.h	/^					clock32_t __utime;$/;"	m	struct:siginfo32::__anon107::__anon108::__anon109::__anon111
+__utime	/usr/include/sys/siginfo.h	/^					clock32_t __utime;$/;"	m	struct:siginfo32::__anon195::__anon196::__anon197::__anon199
+__utime	/usr/include/sys/siginfo.h	/^					clock32_t __utime;$/;"	m	struct:siginfo32::__anon46::__anon47::__anon48::__anon50
+__utime	/usr/include/sys/siginfo.h	/^					clock_t __utime;$/;"	m	struct:k_siginfo::__anon116::__anon117::__anon118::__anon120
+__utime	/usr/include/sys/siginfo.h	/^					clock_t __utime;$/;"	m	struct:k_siginfo::__anon204::__anon205::__anon206::__anon208
+__utime	/usr/include/sys/siginfo.h	/^					clock_t __utime;$/;"	m	struct:k_siginfo::__anon55::__anon56::__anon57::__anon59
+__utime	/usr/include/sys/siginfo.h	/^					clock_t __utime;$/;"	m	struct:siginfo::__anon186::__anon187::__anon188::__anon190
+__utime	/usr/include/sys/siginfo.h	/^					clock_t __utime;$/;"	m	struct:siginfo::__anon37::__anon38::__anon39::__anon41
+__utime	/usr/include/sys/siginfo.h	/^					clock_t __utime;$/;"	m	struct:siginfo::__anon98::__anon99::__anon100::__anon102
 __va_alist_type	/usr/include/sys/va_list.h	58;"	d
 __va_alist_type	/usr/include/sys/va_list.h	60;"	d
 __va_arg	/usr/include/sys/va_impl.h	118;"	d
@@ -2168,105 +2406,171 @@ __va_start	/usr/include/sys/va_impl.h	135;"	d
 __va_start	/usr/include/sys/va_impl.h	95;"	d
 __va_void	/usr/include/sys/va_list.h	65;"	d
 __va_void	/usr/include/sys/va_list.h	70;"	d
-__value	/usr/include/sys/siginfo.h	/^					union __sigval	__value;$/;"	m	struct:siginfo::__anon39::__anon40::__anon41::__anon42	typeref:union:siginfo::__anon39::__anon40::__anon41::__anon42::__sigval
-__value	/usr/include/sys/siginfo.h	/^					union sigval	__value;$/;"	m	struct:k_siginfo::__anon57::__anon58::__anon59::__anon60	typeref:union:k_siginfo::__anon57::__anon58::__anon59::__anon60::sigval
-__value	/usr/include/sys/siginfo.h	/^					union sigval	__value;$/;"	m	struct:siginfo::__anon39::__anon40::__anon41::__anon42	typeref:union:siginfo::__anon39::__anon40::__anon41::__anon42::sigval
-__value	/usr/include/sys/siginfo.h	/^					union sigval32	__value;$/;"	m	struct:siginfo32::__anon48::__anon49::__anon50::__anon51	typeref:union:siginfo32::__anon48::__anon49::__anon50::__anon51::sigval32
+__value	/usr/include/sys/siginfo.h	/^					union __sigval	__value;$/;"	m	struct:siginfo::__anon186::__anon187::__anon188::__anon189	typeref:union:siginfo::__anon186::__anon187::__anon188::__anon189::__sigval
+__value	/usr/include/sys/siginfo.h	/^					union __sigval	__value;$/;"	m	struct:siginfo::__anon37::__anon38::__anon39::__anon40	typeref:union:siginfo::__anon37::__anon38::__anon39::__anon40::__sigval
+__value	/usr/include/sys/siginfo.h	/^					union __sigval	__value;$/;"	m	struct:siginfo::__anon98::__anon99::__anon100::__anon101	typeref:union:siginfo::__anon98::__anon99::__anon100::__anon101::__sigval
+__value	/usr/include/sys/siginfo.h	/^					union sigval	__value;$/;"	m	struct:k_siginfo::__anon116::__anon117::__anon118::__anon119	typeref:union:k_siginfo::__anon116::__anon117::__anon118::__anon119::sigval
+__value	/usr/include/sys/siginfo.h	/^					union sigval	__value;$/;"	m	struct:k_siginfo::__anon204::__anon205::__anon206::__anon207	typeref:union:k_siginfo::__anon204::__anon205::__anon206::__anon207::sigval
+__value	/usr/include/sys/siginfo.h	/^					union sigval	__value;$/;"	m	struct:k_siginfo::__anon55::__anon56::__anon57::__anon58	typeref:union:k_siginfo::__anon55::__anon56::__anon57::__anon58::sigval
+__value	/usr/include/sys/siginfo.h	/^					union sigval	__value;$/;"	m	struct:siginfo::__anon186::__anon187::__anon188::__anon189	typeref:union:siginfo::__anon186::__anon187::__anon188::__anon189::sigval
+__value	/usr/include/sys/siginfo.h	/^					union sigval	__value;$/;"	m	struct:siginfo::__anon37::__anon38::__anon39::__anon40	typeref:union:siginfo::__anon37::__anon38::__anon39::__anon40::sigval
+__value	/usr/include/sys/siginfo.h	/^					union sigval	__value;$/;"	m	struct:siginfo::__anon98::__anon99::__anon100::__anon101	typeref:union:siginfo::__anon98::__anon99::__anon100::__anon101::sigval
+__value	/usr/include/sys/siginfo.h	/^					union sigval32	__value;$/;"	m	struct:siginfo32::__anon107::__anon108::__anon109::__anon110	typeref:union:siginfo32::__anon107::__anon108::__anon109::__anon110::sigval32
+__value	/usr/include/sys/siginfo.h	/^					union sigval32	__value;$/;"	m	struct:siginfo32::__anon195::__anon196::__anon197::__anon198	typeref:union:siginfo32::__anon195::__anon196::__anon197::__anon198::sigval32
+__value	/usr/include/sys/siginfo.h	/^					union sigval32	__value;$/;"	m	struct:siginfo32::__anon46::__anon47::__anon48::__anon49	typeref:union:siginfo32::__anon46::__anon47::__anon48::__anon49::sigval32
 __x86	/usr/include/sys/isa_defs.h	261;"	d
 __x86	/usr/include/sys/isa_defs.h	325;"	d
 __xf_nocheck	/usr/include/stdio_impl.h	/^	unsigned	__xf_nocheck:1;	\/* no extended FILE runtime check *\/$/;"	m	struct:__FILE_TAG
-__zoneid	/usr/include/sys/siginfo.h	/^			id32_t __zoneid;	\/* zone ID		*\/$/;"	m	struct:siginfo32::__anon48::__anon49
-__zoneid	/usr/include/sys/siginfo.h	/^			zoneid_t __zoneid;	\/* zone ID		*\/$/;"	m	struct:k_siginfo::__anon57::__anon58
-__zoneid	/usr/include/sys/siginfo.h	/^			zoneid_t __zoneid;	\/* zone ID		*\/$/;"	m	struct:siginfo::__anon39::__anon40
+__zoneid	/usr/include/sys/siginfo.h	/^			id32_t __zoneid;	\/* zone ID		*\/$/;"	m	struct:siginfo32::__anon107::__anon108
+__zoneid	/usr/include/sys/siginfo.h	/^			id32_t __zoneid;	\/* zone ID		*\/$/;"	m	struct:siginfo32::__anon195::__anon196
+__zoneid	/usr/include/sys/siginfo.h	/^			id32_t __zoneid;	\/* zone ID		*\/$/;"	m	struct:siginfo32::__anon46::__anon47
+__zoneid	/usr/include/sys/siginfo.h	/^			zoneid_t __zoneid;	\/* zone ID		*\/$/;"	m	struct:k_siginfo::__anon116::__anon117
+__zoneid	/usr/include/sys/siginfo.h	/^			zoneid_t __zoneid;	\/* zone ID		*\/$/;"	m	struct:k_siginfo::__anon204::__anon205
+__zoneid	/usr/include/sys/siginfo.h	/^			zoneid_t __zoneid;	\/* zone ID		*\/$/;"	m	struct:k_siginfo::__anon55::__anon56
+__zoneid	/usr/include/sys/siginfo.h	/^			zoneid_t __zoneid;	\/* zone ID		*\/$/;"	m	struct:siginfo::__anon186::__anon187
+__zoneid	/usr/include/sys/siginfo.h	/^			zoneid_t __zoneid;	\/* zone ID		*\/$/;"	m	struct:siginfo::__anon37::__anon38
+__zoneid	/usr/include/sys/siginfo.h	/^			zoneid_t __zoneid;	\/* zone ID		*\/$/;"	m	struct:siginfo::__anon98::__anon99
 _base	/usr/include/stdio_impl.h	/^	unsigned char	*_base;	\/* the buffer *\/$/;"	m	struct:__FILE_TAG
 _bufend	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/stdio.h	357;"	d
 _bufsiz	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/stdio.h	359;"	d
 _cnt	/usr/include/stdio_impl.h	/^	int		_cnt;	\/* number of available characters in buffer *\/$/;"	m	struct:__FILE_TAG
 _d	/usr/include/iso/math_iso.h	/^	double _d;$/;"	m	union:_h_val
-_d	/usr/include/iso/stdio_iso.h	/^	double	_d;$/;"	m	union:__anon29
-_d	/usr/include/iso/stdio_iso.h	/^	double	_d;$/;"	m	union:__anon69
-_d	/usr/include/iso/stdio_iso.h	/^	double	_d;$/;"	m	union:__anon95
-_d	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	double		_d;$/;"	m	union:__anon2
-_d	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	double		_d;$/;"	m	union:__anon71
-_d	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	double		_d;$/;"	m	union:__anon97
-_d	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	double	_d;$/;"	m	union:__anon1
-_d	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	double	_d;$/;"	m	union:__anon70
-_d	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	double	_d;$/;"	m	union:__anon96
-_d	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	double   _d;$/;"	m	union:__anon100
-_d	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	double   _d;$/;"	m	union:__anon101
-_d	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	double   _d;$/;"	m	union:__anon5
-_d	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	double   _d;$/;"	m	union:__anon6
-_d	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	double   _d;$/;"	m	union:__anon74
-_d	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	double   _d;$/;"	m	union:__anon75
-_f	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	longlong_t	_f;	\/* Full 64 bit disk address value *\/$/;"	m	union:__anon108
-_f	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	longlong_t	_f;	\/* Full 64 bit disk address value *\/$/;"	m	union:__anon110
-_f	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	longlong_t	_f;	\/* Full 64 bit disk address value *\/$/;"	m	union:__anon13
-_f	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	longlong_t	_f;	\/* Full 64 bit disk address value *\/$/;"	m	union:__anon15
-_f	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	longlong_t	_f;	\/* Full 64 bit disk address value *\/$/;"	m	union:__anon82
-_f	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	longlong_t	_f;	\/* Full 64 bit disk address value *\/$/;"	m	union:__anon84
-_f	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	offset_t	_f;	\/* Full 64 bit offset value *\/$/;"	m	union:__anon104
-_f	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	offset_t	_f;	\/* Full 64 bit offset value *\/$/;"	m	union:__anon106
-_f	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	offset_t	_f;	\/* Full 64 bit offset value *\/$/;"	m	union:__anon11
-_f	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	offset_t	_f;	\/* Full 64 bit offset value *\/$/;"	m	union:__anon78
-_f	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	offset_t	_f;	\/* Full 64 bit offset value *\/$/;"	m	union:__anon80
-_f	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	offset_t	_f;	\/* Full 64 bit offset value *\/$/;"	m	union:__anon9
+_d	/usr/include/iso/stdio_iso.h	/^	double	_d;$/;"	m	union:__anon128
+_d	/usr/include/iso/stdio_iso.h	/^	double	_d;$/;"	m	union:__anon213
+_d	/usr/include/iso/stdio_iso.h	/^	double	_d;$/;"	m	union:__anon4
+_d	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	double		_d;$/;"	m	union:__anon130
+_d	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	double		_d;$/;"	m	union:__anon155
+_d	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	double		_d;$/;"	m	union:__anon215
+_d	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	double		_d;$/;"	m	union:__anon6
+_d	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	double		_d;$/;"	m	union:__anon67
+_d	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	double	_d;$/;"	m	union:__anon129
+_d	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	double	_d;$/;"	m	union:__anon154
+_d	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	double	_d;$/;"	m	union:__anon214
+_d	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	double	_d;$/;"	m	union:__anon5
+_d	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	double	_d;$/;"	m	union:__anon66
+_d	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	double   _d;$/;"	m	union:__anon10
+_d	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	double   _d;$/;"	m	union:__anon133
+_d	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	double   _d;$/;"	m	union:__anon134
+_d	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	double   _d;$/;"	m	union:__anon158
+_d	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	double   _d;$/;"	m	union:__anon159
+_d	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	double   _d;$/;"	m	union:__anon218
+_d	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	double   _d;$/;"	m	union:__anon219
+_d	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	double   _d;$/;"	m	union:__anon70
+_d	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	double   _d;$/;"	m	union:__anon71
+_d	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	double   _d;$/;"	m	union:__anon9
+_f	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	longlong_t	_f;	\/* Full 64 bit disk address value *\/$/;"	m	union:__anon141
+_f	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	longlong_t	_f;	\/* Full 64 bit disk address value *\/$/;"	m	union:__anon143
+_f	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	longlong_t	_f;	\/* Full 64 bit disk address value *\/$/;"	m	union:__anon166
+_f	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	longlong_t	_f;	\/* Full 64 bit disk address value *\/$/;"	m	union:__anon168
+_f	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	longlong_t	_f;	\/* Full 64 bit disk address value *\/$/;"	m	union:__anon17
+_f	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	longlong_t	_f;	\/* Full 64 bit disk address value *\/$/;"	m	union:__anon19
+_f	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	longlong_t	_f;	\/* Full 64 bit disk address value *\/$/;"	m	union:__anon226
+_f	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	longlong_t	_f;	\/* Full 64 bit disk address value *\/$/;"	m	union:__anon228
+_f	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	longlong_t	_f;	\/* Full 64 bit disk address value *\/$/;"	m	union:__anon78
+_f	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	longlong_t	_f;	\/* Full 64 bit disk address value *\/$/;"	m	union:__anon80
+_f	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	offset_t	_f;	\/* Full 64 bit offset value *\/$/;"	m	union:__anon13
+_f	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	offset_t	_f;	\/* Full 64 bit offset value *\/$/;"	m	union:__anon137
+_f	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	offset_t	_f;	\/* Full 64 bit offset value *\/$/;"	m	union:__anon139
+_f	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	offset_t	_f;	\/* Full 64 bit offset value *\/$/;"	m	union:__anon15
+_f	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	offset_t	_f;	\/* Full 64 bit offset value *\/$/;"	m	union:__anon162
+_f	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	offset_t	_f;	\/* Full 64 bit offset value *\/$/;"	m	union:__anon164
+_f	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	offset_t	_f;	\/* Full 64 bit offset value *\/$/;"	m	union:__anon222
+_f	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	offset_t	_f;	\/* Full 64 bit offset value *\/$/;"	m	union:__anon224
+_f	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	offset_t	_f;	\/* Full 64 bit offset value *\/$/;"	m	union:__anon74
+_f	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	offset_t	_f;	\/* Full 64 bit offset value *\/$/;"	m	union:__anon76
 _file	/usr/include/stdio_impl.h	/^	unsigned char	_file; \/* Old home of the file descriptor *\/$/;"	m	struct:__FILE_TAG
 _flag	/usr/include/stdio_impl.h	/^	unsigned char	_flag;	\/* the state of the stream *\/$/;"	m	struct:__FILE_TAG
-_funcptr	/usr/include/sys/signal.h	/^	}	_funcptr;$/;"	m	struct:sigaction	typeref:union:sigaction::__anon35
-_funcptr	/usr/include/sys/signal.h	/^	}	_funcptr;$/;"	m	struct:sigaction32	typeref:union:sigaction32::__anon36
+_funcptr	/usr/include/sys/signal.h	/^	}	_funcptr;$/;"	m	struct:sigaction	typeref:union:sigaction::__anon182
+_funcptr	/usr/include/sys/signal.h	/^	}	_funcptr;$/;"	m	struct:sigaction	typeref:union:sigaction::__anon33
+_funcptr	/usr/include/sys/signal.h	/^	}	_funcptr;$/;"	m	struct:sigaction	typeref:union:sigaction::__anon94
+_funcptr	/usr/include/sys/signal.h	/^	}	_funcptr;$/;"	m	struct:sigaction32	typeref:union:sigaction32::__anon183
+_funcptr	/usr/include/sys/signal.h	/^	}	_funcptr;$/;"	m	struct:sigaction32	typeref:union:sigaction32::__anon34
+_funcptr	/usr/include/sys/signal.h	/^	}	_funcptr;$/;"	m	struct:sigaction32	typeref:union:sigaction32::__anon95
 _h_val	/usr/include/iso/math_iso.h	/^typedef union _h_val {$/;"	u
 _h_val	/usr/include/iso/math_iso.h	/^} _h_val;$/;"	t	typeref:union:_h_val
-_handler	/usr/include/sys/signal.h	/^		caddr32_t	_handler;$/;"	m	union:sigaction32::__anon36
-_handler	/usr/include/sys/signal.h	/^		void (*_handler)(int);$/;"	m	union:sigaction::__anon35
+_handler	/usr/include/sys/signal.h	/^		caddr32_t	_handler;$/;"	m	union:sigaction32::__anon183
+_handler	/usr/include/sys/signal.h	/^		caddr32_t	_handler;$/;"	m	union:sigaction32::__anon34
+_handler	/usr/include/sys/signal.h	/^		caddr32_t	_handler;$/;"	m	union:sigaction32::__anon95
+_handler	/usr/include/sys/signal.h	/^		void (*_handler)(int);$/;"	m	union:sigaction::__anon182
+_handler	/usr/include/sys/signal.h	/^		void (*_handler)(int);$/;"	m	union:sigaction::__anon33
+_handler	/usr/include/sys/signal.h	/^		void (*_handler)(int);$/;"	m	union:sigaction::__anon94
 _i	/usr/include/iso/math_iso.h	/^	unsigned long _i[sizeof (double) \/ sizeof (unsigned long)];$/;"	m	union:_h_val
-_l	/usr/include/iso/stdio_iso.h	/^	int	_l[2];$/;"	m	union:__anon29
-_l	/usr/include/iso/stdio_iso.h	/^	int	_l[2];$/;"	m	union:__anon69
-_l	/usr/include/iso/stdio_iso.h	/^	int	_l[2];$/;"	m	union:__anon95
-_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_l;	\/* lower 32 bits of disk address value *\/$/;"	m	struct:__anon108::__anon109
-_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_l;	\/* lower 32 bits of disk address value *\/$/;"	m	struct:__anon110::__anon111
-_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_l;	\/* lower 32 bits of disk address value *\/$/;"	m	struct:__anon13::__anon14
-_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_l;	\/* lower 32 bits of disk address value *\/$/;"	m	struct:__anon15::__anon16
-_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_l;	\/* lower 32 bits of disk address value *\/$/;"	m	struct:__anon82::__anon83
-_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_l;	\/* lower 32 bits of disk address value *\/$/;"	m	struct:__anon84::__anon85
-_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_l;	\/* lower 32 bits of offset value *\/$/;"	m	struct:__anon104::__anon105
-_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_l;	\/* lower 32 bits of offset value *\/$/;"	m	struct:__anon106::__anon107
-_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_l;	\/* lower 32 bits of offset value *\/$/;"	m	struct:__anon11::__anon12
-_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_l;	\/* lower 32 bits of offset value *\/$/;"	m	struct:__anon78::__anon79
-_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_l;	\/* lower 32 bits of offset value *\/$/;"	m	struct:__anon80::__anon81
-_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_l;	\/* lower 32 bits of offset value *\/$/;"	m	struct:__anon9::__anon10
-_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	int32_t		_l[4];$/;"	m	union:__anon102
-_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	int32_t		_l[4];$/;"	m	union:__anon7
-_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	int32_t		_l[4];$/;"	m	union:__anon76
-_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	int32_t	_l[2];$/;"	m	union:__anon1
-_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	int32_t	_l[2];$/;"	m	union:__anon70
-_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	int32_t	_l[2];$/;"	m	union:__anon96
-_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	int32_t  _l[2];$/;"	m	union:__anon100
-_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	int32_t  _l[2];$/;"	m	union:__anon5
-_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	int32_t  _l[2];$/;"	m	union:__anon74
-_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	uint32_t	_l[2];$/;"	m	union:__anon2
-_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	uint32_t	_l[2];$/;"	m	union:__anon71
-_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	uint32_t	_l[2];$/;"	m	union:__anon97
-_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	uint32_t	_l[4];$/;"	m	union:__anon103
-_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	uint32_t	_l[4];$/;"	m	union:__anon77
-_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	uint32_t	_l[4];$/;"	m	union:__anon8
-_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	uint32_t _l[2];$/;"	m	union:__anon101
-_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	uint32_t _l[2];$/;"	m	union:__anon6
-_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	uint32_t _l[2];$/;"	m	union:__anon75
+_l	/usr/include/iso/stdio_iso.h	/^	int	_l[2];$/;"	m	union:__anon128
+_l	/usr/include/iso/stdio_iso.h	/^	int	_l[2];$/;"	m	union:__anon213
+_l	/usr/include/iso/stdio_iso.h	/^	int	_l[2];$/;"	m	union:__anon4
+_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_l;	\/* lower 32 bits of disk address value *\/$/;"	m	struct:__anon141::__anon142
+_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_l;	\/* lower 32 bits of disk address value *\/$/;"	m	struct:__anon143::__anon144
+_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_l;	\/* lower 32 bits of disk address value *\/$/;"	m	struct:__anon166::__anon167
+_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_l;	\/* lower 32 bits of disk address value *\/$/;"	m	struct:__anon168::__anon169
+_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_l;	\/* lower 32 bits of disk address value *\/$/;"	m	struct:__anon17::__anon18
+_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_l;	\/* lower 32 bits of disk address value *\/$/;"	m	struct:__anon19::__anon20
+_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_l;	\/* lower 32 bits of disk address value *\/$/;"	m	struct:__anon226::__anon227
+_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_l;	\/* lower 32 bits of disk address value *\/$/;"	m	struct:__anon228::__anon229
+_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_l;	\/* lower 32 bits of disk address value *\/$/;"	m	struct:__anon78::__anon79
+_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_l;	\/* lower 32 bits of disk address value *\/$/;"	m	struct:__anon80::__anon81
+_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_l;	\/* lower 32 bits of offset value *\/$/;"	m	struct:__anon137::__anon138
+_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_l;	\/* lower 32 bits of offset value *\/$/;"	m	struct:__anon139::__anon140
+_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_l;	\/* lower 32 bits of offset value *\/$/;"	m	struct:__anon13::__anon14
+_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_l;	\/* lower 32 bits of offset value *\/$/;"	m	struct:__anon15::__anon16
+_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_l;	\/* lower 32 bits of offset value *\/$/;"	m	struct:__anon162::__anon163
+_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_l;	\/* lower 32 bits of offset value *\/$/;"	m	struct:__anon164::__anon165
+_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_l;	\/* lower 32 bits of offset value *\/$/;"	m	struct:__anon222::__anon223
+_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_l;	\/* lower 32 bits of offset value *\/$/;"	m	struct:__anon224::__anon225
+_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_l;	\/* lower 32 bits of offset value *\/$/;"	m	struct:__anon74::__anon75
+_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_l;	\/* lower 32 bits of offset value *\/$/;"	m	struct:__anon76::__anon77
+_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	int32_t		_l[4];$/;"	m	union:__anon11
+_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	int32_t		_l[4];$/;"	m	union:__anon135
+_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	int32_t		_l[4];$/;"	m	union:__anon160
+_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	int32_t		_l[4];$/;"	m	union:__anon220
+_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	int32_t		_l[4];$/;"	m	union:__anon72
+_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	int32_t	_l[2];$/;"	m	union:__anon129
+_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	int32_t	_l[2];$/;"	m	union:__anon154
+_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	int32_t	_l[2];$/;"	m	union:__anon214
+_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	int32_t	_l[2];$/;"	m	union:__anon5
+_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	int32_t	_l[2];$/;"	m	union:__anon66
+_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	int32_t  _l[2];$/;"	m	union:__anon133
+_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	int32_t  _l[2];$/;"	m	union:__anon158
+_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	int32_t  _l[2];$/;"	m	union:__anon218
+_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	int32_t  _l[2];$/;"	m	union:__anon70
+_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	int32_t  _l[2];$/;"	m	union:__anon9
+_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	uint32_t	_l[2];$/;"	m	union:__anon130
+_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	uint32_t	_l[2];$/;"	m	union:__anon155
+_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	uint32_t	_l[2];$/;"	m	union:__anon215
+_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	uint32_t	_l[2];$/;"	m	union:__anon6
+_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	uint32_t	_l[2];$/;"	m	union:__anon67
+_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	uint32_t	_l[4];$/;"	m	union:__anon12
+_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	uint32_t	_l[4];$/;"	m	union:__anon136
+_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	uint32_t	_l[4];$/;"	m	union:__anon161
+_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	uint32_t	_l[4];$/;"	m	union:__anon221
+_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	uint32_t	_l[4];$/;"	m	union:__anon73
+_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	uint32_t _l[2];$/;"	m	union:__anon10
+_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	uint32_t _l[2];$/;"	m	union:__anon134
+_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	uint32_t _l[2];$/;"	m	union:__anon159
+_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	uint32_t _l[2];$/;"	m	union:__anon219
+_l	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	uint32_t _l[2];$/;"	m	union:__anon71
 _label_t	/usr/include/ia32/sys/machtypes.h	/^typedef	struct	_label_t { long val[6]; } label_t;$/;"	s
 _label_t	/usr/include/ia32/sys/machtypes.h	/^typedef	struct	_label_t { long val[8]; } label_t;$/;"	s
 _once	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef	struct _once {$/;"	s
-_p	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	} _p;$/;"	m	union:__anon104	typeref:struct:__anon104::__anon105
-_p	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	} _p;$/;"	m	union:__anon106	typeref:struct:__anon106::__anon107
-_p	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	} _p;$/;"	m	union:__anon108	typeref:struct:__anon108::__anon109
-_p	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	} _p;$/;"	m	union:__anon11	typeref:struct:__anon11::__anon12
-_p	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	} _p;$/;"	m	union:__anon110	typeref:struct:__anon110::__anon111
 _p	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	} _p;$/;"	m	union:__anon13	typeref:struct:__anon13::__anon14
+_p	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	} _p;$/;"	m	union:__anon137	typeref:struct:__anon137::__anon138
+_p	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	} _p;$/;"	m	union:__anon139	typeref:struct:__anon139::__anon140
+_p	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	} _p;$/;"	m	union:__anon141	typeref:struct:__anon141::__anon142
+_p	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	} _p;$/;"	m	union:__anon143	typeref:struct:__anon143::__anon144
 _p	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	} _p;$/;"	m	union:__anon15	typeref:struct:__anon15::__anon16
+_p	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	} _p;$/;"	m	union:__anon162	typeref:struct:__anon162::__anon163
+_p	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	} _p;$/;"	m	union:__anon164	typeref:struct:__anon164::__anon165
+_p	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	} _p;$/;"	m	union:__anon166	typeref:struct:__anon166::__anon167
+_p	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	} _p;$/;"	m	union:__anon168	typeref:struct:__anon168::__anon169
+_p	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	} _p;$/;"	m	union:__anon17	typeref:struct:__anon17::__anon18
+_p	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	} _p;$/;"	m	union:__anon19	typeref:struct:__anon19::__anon20
+_p	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	} _p;$/;"	m	union:__anon222	typeref:struct:__anon222::__anon223
+_p	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	} _p;$/;"	m	union:__anon224	typeref:struct:__anon224::__anon225
+_p	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	} _p;$/;"	m	union:__anon226	typeref:struct:__anon226::__anon227
+_p	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	} _p;$/;"	m	union:__anon228	typeref:struct:__anon228::__anon229
+_p	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	} _p;$/;"	m	union:__anon74	typeref:struct:__anon74::__anon75
+_p	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	} _p;$/;"	m	union:__anon76	typeref:struct:__anon76::__anon77
 _p	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	} _p;$/;"	m	union:__anon78	typeref:struct:__anon78::__anon79
 _p	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	} _p;$/;"	m	union:__anon80	typeref:struct:__anon80::__anon81
-_p	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	} _p;$/;"	m	union:__anon82	typeref:struct:__anon82::__anon83
-_p	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	} _p;$/;"	m	union:__anon84	typeref:struct:__anon84::__anon85
-_p	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	} _p;$/;"	m	union:__anon9	typeref:struct:__anon9::__anon10
 _pthread_attr	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef struct _pthread_attr {$/;"	s
 _pthread_cond	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef	struct _pthread_cond {		\/* = cond_t in synch.h *\/$/;"	s
 _pthread_condattr	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef struct _pthread_condattr {$/;"	s
@@ -2275,29 +2579,45 @@ _pthread_mutexattr	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.
 _pthread_rwlock	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef	struct _pthread_rwlock {	\/* = rwlock_t in synch.h *\/$/;"	s
 _pthread_rwlockattr	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef struct _pthread_rwlockattr {$/;"	s
 _ptr	/usr/include/stdio_impl.h	/^	unsigned char	*_ptr;	\/* next character from\/to here in buffer *\/$/;"	m	struct:__FILE_TAG
-_q	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	long double	_q;$/;"	m	union:__anon102
-_q	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	long double	_q;$/;"	m	union:__anon103
-_q	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	long double	_q;$/;"	m	union:__anon7
-_q	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	long double	_q;$/;"	m	union:__anon76
-_q	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	long double	_q;$/;"	m	union:__anon77
-_q	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	long double	_q;$/;"	m	union:__anon8
+_q	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	long double	_q;$/;"	m	union:__anon11
+_q	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	long double	_q;$/;"	m	union:__anon12
+_q	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	long double	_q;$/;"	m	union:__anon135
+_q	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	long double	_q;$/;"	m	union:__anon136
+_q	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	long double	_q;$/;"	m	union:__anon160
+_q	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	long double	_q;$/;"	m	union:__anon161
+_q	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	long double	_q;$/;"	m	union:__anon220
+_q	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	long double	_q;$/;"	m	union:__anon221
+_q	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	long double	_q;$/;"	m	union:__anon72
+_q	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^	long double	_q;$/;"	m	union:__anon73
 _quad	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef struct _quad { int val[2]; } quad_t;	\/* used by UFS *\/$/;"	s
-_sigaction	/usr/include/sys/signal.h	/^		caddr32_t	_sigaction;$/;"	m	union:sigaction32::__anon36
-_sigaction	/usr/include/sys/signal.h	/^		void (*_sigaction)(int, siginfo_t *, void *);$/;"	m	union:sigaction::__anon35
+_sigaction	/usr/include/sys/signal.h	/^		caddr32_t	_sigaction;$/;"	m	union:sigaction32::__anon183
+_sigaction	/usr/include/sys/signal.h	/^		caddr32_t	_sigaction;$/;"	m	union:sigaction32::__anon34
+_sigaction	/usr/include/sys/signal.h	/^		caddr32_t	_sigaction;$/;"	m	union:sigaction32::__anon95
+_sigaction	/usr/include/sys/signal.h	/^		void (*_sigaction)(int, siginfo_t *, void *);$/;"	m	union:sigaction::__anon182
+_sigaction	/usr/include/sys/signal.h	/^		void (*_sigaction)(int, siginfo_t *, void *);$/;"	m	union:sigaction::__anon33
+_sigaction	/usr/include/sys/signal.h	/^		void (*_sigaction)(int, siginfo_t *, void *);$/;"	m	union:sigaction::__anon94
 _sys_nsig	/usr/include/signal.h	50;"	d
 _sys_siglist	/usr/include/signal.h	49;"	d
-_u	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_u;	\/* upper 32 bits of disk address value *\/$/;"	m	struct:__anon108::__anon109
-_u	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_u;	\/* upper 32 bits of disk address value *\/$/;"	m	struct:__anon110::__anon111
-_u	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_u;	\/* upper 32 bits of disk address value *\/$/;"	m	struct:__anon13::__anon14
-_u	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_u;	\/* upper 32 bits of disk address value *\/$/;"	m	struct:__anon15::__anon16
-_u	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_u;	\/* upper 32 bits of disk address value *\/$/;"	m	struct:__anon82::__anon83
-_u	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_u;	\/* upper 32 bits of disk address value *\/$/;"	m	struct:__anon84::__anon85
-_u	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_u;	\/* upper 32 bits of offset value *\/$/;"	m	struct:__anon104::__anon105
-_u	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_u;	\/* upper 32 bits of offset value *\/$/;"	m	struct:__anon106::__anon107
-_u	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_u;	\/* upper 32 bits of offset value *\/$/;"	m	struct:__anon11::__anon12
-_u	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_u;	\/* upper 32 bits of offset value *\/$/;"	m	struct:__anon78::__anon79
-_u	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_u;	\/* upper 32 bits of offset value *\/$/;"	m	struct:__anon80::__anon81
-_u	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_u;	\/* upper 32 bits of offset value *\/$/;"	m	struct:__anon9::__anon10
+_u	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_u;	\/* upper 32 bits of disk address value *\/$/;"	m	struct:__anon141::__anon142
+_u	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_u;	\/* upper 32 bits of disk address value *\/$/;"	m	struct:__anon143::__anon144
+_u	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_u;	\/* upper 32 bits of disk address value *\/$/;"	m	struct:__anon166::__anon167
+_u	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_u;	\/* upper 32 bits of disk address value *\/$/;"	m	struct:__anon168::__anon169
+_u	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_u;	\/* upper 32 bits of disk address value *\/$/;"	m	struct:__anon17::__anon18
+_u	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_u;	\/* upper 32 bits of disk address value *\/$/;"	m	struct:__anon19::__anon20
+_u	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_u;	\/* upper 32 bits of disk address value *\/$/;"	m	struct:__anon226::__anon227
+_u	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_u;	\/* upper 32 bits of disk address value *\/$/;"	m	struct:__anon228::__anon229
+_u	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_u;	\/* upper 32 bits of disk address value *\/$/;"	m	struct:__anon78::__anon79
+_u	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_u;	\/* upper 32 bits of disk address value *\/$/;"	m	struct:__anon80::__anon81
+_u	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_u;	\/* upper 32 bits of offset value *\/$/;"	m	struct:__anon137::__anon138
+_u	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_u;	\/* upper 32 bits of offset value *\/$/;"	m	struct:__anon139::__anon140
+_u	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_u;	\/* upper 32 bits of offset value *\/$/;"	m	struct:__anon13::__anon14
+_u	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_u;	\/* upper 32 bits of offset value *\/$/;"	m	struct:__anon15::__anon16
+_u	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_u;	\/* upper 32 bits of offset value *\/$/;"	m	struct:__anon162::__anon163
+_u	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_u;	\/* upper 32 bits of offset value *\/$/;"	m	struct:__anon164::__anon165
+_u	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_u;	\/* upper 32 bits of offset value *\/$/;"	m	struct:__anon222::__anon223
+_u	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_u;	\/* upper 32 bits of offset value *\/$/;"	m	struct:__anon224::__anon225
+_u	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_u;	\/* upper 32 bits of offset value *\/$/;"	m	struct:__anon74::__anon75
+_u	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^		int32_t	_u;	\/* upper 32 bits of offset value *\/$/;"	m	struct:__anon76::__anon77
 _zprintf	src/zprintf.c	/^static void _zprintf(int fd, char *template, va_list argp){$/;"	f	file:	signature:(int fd, char *template, va_list argp)
 abs	/usr/include/iso/math_iso.h	/^	inline double abs(double __X) { return fabs(__X); }$/;"	f	signature:(double __X)
 abs	/usr/include/iso/math_iso.h	/^	inline float abs(float __X) { return __fabsf(__X); }$/;"	f	signature:(float __X)
@@ -2326,12 +2646,16 @@ blkcnt_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typede
 blkcnt_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef longlong_t	blkcnt_t;	\/* count of file blocks *\/$/;"	t
 blksize_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef	int		blksize_t;	\/* used for block sizes *\/$/;"	t
 blksize_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef	long		blksize_t;	\/* used for block sizes *\/$/;"	t
-boolean_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef enum { B_FALSE, B_TRUE } boolean_t;$/;"	t	typeref:enum:__anon4
-boolean_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef enum { B_FALSE, B_TRUE } boolean_t;$/;"	t	typeref:enum:__anon73
-boolean_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef enum { B_FALSE, B_TRUE } boolean_t;$/;"	t	typeref:enum:__anon99
-boolean_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef enum { _B_FALSE, _B_TRUE } boolean_t;$/;"	t	typeref:enum:__anon3
-boolean_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef enum { _B_FALSE, _B_TRUE } boolean_t;$/;"	t	typeref:enum:__anon72
-boolean_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef enum { _B_FALSE, _B_TRUE } boolean_t;$/;"	t	typeref:enum:__anon98
+boolean_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef enum { B_FALSE, B_TRUE } boolean_t;$/;"	t	typeref:enum:__anon132
+boolean_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef enum { B_FALSE, B_TRUE } boolean_t;$/;"	t	typeref:enum:__anon157
+boolean_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef enum { B_FALSE, B_TRUE } boolean_t;$/;"	t	typeref:enum:__anon217
+boolean_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef enum { B_FALSE, B_TRUE } boolean_t;$/;"	t	typeref:enum:__anon69
+boolean_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef enum { B_FALSE, B_TRUE } boolean_t;$/;"	t	typeref:enum:__anon8
+boolean_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef enum { _B_FALSE, _B_TRUE } boolean_t;$/;"	t	typeref:enum:__anon131
+boolean_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef enum { _B_FALSE, _B_TRUE } boolean_t;$/;"	t	typeref:enum:__anon156
+boolean_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef enum { _B_FALSE, _B_TRUE } boolean_t;$/;"	t	typeref:enum:__anon216
+boolean_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef enum { _B_FALSE, _B_TRUE } boolean_t;$/;"	t	typeref:enum:__anon68
+boolean_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef enum { _B_FALSE, _B_TRUE } boolean_t;$/;"	t	typeref:enum:__anon7
 bufcall_id_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef void		*bufcall_id_t;	\/* opaque handle from bufcall(9F) *\/$/;"	t
 c_cc	/usr/include/sys/termios.h	/^	cc_t		c_cc[NCCS];	\/* control chars *\/$/;"	m	struct:termios
 c_cflag	/usr/include/sys/termios.h	/^	tcflag_t	c_cflag;	\/* control modes *\/$/;"	m	struct:termios
@@ -2343,7 +2667,9 @@ caddr_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef
 cc_t	/usr/include/sys/termios.h	/^typedef unsigned char cc_t;$/;"	t
 ceil	/usr/include/iso/math_iso.h	/^	inline float ceil(float __X) { return __ceilf(__X); }$/;"	f	signature:(float __X)
 ceil	/usr/include/iso/math_iso.h	/^	inline long double ceil(long double __X) { return __ceill(__X); }$/;"	f	signature:(long double __X)
-checkperm	/usr/include/sys/signal.h	/^	int	checkperm;			\/* check perm or not	*\/$/;"	m	struct:__anon37
+checkperm	/usr/include/sys/signal.h	/^	int	checkperm;			\/* check perm or not	*\/$/;"	m	struct:__anon184
+checkperm	/usr/include/sys/signal.h	/^	int	checkperm;			\/* check perm or not	*\/$/;"	m	struct:__anon35
+checkperm	/usr/include/sys/signal.h	/^	int	checkperm;			\/* check perm or not	*\/$/;"	m	struct:__anon96
 clean_prompt	src/main.c	/^void clean_prompt(){$/;"	f
 clearerr	/usr/include/iso/stdio_iso.h	/^inline void clearerr(FILE *_p) { _p->_flag &= ~(_IOERR | _IOEOF); }$/;"	f	namespace:std	signature:(FILE *_p)
 clock_t	/usr/include/iso/time_iso.h	/^typedef	long	clock_t;$/;"	t	namespace:std
@@ -2351,9 +2677,8 @@ clock_t	/usr/include/limits.h	/^typedef long	clock_t;$/;"	t
 clock_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef	long		clock_t; \/* relative time in a specified resolution *\/$/;"	t
 clockid_t	/usr/include/time.h	/^typedef int	clockid_t;$/;"	t
 clockid_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef	int	clockid_t;	\/* clock identifier type *\/$/;"	t
-cmd_case	src/main.c	27;"	d	file:
+cmd_case	src/main.c	18;"	d	file:
 cnt_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef	short		cnt_t;		\/* ?<count> type *\/$/;"	t
-command_mode	src/main.c	/^void command_mode(int action){$/;"	f	signature:(int action)
 cos	/usr/include/iso/math_iso.h	/^	inline float cos(float __X) { return __cosf(__X); }$/;"	f	signature:(float __X)
 cos	/usr/include/iso/math_iso.h	/^	inline long double cos(long double __X) { return __cosl(__X); }$/;"	f	signature:(long double __X)
 cosh	/usr/include/iso/math_iso.h	/^	inline float cosh(float __X) { return __coshf(__X); }$/;"	f	signature:(float __X)
@@ -2367,21 +2692,22 @@ ctime_r	/usr/include/time.h	277;"	d
 ctime_r	/usr/include/time.h	321;"	d
 daddr_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef	long		daddr_t;	\/* <disk address> type *\/$/;"	t
 decimal_form	/usr/include/floatingpoint.h	/^enum decimal_form {$/;"	g
-decimal_mode	/usr/include/floatingpoint.h	/^} decimal_mode;$/;"	t	typeref:struct:__anon31
-decimal_record	/usr/include/floatingpoint.h	/^} decimal_record;$/;"	t	typeref:struct:__anon30
+decimal_mode	/usr/include/floatingpoint.h	/^} decimal_mode;$/;"	t	typeref:struct:__anon65
+decimal_record	/usr/include/floatingpoint.h	/^} decimal_record;$/;"	t	typeref:struct:__anon64
 decimal_string	/usr/include/floatingpoint.h	/^typedef char decimal_string[DECIMAL_STRING_LENGTH];$/;"	t
 decimal_string_form	/usr/include/floatingpoint.h	/^enum decimal_string_form {	\/* Valid decimal number string formats. *\/$/;"	g
-def_term	src/main.c	/^struct termios term = { 0 }, def_term = { 0 };$/;"	v	typeref:struct:
+def_term	src/include/tty.h	/^struct termios def_term;$/;"	v	typeref:struct:termios
+def_term	src/main.c	/^struct termios def_term = { 0 };$/;"	v	typeref:struct:termios
 dev_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef ulong_t	dev_t;			\/* expanded device type *\/$/;"	t
-df	/usr/include/floatingpoint.h	/^	enum decimal_form df;	\/* Format for conversion from binary to *\/$/;"	m	struct:__anon31	typeref:enum:__anon31::decimal_form
+df	/usr/include/floatingpoint.h	/^	enum decimal_form df;	\/* Format for conversion from binary to *\/$/;"	m	struct:__anon65	typeref:enum:__anon65::decimal_form
 diskaddr_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef	u_longlong_t	diskaddr_t;$/;"	t
 div	/usr/include/iso/stdlib_iso.h	/^	inline ldiv_t div(long _l1, long _l2) { return ldiv(_l1, _l2); }$/;"	f	signature:(long _l1, long _l2)
-div_t	/usr/include/iso/stdlib_iso.h	/^} div_t;$/;"	t	namespace:std	typeref:struct:std::__anon121
-div_t	/usr/include/iso/stdlib_iso.h	/^} div_t;$/;"	t	namespace:std	typeref:struct:std::__anon26
-div_t	/usr/include/iso/stdlib_iso.h	/^} div_t;$/;"	t	namespace:std	typeref:struct:std::__anon66
+div_t	/usr/include/iso/stdlib_iso.h	/^} div_t;$/;"	t	namespace:std	typeref:struct:std::__anon1
+div_t	/usr/include/iso/stdlib_iso.h	/^} div_t;$/;"	t	namespace:std	typeref:struct:std::__anon125
+div_t	/usr/include/iso/stdlib_iso.h	/^} div_t;$/;"	t	namespace:std	typeref:struct:std::__anon239
 double_t	/usr/include/iso/math_c99.h	/^typedef double double_t;$/;"	t
 double_t	/usr/include/iso/math_c99.h	/^typedef long double double_t;$/;"	t
-ds	/usr/include/floatingpoint.h	/^	decimal_string ds;	\/* Significand - each char contains an ascii *\/$/;"	m	struct:__anon30
+ds	/usr/include/floatingpoint.h	/^	decimal_string ds;	\/* Significand - each char contains an ascii *\/$/;"	m	struct:__anon64
 dzprintf	src/zprintf.c	/^void dzprintf(int fd, char *template, ...){$/;"	f	signature:(int fd, char *template, ...)
 errno	/usr/include/errno.h	38;"	d
 errno	/usr/include/errno.h	43;"	d
@@ -2390,7 +2716,7 @@ exception	/usr/include/math.h	325;"	d
 exception	/usr/include/math.h	46;"	d
 exp	/usr/include/iso/math_iso.h	/^	inline float exp(float __X) { return __expf(__X); }$/;"	f	signature:(float __X)
 exp	/usr/include/iso/math_iso.h	/^	inline long double exp(long double __X) { return __expl(__X); }$/;"	f	signature:(long double __X)
-exponent	/usr/include/floatingpoint.h	/^	int	exponent;$/;"	m	struct:__anon30
+exponent	/usr/include/floatingpoint.h	/^	int	exponent;$/;"	m	struct:__anon64
 extended	/usr/include/floatingpoint.h	/^typedef unsigned extended[3];$/;"	t
 f_access	/usr/include/sys/fcntl.h	/^	short	f_access;$/;"	m	struct:fshare
 f_deny	/usr/include/sys/fcntl.h	/^	short	f_deny;$/;"	m	struct:fshare
@@ -2482,7 +2808,7 @@ fp_trap_underflow	/usr/include/sys/ieeefp.h	/^	fp_trap_underflow	= 4,$/;"	e	enum
 fp_underflow	/usr/include/sys/ieeefp.h	/^	fp_underflow	= 2,$/;"	e	enum:fp_exception_type
 fp_underflow	/usr/include/sys/ieeefp.h	/^	fp_underflow	= 4,$/;"	e	enum:fp_exception_type
 fp_zero	/usr/include/sys/ieeefp.h	/^	fp_zero		= 0,$/;"	e	enum:fp_class_type
-fpclass	/usr/include/floatingpoint.h	/^	enum fp_class_type fpclass;$/;"	m	struct:__anon30	typeref:enum:__anon30::fp_class_type
+fpclass	/usr/include/floatingpoint.h	/^	enum fp_class_type fpclass;$/;"	m	struct:__anon64	typeref:enum:__anon64::fp_class_type
 fpclassify	/usr/include/iso/math_c99.h	119;"	d
 fpclassify	/usr/include/iso/math_c99.h	120;"	d
 fpclassify	/usr/include/iso/math_c99.h	66;"	d
@@ -2532,6 +2858,7 @@ getlogin_r	/usr/include/unistd.h	/^getlogin_r(char *__name, int __len)$/;"	f	sig
 getlogin_r	/usr/include/unistd.h	922;"	d
 getlogin_r	/usr/include/unistd.h	964;"	d
 gid_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef	uid_t	gid_t;			\/* GID type		*\/$/;"	t
+handle_stdin	src/tty.c	/^int handle_stdin(int *in_tty, int *pipe_fd, int *read_fd){$/;"	f	signature:(int *in_tty, int *pipe_fd, int *read_fd)
 hblkhd	/usr/include/malloc.h	/^	unsigned long hblkhd;	\/* space in holding block headers *\/$/;"	m	struct:mallinfo
 hblks	/usr/include/malloc.h	/^	unsigned long hblks;	\/* number of holding blocks *\/$/;"	m	struct:mallinfo
 help	src/main.c	/^char *help = "Most commands optionally preceded by integer argument k.  \\n\\$/;"	v
@@ -2628,7 +2955,9 @@ itoa	src/zprintf.c	/^void itoa(int n, char s[]) {$/;"	f	signature:(int n, char s
 k_fltset_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef uint_t k_fltset_t;	\/* kernel fault set type *\/$/;"	t
 k_siginfo	/usr/include/sys/siginfo.h	/^typedef struct k_siginfo {$/;"	s
 k_siginfo_t	/usr/include/sys/siginfo.h	/^} k_siginfo_t;$/;"	t	typeref:struct:k_siginfo
-k_sigset_t	/usr/include/sys/signal.h	/^} k_sigset_t;$/;"	t	typeref:struct:__anon34
+k_sigset_t	/usr/include/sys/signal.h	/^} k_sigset_t;$/;"	t	typeref:struct:__anon181
+k_sigset_t	/usr/include/sys/signal.h	/^} k_sigset_t;$/;"	t	typeref:struct:__anon32
+k_sigset_t	/usr/include/sys/signal.h	/^} k_sigset_t;$/;"	t	typeref:struct:__anon93
 keepcost	/usr/include/malloc.h	/^	unsigned long keepcost;	\/* cost of enabling keep option *\/$/;"	m	struct:mallinfo
 key_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef	int	key_t;			\/* IPC key type		*\/$/;"	t
 l_len	/usr/include/sys/fcntl.h	/^	int32_t	l_len;		\/* len == 0 means until end of file *\/$/;"	m	struct:o_flock
@@ -2676,27 +3005,36 @@ label_t	/usr/include/ia32/sys/machtypes.h	/^typedef	struct	_label_t { long val[6
 label_t	/usr/include/ia32/sys/machtypes.h	/^typedef	struct	_label_t { long val[8]; } label_t;$/;"	t	typeref:struct:_label_t
 ldexp	/usr/include/iso/math_iso.h	/^	inline float ldexp(float __X, int __Y) { return __ldexpf(__X, __Y); }$/;"	f	signature:(float __X, int __Y)
 ldexp	/usr/include/iso/math_iso.h	/^	inline long double ldexp(long double __X, int __Y) { return$/;"	f	signature:(long double __X, int __Y)
-ldiv_t	/usr/include/iso/stdlib_iso.h	/^} ldiv_t;$/;"	t	namespace:std	typeref:struct:std::__anon122
-ldiv_t	/usr/include/iso/stdlib_iso.h	/^} ldiv_t;$/;"	t	namespace:std	typeref:struct:std::__anon27
-ldiv_t	/usr/include/iso/stdlib_iso.h	/^} ldiv_t;$/;"	t	namespace:std	typeref:struct:std::__anon67
+ldiv_t	/usr/include/iso/stdlib_iso.h	/^} ldiv_t;$/;"	t	namespace:std	typeref:struct:std::__anon126
+ldiv_t	/usr/include/iso/stdlib_iso.h	/^} ldiv_t;$/;"	t	namespace:std	typeref:struct:std::__anon2
+ldiv_t	/usr/include/iso/stdlib_iso.h	/^} ldiv_t;$/;"	t	namespace:std	typeref:struct:std::__anon240
 len_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef u_longlong_t	len_t;$/;"	t
 lgrp_id_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef id_t		lgrp_id_t;	\/* lgroup ID *\/$/;"	t
 libm_ieee	/usr/include/math.h	/^enum version {libm_ieee = -1, c_issue_4, ansi_1, strict_ansi};$/;"	e	enum:version
-lldaddr_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} lldaddr_t;$/;"	t	typeref:union:__anon108
-lldaddr_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} lldaddr_t;$/;"	t	typeref:union:__anon110
-lldaddr_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} lldaddr_t;$/;"	t	typeref:union:__anon13
-lldaddr_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} lldaddr_t;$/;"	t	typeref:union:__anon15
-lldaddr_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} lldaddr_t;$/;"	t	typeref:union:__anon82
-lldaddr_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} lldaddr_t;$/;"	t	typeref:union:__anon84
-lldiv_t	/usr/include/iso/stdlib_c99.h	/^} lldiv_t;$/;"	t	typeref:struct:__anon123
-lldiv_t	/usr/include/iso/stdlib_c99.h	/^} lldiv_t;$/;"	t	typeref:struct:__anon28
-lldiv_t	/usr/include/iso/stdlib_c99.h	/^} lldiv_t;$/;"	t	typeref:struct:__anon68
-lloff_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} lloff_t;$/;"	t	typeref:union:__anon104
-lloff_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} lloff_t;$/;"	t	typeref:union:__anon106
-lloff_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} lloff_t;$/;"	t	typeref:union:__anon11
-lloff_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} lloff_t;$/;"	t	typeref:union:__anon78
-lloff_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} lloff_t;$/;"	t	typeref:union:__anon80
-lloff_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} lloff_t;$/;"	t	typeref:union:__anon9
+lldaddr_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} lldaddr_t;$/;"	t	typeref:union:__anon141
+lldaddr_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} lldaddr_t;$/;"	t	typeref:union:__anon143
+lldaddr_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} lldaddr_t;$/;"	t	typeref:union:__anon166
+lldaddr_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} lldaddr_t;$/;"	t	typeref:union:__anon168
+lldaddr_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} lldaddr_t;$/;"	t	typeref:union:__anon17
+lldaddr_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} lldaddr_t;$/;"	t	typeref:union:__anon19
+lldaddr_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} lldaddr_t;$/;"	t	typeref:union:__anon226
+lldaddr_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} lldaddr_t;$/;"	t	typeref:union:__anon228
+lldaddr_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} lldaddr_t;$/;"	t	typeref:union:__anon78
+lldaddr_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} lldaddr_t;$/;"	t	typeref:union:__anon80
+lldiv_t	/usr/include/iso/stdlib_c99.h	/^} lldiv_t;$/;"	t	typeref:struct:__anon127
+lldiv_t	/usr/include/iso/stdlib_c99.h	/^} lldiv_t;$/;"	t	typeref:struct:__anon241
+lldiv_t	/usr/include/iso/stdlib_c99.h	/^} lldiv_t;$/;"	t	typeref:struct:__anon3
+lloff_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} lloff_t;$/;"	t	typeref:union:__anon13
+lloff_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} lloff_t;$/;"	t	typeref:union:__anon137
+lloff_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} lloff_t;$/;"	t	typeref:union:__anon139
+lloff_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} lloff_t;$/;"	t	typeref:union:__anon15
+lloff_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} lloff_t;$/;"	t	typeref:union:__anon162
+lloff_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} lloff_t;$/;"	t	typeref:union:__anon164
+lloff_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} lloff_t;$/;"	t	typeref:union:__anon222
+lloff_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} lloff_t;$/;"	t	typeref:union:__anon224
+lloff_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} lloff_t;$/;"	t	typeref:union:__anon74
+lloff_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} lloff_t;$/;"	t	typeref:union:__anon76
+lock_signals	src/signal.c	/^void lock_signals(){$/;"	f
 lock_t	/usr/include/ia32/sys/machtypes.h	/^typedef	unsigned char	lock_t;		\/* lock work for busy wait *\/$/;"	t
 lockf	/usr/include/unistd.h	199;"	d
 lockf64	/usr/include/unistd.h	220;"	d
@@ -2705,9 +3043,11 @@ log	/usr/include/iso/math_iso.h	/^	inline long double log(long double __X) { ret
 log10	/usr/include/iso/math_iso.h	/^	inline float log10(float __X) { return __log10f(__X); }$/;"	f	signature:(float __X)
 log10	/usr/include/iso/math_iso.h	/^	inline long double log10(long double __X) { return __log10l(__X); }$/;"	f	signature:(long double __X)
 longlong_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef	long long		longlong_t;$/;"	t
-longlong_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} longlong_t;$/;"	t	typeref:union:__anon1
-longlong_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} longlong_t;$/;"	t	typeref:union:__anon70
-longlong_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} longlong_t;$/;"	t	typeref:union:__anon96
+longlong_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} longlong_t;$/;"	t	typeref:union:__anon129
+longlong_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} longlong_t;$/;"	t	typeref:union:__anon154
+longlong_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} longlong_t;$/;"	t	typeref:union:__anon214
+longlong_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} longlong_t;$/;"	t	typeref:union:__anon5
+longlong_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} longlong_t;$/;"	t	typeref:union:__anon66
 lseek	/usr/include/unistd.h	195;"	d
 lseek64	/usr/include/unistd.h	216;"	d
 lstat	/usr/include/sys/stat.h	164;"	d
@@ -2731,12 +3071,12 @@ mode_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef	
 mode_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef	ulong_t	mode_t;			\/* (historical version) *\/$/;"	t
 modf	/usr/include/iso/math_iso.h	/^	inline float modf(float __X, float *__Y) { return __modff(__X, __Y); }$/;"	f	signature:(float __X, float *__Y)
 modf	/usr/include/iso/math_iso.h	/^	inline long double modf(long double __X, long double *__Y) { return$/;"	f	signature:(long double __X, long double *__Y)
-more	/usr/include/floatingpoint.h	/^	int	more;		\/* On conversion from decimal to binary, != 0 *\/$/;"	m	struct:__anon30
+more	/usr/include/floatingpoint.h	/^	int	more;		\/* On conversion from decimal to binary, != 0 *\/$/;"	m	struct:__anon64
 name	/usr/include/math.h	/^	char *name;$/;"	m	struct:exception
 nan_form	/usr/include/floatingpoint.h	/^	nan_form,		\/* nan			*\/$/;"	e	enum:decimal_string_form
 nanstring_form	/usr/include/floatingpoint.h	/^	nanstring_form		\/* nan(string)		*\/$/;"	e	enum:decimal_string_form
-ndigits	/usr/include/floatingpoint.h	/^	int 	ndigits;	\/* On fixed_form conversion from binary to *\/$/;"	m	struct:__anon30
-ndigits	/usr/include/floatingpoint.h	/^	int ndigits;		\/* Number of digits for conversion. *\/$/;"	m	struct:__anon31
+ndigits	/usr/include/floatingpoint.h	/^	int 	ndigits;	\/* On fixed_form conversion from binary to *\/$/;"	m	struct:__anon64
+ndigits	/usr/include/floatingpoint.h	/^	int ndigits;		\/* Number of digits for conversion. *\/$/;"	m	struct:__anon65
 nlink_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef	uint_t nlink_t;			\/* file link type	*\/$/;"	t
 nlink_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef	ulong_t	nlink_t;		\/* (historical version) *\/$/;"	t
 o_dev_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef short	o_dev_t;		\/* old device type	*\/$/;"	t
@@ -2762,21 +3102,27 @@ open64	/usr/include/fcntl.h	87;"	d
 openat	/usr/include/fcntl.h	71;"	d
 openat64	/usr/include/fcntl.h	91;"	d
 ordblks	/usr/include/malloc.h	/^	unsigned long ordblks;	\/* number of ordinary blocks *\/$/;"	m	struct:mallinfo
-osig	src/main.c	/^sigset_t sig, osig;$/;"	v
+osig	src/include/signal.h	/^sigset_t sig, osig;$/;"	v
 p_lid	/usr/include/sys/procset.h	/^	id_t		p_lid;	\/* The id of the left operand.	*\/$/;"	m	struct:procset
 p_lidtype	/usr/include/sys/procset.h	/^	idtype_t	p_lidtype;$/;"	m	struct:procset
 p_op	/usr/include/sys/procset.h	/^	idop_t		p_op;	\/* The operator connection the	*\/$/;"	m	struct:procset
 p_rid	/usr/include/sys/procset.h	/^	id_t		p_rid;	\/* The id of the right operand.	*\/$/;"	m	struct:procset
 p_ridtype	/usr/include/sys/procset.h	/^	idtype_t	p_ridtype;$/;"	m	struct:procset
-pad128_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} pad128_t;$/;"	t	typeref:union:__anon102
-pad128_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} pad128_t;$/;"	t	typeref:union:__anon7
-pad128_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} pad128_t;$/;"	t	typeref:union:__anon76
+pad128_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} pad128_t;$/;"	t	typeref:union:__anon11
+pad128_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} pad128_t;$/;"	t	typeref:union:__anon135
+pad128_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} pad128_t;$/;"	t	typeref:union:__anon160
+pad128_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} pad128_t;$/;"	t	typeref:union:__anon220
+pad128_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} pad128_t;$/;"	t	typeref:union:__anon72
 pad64_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef int64_t		pad64_t;$/;"	t
-pad64_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} pad64_t;$/;"	t	typeref:union:__anon100
-pad64_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} pad64_t;$/;"	t	typeref:union:__anon5
-pad64_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} pad64_t;$/;"	t	typeref:union:__anon74
+pad64_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} pad64_t;$/;"	t	typeref:union:__anon133
+pad64_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} pad64_t;$/;"	t	typeref:union:__anon158
+pad64_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} pad64_t;$/;"	t	typeref:union:__anon218
+pad64_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} pad64_t;$/;"	t	typeref:union:__anon70
+pad64_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} pad64_t;$/;"	t	typeref:union:__anon9
 paddr_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef	uint64_t	paddr_t;$/;"	t
-perm	/usr/include/sys/signal.h	/^	int	perm;				\/* flag for EPERM	*\/$/;"	m	struct:__anon37
+perm	/usr/include/sys/signal.h	/^	int	perm;				\/* flag for EPERM	*\/$/;"	m	struct:__anon184
+perm	/usr/include/sys/signal.h	/^	int	perm;				\/* flag for EPERM	*\/$/;"	m	struct:__anon35
+perm	/usr/include/sys/signal.h	/^	int	perm;				\/* flag for EPERM	*\/$/;"	m	struct:__anon96
 perr	src/string.c	/^int perr(int err){$/;"	f	signature:(int err)
 pfn_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef	ulong_t		pfn_t;		\/* page frame number *\/$/;"	t
 pgcnt_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef	ulong_t		pgcnt_t;	\/* number of pages *\/$/;"	t
@@ -2801,12 +3147,16 @@ projid_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typede
 prompt	src/main.c	/^char *prompt = "More";$/;"	v
 pselect	/usr/include/sys/select.h	82;"	d
 pthread_attr_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} pthread_attr_t;$/;"	t	typeref:struct:_pthread_attr
-pthread_barrier_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} pthread_barrier_t;$/;"	t	typeref:struct:__anon117
-pthread_barrier_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} pthread_barrier_t;$/;"	t	typeref:struct:__anon22
-pthread_barrier_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} pthread_barrier_t;$/;"	t	typeref:struct:__anon91
-pthread_barrierattr_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} pthread_barrierattr_t;$/;"	t	typeref:struct:__anon118
-pthread_barrierattr_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} pthread_barrierattr_t;$/;"	t	typeref:struct:__anon23
-pthread_barrierattr_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} pthread_barrierattr_t;$/;"	t	typeref:struct:__anon92
+pthread_barrier_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} pthread_barrier_t;$/;"	t	typeref:struct:__anon150
+pthread_barrier_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} pthread_barrier_t;$/;"	t	typeref:struct:__anon175
+pthread_barrier_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} pthread_barrier_t;$/;"	t	typeref:struct:__anon235
+pthread_barrier_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} pthread_barrier_t;$/;"	t	typeref:struct:__anon26
+pthread_barrier_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} pthread_barrier_t;$/;"	t	typeref:struct:__anon87
+pthread_barrierattr_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} pthread_barrierattr_t;$/;"	t	typeref:struct:__anon151
+pthread_barrierattr_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} pthread_barrierattr_t;$/;"	t	typeref:struct:__anon176
+pthread_barrierattr_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} pthread_barrierattr_t;$/;"	t	typeref:struct:__anon236
+pthread_barrierattr_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} pthread_barrierattr_t;$/;"	t	typeref:struct:__anon27
+pthread_barrierattr_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} pthread_barrierattr_t;$/;"	t	typeref:struct:__anon88
 pthread_cond_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} pthread_cond_t;$/;"	t	typeref:struct:_pthread_cond
 pthread_condattr_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} pthread_condattr_t;$/;"	t	typeref:struct:_pthread_condattr
 pthread_key_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef	uint_t	pthread_key_t;	\/* = thread_key_t in thread.h *\/$/;"	t
@@ -2830,27 +3180,27 @@ pwrite64	/usr/include/unistd.h	218;"	d
 quad	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef quad_t		quad;			\/* used by UFS *\/$/;"	t
 quad_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef struct _quad { int val[2]; } quad_t;	\/* used by UFS *\/$/;"	t	typeref:struct:_quad
 quadruple	/usr/include/floatingpoint.h	/^typedef long double quadruple;	\/* Quadruple-precision type. *\/$/;"	t
-quot	/usr/include/iso/stdlib_c99.h	/^	long long	quot;$/;"	m	struct:__anon123
-quot	/usr/include/iso/stdlib_c99.h	/^	long long	quot;$/;"	m	struct:__anon28
-quot	/usr/include/iso/stdlib_c99.h	/^	long long	quot;$/;"	m	struct:__anon68
-quot	/usr/include/iso/stdlib_iso.h	/^	int	quot;$/;"	m	struct:std::__anon121
-quot	/usr/include/iso/stdlib_iso.h	/^	int	quot;$/;"	m	struct:std::__anon26
-quot	/usr/include/iso/stdlib_iso.h	/^	int	quot;$/;"	m	struct:std::__anon66
-quot	/usr/include/iso/stdlib_iso.h	/^	long	quot;$/;"	m	struct:std::__anon122
-quot	/usr/include/iso/stdlib_iso.h	/^	long	quot;$/;"	m	struct:std::__anon27
-quot	/usr/include/iso/stdlib_iso.h	/^	long	quot;$/;"	m	struct:std::__anon67
-rd	/usr/include/floatingpoint.h	/^	enum fp_direction_type rd;$/;"	m	struct:__anon31	typeref:enum:__anon31::fp_direction_type
-rem	/usr/include/iso/stdlib_c99.h	/^	long long	rem;$/;"	m	struct:__anon123
-rem	/usr/include/iso/stdlib_c99.h	/^	long long	rem;$/;"	m	struct:__anon28
-rem	/usr/include/iso/stdlib_c99.h	/^	long long	rem;$/;"	m	struct:__anon68
-rem	/usr/include/iso/stdlib_iso.h	/^	int	rem;$/;"	m	struct:std::__anon121
-rem	/usr/include/iso/stdlib_iso.h	/^	int	rem;$/;"	m	struct:std::__anon26
-rem	/usr/include/iso/stdlib_iso.h	/^	int	rem;$/;"	m	struct:std::__anon66
-rem	/usr/include/iso/stdlib_iso.h	/^	long	rem;$/;"	m	struct:std::__anon122
-rem	/usr/include/iso/stdlib_iso.h	/^	long	rem;$/;"	m	struct:std::__anon27
-rem	/usr/include/iso/stdlib_iso.h	/^	long	rem;$/;"	m	struct:std::__anon67
-reset_cmd	src/main.c	26;"	d	file:
-reset_tty	src/main.c	/^void reset_tty(){$/;"	f
+quot	/usr/include/iso/stdlib_c99.h	/^	long long	quot;$/;"	m	struct:__anon127
+quot	/usr/include/iso/stdlib_c99.h	/^	long long	quot;$/;"	m	struct:__anon241
+quot	/usr/include/iso/stdlib_c99.h	/^	long long	quot;$/;"	m	struct:__anon3
+quot	/usr/include/iso/stdlib_iso.h	/^	int	quot;$/;"	m	struct:std::__anon1
+quot	/usr/include/iso/stdlib_iso.h	/^	int	quot;$/;"	m	struct:std::__anon125
+quot	/usr/include/iso/stdlib_iso.h	/^	int	quot;$/;"	m	struct:std::__anon239
+quot	/usr/include/iso/stdlib_iso.h	/^	long	quot;$/;"	m	struct:std::__anon126
+quot	/usr/include/iso/stdlib_iso.h	/^	long	quot;$/;"	m	struct:std::__anon2
+quot	/usr/include/iso/stdlib_iso.h	/^	long	quot;$/;"	m	struct:std::__anon240
+rd	/usr/include/floatingpoint.h	/^	enum fp_direction_type rd;$/;"	m	struct:__anon65	typeref:enum:__anon65::fp_direction_type
+rem	/usr/include/iso/stdlib_c99.h	/^	long long	rem;$/;"	m	struct:__anon127
+rem	/usr/include/iso/stdlib_c99.h	/^	long long	rem;$/;"	m	struct:__anon241
+rem	/usr/include/iso/stdlib_c99.h	/^	long long	rem;$/;"	m	struct:__anon3
+rem	/usr/include/iso/stdlib_iso.h	/^	int	rem;$/;"	m	struct:std::__anon1
+rem	/usr/include/iso/stdlib_iso.h	/^	int	rem;$/;"	m	struct:std::__anon125
+rem	/usr/include/iso/stdlib_iso.h	/^	int	rem;$/;"	m	struct:std::__anon239
+rem	/usr/include/iso/stdlib_iso.h	/^	long	rem;$/;"	m	struct:std::__anon126
+rem	/usr/include/iso/stdlib_iso.h	/^	long	rem;$/;"	m	struct:std::__anon2
+rem	/usr/include/iso/stdlib_iso.h	/^	long	rem;$/;"	m	struct:std::__anon240
+reset_cmd	src/main.c	17;"	d	file:
+reset_tty	src/tty.c	/^void reset_tty(){$/;"	f
 retval	/usr/include/math.h	/^	double retval;$/;"	m	struct:exception
 reverse	src/zprintf.c	/^void reverse(char s[]){$/;"	f	signature:(char s[])
 sa_flags	/usr/include/sys/signal.h	/^	int sa_flags;$/;"	m	struct:sigaction
@@ -2899,9 +3249,13 @@ si_uid	/usr/include/sys/siginfo.h	450;"	d
 si_utime	/usr/include/sys/siginfo.h	449;"	d
 si_value	/usr/include/sys/siginfo.h	451;"	d
 si_zoneid	/usr/include/sys/siginfo.h	446;"	d
-sicode	/usr/include/sys/signal.h	/^	int	sicode;				\/* has siginfo.si_code	*\/$/;"	m	struct:__anon37
-sig	/usr/include/sys/signal.h	/^	int	sig;				\/* signal no.		*\/$/;"	m	struct:__anon37
-sig	src/main.c	/^sigset_t sig, osig;$/;"	v
+sicode	/usr/include/sys/signal.h	/^	int	sicode;				\/* has siginfo.si_code	*\/$/;"	m	struct:__anon184
+sicode	/usr/include/sys/signal.h	/^	int	sicode;				\/* has siginfo.si_code	*\/$/;"	m	struct:__anon35
+sicode	/usr/include/sys/signal.h	/^	int	sicode;				\/* has siginfo.si_code	*\/$/;"	m	struct:__anon96
+sig	/usr/include/sys/signal.h	/^	int	sig;				\/* signal no.		*\/$/;"	m	struct:__anon184
+sig	/usr/include/sys/signal.h	/^	int	sig;				\/* signal no.		*\/$/;"	m	struct:__anon35
+sig	/usr/include/sys/signal.h	/^	int	sig;				\/* signal no.		*\/$/;"	m	struct:__anon96
+sig	src/include/signal.h	/^sigset_t sig, osig;$/;"	v
 sig_atomic_t	/usr/include/iso/signal_iso.h	/^typedef int	sig_atomic_t;$/;"	t	namespace:std
 sigaction	/usr/include/sys/signal.h	/^struct sigaction {$/;"	s
 sigaction32	/usr/include/sys/signal.h	/^struct sigaction32 {$/;"	s
@@ -2939,7 +3293,7 @@ sigisempty	/usr/include/sys/signal.h	265;"	d
 sigismember	/usr/include/sys/signal.h	264;"	d
 sigktou	/usr/include/sys/signal.h	269;"	d
 sigmask	/usr/include/sys/signal.h	247;"	d
-sign	/usr/include/floatingpoint.h	/^	int	sign;$/;"	m	struct:__anon30
+sign	/usr/include/floatingpoint.h	/^	int	sign;$/;"	m	struct:__anon64
 signbit	/usr/include/iso/math_c99.h	129;"	d
 signbit	/usr/include/iso/math_c99.h	130;"	d
 signbit	/usr/include/iso/math_c99.h	74;"	d
@@ -2949,20 +3303,32 @@ signotify32_id	/usr/include/sys/signal.h	/^typedef struct signotify32_id {$/;"	s
 signotify32_id_t	/usr/include/sys/signal.h	/^} signotify32_id_t;$/;"	t	typeref:struct:signotify32_id
 signotify_id	/usr/include/sys/signal.h	/^typedef struct signotify_id {		\/* signotify id struct		*\/$/;"	s
 signotify_id_t	/usr/include/sys/signal.h	/^} signotify_id_t;$/;"	t	typeref:struct:signotify_id
-signotifyq_t	/usr/include/sys/signal.h	/^} signotifyq_t;$/;"	t	typeref:struct:__anon38
+signotifyq_t	/usr/include/sys/signal.h	/^} signotifyq_t;$/;"	t	typeref:struct:__anon185
+signotifyq_t	/usr/include/sys/signal.h	/^} signotifyq_t;$/;"	t	typeref:struct:__anon36
+signotifyq_t	/usr/include/sys/signal.h	/^} signotifyq_t;$/;"	t	typeref:struct:__anon97
 sigqhdr	/usr/include/sys/signal.h	/^typedef struct sigqhdr {		\/* sigqueue pool header		*\/$/;"	s
 sigqhdr_t	/usr/include/sys/signal.h	/^} sigqhdr_t;$/;"	t	typeref:struct:sigqhdr
 sigqueue	/usr/include/sys/siginfo.h	/^typedef struct sigqueue {$/;"	s
 sigqueue_t	/usr/include/sys/siginfo.h	/^} sigqueue_t;$/;"	t	typeref:struct:sigqueue
-sigsend_t	/usr/include/sys/signal.h	/^} sigsend_t;$/;"	t	typeref:struct:__anon37
-sigset32_t	/usr/include/sys/select.h	/^} sigset32_t;$/;"	t	typeref:struct:__anon120
-sigset32_t	/usr/include/sys/select.h	/^} sigset32_t;$/;"	t	typeref:struct:__anon25
-sigset32_t	/usr/include/sys/select.h	/^} sigset32_t;$/;"	t	typeref:struct:__anon94
-sigset32_t	/usr/include/sys/signal.h	/^} sigset32_t;$/;"	t	typeref:struct:__anon33
-sigset_t	/usr/include/sys/select.h	/^} sigset_t;$/;"	t	typeref:struct:__anon119
-sigset_t	/usr/include/sys/select.h	/^} sigset_t;$/;"	t	typeref:struct:__anon24
-sigset_t	/usr/include/sys/select.h	/^} sigset_t;$/;"	t	typeref:struct:__anon93
-sigset_t	/usr/include/sys/signal.h	/^} sigset_t;$/;"	t	typeref:struct:__anon32
+sigsend_t	/usr/include/sys/signal.h	/^} sigsend_t;$/;"	t	typeref:struct:__anon184
+sigsend_t	/usr/include/sys/signal.h	/^} sigsend_t;$/;"	t	typeref:struct:__anon35
+sigsend_t	/usr/include/sys/signal.h	/^} sigsend_t;$/;"	t	typeref:struct:__anon96
+sigset32_t	/usr/include/sys/select.h	/^} sigset32_t;$/;"	t	typeref:struct:__anon153
+sigset32_t	/usr/include/sys/select.h	/^} sigset32_t;$/;"	t	typeref:struct:__anon178
+sigset32_t	/usr/include/sys/select.h	/^} sigset32_t;$/;"	t	typeref:struct:__anon238
+sigset32_t	/usr/include/sys/select.h	/^} sigset32_t;$/;"	t	typeref:struct:__anon29
+sigset32_t	/usr/include/sys/select.h	/^} sigset32_t;$/;"	t	typeref:struct:__anon90
+sigset32_t	/usr/include/sys/signal.h	/^} sigset32_t;$/;"	t	typeref:struct:__anon180
+sigset32_t	/usr/include/sys/signal.h	/^} sigset32_t;$/;"	t	typeref:struct:__anon31
+sigset32_t	/usr/include/sys/signal.h	/^} sigset32_t;$/;"	t	typeref:struct:__anon92
+sigset_t	/usr/include/sys/select.h	/^} sigset_t;$/;"	t	typeref:struct:__anon152
+sigset_t	/usr/include/sys/select.h	/^} sigset_t;$/;"	t	typeref:struct:__anon177
+sigset_t	/usr/include/sys/select.h	/^} sigset_t;$/;"	t	typeref:struct:__anon237
+sigset_t	/usr/include/sys/select.h	/^} sigset_t;$/;"	t	typeref:struct:__anon28
+sigset_t	/usr/include/sys/select.h	/^} sigset_t;$/;"	t	typeref:struct:__anon89
+sigset_t	/usr/include/sys/signal.h	/^} sigset_t;$/;"	t	typeref:struct:__anon179
+sigset_t	/usr/include/sys/signal.h	/^} sigset_t;$/;"	t	typeref:struct:__anon30
+sigset_t	/usr/include/sys/signal.h	/^} sigset_t;$/;"	t	typeref:struct:__anon91
 sigstack	/usr/include/sys/signal.h	/^struct sigstack {$/;"	s
 sigutok	/usr/include/sys/signal.h	266;"	d
 sigval	/usr/include/sys/siginfo.h	/^union sigval {$/;"	u
@@ -3001,8 +3367,12 @@ sn_pad	/usr/include/sys/signal.h	/^	int	sn_pad;			\/* reserved			*\/$/;"	m	struc
 sn_pad	/usr/include/sys/signal.h	/^	int32_t	sn_pad;			\/* reserved *\/$/;"	m	struct:signotify32_id
 sn_pid	/usr/include/sys/signal.h	/^	pid32_t	sn_pid;			\/* pid of proc to be notified *\/$/;"	m	struct:signotify32_id
 sn_pid	/usr/include/sys/signal.h	/^	pid_t	sn_pid;			\/* pid of proc to be notified	*\/$/;"	m	struct:signotify_id
-sn_sigq	/usr/include/sys/signal.h	/^	sigqueue_t	sn_sigq;	\/* sigq struct for notification *\/$/;"	m	struct:__anon38
-sn_snid	/usr/include/sys/signal.h	/^	u_longlong_t	sn_snid;	\/* unique id for notification	*\/$/;"	m	struct:__anon38
+sn_sigq	/usr/include/sys/signal.h	/^	sigqueue_t	sn_sigq;	\/* sigq struct for notification *\/$/;"	m	struct:__anon185
+sn_sigq	/usr/include/sys/signal.h	/^	sigqueue_t	sn_sigq;	\/* sigq struct for notification *\/$/;"	m	struct:__anon36
+sn_sigq	/usr/include/sys/signal.h	/^	sigqueue_t	sn_sigq;	\/* sigq struct for notification *\/$/;"	m	struct:__anon97
+sn_snid	/usr/include/sys/signal.h	/^	u_longlong_t	sn_snid;	\/* unique id for notification	*\/$/;"	m	struct:__anon185
+sn_snid	/usr/include/sys/signal.h	/^	u_longlong_t	sn_snid;	\/* unique id for notification	*\/$/;"	m	struct:__anon36
+sn_snid	/usr/include/sys/signal.h	/^	u_longlong_t	sn_snid;	\/* unique id for notification	*\/$/;"	m	struct:__anon97
 snprintf	/usr/include/iso/stdio_c99.h	45;"	d
 speed_t	/usr/include/sys/termios.h	/^typedef unsigned int speed_t;$/;"	t
 spgcnt_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef	long		spgcnt_t;	\/* signed number of pages *\/$/;"	t
@@ -3176,7 +3546,8 @@ taskid_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typede
 tcflag_t	/usr/include/sys/termios.h	/^typedef unsigned int tcflag_t;$/;"	t
 tell	/usr/include/unistd.h	200;"	d
 tell64	/usr/include/unistd.h	221;"	d
-term	src/main.c	/^struct termios term = { 0 }, def_term = { 0 };$/;"	v	typeref:struct:termios
+term	src/main.c	/^struct termios term = { 0 };$/;"	v	typeref:struct:termios
+term_mode	src/tty.c	/^void term_mode(int action, struct termios *term){$/;"	f	signature:(int action, struct termios *term)
 termios	/usr/include/sys/termios.h	/^struct termios {$/;"	s
 time_t	/usr/include/iso/time_iso.h	/^typedef	long	time_t;$/;"	t	namespace:std
 time_t	/usr/include/sys/time.h	/^typedef	long	time_t;		\/* time of day in seconds *\/$/;"	t
@@ -3233,9 +3604,11 @@ u_char	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef 
 u_int	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef unsigned int	u_int;$/;"	t
 u_long	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef unsigned long	u_long;$/;"	t
 u_longlong_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef	unsigned long long	u_longlong_t;$/;"	t
-u_longlong_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} u_longlong_t;$/;"	t	typeref:union:__anon2
-u_longlong_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} u_longlong_t;$/;"	t	typeref:union:__anon71
-u_longlong_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} u_longlong_t;$/;"	t	typeref:union:__anon97
+u_longlong_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} u_longlong_t;$/;"	t	typeref:union:__anon130
+u_longlong_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} u_longlong_t;$/;"	t	typeref:union:__anon155
+u_longlong_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} u_longlong_t;$/;"	t	typeref:union:__anon215
+u_longlong_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} u_longlong_t;$/;"	t	typeref:union:__anon6
+u_longlong_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} u_longlong_t;$/;"	t	typeref:union:__anon67
 u_offset_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef	u_longlong_t	u_offset_t;$/;"	t
 u_short	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef unsigned short	u_short;$/;"	t
 uchar_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef	unsigned char	uchar_t;$/;"	t
@@ -3266,14 +3639,19 @@ uintptr_t	/usr/include/sys/int_types.h	/^typedef unsigned long		uintptr_t;$/;"	t
 ulong	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef	unsigned long	ulong;$/;"	t
 ulong_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef	unsigned long	ulong_t;$/;"	t
 unchar	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef	unsigned char	unchar;$/;"	t
+unlock_signals	src/signal.c	/^void unlock_signals(){$/;"	f
 uordblks	/usr/include/malloc.h	/^	unsigned long uordblks;	\/* space in ordinary blocks in use *\/$/;"	m	struct:mallinfo
-upad128_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} upad128_t;$/;"	t	typeref:union:__anon103
-upad128_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} upad128_t;$/;"	t	typeref:union:__anon77
-upad128_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} upad128_t;$/;"	t	typeref:union:__anon8
+upad128_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} upad128_t;$/;"	t	typeref:union:__anon12
+upad128_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} upad128_t;$/;"	t	typeref:union:__anon136
+upad128_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} upad128_t;$/;"	t	typeref:union:__anon161
+upad128_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} upad128_t;$/;"	t	typeref:union:__anon221
+upad128_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} upad128_t;$/;"	t	typeref:union:__anon73
 upad64_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef	uint64_t	upad64_t;$/;"	t
-upad64_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} upad64_t;$/;"	t	typeref:union:__anon101
-upad64_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} upad64_t;$/;"	t	typeref:union:__anon6
-upad64_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} upad64_t;$/;"	t	typeref:union:__anon75
+upad64_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} upad64_t;$/;"	t	typeref:union:__anon10
+upad64_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} upad64_t;$/;"	t	typeref:union:__anon134
+upad64_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} upad64_t;$/;"	t	typeref:union:__anon159
+upad64_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} upad64_t;$/;"	t	typeref:union:__anon219
+upad64_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^} upad64_t;$/;"	t	typeref:union:__anon71
 use_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef	uchar_t		use_t;		\/* use count for swap.  *\/$/;"	t
 useconds_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef uint_t		useconds_t;	\/* Time, in microseconds *\/$/;"	t
 ushort	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef	unsigned short	ushort;$/;"	t
@@ -3287,7 +3665,9 @@ va_start	/usr/include/iso/stdarg_iso.h	56;"	d
 val	/usr/include/ia32/sys/machtypes.h	/^typedef	struct	_label_t { long val[6]; } label_t;$/;"	m	struct:_label_t
 val	/usr/include/ia32/sys/machtypes.h	/^typedef	struct	_label_t { long val[8]; } label_t;$/;"	m	struct:_label_t
 val	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef struct _quad { int val[2]; } quad_t;	\/* used by UFS *\/$/;"	m	struct:_quad
-value	/usr/include/sys/signal.h	/^	union sigval value;			\/* user specified value	*\/$/;"	m	struct:__anon37	typeref:union:__anon37::sigval
+value	/usr/include/sys/signal.h	/^	union sigval value;			\/* user specified value	*\/$/;"	m	struct:__anon184	typeref:union:__anon184::sigval
+value	/usr/include/sys/signal.h	/^	union sigval value;			\/* user specified value	*\/$/;"	m	struct:__anon35	typeref:union:__anon35::sigval
+value	/usr/include/sys/signal.h	/^	union sigval value;			\/* user specified value	*\/$/;"	m	struct:__anon96	typeref:union:__anon96::sigval
 veof	/usr/include/sys/termios.h	/^	unsigned char veof;	\/* veof value *\/$/;"	m	struct:lx_cc
 veol	/usr/include/sys/termios.h	/^	unsigned char veol;	\/* veol value *\/$/;"	m	struct:lx_cc
 version	/usr/include/math.h	/^enum version {libm_ieee = -1, c_issue_4, ansi_1, strict_ansi};$/;"	g
@@ -3304,7 +3684,7 @@ ws_col	/usr/include/sys/termios.h	/^	unsigned short ws_col;	\/* columns, in char
 ws_row	/usr/include/sys/termios.h	/^	unsigned short ws_row;	\/* rows, in characters *\/$/;"	m	struct:winsize
 ws_xpixel	/usr/include/sys/termios.h	/^	unsigned short ws_xpixel;	\/* horizontal size, pixels *\/$/;"	m	struct:winsize
 ws_ypixel	/usr/include/sys/termios.h	/^	unsigned short ws_ypixel;	\/* vertical size, pixels *\/$/;"	m	struct:winsize
-zassert	src/include/string.h	9;"	d
+zassert	src/include/zassert.h	1;"	d
 zoneid_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef id_t	zoneid_t;$/;"	t
 zprintf	src/zprintf.c	/^void zprintf(char *template, ...){$/;"	f	signature:(char *template, ...)
 zputb	src/zprintf.c	/^void zputb(char *ptr, int length){$/;"	f	signature:(char *ptr, int length)
