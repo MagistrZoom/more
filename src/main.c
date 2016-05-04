@@ -186,8 +186,6 @@ int main(int argc, char *argv[]) {
 	zassert(term_err < 0)
 	int columns = terminal_d.ws_col;
 	int rows = terminal_d.ws_row - 1; /*1 line reserved for a prompt*/
-//	int columns = 80;
-//	int rows = 24;
 	
 	int read_fd;
 	
