@@ -3215,7 +3215,7 @@ sa_resv	/usr/include/sys/signal.h	/^	int32_t		sa_resv[2];$/;"	m	struct:sigaction
 sa_sigaction	/usr/include/sys/signal.h	94;"	d
 screen	src/include/string.h	/^	size_t real, screen;$/;"	m	struct:screen_len
 screen_len	src/include/string.h	/^struct screen_len{$/;"	s
-scrlen	src/string.c	/^struct screen_len scrlen(const char *from, size_t offset, size_t limit, int tab_l){$/;"	f	signature:(const char *from, size_t offset, size_t limit, int tab_l)
+scrlen	src/string.c	/^struct screen_len scrlen(const char *from, size_t limit, size_t columns, int tab_l, int *flag){$/;"	f	signature:(const char *from, size_t limit, size_t columns, int tab_l, int *flag)
 select	/usr/include/sys/select.h	80;"	d
 serial	/usr/include/sys/termios.h	/^	uint32_t serial;$/;"	m	struct:ppsclockev32
 serial	/usr/include/sys/termios.h	/^	uint_t serial;$/;"	m	struct:ppsclockev

@@ -12,11 +12,7 @@ int perr(int err){
 }
 
 /*
- * @function strastr
- * @description same as strstr but searches for all occasions
- * @param (const char*) haystack
- * @param (const char*) needle
- * @return (size_t) amount of occasions of needle in haystack
+ * same as strstr but searches for all occasions
  */
 size_t strastr(const char *haystack, const char *needle) {
     size_t r = 0;
@@ -29,21 +25,21 @@ size_t strastr(const char *haystack, const char *needle) {
 }
 
 /*
- * @function scrlen
- * @description calculates size of line from @from to @to with respect to tabstops
- * @param char *from
- * @param char *to
- * @param int tabstop
- * @return size_t strlen wit respect to tabstops
+ * calculates size of line from @from to @to with respect to tabstops
  */
-struct screen_len scrlen(const char *from, size_t offset, size_t limit, int tab_l){
+struct screen_len scrlen(const char *from, size_t limit, size_t columns, int tab_l, int *flag){
 	int		t_offset = 0;
 	size_t 	screen_l = 0;
 	size_t 	real_l = 0;
-	char *to = from + offset;
+	char *to = from + limit;
 	char *cur = from;
 
-	while(screen_l < limit && cur < to) {
+	char *newline = memmem(from, limit, NL, 1);
+	if(newline != NULL && newline < to){
+		to = newline + 1;
+		*flag = -1;
+	}
+	while(screen_l < columns && cur < to) {
 		if(*cur == TAB){
 			if(screen_l + tab_l - t_offset < limit)
 				screen_l += tab_l - t_offset;
@@ -56,6 +52,10 @@ struct screen_len scrlen(const char *from, size_t offset, size_t limit, int tab_
 		}
 		real_l++;
 		cur++;
+	}
+	/*buffer ends before screen_l reached columns*/
+	if(cur == to && *flag != -1){
+		*flag = 1;
 	}
 	return (struct screen_len){
 		.screen = screen_l,

@@ -237,16 +237,19 @@ int main(int argc, char *argv[]) {
 
 		while(ptr - buf < read_e){
 			int flag = 0;
-			int line_l = get_outstr(ptr, columns, read_e, &flag);
-
-			struct screen_len len = scrlen(ptr, line_l, columns, tab_spaces);
+			struct screen_len len = scrlen(ptr, read_e - (ptr-buf), columns, tab_spaces, &flag);
+			//end of buffer reached
+			if(len.real < columns && len.real+(ptr-buf) == read_e 
+					&& print_b + len.real != end){
+				offset = len.real;
+				memcpy(buf, ptr, offset);
+				break;
+			}
 
 			zputb(ptr, len.real);
 
-			/*if there are sequence of newlines*/
-			if(!len.real && lines < current_rows_limit){ lines++; zprintf(NL); len.real++; }
-			if(len.screen == columns){ lines++; }
-				
+			lines++;
+
 			ptr 	+= len.real;
 			print_b	+= len.real;
 
