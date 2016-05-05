@@ -36,30 +36,58 @@ size_t strastr(const char *haystack, const char *needle) {
  * @param int tabstop
  * @return size_t strlen wit respect to tabstops
  */
-size_t scrlen(const char *from, size_t offset, int tab_l){
+struct screen_len scrlen(const char *from, size_t offset, size_t limit, int tab_l){
 	int		t_offset = 0;
+	size_t 	screen_l = 0;
 	size_t 	real_l = 0;
 	char *to = from + offset;
-	char *cur;
-	for(cur = from; cur < to; cur++){
+	char *cur = from;
+
+	while(screen_l < limit && cur < to) {
 		if(*cur == TAB){
-			real_l += tab_l - t_offset;
+			if(screen_l + tab_l - t_offset < limit)
+				screen_l += tab_l - t_offset;
+			else
+				break;
 			t_offset = 0;
 		} else {
-			real_l++;
+			screen_l++;
 			t_offset = (t_offset+1) & 7;
 		}
+		real_l++;
+		cur++;
 	}
-
-	return real_l;
+	return (struct screen_len){
+		.screen = screen_l,
+		.real = real_l	
+	};
 }
 
+/*
+ * This function returns amount of bytes after ptr less or equal than columns
+ * + newline optionally
+ */
+int get_outstr(char *ptr, int columns, size_t max, int *flag){
+	char *newline = memmem(ptr, max, NL, 1);
+	if(!newline){
+		*flag = 1;
+		return columns;
+	} else {
+		int min = 0;
+		if(columns < newline - ptr){
+			min = columns;
+		} else {
+			min = newline - ptr;
+		}
+		return min;
+	}
+}
 
 /*
  * Find the first occurrence of the byte string s in byte string l.
  */
 
-void * memmem(const void *l, size_t l_len, const void *s, size_t s_len) {
+void *memmem(const void *l, size_t l_len, const void *s, size_t s_len) {
 	register char *cur, *last;
 	const char *cl = (const char *)l;
 	const char *cs = (const char *)s;

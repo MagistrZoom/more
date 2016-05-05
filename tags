@@ -122,7 +122,6 @@ CLOCK_REALTIME	/usr/include/sys/time_impl.h	104;"	d
 CLOCK_THREAD_CPUTIME_ID	/usr/include/sys/time_impl.h	103;"	d
 CLOCK_VIRTUAL	/usr/include/sys/time_impl.h	102;"	d
 CMD	src/main.c	/^enum CMD {$/;"	g	file:
-CMD	src/main.c	/^} CMD;$/;"	v	typeref:enum:CMD
 CMD_BACK	src/main.c	/^	CMD_BACK,		\/* ib		backward i(1) screenfuls of text, files only *\/$/;"	e	enum:CMD	file:
 CMD_EXIT	src/main.c	/^	CMD_EXIT = 0,	\/*!q		interrupt 									 *\/$/;"	e	enum:CMD	file:
 CMD_HALF	src/main.c	/^	CMD_HALF,		\/*!id 		by default scroll 11 lines, i as new default *\/$/;"	e	enum:CMD	file:
@@ -655,6 +654,7 @@ NCC	/usr/include/sys/termios.h	55;"	d
 NCCS	/usr/include/sys/termios.h	59;"	d
 NFDBITS	/usr/include/sys/select.h	104;"	d
 NGROUPS_MAX	/usr/include/limits.h	64;"	d
+NL	src/include/string.h	8;"	d
 NL	src/main.c	13;"	d	file:
 NL0	/usr/include/sys/ioctl.h	75;"	d
 NL0	/usr/include/sys/termios.h	226;"	d
@@ -2845,6 +2845,7 @@ ftello	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/stdio.h	237;"	d
 ftello64	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/stdio.h	257;"	d
 ftruncate	/usr/include/unistd.h	194;"	d
 ftruncate64	/usr/include/unistd.h	215;"	d
+get_outstr	src/string.c	/^int get_outstr(char *ptr, int columns, size_t max, int *flag){$/;"	f	signature:(char *ptr, int columns, size_t max, int *flag)
 getc	/usr/include/iso/stdio_iso.h	/^inline int getc(FILE *_p) {$/;"	f	namespace:std	signature:(FILE *_p)
 getc_unlocked	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/stdio.h	435;"	d
 getc_unlocked	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/stdio.h	443;"	d
@@ -3061,7 +3062,7 @@ mallinfo	/usr/include/malloc.h	/^struct mallinfo  {$/;"	s
 math_errhandling	/usr/include/iso/math_c99.h	203;"	d
 math_errhandling	/usr/include/iso/math_c99.h	204;"	d
 memchr	/usr/include/iso/string_iso.h	/^	inline void *memchr(void * __s, int __c, size_t __n) {$/;"	f	signature:(void * __s, int __c, size_t __n)
-memmem	src/string.c	/^void * memmem(const void *l, size_t l_len, const void *s, size_t s_len) {$/;"	f	signature:(const void *l, size_t l_len, const void *s, size_t s_len)
+memmem	src/string.c	/^void *memmem(const void *l, size_t l_len, const void *s, size_t s_len) {$/;"	f	signature:(const void *l, size_t l_len, const void *s, size_t s_len)
 minor_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef uint_t	minor_t;	\/* minor part of device number *\/$/;"	t
 minor_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef ulong_t	minor_t;	\/* (historical version) *\/$/;"	t
 mknod	/usr/include/sys/stat_impl.h	/^mknod(const char *_path, mode_t _mode, dev_t _dev)$/;"	f	signature:(const char *_path, mode_t _mode, dev_t _dev)
@@ -3190,6 +3191,7 @@ quot	/usr/include/iso/stdlib_iso.h	/^	long	quot;$/;"	m	struct:std::__anon126
 quot	/usr/include/iso/stdlib_iso.h	/^	long	quot;$/;"	m	struct:std::__anon2
 quot	/usr/include/iso/stdlib_iso.h	/^	long	quot;$/;"	m	struct:std::__anon240
 rd	/usr/include/floatingpoint.h	/^	enum fp_direction_type rd;$/;"	m	struct:__anon65	typeref:enum:__anon65::fp_direction_type
+real	src/include/string.h	/^	size_t real, screen;$/;"	m	struct:screen_len
 rem	/usr/include/iso/stdlib_c99.h	/^	long long	rem;$/;"	m	struct:__anon127
 rem	/usr/include/iso/stdlib_c99.h	/^	long long	rem;$/;"	m	struct:__anon241
 rem	/usr/include/iso/stdlib_c99.h	/^	long long	rem;$/;"	m	struct:__anon3
@@ -3211,7 +3213,9 @@ sa_mask	/usr/include/sys/signal.h	/^	sigset_t sa_mask;$/;"	m	struct:sigaction
 sa_resv	/usr/include/sys/signal.h	/^	int sa_resv[2];$/;"	m	struct:sigaction
 sa_resv	/usr/include/sys/signal.h	/^	int32_t		sa_resv[2];$/;"	m	struct:sigaction32
 sa_sigaction	/usr/include/sys/signal.h	94;"	d
-scrlen	src/string.c	/^size_t scrlen(const char *from, size_t offset, int tab_l){$/;"	f	signature:(const char *from, size_t offset, int tab_l)
+screen	src/include/string.h	/^	size_t real, screen;$/;"	m	struct:screen_len
+screen_len	src/include/string.h	/^struct screen_len{$/;"	s
+scrlen	src/string.c	/^struct screen_len scrlen(const char *from, size_t offset, size_t limit, int tab_l){$/;"	f	signature:(const char *from, size_t offset, size_t limit, int tab_l)
 select	/usr/include/sys/select.h	80;"	d
 serial	/usr/include/sys/termios.h	/^	uint32_t serial;$/;"	m	struct:ppsclockev32
 serial	/usr/include/sys/termios.h	/^	uint_t serial;$/;"	m	struct:ppsclockev

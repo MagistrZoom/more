@@ -54,7 +54,7 @@ enum CMD {
 	CMD_REPEAT,		/* .		repeat last command 						 */
 	CMD_INV,		/*!			any other command							 */
 	CMD_NOP
-};		
+} CMD;
 
 /* set up no-echo and canonical mode
  * block signals SIGINT and SIGTSTP
@@ -236,35 +236,94 @@ int main(int argc, char *argv[]) {
 		offset = 0;
 
 		while(ptr - buf < read_e){
-			int flag = 0;
-			int line_l = get_outstr(ptr, columns, read_e, &flag);
-
-			struct screen_len len = scrlen(ptr, line_l, columns, tab_spaces);
-
-			zputb(ptr, len.real);
-
-			/*if there are sequence of newlines*/
-			if(!len.real && lines < current_rows_limit){ lines++; zprintf(NL); len.real++; }
-			if(len.screen == columns){ lines++; }
+//			nlptr = memmem(ptr, read_e - (ptr-buf), NL, 1)+1;
+//			real_l = scrlen(ptr, line_l, tab_spaces);
+//			zputb(ptr, line_l);
 				
-			ptr 	+= len.real;
-			print_b	+= len.real;
-
-
+			
 			if(lines == current_rows_limit){
-				zprintf(NL);
+				total_lines += lines;
 				lines = 0;
-				print_prompt(print_b, end, in_tty);
 
-				size_t k = 0;
-				enum CMD cmd = wait_for_a_command(&k);
+				reset_cmd(lnflag, 1);
+				reset_cmd(scflag, screen_rows_limit);
+				reset_cmd(hscflag, half_rows_limit);
+
+				print_prompt(print_b, end, in_tty);
+REQ_CMD:
+				if(print_b +line_l < end/* || -w flag */)
+					cmd = wait_for_a_command(&i);
 
 				clean_prompt();
-				if(cmd == CMD_EXIT){
-					reset_tty();
-					return 0;
+
+				if(cmd != CMD_REPEAT){ previous_command = cmd; }
+EXEC_CMD:		
+				switch(cmd) {
+					case CMD_EXIT:
+						reset_tty();
+						return 0;
+						break;
+					case CMD_LINE:
+						lnflag = 1;
+						screen_def_rows_limit = i?i:screen_def_rows_limit;
+						screen_rows_limit = i?i:screen_rows_limit;
+						current_rows_limit = i?i:1;
+						break;
+					case CMD_SCREEN_DEF:
+						screen_def_rows_limit = i?i:screen_def_rows_limit;
+					case CMD_SCREEN:
+						scflag = 1;
+						screen_rows_limit = i?i:screen_rows_limit;
+						current_rows_limit = i?i:screen_rows_limit;
+						break;
+					case CMD_HALF:
+						hscflag = 1;
+						half_rows_limit = i?i:half_rows_limit;
+						current_rows_limit = half_rows_limit;
+						break;
+					case CMD_PRINTL:
+						clean_prompt();
+						zprintf("%d", total_lines);
+						goto REQ_CMD;
+						break;
+					case CMD_PRINTFNL:
+						clean_prompt();
+						zprintf("\"%s\" %d", argv[1], total_lines);
+						goto REQ_CMD;
+						break;
+					case CMD_HELP:
+						clean_prompt();
+						zprintf("%s", help);
+						print_prompt(print_b, end, in_tty);
+						break;
+					case CMD_REPEAT:
+						cmd = previous_command;
+						goto EXEC_CMD;
+						break; 
+					case CMD_BACK:
+/*						line_counter = total_lines - (i?i:1+1)*rows;
+						if(!in_tty && line_counter >= 0){
+							skflag = 1;
+							total_lines = line_counter;
+							print_b = line_offset[total_lines];
+							off_t seek_e = lseek(read_fd, print_b, SEEK_SET);
+							zassert(seek_e < 0)
+							break;
+						}*/
+					case CMD_INV:
+						clean_prompt();
+						zprintf("Invalid command");
+					default:
+						goto REQ_CMD;
+						break;
 				}
 			}
+			ptr     += line_l;
+			if(skflag){
+				skflag = 0;
+				break;
+			}
+			print_b += line_l;
 		}
 	}
 	
