@@ -16,7 +16,7 @@ int perr(int err){
  */
 size_t strastr(const char *haystack, const char *needle) {
     size_t r = 0;
-    char *high_bracket = haystack;
+    char *high_bracket = (char*)haystack;
     while((high_bracket = strstr(high_bracket, needle)) != NULL){
             r++;
             high_bracket += strlen(needle);
@@ -31,31 +31,30 @@ struct screen_len scrlen(const char *from, size_t limit, size_t columns, int tab
 	int		t_offset = 0;
 	size_t 	screen_l = 0;
 	size_t 	real_l = 0;
-	char *to = from + limit;
-	char *cur = from;
+	char *to = (char*)from + limit;
+	char *cur = (char*)from;
 
 	char *newline = memmem(from, limit, NL, 1);
 	if(newline != NULL && newline < to){
-		to = newline + 1;
-		*flag = -1;
+		if(newline < from + columns){
+			/*there are \n in line*/
+			newline++;
+		}
+		to = newline;
 	}
 	while(screen_l < columns && cur < to) {
 		if(*cur == TAB){
-			if(screen_l + tab_l - t_offset < limit)
+			if(screen_l + tab_l - t_offset < columns)
 				screen_l += tab_l - t_offset;
 			else
 				break;
 			t_offset = 0;
 		} else {
 			screen_l++;
-			t_offset = (t_offset+1) & 7;
+			t_offset = (t_offset + 1) & (tab_l - 1);
 		}
 		real_l++;
 		cur++;
-	}
-	/*buffer ends before screen_l reached columns*/
-	if(cur == to && *flag != -1){
-		*flag = 1;
 	}
 	return (struct screen_len){
 		.screen = screen_l,

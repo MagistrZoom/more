@@ -236,7 +236,7 @@ int main(int argc, char *argv[]) {
 		offset = 0;
 
 		while(ptr - buf < read_e){
-			int flag = 0;
+			int flag = ~0;
 			struct screen_len len = scrlen(ptr, read_e - (ptr-buf), columns, tab_spaces, &flag);
 			//end of buffer reached
 			if(len.real < columns && len.real+(ptr-buf) == read_e 
@@ -247,15 +247,16 @@ int main(int argc, char *argv[]) {
 			}
 
 			zputb(ptr, len.real);
-
 			lines++;
 
 			ptr 	+= len.real;
 			print_b	+= len.real;
 
-
 			if(lines == current_rows_limit){
-				zprintf(NL);
+				if(ptr[-1] != NLC){
+					zprintf(NL);
+				}
+
 				lines = 0;
 				print_prompt(print_b, end, in_tty);
 
