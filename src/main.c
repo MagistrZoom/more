@@ -10,8 +10,6 @@
 
 #include <limits.h> /* just for one constant */
 
-#define NL "\n"
-#define NLC '\n'
 #define INIT_LINES (256)
 
 #define reset_cmd(flag, v) do{ if(flag){ flag = 0; current_rows_limit = v;}} while(0)

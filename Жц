@@ -36,16 +36,18 @@ struct screen_len scrlen(const char *from, size_t limit, size_t columns, int tab
 
 	char *newline = memmem(from, limit, NL, 1);
 	if(newline != NULL && newline < to){
+		if(newline < from + columns){
+			/*there are \n in line*/
+			newline++;
+		}
 		to = newline;
 	}
 	while(screen_l < columns && cur < to) {
 		if(*cur == TAB){
-			if(screen_l + tab_l - t_offset <= columns)
+			if(screen_l + tab_l - t_offset < columns)
 				screen_l += tab_l - t_offset;
-			else {
-				real_l++;
+			else
 				break;
-			}
 			t_offset = 0;
 		} else {
 			screen_l++;
@@ -54,11 +56,6 @@ struct screen_len scrlen(const char *from, size_t limit, size_t columns, int tab
 		real_l++;
 		cur++;
 	}
-	if(*cur == NLC){
-		screen_l++;
-		real_l++;
-	}
-
 	return (struct screen_len){
 		.screen = screen_l,
 		.real = real_l	

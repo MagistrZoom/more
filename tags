@@ -509,7 +509,7 @@ INFINITY	/usr/include/iso/math_c99.h	111;"	d
 INFINITY	/usr/include/iso/math_c99.h	112;"	d
 INFINITY	/usr/include/iso/math_c99.h	33;"	d
 INFINITY	/usr/include/iso/math_c99.h	34;"	d
-INIT_LINES	src/main.c	15;"	d	file:
+INIT_LINES	src/main.c	13;"	d	file:
 INLCR	/usr/include/sys/termios.h	193;"	d
 INPCK	/usr/include/sys/termios.h	191;"	d
 INT16_MAX	/usr/include/sys/int_limits.h	65;"	d
@@ -655,14 +655,13 @@ NCCS	/usr/include/sys/termios.h	59;"	d
 NFDBITS	/usr/include/sys/select.h	104;"	d
 NGROUPS_MAX	/usr/include/limits.h	64;"	d
 NL	src/include/string.h	8;"	d
-NL	src/main.c	13;"	d	file:
 NL0	/usr/include/sys/ioctl.h	75;"	d
 NL0	/usr/include/sys/termios.h	226;"	d
 NL1	/usr/include/sys/ioctl.h	76;"	d
 NL1	/usr/include/sys/termios.h	227;"	d
 NL2	/usr/include/sys/ioctl.h	77;"	d
 NL3	/usr/include/sys/ioctl.h	78;"	d
-NLC	src/main.c	14;"	d	file:
+NLC	src/include/string.h	9;"	d
 NLDELAY	/usr/include/sys/ioctl.h	74;"	d
 NLDLY	/usr/include/sys/termios.h	225;"	d
 NL_ARGMAX	/usr/include/limits.h	181;"	d
@@ -2677,7 +2676,7 @@ clock_t	/usr/include/limits.h	/^typedef long	clock_t;$/;"	t
 clock_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef	long		clock_t; \/* relative time in a specified resolution *\/$/;"	t
 clockid_t	/usr/include/time.h	/^typedef int	clockid_t;$/;"	t
 clockid_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef	int	clockid_t;	\/* clock identifier type *\/$/;"	t
-cmd_case	src/main.c	18;"	d	file:
+cmd_case	src/main.c	16;"	d	file:
 cnt_t	/usr/sfw/lib/gcc/i386-pc-solaris2.10/3.4.3/include/sys/types.h	/^typedef	short		cnt_t;		\/* ?<count> type *\/$/;"	t
 cos	/usr/include/iso/math_iso.h	/^	inline float cos(float __X) { return __cosf(__X); }$/;"	f	signature:(float __X)
 cos	/usr/include/iso/math_iso.h	/^	inline long double cos(long double __X) { return __cosl(__X); }$/;"	f	signature:(long double __X)
@@ -3201,7 +3200,7 @@ rem	/usr/include/iso/stdlib_iso.h	/^	int	rem;$/;"	m	struct:std::__anon239
 rem	/usr/include/iso/stdlib_iso.h	/^	long	rem;$/;"	m	struct:std::__anon126
 rem	/usr/include/iso/stdlib_iso.h	/^	long	rem;$/;"	m	struct:std::__anon2
 rem	/usr/include/iso/stdlib_iso.h	/^	long	rem;$/;"	m	struct:std::__anon240
-reset_cmd	src/main.c	17;"	d	file:
+reset_cmd	src/main.c	15;"	d	file:
 reset_tty	src/tty.c	/^void reset_tty(){$/;"	f
 retval	/usr/include/math.h	/^	double retval;$/;"	m	struct:exception
 reverse	src/zprintf.c	/^void reverse(char s[]){$/;"	f	signature:(char s[])

@@ -6,6 +6,7 @@
 
 #define TAB '\t'
 #define NL "\n"
+#define NLC '\n'
 int perr(int err); 
 struct screen_len{
 	size_t real, screen;
