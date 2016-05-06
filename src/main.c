@@ -14,7 +14,9 @@
 #define INIT_LINES (256)
 
 char *prompt = "More";
-char *help = "Most commands optionally preceded by integer argument k.  \n\
+char *help = "\n\
+***************************************************************************\n\
+Most commands optionally preceded by integer argument k.  \n\
 Defaults in brackets.  Star (*) indicates argument becomes new default.\n\
 ---------------------------------------------------------------------------\n\
 <space>     Display next k lines of text [current screen size]\n\
@@ -86,16 +88,18 @@ int main(int argc, char *argv[]) {
 	
 	int read_fd;
 	
-	off_t end = 0, start = 0;
+	off_t end = 0;
 
 	char *buf = calloc(sizeof(char), page_size);
 	char *ptr;
 
 	size_t print_b = 0;			
+	size_t i = 0;			
 	size_t offset = 0;
 	size_t read_e;
 
 	unsigned int lines = 0;
+	unsigned int total_lines = 0;
 
 	/* default lengths */
 	int current_rows_limit = rows;
@@ -109,7 +113,6 @@ int main(int argc, char *argv[]) {
 	int scflag = 0; /* screen mode */
 	int hscflag = 0; /* half-screen mode */
 
-	enum CMD cmd;
 	/* repeat cache */
 	enum CMD previous_command = CMD_NOP;
 
@@ -178,16 +181,70 @@ int main(int argc, char *argv[]) {
 					zprintf(NL);
 				}
 
+				reset_cmd(lnflag, 1);
+                reset_cmd(scflag, screen_rows_limit);
+                reset_cmd(hscflag, half_rows_limit);
+
+				total_lines += lines;
+
 				lines = 0;
+				
 				print_prompt(prompt, print_b, end, in_tty);
 
-				size_t k = 0;
-				enum CMD cmd = wait_for_a_command(&k);
-
+REQ_CMD:		i = 0;
+				enum CMD cmd = wait_for_a_command(&i);
+				
+				if(cmd != CMD_REPEAT){ previous_command = cmd; }
 				clean_prompt();
-				if(cmd == CMD_EXIT){
-					reset_tty();
-					return 0;
+EXEC_CMD:		switch(cmd) {
+					case CMD_EXIT:
+					    reset_tty();
+					    return 0;
+					    break;
+					case CMD_LINE:
+					    lnflag = 1;
+					    screen_def_rows_limit = i?i:screen_def_rows_limit;
+					    screen_rows_limit = i?i:screen_rows_limit;
+					    current_rows_limit = i?i:line_rows_limit;
+					    break;
+					case CMD_SCREEN_DEF:
+					    screen_def_rows_limit = i?i:screen_def_rows_limit;
+					case CMD_SCREEN:
+					    scflag = 1;
+					    screen_rows_limit = i?i:screen_rows_limit;
+					    current_rows_limit = i?i:screen_rows_limit;
+					    break;
+					case CMD_HALF:
+					    hscflag = 1;
+					    half_rows_limit = i?i:half_rows_limit;
+					    current_rows_limit = half_rows_limit;
+					    break;
+					case CMD_PRINTL:
+                        clean_prompt();
+                        zprintf("%d", total_lines);
+				        goto REQ_CMD;
+				        break;
+					case CMD_PRINTFNL:
+					    clean_prompt();
+					    zprintf("\"%s\" %d", argv[1], total_lines);
+					    goto REQ_CMD;
+					    break;
+					case CMD_HELP:
+					    clean_prompt();
+					    zprintf("%s", help);
+					    print_prompt(prompt, print_b, end, in_tty);
+						goto REQ_CMD;
+					    break;
+					case CMD_REPEAT:
+					    cmd = previous_command;
+					    goto EXEC_CMD;
+					    break; 
+					case CMD_INV:
+					    clean_prompt();
+					    zprintf("Invalid command");
+					default:
+					    goto REQ_CMD;
+					    break;
 				}
 			}
 		}
@@ -196,8 +253,8 @@ int main(int argc, char *argv[]) {
 	/* -w flag implementation */
 	if(flags & W_FLAG){
 		print_prompt("No-more", 0, 0, 1);
-		size_t k = 0;
-		(void)wait_for_a_command(&k);
+		i = 0;
+		(void)wait_for_a_command(&i);
 		clean_prompt();
 	}
 	

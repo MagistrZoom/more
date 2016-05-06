@@ -1,13 +1,13 @@
 #include "include/tty.h"
 
-int handle_stdin(int *in_tty, int *pipe_fd, int *read_fd){
-		*in_tty = 1;
-		*pipe_fd = dup(STDIN_FILENO);
-		zassert(*pipe_fd < 0)
-		*read_fd = *pipe_fd;
-		close(STDIN_FILENO);
-		int fd = open("/dev/tty", O_RDONLY);
-		zassert(fd < 0)
+void handle_stdin(int *in_tty, int *pipe_fd, int *read_fd){
+	*in_tty = 1;
+	*pipe_fd = dup(STDIN_FILENO);
+	zassert(*pipe_fd < 0)
+	*read_fd = *pipe_fd;
+	close(STDIN_FILENO);
+	int fd = open("/dev/tty", O_RDONLY);
+	zassert(fd < 0)
 }
 
 void clear_screen(){

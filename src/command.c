@@ -85,9 +85,9 @@ enum CMD wait_for_a_command(size_t *k){
 		cmd_case('z', SCREEN_DEF);
 		cmd_case(NLC, LINE);
 		cmd_case('d', HALF);
-		cmd_case('s', SKIP);
-		cmd_case('f', SKIP_SCREEN);
-		cmd_case('b', BACK);
+		//cmd_case('s', SKIP);
+		//cmd_case('f', SKIP_SCREEN);
+		//cmd_case('b', BACK);
 
 		cmd_case('q', EXIT);
 		cmd_case('h', HELP);

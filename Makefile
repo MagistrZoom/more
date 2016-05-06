@@ -1,6 +1,6 @@
 CC=gcc
 LD=gcc
-CFLAGS=-m64 -g -c -o
+CFLAGS=-Wall -m64 -g -c -o
 LFLAGS=-lm -m64 -o
 SRCS=$(wildcard src/*.c)
 OBJS=$(addprefix obj/,$(notdir $(SRCS:.c=.o)))

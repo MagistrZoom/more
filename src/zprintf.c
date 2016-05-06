@@ -43,7 +43,6 @@ A:
 		goto Z;
 	if(template[i] != '%')
 		goto F;
-B:
 	written = write(fd, outbuffer, j);
 	zassert(written < 0)
 
