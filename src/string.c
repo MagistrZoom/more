@@ -1,8 +1,10 @@
 #include "include/string.h"
 #include "include/zprintf.h"
+#include "include/tty.h"
 
 void put_header(char *filename){
-	zprintf("[2J[H::::::::::::\n%s\n::::::::::::\n", filename);	
+	clear_screen();
+	zprintf("::::::::::::\n%s\n::::::::::::\n", filename);	
 }
 
 int perr(int err){
@@ -27,7 +29,7 @@ size_t strastr(const char *haystack, const char *needle) {
 /*
  * calculates size of line from @from to @to with respect to tabstops
  */
-struct screen_len scrlen(const char *from, size_t limit, size_t columns, int tab_l, int *flag){
+size_t scrlen(const char *from, size_t limit, size_t columns, int tab_l){
 	int		t_offset = 0;
 	size_t 	screen_l = 0;
 	size_t 	real_l = 0;
@@ -59,30 +61,7 @@ struct screen_len scrlen(const char *from, size_t limit, size_t columns, int tab
 		real_l++;
 	}
 
-	return (struct screen_len){
-		.screen = screen_l,
-		.real = real_l	
-	};
-}
-
-/*
- * This function returns amount of bytes after ptr less or equal than columns
- * + newline optionally
- */
-int get_outstr(char *ptr, int columns, size_t max, int *flag){
-	char *newline = memmem(ptr, max, NL, 1);
-	if(!newline){
-		*flag = 1;
-		return columns;
-	} else {
-		int min = 0;
-		if(columns < newline - ptr){
-			min = columns;
-		} else {
-			min = newline - ptr;
-		}
-		return min;
-	}
+	return real_l;
 }
 
 /*

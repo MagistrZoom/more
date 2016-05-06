@@ -10,6 +10,10 @@ int handle_stdin(int *in_tty, int *pipe_fd, int *read_fd){
 		zassert(fd < 0)
 }
 
+void clear_screen(){
+	zprintf("[2J[H");
+}
+
 void reset_tty(){
        int tcs_set_err = tcsetattr(STDERR_FILENO, TCSANOW, &def_term);
        zassert(tcs_set_err < 0)

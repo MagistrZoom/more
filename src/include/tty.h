@@ -15,8 +15,9 @@
 #define COMMAND_SET (1)
 #define COMMAND_UNSET (0)
 
-struct termios def_term;
+struct termios term, def_term;
 
 int handle_stdin(int *in_tty, int *pipe_fd, int *read_fd);
 void reset_tty();
 void term_mode(int action, struct termios *term);
+void clear_screen();
