@@ -16,4 +16,4 @@ obj/%.o: src/%.c
 	$(CC) $(CFLAGS) $@ $<                                                   
                                                                                
 clean:                                                                         
-	rm -f obj/* build/* 
+	rm -f obj/* build/* tags
