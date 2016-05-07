@@ -69,7 +69,7 @@ int main(int argc, char *argv[]) {
 	char **files = parse_flags(&flags, argv);
 
 	/* need to get optimal buf size */
-	size_t page_size = sysconf(_SC_PAGESIZE);
+	size_t page_size = sysconf(_SC_PAGESIZE)*2;
 
 	int in_tty = 0;
 	/* get terminal parameters and size */
