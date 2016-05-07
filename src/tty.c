@@ -28,7 +28,7 @@ void term_mode(int action, struct termios *term){
 		zassert(tcs_set_err < 0)
 		lock_signals();
 	} else {
-		term->c_lflag &= !ICANON & ECHO; 
+		term->c_lflag &= ~ICANON & ECHO; 
 		int tcs_set_err = tcsetattr(STDERR_FILENO, TCSANOW, term);
 		zassert(tcs_set_err < 0)
 		unlock_signals();
